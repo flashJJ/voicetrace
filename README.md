@@ -9,6 +9,22 @@
 > 报名截止：2026-11-23 23:59（北京时间）\
 > 当前状态：3 种模式 / 9 个互动故事 / 91 条资料库 / 8 个黄金样品 / 真实模型 8/8 黄金样品 7/7 通过
 
+[![Deploy demo to GitHub Pages](https://github.com/flashJJ/voicetrace/actions/workflows/pages.yml/badge.svg)](https://github.com/flashJJ/voicetrace/actions/workflows/pages.yml)
+
+## 在线演示
+
+- **GitHub Pages（静态演示）**：https://flashJJ.github.io/voicetrace/
+- 静态版包含：`/demo`、`/stories`、`/library`、`/map`、`/about`
+- `/studio` 的在线生成需要服务端，GitHub Pages 静态版会提示去 `/demo` 看预生成故事；完整生成版请本地运行或部署到 Vercel
+
+## CI / 部署
+
+- push 到 `main` → GitHub Actions 自动构建静态版并部署到 GitHub Pages
+- 工作流：[`.github/workflows/pages.yml`](.github/workflows/pages.yml)
+- 构建脚本：[`web/scripts/build-static.mjs`](web/scripts/build-static.mjs)（静态构建时临时移走 `app/api`，保留 `/demo` 等页面）
+- 首次可能需要在 GitHub 仓库 `Settings → Pages → Build and deployment → Source` 选择 **GitHub Actions**
+- 完整版（含 `/studio` 真实模型）建议在 Vercel 导入仓库，并配置 `LLM_API_KEY`、`LLM_BASE_URL`、`LLM_MODEL`
+
 ## 仓库关联
 
 已关联：https://github.com/flashJJ/voicetrace

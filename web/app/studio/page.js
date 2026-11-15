@@ -23,6 +23,12 @@ export default function StudioPage() {
 
   const generate = async () => {
     if (!selected) return;
+    if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
+      setError(
+        "这是 GitHub Pages 静态演示，不提供在线生成。请从顶部「创作 → 演示」查看预生成故事，或本地运行 npm run dev。"
+      );
+      return;
+    }
     setLoading(true);
     setError("");
     try {
