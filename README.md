@@ -13,7 +13,7 @@
 
 ## 在线演示
 
-- **GitHub Pages（静态演示）**：https://flashJJ.github.io/voicetrace/
+- **GitHub Pages（静态演示）**：https://flashjj.github.io/voicetrace/
 - 静态版包含：`/demo`、`/stories`、`/library`、`/map`、`/about`
 - `/studio` 的在线生成需要服务端，GitHub Pages 静态版会提示去 `/demo` 看预生成故事；完整生成版请本地运行或部署到 Vercel
 
