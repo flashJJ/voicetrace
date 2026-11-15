@@ -2,13 +2,16 @@
 
 > **English name:** VoiceTrace\
 > **中文名:** 声迹 · 方言故事书\
-> **Repo suggestion:** `voicetrace`（若被占用，用 `voicetrace-storybook`）\
+> **GitHub:** https://github.com/flashJJ/voicetrace\
+> **Repo:** `voicetrace`\
 > 最后更新：2026-11-16\
 > 比赛周期：2026-11-10 至 2026-12-06\
 > 报名截止：2026-11-23 23:59（北京时间）\
 > 当前状态：3 种模式 / 9 个互动故事 / 91 条资料库 / 8 个黄金样品 / 真实模型 8/8 黄金样品 7/7 通过
 
-## 仓库关联（建议）
+## 仓库关联
+
+已关联：https://github.com/flashJJ/voicetrace
 
 ```bash
 cd voicetrace
@@ -16,7 +19,7 @@ git init
 git add .
 git commit -m "feat: VoiceTrace initial prototype"
 git branch -M main
-git remote add origin <your-repo-url>
+git remote add origin https://github.com/flashJJ/voicetrace.git
 git push -u origin main
 ```
 
