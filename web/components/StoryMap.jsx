@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { stories } from "../lib/stories";
 
 const pins = {
@@ -10,14 +10,77 @@ const pins = {
   "grandma-congee": { x: 430, y: 390, label: "广州河南" },
 };
 
+const pinGroups = Object.values(
+  stories.reduce((groups, story) => {
+    const pin = pins[story.slug] || { x: 400, y: 300, label: "广州" };
+    const key = `${pin.x}-${pin.y}`;
+    if (!groups[key]) {
+      groups[key] = { key, ...pin, stories: [] };
+    }
+    groups[key].stories.push(story);
+    return groups;
+  }, {})
+);
+
 export default function StoryMap() {
   const [activeSlug, setActiveSlug] = useState(stories[0].slug);
+  const [openGroupKey, setOpenGroupKey] = useState(null);
+  const mapCanvasRef = useRef(null);
+  const groupRefs = useRef({});
   const active = stories.find((story) => story.slug === activeSlug) || stories[0];
+  const openGroup = pinGroups.find((group) => group.key === openGroupKey);
+
+  useEffect(() => {
+    if (!openGroupKey) return undefined;
+
+    const handlePointerDown = (event) => {
+      if (!mapCanvasRef.current?.contains(event.target)) {
+        setOpenGroupKey(null);
+      }
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setOpenGroupKey(null);
+        groupRefs.current[openGroupKey]?.focus();
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [openGroupKey]);
+
+  const selectStory = (slug) => {
+    setActiveSlug(slug);
+    setOpenGroupKey(null);
+    if (openGroupKey) {
+      groupRefs.current[openGroupKey]?.focus();
+    }
+  };
+
+  const toggleGroup = (group) => {
+    if (group.stories.length === 1) {
+      selectStory(group.stories[0].slug);
+      return;
+    }
+    setOpenGroupKey((current) => (current === group.key ? null : group.key));
+  };
+
+  const handleGroupKeyDown = (event, group) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleGroup(group);
+    }
+  };
 
   return (
     <div className="map-layout">
       <div className="map-frame">
-        <svg viewBox="0 0 800 620" role="img" aria-label="声迹声音地图示意">
+        <div className="map-canvas" ref={mapCanvasRef}>
+          <svg viewBox="0 0 800 620" role="img" aria-label="声迹声音地图示意">
           <rect x="0" y="0" width="800" height="620" fill="#f2e7d4" />
           <path
             d="M70 180 C160 120, 260 130, 340 170 C430 215, 520 190, 610 150 C690 115, 745 140, 750 210 C755 290, 690 330, 720 410 C745 480, 690 540, 600 545 C510 550, 470 505, 390 520 C300 537, 210 520, 150 465 C90 410, 80 330, 70 260 Z"
@@ -51,61 +114,125 @@ export default function StoryMap() {
             示意地图 · 非精确地理数据
           </text>
 
-          {stories.map((story) => {
-            const pin = pins[story.slug] || { x: 400, y: 300, label: "广州" };
-            const isActive = story.slug === activeSlug;
+          {pinGroups.map((group) => {
+            const isMulti = group.stories.length > 1;
+            const isActive = group.stories.some((story) => story.slug === activeSlug);
+            const isOpen = openGroupKey === group.key;
+            const title = isMulti
+              ? `${group.label} · ${group.stories.length} 个故事`
+              : group.stories[0].title;
+
             return (
               <g
-                key={story.slug}
-                className={`map-pin ${isActive ? "is-active" : ""}`}
-                onClick={() => setActiveSlug(story.slug)}
-                onKeyDown={(event) => {
-                  if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    setActiveSlug(story.slug);
-                  }
+                key={group.key}
+                ref={(node) => {
+                  groupRefs.current[group.key] = node;
                 }}
+                className={`map-pin ${isActive ? "is-active" : ""}`}
+                onClick={() => toggleGroup(group)}
+                onKeyDown={(event) => handleGroupKeyDown(event, group)}
                 role="button"
                 tabIndex={0}
-                aria-label={`${story.title}，${story.dialect}`}
+                aria-label={
+                  isMulti
+                    ? `${group.label}，${group.stories.length} 个故事，点击展开选择`
+                    : `${group.stories[0].title}，${group.stories[0].dialect}`
+                }
+                aria-expanded={isMulti ? isOpen : undefined}
+                aria-controls={isMulti ? `map-group-${group.key}` : undefined}
               >
-                <circle cx={pin.x} cy={pin.y} r="26" fill="rgba(166,58,43,0.12)" />
                 <circle
-                  cx={pin.x}
-                  cy={pin.y}
-                  r={isActive ? 9 : 7}
+                  cx={group.x}
+                  cy={group.y}
+                  r={isMulti ? 30 : 26}
+                  fill="rgba(166,58,43,0.12)"
+                />
+                <circle
+                  className="map-pin-dot"
+                  cx={group.x}
+                  cy={group.y}
+                  r={isMulti ? 18 : isActive ? 9 : 7}
                   fill={isActive ? "#a63a2b" : "#2f5d50"}
                 />
                 <circle
-                  cx={pin.x}
-                  cy={pin.y}
-                  r="16"
+                  className="map-pin-ring"
+                  cx={group.x}
+                  cy={group.y}
+                  r={isMulti ? 25 : 16}
                   fill="none"
                   stroke={isActive ? "#a63a2b" : "#2f5d50"}
                   strokeWidth="1.2"
                   opacity={isActive ? 0.9 : 0.45}
                 />
+                {isMulti && (
+                  <text
+                    x={group.x}
+                    y={group.y}
+                    textAnchor="middle"
+                    dominantBaseline="central"
+                    fill="#fff8ec"
+                    fontSize="12"
+                    fontWeight="700"
+                    pointerEvents="none"
+                  >
+                    {group.stories.length}
+                  </text>
+                )}
                 <text
-                  x={pin.x + 20}
-                  y={pin.y + 5}
+                  x={group.x + (isMulti ? 26 : 20)}
+                  y={group.y + 5}
                   fill={isActive ? "#1f1b16" : "#4f463c"}
                   fontSize="14"
                   fontWeight="600"
                 >
-                  {story.title}
+                  {title}
                 </text>
                 <text
-                  x={pin.x + 20}
-                  y={pin.y + 24}
+                  x={group.x + (isMulti ? 26 : 20)}
+                  y={group.y + 24}
                   fill="#7a6d5e"
                   fontSize="11"
                 >
-                  {pin.label}
+                  {isMulti ? (isOpen ? "收起故事列表" : "点击展开选择") : group.label}
                 </text>
               </g>
             );
           })}
-        </svg>
+          </svg>
+          {openGroup && (
+            <div
+              className="map-pin-menu"
+              id={`map-group-${openGroup.key}`}
+              role="group"
+              aria-label={`${openGroup.label}的故事`}
+              style={{
+                left: `${(openGroup.x / 800) * 100}%`,
+                top: `${((openGroup.y + 34) / 620) * 100}%`,
+              }}
+            >
+              <span className="map-pin-menu-title">
+                {openGroup.label} · 选择故事
+              </span>
+              {openGroup.stories.map((story, index) => (
+                <button
+                  type="button"
+                  key={story.slug}
+                  className={`map-pin-option ${
+                    story.slug === activeSlug ? "is-active" : ""
+                  }`}
+                  onClick={() => selectStory(story.slug)}
+                  aria-pressed={story.slug === activeSlug}
+                  autoFocus={index === 0}
+                >
+                  <span>{story.title}</span>
+                  <small>
+                    {story.modeLabel} · {story.dialect.replace("粤语 · ", "")}
+                  </small>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       <aside className="map-panel">
@@ -130,7 +257,7 @@ export default function StoryMap() {
               type="button"
               key={story.slug}
               className="map-story"
-              onClick={() => setActiveSlug(story.slug)}
+              onClick={() => selectStory(story.slug)}
             >
               <img src={story.cover} alt="" />
               <span>
