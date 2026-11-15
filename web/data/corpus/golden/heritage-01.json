@@ -1,0 +1,212 @@
+[
+  {
+    "id": "golden-moonlight-v1",
+    "storyId": "yue-rhyme-moonlight",
+    "input": {
+      "title": "月光光",
+      "text": "月光光，照地堂，虾仔你乖乖瞓落床，听朝阿妈要赶插秧咯，阿爷睇牛佢上山冈。虾仔你快高长大，帮手阿爷去睇牛羊。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": [
+        "月光",
+        "地堂",
+        "虾仔",
+        "阿妈",
+        "阿爷",
+        "牛",
+        "秧"
+      ],
+      "glossary": [
+        {
+          "term": "地堂",
+          "meaning": "天井、屋前空地"
+        },
+        {
+          "term": "虾仔",
+          "meaning": "对小孩的昵称"
+        },
+        {
+          "term": "睇牛",
+          "meaning": "放牛"
+        }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "骑楼下的月光",
+          "summary": "阿妈在月光下哄虾仔睡觉，唱起插秧和放牛的日常。",
+          "choices": [
+            "乖乖睡觉",
+            "问阿妈插秧是什么"
+          ]
+        },
+        {
+          "act": 2,
+          "title": "月光里的劳作",
+          "summary": "阿妈说明天要赶插秧，阿爷要上山放牛，阿嫲要织网到天亮。",
+          "choices": [
+            "帮阿妈捶背",
+            "问阿爷什么时候回来"
+          ]
+        },
+        {
+          "act": 3,
+          "title": "快高长大",
+          "summary": "阿妈希望虾仔快高长大，帮阿爷睇牛羊、划艇撒网。",
+          "choices": []
+        }
+      ],
+      "endings": [
+        "虾仔在月光下睡着，梦里有一片插秧的水田。"
+      ],
+      "translationZh": "月光照亮天井，小孩乖乖上床睡觉。明天妈妈要赶去插秧，爷爷要上山放牛。孩子你快高长大，帮爷爷去看牛羊。",
+      "safetyFlags": []
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "glossary_terms_present",
+      "translation_present",
+      "no_hallucinated_entities"
+    ],
+    "mode": "heritage"
+  },
+  {
+    "id": "golden-five-goats-v1",
+    "storyId": "yue-legend-five-goats",
+    "input": {
+      "title": "五羊传说",
+      "text": "相传西周时，五位仙人骑五只口衔谷穗的羊降临广州，把谷穗赠给当地人，祝愿此地永无饥荒。仙人离去后，五羊化为石。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": [
+        "五位仙人",
+        "五只羊",
+        "谷穗",
+        "广州",
+        "石像"
+      ],
+      "glossary": [
+        {
+          "term": "五羊",
+          "meaning": "五只仙羊"
+        },
+        {
+          "term": "穗",
+          "meaning": "谷穗，也是广州简称"
+        }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "仙人降临",
+          "summary": "五位仙人骑羊飞临广州，手中拿着谷穗。",
+          "choices": [
+            "上前迎接",
+            "躲起来偷看"
+          ]
+        },
+        {
+          "act": 2,
+          "title": "赠穗祝福",
+          "summary": "仙人把谷穗赠给当地人，祝愿广州永无饥荒。",
+          "choices": [
+            "跪谢仙人",
+            "问仙人从哪里来"
+          ]
+        },
+        {
+          "act": 3,
+          "title": "五羊化石",
+          "summary": "仙人腾空而去，五只羊化为石，守护广州。",
+          "choices": []
+        }
+      ],
+      "endings": [
+        "五羊留在广州，广州从此又叫羊城、穗城。"
+      ],
+      "translationZh": "五位仙人骑着口衔谷穗的羊来到广州，把谷穗送给当地人，祝福这里永远没有饥荒。仙人离开后，羊化为石头。",
+      "safetyFlags": []
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "entities_are_grounded",
+      "translation_present",
+      "moral_or_ending_present"
+    ],
+    "mode": "heritage"
+  },
+  {
+    "id": "golden-hoxiangu-v1",
+    "storyId": "yue-legend-hoxiangu",
+    "input": {
+      "title": "何仙姑与挂绿传说",
+      "text": "何仙姑成仙后常回增城故乡，在荔枝树下绣鞋、织带，离开时遗落一根绿色丝线，从此荔枝果壳上多了一道绿线，人称挂绿。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": [
+        "何仙姑",
+        "增城",
+        "荔枝树",
+        "绿丝线",
+        "挂绿荔枝"
+      ],
+      "glossary": [
+        {
+          "term": "挂绿",
+          "meaning": "增城名种荔枝"
+        },
+        {
+          "term": "西园",
+          "meaning": "增城荔城西园，挂绿母树所在地"
+        }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "仙姑回乡",
+          "summary": "何仙姑回到增城，坐在西园荔枝树下绣鞋。",
+          "choices": [
+            "陪仙姑绣鞋",
+            "问仙姑天上是什么样子"
+          ]
+        },
+        {
+          "act": 2,
+          "title": "遗落绿丝线",
+          "summary": "天快亮了，仙姑匆忙离开，一根绿丝线落在荔枝树上。",
+          "choices": [
+            "追上去还给她",
+            "把丝线留在树上"
+          ]
+        },
+        {
+          "act": 3,
+          "title": "挂绿荔枝",
+          "summary": "荔枝成熟时，每颗果壳上都多了一道绿线。",
+          "choices": []
+        }
+      ],
+      "endings": [
+        "从此增城荔枝有了“挂绿”这个名字。"
+      ],
+      "translationZh": "何仙姑成仙后常回增城，在荔枝树下绣鞋织带。她离开时遗落一根绿丝线，从此荔枝果壳上多了一道绿线，人称“挂绿”。",
+      "safetyFlags": []
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "glossary_terms_present",
+      "translation_present",
+      "no_hallucinated_entities"
+    ],
+    "mode": "heritage"
+  }
+]

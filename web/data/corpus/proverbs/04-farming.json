@@ -1,0 +1,145 @@
+[
+  {
+    "id": "yue-weather-sweet-potato",
+    "type": "weather_proverb",
+    "title": "处暑番薯立秋插",
+    "subtitle": "广东农谚 · 番薯与晚稻",
+    "region": "广东 · 江门",
+    "dialect": "粤语（广府片）",
+    "summary": "处暑前后种正造番薯，立秋前后插晚造水稻。是江门一带的非遗农谚。",
+    "text": "处暑番薯立秋插",
+    "tags": [
+      "农谚",
+      "处暑",
+      "立秋",
+      "番薯",
+      "水稻"
+    ],
+    "motifs": [
+      "处暑",
+      "番薯",
+      "立秋",
+      "插秧"
+    ],
+    "source": [
+      {
+        "title": "江海区非遗：农谚",
+        "url": "https://c.m.163.com/news/a/JCEDUCMD0514D2R4.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-rice-seedling",
+    "type": "weather_proverb",
+    "title": "八月十五定禾苗",
+    "subtitle": "广东农谚 · 晚稻",
+    "region": "广东 · 江门",
+    "dialect": "粤语（广府片）",
+    "summary": "中秋前后，晚稻秧苗的有效分蘖结束，稻田穗数大局已定。",
+    "text": "八月十五定禾苗",
+    "tags": [
+      "农谚",
+      "中秋",
+      "晚稻",
+      "江门"
+    ],
+    "motifs": [
+      "八月十五",
+      "禾苗",
+      "晚稻"
+    ],
+    "source": [
+      {
+        "title": "江海区非遗：农谚",
+        "url": "https://c.m.163.com/news/a/JCEDUCMD0514D2R4.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-cold-dew",
+    "type": "weather_proverb",
+    "title": "寒露过三朝，迟早一齐飙",
+    "subtitle": "广东农谚 · 寒露",
+    "region": "广东 · 江门",
+    "dialect": "粤语（广府片）",
+    "summary": "寒露过后三天，晚稻不管迟熟种还是早熟种，都会一起抽穗。",
+    "text": "寒露过三朝，迟早一齐飙",
+    "tags": [
+      "农谚",
+      "寒露",
+      "晚稻",
+      "江门"
+    ],
+    "motifs": [
+      "寒露",
+      "抽穗",
+      "晚稻"
+    ],
+    "source": [
+      {
+        "title": "江海区非遗：农谚",
+        "url": "https://c.m.163.com/news/a/JCEDUCMD0514D2R4.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-snow-harvest",
+    "type": "weather_proverb",
+    "title": "小雪小割，大雪大割",
+    "subtitle": "广东农谚 · 晚稻收割",
+    "region": "广东 · 江门",
+    "dialect": "粤语（广府片）",
+    "summary": "小雪时节开始小规模收割晚稻，大雪时节进入大面积收割。",
+    "text": "小雪小割，大雪大割",
+    "tags": [
+      "农谚",
+      "小雪",
+      "大雪",
+      "晚稻",
+      "收割"
+    ],
+    "motifs": [
+      "小雪",
+      "大雪",
+      "收割"
+    ],
+    "source": [
+      {
+        "title": "江海区非遗：农谚",
+        "url": "https://c.m.163.com/news/a/JCEDUCMD0514D2R4.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

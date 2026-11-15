@@ -1,0 +1,339 @@
+[
+  {
+    "id": "yue-custom-dragon-boat",
+    "type": "custom",
+    "title": "扒龙船",
+    "subtitle": "珠三角水乡的端午",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "端午前后，珠三角各村起龙船、采青、招景、扒龙船、吃龙船饭。龙船鼓一响，外出的人也会回村，是水乡最重要的宗族与社区节日之一。",
+    "text": "",
+    "tags": [
+      "端午",
+      "龙船",
+      "水乡",
+      "宗族",
+      "珠三角"
+    ],
+    "motifs": [
+      "起龙船",
+      "采青",
+      "招景",
+      "龙船饭",
+      "龙船鼓"
+    ],
+    "glossary": [
+      {
+        "term": "扒龙船",
+        "meaning": "划龙舟",
+        "note": "“扒”是划。"
+      },
+      {
+        "term": "招景",
+        "meaning": "龙船互访、应景",
+        "note": "珠三角龙船习俗。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：波罗诞与扒龙舟",
+        "url": "http://www.hp.gov.cn/2021gb/zz/mtxx/content/post_9543206.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "搜狐：27首广州童谣（氹氹转·睇龙船）",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-custom-polodan",
+    "type": "custom",
+    "title": "波罗诞",
+    "subtitle": "南海神庙的千年庙会",
+    "region": "广州 · 黄埔庙头",
+    "dialect": "粤语（广府片）",
+    "summary": "波罗诞源于南海神庙的“南海神诞”，每年农历二月举行。乡民为南海神祝融净身、巡游，买波罗鸡、波罗粽，是广州黄埔最盛大的民间庙会之一。",
+    "text": "",
+    "tags": [
+      "庙会",
+      "波罗诞",
+      "南海神庙",
+      "黄埔",
+      "民俗"
+    ],
+    "motifs": [
+      "南海神",
+      "波罗鸡",
+      "波罗粽",
+      "扶胥港",
+      "五子朝王"
+    ],
+    "glossary": [
+      {
+        "term": "波罗鸡",
+        "meaning": "波罗诞传统工艺品",
+        "note": "用纸、浆糊做成，寓意吉祥。"
+      },
+      {
+        "term": "波罗粽",
+        "meaning": "波罗诞特色食品",
+        "note": "与普通粽子不同，用料更丰富。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市情网：传承千年的波罗诞",
+        "url": "https://gzsqw.org.cn/c/sdfzpc/gfwh/2959.jhtml",
+        "license": "government-fact"
+      },
+      {
+        "title": "黄埔区政府：千年庙会",
+        "url": "http://www.hp.gov.cn/2021gb/zz/mtxx/content/post_9543206.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-custom-beidi",
+    "type": "custom",
+    "title": "北帝诞",
+    "subtitle": "佛山祖庙的三月三",
+    "region": "佛山 · 禅城",
+    "dialect": "粤语（广府片）",
+    "summary": "每年农历三月初三，佛山祖庙举行北帝诞庙会。醒狮、舞龙、武术、粤剧巡游，市民到锦香池“掟龟”祈福，是佛山最热闹的民俗活动之一。",
+    "text": "",
+    "tags": [
+      "庙会",
+      "北帝诞",
+      "佛山祖庙",
+      "醒狮",
+      "民俗"
+    ],
+    "motifs": [
+      "北帝",
+      "三月三",
+      "醒狮",
+      "掟龟",
+      "巡游"
+    ],
+    "glossary": [
+      {
+        "term": "北帝诞",
+        "meaning": "农历三月初三",
+        "note": "佛山祖庙北帝诞庙会。"
+      },
+      {
+        "term": "掟龟",
+        "meaning": "向石龟投币祈福",
+        "note": "投中龟头或蛇头为好兆头。"
+      }
+    ],
+    "source": [
+      {
+        "title": "佛山新闻：《祖庙有段古》",
+        "url": "https://www.fsonline.com.cn/FS_PLUS/1058815.html",
+        "license": "reference"
+      },
+      {
+        "title": "百度百科：佛山祖庙北帝诞",
+        "url": "https://m.baike.com/wiki/%E4%BD%9B%E5%B1%B1%E7%A5%96%E5%BA%99/20020002",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-custom-pangu-festival",
+    "type": "custom",
+    "title": "盘古王诞",
+    "subtitle": "花都狮岭的四天四夜",
+    "region": "广州 · 花都狮岭",
+    "dialect": "粤语（广府片）",
+    "summary": "农历八月十二至十五，花都狮岭盘古王诞持续四天四夜。乡民争上头炷香、手持风车绕神像转圈、登山转运、取龙口泉水，醒狮队轮番祭拜。",
+    "text": "",
+    "tags": [
+      "庙会",
+      "盘古王诞",
+      "花都",
+      "醒狮",
+      "民俗"
+    ],
+    "motifs": [
+      "盘古王",
+      "头炷香",
+      "风车",
+      "龙口泉",
+      "醒狮"
+    ],
+    "glossary": [
+      {
+        "term": "盘古王诞",
+        "meaning": "农历八月十二",
+        "note": "花都狮岭盘古王庙诞日。"
+      },
+      {
+        "term": "转运",
+        "meaning": "转好运",
+        "note": "手持风车绕神像转圈、登山。"
+      }
+    ],
+    "source": [
+      {
+        "title": "花都区政府：花都的文脉春秋",
+        "url": "https://www.huadu.gov.cn/zzzs/hdxw/content/post_10635692.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "羊城八景投票：盘古王诞",
+        "url": "https://project.ycwb.com.cn/ycxbj/detail?itemId=53",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-custom-golden-flower-festival",
+    "type": "custom",
+    "title": "金花诞",
+    "subtitle": "农历四月十七，求子祈福",
+    "region": "广州 · 黄埔长洲",
+    "dialect": "粤语（广府片）",
+    "summary": "金花诞在农历四月十七，广州黄埔长洲等地举行。人们到金花庙祈福，尤其是求子、求母子平安，是广州重要的生育民俗。",
+    "text": "",
+    "tags": [
+      "庙会",
+      "金花诞",
+      "生育",
+      "黄埔",
+      "民俗"
+    ],
+    "motifs": [
+      "金花娘娘",
+      "四月十七",
+      "求子",
+      "金花庙"
+    ],
+    "glossary": [
+      {
+        "term": "金花诞",
+        "meaning": "农历四月十七",
+        "note": "纪念金花娘娘的诞日。"
+      },
+      {
+        "term": "求子",
+        "meaning": "祈求生育",
+        "note": "金花娘娘被视为生育保护神。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市情网：金花诞",
+        "url": "https://gzsqw.org.cn/c/sdfzpc/gfwh/40128.jhtml",
+        "license": "government-fact"
+      },
+      {
+        "title": "南方+：长洲金花诞",
+        "url": "https://static.nfapp.southcn.com/content/201705/10/c416891.html",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-custom-zheng-xian-festival",
+    "type": "custom",
+    "title": "郑仙诞",
+    "subtitle": "白云山的登高祈福",
+    "region": "广州 · 白云山",
+    "dialect": "粤语（广府片）",
+    "summary": "郑仙诞纪念在白云山悬壶济世、采药飞升的郑安期。民间有登白云山、采菖蒲、祈福的习俗，是广州十大非遗节庆活动之一。",
+    "text": "",
+    "tags": [
+      "庙会",
+      "郑仙诞",
+      "白云山",
+      "登高",
+      "民俗"
+    ],
+    "motifs": [
+      "郑安期",
+      "九节菖蒲",
+      "登高",
+      "祈福"
+    ],
+    "glossary": [
+      {
+        "term": "郑仙诞",
+        "meaning": "纪念郑安期的节日",
+        "note": "广州白云山一带。"
+      },
+      {
+        "term": "菖蒲",
+        "meaning": "一种水边草本植物",
+        "note": "传说九节菖蒲是仙草。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市文化广电旅游局：郑仙诞",
+        "url": "http://wglj.gz.gov.cn/gkmlpt/content/9/9497/post_9497554.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "白云山风景区：郑仙传说",
+        "url": "https://www.baiyunshan.com.cn/bys/bygj/200511/c7178d1a90424750abd0e4f9259ea980.shtml",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  }
+]

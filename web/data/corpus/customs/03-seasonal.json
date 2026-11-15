@@ -1,0 +1,108 @@
+[
+  {
+    "id": "yue-custom-mid-autumn",
+    "type": "custom",
+    "title": "中秋拜月光",
+    "subtitle": "广府人的月亮节",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "中秋夜，广府人家摆月饼、柚子、田螺、芋头拜月光，小孩提灯笼、玩“树中秋”。一家人围坐赏月，是重要的团圆节日。",
+    "text": "",
+    "tags": [
+      "节日",
+      "中秋",
+      "拜月光",
+      "团圆",
+      "广府"
+    ],
+    "motifs": [
+      "月光",
+      "月饼",
+      "柚子",
+      "田螺",
+      "灯笼"
+    ],
+    "glossary": [
+      {
+        "term": "拜月光",
+        "meaning": "中秋拜月",
+        "note": "广府中秋习俗。"
+      },
+      {
+        "term": "树中秋",
+        "meaning": "把灯笼挂在高处",
+        "note": "旧时广州中秋儿童游戏。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：广府年俗与节庆",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_8051423.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "搜狐：27首广州经典童谣（月光光）",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-custom-winter-solstice",
+    "type": "custom",
+    "title": "冬至大过年",
+    "subtitle": "广府人的冬节",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "广府有“冬至大过年”的说法。冬至当天一家人团聚，吃汤圆、腊味糯米饭、打边炉，祭祖拜神，比春节还隆重。",
+    "text": "",
+    "tags": [
+      "节日",
+      "冬至",
+      "团圆",
+      "饮食",
+      "广府"
+    ],
+    "motifs": [
+      "冬至",
+      "汤圆",
+      "腊味糯米饭",
+      "打边炉",
+      "祭祖"
+    ],
+    "glossary": [
+      {
+        "term": "冬至大过年",
+        "meaning": "冬至比过年还重要",
+        "note": "广府俗语。"
+      },
+      {
+        "term": "打边炉",
+        "meaning": "吃火锅",
+        "note": "粤语里火锅叫“边炉”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：广府节庆",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_8051423.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

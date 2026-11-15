@@ -1,0 +1,167 @@
+[
+  {
+    "id": "yue-legend-five-goats",
+    "type": "legend",
+    "title": "五羊传说",
+    "subtitle": "广州为什么叫羊城、穗城",
+    "region": "广州 · 越秀",
+    "dialect": "粤语（广府片）",
+    "summary": "相传西周时，五位仙人骑五只口衔谷穗的羊降临广州，把谷穗赠给当地人，祝愿此地永无饥荒。仙人离去后，五羊化为石。广州因此又称羊城、穗城。",
+    "tags": [
+      "传说",
+      "广州",
+      "五羊",
+      "谷穗",
+      "城市起源"
+    ],
+    "motifs": [
+      "五仙",
+      "五羊",
+      "谷穗",
+      "仙人",
+      "化石"
+    ],
+    "glossary": [
+      {
+        "term": "五羊",
+        "meaning": "五只仙羊",
+        "note": "广州“羊城”之名的来源。"
+      },
+      {
+        "term": "穗",
+        "meaning": "谷穗",
+        "note": "广州简称“穗”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：五仙古观访仙踪 五羊传说瑞气盈",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_10007911.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "广东省情网：五羊石像与五羊传说",
+        "url": "https://dfz.gd.gov.cn/index/dqyj/content/mpost_3961113.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": true,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-legend-yuexiu",
+    "type": "legend",
+    "title": "越秀山故事与镇海楼",
+    "subtitle": "五层楼为什么叫“镇海”",
+    "region": "广州 · 越秀",
+    "dialect": "粤语（广府片）",
+    "summary": "明洪武年间，永嘉侯朱亮祖扩建广州城，在越秀山最高处建望海楼，俗称五层楼。民间传说越秀山有“帝王之气”，建楼似塔以镇王气；后来题名“镇海楼”，取雄镇海疆之意。",
+    "tags": [
+      "传说",
+      "越秀山",
+      "镇海楼",
+      "五层楼",
+      "广州"
+    ],
+    "motifs": [
+      "越秀山",
+      "镇海楼",
+      "五层楼",
+      "王气",
+      "朱亮祖"
+    ],
+    "glossary": [
+      {
+        "term": "五层楼",
+        "meaning": "镇海楼的俗称",
+        "note": "楼成塔状，塔似楼形。"
+      },
+      {
+        "term": "镇海",
+        "meaning": "雄镇海疆",
+        "note": "明代广州望海之意。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：越秀山上故事多",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9485736.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "广州市情网：镇海楼",
+        "url": "https://gzsqw.org.cn/c/sdfzpc/ycls/40171.jhtml",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-legend-zhuji-xiang",
+    "type": "legend",
+    "title": "珠玑巷人南迁传说",
+    "subtitle": "广府人的“七百年前桑梓乡”",
+    "region": "韶关南雄 → 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "南宋至元初，大批中原汉人翻越南岭，聚居南雄珠玑巷，后又陆续南迁珠江三角洲。传说贡生罗贵带领33姓97户伐竹结筏南下，成为许多广府家族的根脉记忆。",
+    "tags": [
+      "传说",
+      "珠玑巷",
+      "南迁",
+      "罗贵",
+      "广府根脉"
+    ],
+    "motifs": [
+      "珠玑巷",
+      "南迁",
+      "罗贵",
+      "竹筏",
+      "胡妃"
+    ],
+    "glossary": [
+      {
+        "term": "珠玑巷",
+        "meaning": "南雄古巷",
+        "note": "被誉为“中华文化驿站，天下广府根源”。"
+      },
+      {
+        "term": "桑梓乡",
+        "meaning": "故乡",
+        "note": "珠玑巷被称为“七百年前桑梓乡”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "中国非物质文化遗产网：珠玑巷人南迁传说",
+        "url": "https://www.ihchina.cn/project_details/23440.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "广州市政府：黄花遍地缀珠玑",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_8950102.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 3,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history",
+      "ghost"
+    ]
+  }
+]

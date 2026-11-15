@@ -1,0 +1,255 @@
+[
+  {
+    "id": "yue-legend-luogang",
+    "type": "legend",
+    "title": "萝岗香雪",
+    "subtitle": "十里梅林与梅花女",
+    "region": "广州 · 黄埔萝岗",
+    "dialect": "粤语（广府片）",
+    "summary": "南宋钟玉岩告老还乡，从梅关古道带回百株梅苗，在萝岗种成十里梅林。每逢岁末，繁花如雪、梅香沁人，人称“萝岗香雪”；民间还有梅花女化石的凄美传说。",
+    "tags": [
+      "传说",
+      "萝岗",
+      "梅花",
+      "钟玉岩",
+      "香雪"
+    ],
+    "motifs": [
+      "梅林",
+      "梅花女",
+      "点头石",
+      "十里香雪"
+    ],
+    "glossary": [
+      {
+        "term": "萝岗香雪",
+        "meaning": "萝岗梅花盛景",
+        "note": "广州旧羊城八景之一。"
+      },
+      {
+        "term": "梅开二度",
+        "meaning": "一年开两次花",
+        "note": "萝岗特殊气候造成的景象。"
+      }
+    ],
+    "source": [
+      {
+        "title": "黄埔区政府：萝岗香雪公园",
+        "url": "http://www.hp.gov.cn/gzjg/qt/hpqgjdag/xxgk/content/post_10633683.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "广州市情网：萝岗香雪得名的由来",
+        "url": "https://gzsqw.org.cn/c/sdfzpc/gfwh/40096.jhtml",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-haizhuang",
+    "type": "legend",
+    "title": "海幢寺传说",
+    "subtitle": "未有海幢寺，先有鹰爪兰",
+    "region": "广州 · 海珠",
+    "dialect": "粤语（广府片）",
+    "summary": "相传婢女兰香被主人冤枉偷玉扣，为表清白投井自尽。后来井上长出一株鹰爪兰，人们说那是兰香的化身。海幢寺还有宋莲、猛虎回头石、素仁盆景等传说。",
+    "tags": [
+      "传说",
+      "海幢寺",
+      "鹰爪兰",
+      "海珠",
+      "冤屈"
+    ],
+    "motifs": [
+      "兰香",
+      "玉扣",
+      "投井",
+      "鹰爪兰",
+      "宋莲"
+    ],
+    "glossary": [
+      {
+        "term": "海幢寺",
+        "meaning": "广州海珠区千年古刹",
+        "note": "“未有海幢寺，先有鹰爪兰”是广州俗语。"
+      },
+      {
+        "term": "鹰爪兰",
+        "meaning": "寺内名植",
+        "note": "传说由兰香化生。"
+      }
+    ],
+    "source": [
+      {
+        "title": "百度百科：海幢寺",
+        "url": "https://m.baike.com/wiki/%E6%B5%B7%E5%B9%A2%E5%AF%BA/21026731",
+        "license": "reference"
+      },
+      {
+        "title": "花城+：海幢寺传说研学",
+        "url": "https://huacheng.gz-cmc.com/pages/2025/08/05/eaaa4a4ee4224af3abfe212dad501577.html",
+        "license": "reference"
+      }
+    ],
+    "license": "original-retelling",
+    "storyPotential": 5,
+    "difficulty": 3,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-conghua-spring",
+    "type": "legend",
+    "title": "从化温泉传说",
+    "subtitle": "龙宫煮泉与采药老人",
+    "region": "广州 · 从化",
+    "dialect": "粤语（广府片）",
+    "summary": "相传从化流溪河畔有位姓徐的采药老人，为救瘟疫中的乡亲上山采药，感动仙女，得到一口能把泉水熬成药的银锅。银锅引来恶霸抢夺，老人被青龙留在龙宫煮泉济世，从此流溪河畔涌出股股温泉。",
+    "tags": [
+      "传说",
+      "从化",
+      "温泉",
+      "采药",
+      "仙女"
+    ],
+    "motifs": [
+      "采药老人",
+      "银锅",
+      "青龙",
+      "温泉",
+      "瘟疫"
+    ],
+    "glossary": [
+      {
+        "term": "流溪河",
+        "meaning": "从化主要河流",
+        "note": "从化温泉位于流溪河畔。"
+      },
+      {
+        "term": "煮泉",
+        "meaning": "把泉水煮成药",
+        "note": "传说中银锅的妙用。"
+      }
+    ],
+    "source": [
+      {
+        "title": "从化区政府：从化温泉传说",
+        "url": "http://www.conghua.gov.cn/zjch/lswh/chgs/content/post_3129540.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "花城+：从化山间的故事大“权”",
+        "url": "https://huacheng.gz-cmc.com/pages/2023/11/28/SF11135466fe260094e75b455da485f4.html",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-suxin",
+    "type": "legend",
+    "title": "素馨花传说",
+    "subtitle": "广州旧时的市花与花神",
+    "region": "广州 · 海珠庄头",
+    "dialect": "粤语（广府片）",
+    "summary": "相传五代时海珠庄头有位素馨姑娘，死后葬在花田，坟上长出更洁白芳香的耶悉茗。人们为纪念她，把花改名为素馨花，并尊她为花神。",
+    "tags": [
+      "传说",
+      "素馨花",
+      "花神",
+      "海珠",
+      "庄头"
+    ],
+    "motifs": [
+      "素馨姑娘",
+      "耶悉茗",
+      "花田",
+      "花神"
+    ],
+    "glossary": [
+      {
+        "term": "耶悉茗",
+        "meaning": "素馨花的旧名",
+        "note": "源自波斯语，经海路传入广州。"
+      },
+      {
+        "term": "素馨花",
+        "meaning": "广州旧时市花",
+        "note": "宋代已有种植记载。"
+      }
+    ],
+    "source": [
+      {
+        "title": "海珠区政府：传承素馨文化",
+        "url": "http://www.haizhu.gov.cn/gzhzzj/gkmlpt/content/9/9200/post_9200461.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "南方+：素馨花传说搬上粤剧舞台",
+        "url": "https://static.nfapp.southcn.com/content/202401/24/c8535942.html",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-nengren",
+    "type": "legend",
+    "title": "白云山能仁寺传说",
+    "subtitle": "已列入广州非遗名录，故事文本待补充",
+    "region": "广州 · 白云山",
+    "dialect": "粤语（广府片）",
+    "summary": "白云山能仁寺传说已列入广州市第九批市级非物质文化遗产代表性项目名录（民间文学）。具体故事版本待从公开资料补充。",
+    "tags": [
+      "传说",
+      "白云山",
+      "能仁寺",
+      "待补充"
+    ],
+    "motifs": [
+      "白云山",
+      "能仁寺"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "广州市政府：第九批市级非遗名录",
+        "url": "https://www.gz.gov.cn/gkmlpt/content/10/10815/mpost_10815781.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 3,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

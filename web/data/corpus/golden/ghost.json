@@ -1,0 +1,51 @@
+[
+  {
+    "id": "golden-haizhuang-ghost-v1",
+    "storyId": "yue-legend-haizhuang",
+    "mode": "ghost",
+    "input": {
+      "title": "海幢寺·鹰爪兰",
+      "text": "相传婢女兰香被主人冤枉偷玉扣，为表清白投井自尽。后来井上长出一株鹰爪兰，人们说那是兰香的化身。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": ["海幢寺", "兰香", "玉扣", "井", "鹰爪兰"],
+      "glossary": [
+        { "term": "海幢寺", "meaning": "广州海珠区千年古刹" },
+        { "term": "鹰爪兰", "meaning": "寺内名植，传说由兰香化生" }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "井边的哭声",
+          "summary": "夜里，你走进海幢寺，听见井边有女子低声哭泣。",
+          "choices": ["走近井边", "去找守夜的僧人"]
+        },
+        {
+          "act": 2,
+          "title": "兰香的自述",
+          "summary": "兰香说自己被冤枉偷了玉扣，为表清白投井；她想让人知道真相。",
+          "choices": ["答应帮她查清楚", "劝她放下，别再困在井边"]
+        },
+        {
+          "act": 3,
+          "title": "鹰爪兰开",
+          "summary": "第二天，井边长出一株鹰爪兰。你说出兰香的故事，寺里为她立了一块小碑。",
+          "choices": []
+        }
+      ],
+      "endings": ["有些冤屈，会开成一株花。"],
+      "translationZh": "夜里，你在海幢寺听见井边有女子哭泣。她是被冤枉偷玉扣的婢女兰香，投井自尽后，井上长出一株鹰爪兰。你替她说出真相，让故事不再被埋没。",
+      "safetyFlags": ["ghost_story", "no_gore", "folklore_explanation"]
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "ghost_tone_without_gore",
+      "folklore_explanation_present",
+      "translation_present",
+      "no_hallucinated_entities"
+    ]
+  }
+]

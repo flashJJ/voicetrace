@@ -1,0 +1,218 @@
+[
+  {
+    "id": "yue-proverb-coffin-shop",
+    "type": "proverb",
+    "title": "棺材铺拜神——想人死",
+    "subtitle": "粤语歇后语 · 不怀好意",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "棺材铺靠死人做生意，拜神求的自然是“有人死”。形容人心术不正、盼着别人倒霉。",
+    "text": "棺材铺拜神——想人死",
+    "tags": [
+      "歇后语",
+      "棺材铺",
+      "讽刺",
+      "广府"
+    ],
+    "motifs": [
+      "棺材铺",
+      "拜神",
+      "想人死"
+    ],
+    "source": [
+      {
+        "title": "广东人精髓 200 条歇后语",
+        "url": "https://sauwing.com/wp-content/uploads/2018/01/200e6a29de6ad87e5be8ce8aa9e.pdf",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-yama",
+    "type": "proverb",
+    "title": "阎罗王招工——揾鬼嚟做",
+    "subtitle": "粤语歇后语 · 没人愿意做",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "阎罗王招工，只能招鬼来做。形容工作没人愿意干，或事情荒唐、不切实际。",
+    "text": "阎罗王招工——揾鬼嚟做",
+    "tags": [
+      "歇后语",
+      "阎罗王",
+      "招工",
+      "广府"
+    ],
+    "motifs": [
+      "阎罗王",
+      "鬼",
+      "招工"
+    ],
+    "source": [
+      {
+        "title": "广府文化研究中心：粤语歇后语",
+        "url": "https://gzgfwh.gzhu.edu.cn/info/1043/1358.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-monk-umbrella",
+    "type": "proverb",
+    "title": "和尚担遮——无法（发）无天",
+    "subtitle": "粤语歇后语 · 无法无天",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "和尚没有头发，“发”与“法”同音；打伞遮住天。形容人不受管束、无法无天。",
+    "text": "和尚担遮——无法（发）无天",
+    "tags": [
+      "歇后语",
+      "和尚",
+      "谐音",
+      "广府"
+    ],
+    "motifs": [
+      "和尚",
+      "担遮",
+      "无法无天"
+    ],
+    "source": [
+      {
+        "title": "广府文化研究中心：粤语歇后语",
+        "url": "https://gzgfwh.gzhu.edu.cn/info/1043/1358.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-one-eye",
+    "type": "proverb",
+    "title": "单眼仔睇老婆——一眼睇哂",
+    "subtitle": "粤语歇后语 · 一目了然",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "单眼的人看东西，一眼就看完了。形容事情很简单、一目了然。",
+    "text": "单眼仔睇老婆——一眼睇哂",
+    "tags": [
+      "歇后语",
+      "单眼",
+      "一目了然",
+      "广府"
+    ],
+    "motifs": [
+      "单眼仔",
+      "睇老婆",
+      "一眼睇哂"
+    ],
+    "source": [
+      {
+        "title": "广府文化研究中心：粤语歇后语",
+        "url": "https://gzgfwh.gzhu.edu.cn/info/1043/1358.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-cucumber",
+    "type": "proverb",
+    "title": "半夜食黄瓜——唔知头唔知尾",
+    "subtitle": "粤语歇后语 · 不明就里",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "半夜黑灯瞎火吃黄瓜，不知道哪头是哪头。形容不了解事情的来龙去脉、不知底细。",
+    "text": "半夜食黄瓜——唔知头唔知尾",
+    "tags": [
+      "歇后语",
+      "黄瓜",
+      "不明就里",
+      "广府"
+    ],
+    "motifs": [
+      "半夜",
+      "黄瓜",
+      "头尾"
+    ],
+    "source": [
+      {
+        "title": "广府文化研究中心：粤语歇后语",
+        "url": "https://gzgfwh.gzhu.edu.cn/info/1043/1358.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-flat-nose",
+    "type": "proverb",
+    "title": "扁鼻佬戴眼镜——冇得顶",
+    "subtitle": "粤语歇后语 · 顶不住",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "鼻梁扁，眼镜架不住。“冇得顶”既指眼镜顶不住，也指受不了、非常厉害。",
+    "text": "扁鼻佬戴眼镜——冇得顶",
+    "tags": [
+      "歇后语",
+      "眼镜",
+      "谐音",
+      "广府"
+    ],
+    "motifs": [
+      "扁鼻佬",
+      "眼镜",
+      "冇得顶"
+    ],
+    "source": [
+      {
+        "title": "广府文化研究中心：粤语歇后语",
+        "url": "https://gzgfwh.gzhu.edu.cn/info/1043/1358.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  }
+]

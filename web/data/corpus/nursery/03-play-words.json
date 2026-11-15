@@ -1,0 +1,206 @@
+[
+  {
+    "id": "yue-rhyme-guess-fist",
+    "type": "nursery_rhyme",
+    "title": "猜呈寻",
+    "subtitle": "广府童谣 · 猜拳 · 游戏",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "呈寻剪，呈寻包，呈寻糯米叉烧包。一首猜拳游戏童谣，适合做互动故事的开场。",
+    "text": "呈寻剪，呈寻包，\n呈寻糯米叉烧包。\n老鼠唔食炸药包，\n执到粮票买面包。",
+    "tags": [
+      "童谣",
+      "游戏",
+      "猜拳",
+      "食物"
+    ],
+    "motifs": [
+      "猜呈寻",
+      "剪刀",
+      "包",
+      "叉烧包",
+      "老鼠"
+    ],
+    "glossary": [
+      {
+        "term": "呈寻",
+        "meaning": "猜拳时的口令",
+        "note": "类似“石头剪刀布”的节奏口令。"
+      },
+      {
+        "term": "执到",
+        "meaning": "捡到",
+        "note": "“执”是捡、拾。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-sell-sheep",
+    "type": "nursery_rhyme",
+    "title": "卖羊卖咩",
+    "subtitle": "广府童谣 · 动物 · 绕口",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "卖羊卖咩，卖到老鼠担遮。狗仔拉蛇，蛇摆尾似风车，番鬼扒龙船。",
+    "text": "卖羊卖咩，\n卖到老鼠担遮。\n狗仔忙住去拉蛇，\n蛇摆尾，似风车，\n风车氹氹转，\n番鬼扒龙船。\n扒得快，好世界，\n扒得摩，无鼻哥。",
+    "tags": [
+      "童谣",
+      "动物",
+      "绕口",
+      "龙船"
+    ],
+    "motifs": [
+      "卖羊",
+      "老鼠担遮",
+      "蛇",
+      "风车",
+      "龙船"
+    ],
+    "glossary": [
+      {
+        "term": "担遮",
+        "meaning": "打伞",
+        "note": "“遮”是伞。"
+      },
+      {
+        "term": "扒得摩",
+        "meaning": "划得慢",
+        "note": "“摩”在粤语里可表示慢。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-laugh-cry",
+    "type": "nursery_rhyme",
+    "title": "又喊又笑",
+    "subtitle": "广府童谣 · 幽默 · 动物",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "又喊又笑，乌蝇打醮，蠄蟧濑尿，老鼠行桥。一首画面古怪又热闹的广府童谣。",
+    "text": "又喊又笑，\n乌蝇打醮，\n蠄蟧濑尿，\n老鼠行桥，\n行到西门口，\n畀人打啰柚。",
+    "tags": [
+      "童谣",
+      "幽默",
+      "动物",
+      "西关"
+    ],
+    "motifs": [
+      "乌蝇",
+      "蠄蟧",
+      "老鼠",
+      "西门口"
+    ],
+    "glossary": [
+      {
+        "term": "乌蝇",
+        "meaning": "苍蝇",
+        "note": "粤语常用词。"
+      },
+      {
+        "term": "蠄蟧",
+        "meaning": "蜘蛛",
+        "note": "粤语读作 kam4 lou4。"
+      },
+      {
+        "term": "啰柚",
+        "meaning": "屁股",
+        "note": "粤语俚语。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-drizzle",
+    "type": "nursery_rhyme",
+    "title": "落雨溦溦",
+    "subtitle": "广府童谣 · 下雨 · 动物",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "落雨溦溦，水浸田基。田基有条蛇，吓亲大老爷。",
+    "text": "落雨溦溦，\n水浸田基。\n田基有条蛇，\n吓亲大老爷。\n大老爷揸支枪，\n吓亲个缠脚娘。",
+    "tags": [
+      "童谣",
+      "下雨",
+      "动物",
+      "田基"
+    ],
+    "motifs": [
+      "落雨溦溦",
+      "田基",
+      "蛇",
+      "大老爷"
+    ],
+    "glossary": [
+      {
+        "term": "溦溦",
+        "meaning": "毛毛雨",
+        "note": "粤语“溦”读 mei4。"
+      },
+      {
+        "term": "田基",
+        "meaning": "田埂",
+        "note": "水田之间的土埂。"
+      },
+      {
+        "term": "吓亲",
+        "meaning": "吓到",
+        "note": "“亲”表示受到某种影响。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "yue-weather-south-wind",
+    "type": "weather_proverb",
+    "title": "一日南风三日报",
+    "subtitle": "广东天气谚语 · 南风",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "刮一天南风，往往要连续报三天。形容南风天气持续时间较长。",
+    "text": "一日南风三日报",
+    "tags": [
+      "天气谚语",
+      "南风",
+      "广东"
+    ],
+    "motifs": [
+      "南风",
+      "天气"
+    ],
+    "source": [
+      {
+        "title": "查字典：广东天气谚语大全",
+        "url": "https://www.chazidian.com/duilian5747/",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-halo",
+    "type": "weather_proverb",
+    "title": "大晕风，细晕雨",
+    "subtitle": "广东天气谚语 · 日晕",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "日晕大，预示大风；日晕小，预示下雨。是看天象判断天气的农谚。",
+    "text": "大晕风，细晕雨",
+    "tags": [
+      "天气谚语",
+      "日晕",
+      "广东"
+    ],
+    "motifs": [
+      "日晕",
+      "风",
+      "雨"
+    ],
+    "source": [
+      {
+        "title": "查字典：广东天气谚语大全",
+        "url": "https://www.chazidian.com/duilian5747/",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-thunder-december",
+    "type": "weather_proverb",
+    "title": "十二月雷公叫，有谷冇处粜",
+    "subtitle": "广东天气谚语 · 冬雷",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "农历十二月打雷，预示来年收成不好，有谷也没地方卖。是旧时农事经验的总结。",
+    "text": "十二月雷公叫，有谷冇处粜",
+    "tags": [
+      "天气谚语",
+      "冬雷",
+      "农事",
+      "广东"
+    ],
+    "motifs": [
+      "雷公",
+      "十二月",
+      "谷",
+      "粜"
+    ],
+    "glossary": [
+      {
+        "term": "粜",
+        "meaning": "卖粮食",
+        "note": "粤语读 tiu3。"
+      }
+    ],
+    "source": [
+      {
+        "title": "查字典：广东天气谚语大全",
+        "url": "https://www.chazidian.com/duilian5747/",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-frost",
+    "type": "weather_proverb",
+    "title": "十月有霜，谷米满仓",
+    "subtitle": "广东天气谚语 · 霜降",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "农历十月有霜，预示来年谷米丰收、粮仓满满。",
+    "text": "十月有霜，谷米满仓",
+    "tags": [
+      "天气谚语",
+      "霜",
+      "丰收",
+      "广东"
+    ],
+    "motifs": [
+      "霜",
+      "谷米",
+      "粮仓"
+    ],
+    "source": [
+      {
+        "title": "查字典：广东天气谚语大全",
+        "url": "https://www.chazidian.com/duilian5747/",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-gold-silver",
+    "type": "weather_proverb",
+    "title": "七月落金，八月落银",
+    "subtitle": "广东天气谚语 · 农历七八月的雨",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "农历七月下的雨对农作物特别重要，像金子；八月下的雨像银子。形容七八月雨水对收成的作用。",
+    "text": "七月落金，八月落银",
+    "tags": [
+      "天气谚语",
+      "雨水",
+      "农事",
+      "广东"
+    ],
+    "motifs": [
+      "七月",
+      "八月",
+      "雨",
+      "金",
+      "银"
+    ],
+    "source": [
+      {
+        "title": "道客巴巴：粤语经典谚语大全",
+        "url": "https://m.doc88.com/p-8495392956223.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-mid-autumn",
+    "type": "weather_proverb",
+    "title": "八月十五云遮月，正月十五雨纷飞",
+    "subtitle": "广东天气谚语 · 中秋与元宵",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "中秋夜云多遮月，往往预示来年元宵节有雨。是旧时用节日天气做长期预测的谚语。",
+    "text": "八月十五云遮月，正月十五雨纷飞",
+    "tags": [
+      "天气谚语",
+      "中秋",
+      "元宵",
+      "广东"
+    ],
+    "motifs": [
+      "八月十五",
+      "云遮月",
+      "正月十五",
+      "雨"
+    ],
+    "source": [
+      {
+        "title": "道客巴巴：粤语经典谚语大全",
+        "url": "https://m.doc88.com/p-8495392956223.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-weather-cold-spring",
+    "type": "weather_proverb",
+    "title": "大寒冇雨落春霜",
+    "subtitle": "广东天气谚语 · 大寒",
+    "region": "广东",
+    "dialect": "粤语（广府片）",
+    "summary": "大寒当天晴朗无雨，往往预示来年春天较冷、有春霜。",
+    "text": "大寒冇雨落春霜",
+    "tags": [
+      "天气谚语",
+      "大寒",
+      "春霜",
+      "广东"
+    ],
+    "motifs": [
+      "大寒",
+      "春霜"
+    ],
+    "source": [
+      {
+        "title": "道客巴巴：粤语经典谚语大全",
+        "url": "https://m.doc88.com/p-8495392956223.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "id": "yue-legend-chen-mengji",
+    "type": "legend",
+    "title": "陈梦吉故事",
+    "subtitle": "广东民间“扭计师爷”",
+    "region": "江门 · 新会",
+    "dialect": "粤语（广府片）",
+    "summary": "陈梦吉是明代新会的传奇人物，足智多谋，人称“扭计师爷”“扭计祖宗”。他常替百姓出点子、惩恶扬善，故事在五邑和珠三角流传数百年。",
+    "tags": [
+      "传说",
+      "陈梦吉",
+      "机智人物",
+      "新会",
+      "扭计"
+    ],
+    "motifs": [
+      "扭计",
+      "师爷",
+      "惩恶扬善",
+      "鬼才"
+    ],
+    "glossary": [
+      {
+        "term": "扭计",
+        "meaning": "想办法、出计谋",
+        "note": "粤语里“扭计”常指扭转形势的计策。"
+      },
+      {
+        "term": "师爷",
+        "meaning": "旧时幕僚、参谋",
+        "note": "陈梦吉被称为“扭计师爷”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "南方+：非遗广东“扭计师爷”陈梦吉故事",
+        "url": "http://static.nfapp.southcn.com/content/202111/25/c5972945.html",
+        "license": "reference"
+      },
+      {
+        "title": "澎湃：【新会非遗】陈梦吉故事",
+        "url": "https://m.thepaper.cn/newsDetail_forward_28633398",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 5,
+    "difficulty": 3,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-legend-lun-wenxu",
+    "type": "legend",
+    "title": "伦文叙故事",
+    "subtitle": "状元及第粥与“鬼才”传说",
+    "region": "佛山 · 南海 / 禅城",
+    "dialect": "粤语（广府片）",
+    "summary": "伦文叙出身贫寒，却聪慧过人，后来高中状元。民间流传他少年时在石湾丰宁寺题字、在粥铺吃“状元及第粥”等故事，是广府“人穷志不短”的典型。",
+    "tags": [
+      "传说",
+      "伦文叙",
+      "状元",
+      "及第粥",
+      "佛山"
+    ],
+    "motifs": [
+      "伦文叙",
+      "状元",
+      "及第粥",
+      "丰宁寺",
+      "鬼才"
+    ],
+    "glossary": [
+      {
+        "term": "状元及第粥",
+        "meaning": "广式粥品",
+        "note": "传说与伦文叙有关，内含猪肝、粉肠、肉丸。"
+      },
+      {
+        "term": "丰宁寺",
+        "meaning": "石湾古寺",
+        "note": "传说少年伦文叙为寺院题名。"
+      }
+    ],
+    "source": [
+      {
+        "title": "佛山市政府：“鬼才”伦文叙",
+        "url": "https://www.foshan.gov.cn/zjfs/fsly/mrzs/content/post_1722890.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "南海区政府：伦文叙与状元及第粥",
+        "url": "https://www.nanhai.gov.cn/fsnhq/rwnh/nhfz/gjnh/content/post_5890313.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": true,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-legend-xiangyunsha",
+    "type": "legend",
+    "title": "香云纱的传说与技艺",
+    "subtitle": "阳光、泥巴与匠人的云纱",
+    "region": "佛山 · 顺德伦教",
+    "dialect": "粤语（广府片）",
+    "summary": "香云纱古称“响云纱”，因穿着时摩擦发出细碎声响得名。它以纯植物染料手工染整桑蚕丝，靠阳光、空气、水和匠人的经验制成，是顺德伦教的国家级非遗。",
+    "tags": [
+      "传说",
+      "香云纱",
+      "顺德",
+      "非遗",
+      "匠人"
+    ],
+    "motifs": [
+      "响云纱",
+      "莨纱",
+      "晒莨",
+      "河泥",
+      "匠人"
+    ],
+    "glossary": [
+      {
+        "term": "香云纱",
+        "meaning": "岭南手工染整丝织物",
+        "note": "2008年列入国家级非遗。"
+      },
+      {
+        "term": "晒莨",
+        "meaning": "香云纱染整工序",
+        "note": "需要反复浸染、日晒。"
+      }
+    ],
+    "source": [
+      {
+        "title": "顺德区政府：寻访香云纱",
+        "url": "https://www.shunde.gov.cn/fssdlunj/gkmlpt/content/7/7322/post_7322191.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "广东省侨办：顺德香云纱",
+        "url": "http://www.qb.gd.gov.cn/jrqx/content/post_1340243.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 3,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

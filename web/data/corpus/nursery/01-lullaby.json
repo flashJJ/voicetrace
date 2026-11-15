@@ -1,0 +1,148 @@
+[
+  {
+    "id": "yue-rhyme-moonlight",
+    "type": "nursery_rhyme",
+    "title": "月光光",
+    "subtitle": "广府童谣 · 中秋 · 哄睡",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "阿妈在月光下哄虾仔睡觉，唱出插秧、睇牛、捕鱼、织网的日常。",
+    "text": "月光光，照地堂，\n虾仔你乖乖瞓落床，\n听朝阿妈要赶插秧咯，\n阿爷睇牛佢上山冈。\n虾仔你快高长大，\n帮手阿爷去睇牛羊。\n\n月光光，照地堂，\n虾仔你乖乖瞓落床，\n听朝阿爸要捕鱼虾，\n阿嫲织网要织到天光。\n虾仔你快高长大，\n划艇撒网就更在行。",
+    "tags": [
+      "童谣",
+      "中秋",
+      "月亮",
+      "亲情",
+      "哄睡"
+    ],
+    "motifs": [
+      "月光",
+      "地堂",
+      "虾仔",
+      "插秧",
+      "睇牛",
+      "织网"
+    ],
+    "glossary": [
+      {
+        "term": "地堂",
+        "meaning": "天井、屋前的空地",
+        "note": "西关大屋常见的天井，夏天用来乘凉。"
+      },
+      {
+        "term": "虾仔",
+        "meaning": "对小孩的昵称",
+        "note": "粤语里常把小孩叫作“虾仔”“虾女”。"
+      },
+      {
+        "term": "睇牛",
+        "meaning": "放牛",
+        "note": "“睇”是看、照看。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 1,
+    "goldenSample": true,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-grandma-bridge",
+    "type": "nursery_rhyme",
+    "title": "摇到外婆桥",
+    "subtitle": "广府童谣 · 外婆 · 亲情",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "摇摇摇，摇到外婆桥。桥边有青草地、白云垂柳燕子飞，外婆问我是好宝宝。",
+    "text": "摇摇摇，摇到外婆桥，\n桥边有幅青草地，\n白云垂柳燕子飞。\n摇摇摇，摇到外婆桥，\n桥边有间屋仔，\n细阿婆就住响外婆桥。\n外婆呀，你好不好？\n外婆呀，我是个好宝宝。\n我问外婆好不好，\n外婆话我是个好宝宝。",
+    "tags": [
+      "童谣",
+      "外婆",
+      "亲情",
+      "低龄"
+    ],
+    "motifs": [
+      "外婆桥",
+      "青草地",
+      "燕子",
+      "细阿婆"
+    ],
+    "glossary": [
+      {
+        "term": "屋仔",
+        "meaning": "小房子",
+        "note": "“仔”表示小。"
+      },
+      {
+        "term": "细阿婆",
+        "meaning": "外婆（昵称）",
+        "note": "不同地方叫法不同。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-bird-falls",
+    "type": "nursery_rhyme",
+    "title": "有只雀仔跌落水",
+    "subtitle": "广府童谣 · 动物 · 循环",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "有只雀仔跌落水，被水冲去。一首简单的循环童谣，适合低龄亲子。",
+    "text": "有只雀仔跌落水，\n跌落水，跌落水，\n有只雀仔跌落水，\n被水冲去。",
+    "tags": [
+      "童谣",
+      "动物",
+      "低龄",
+      "循环"
+    ],
+    "motifs": [
+      "雀仔",
+      "跌落水",
+      "被水冲去"
+    ],
+    "glossary": [
+      {
+        "term": "雀仔",
+        "meaning": "小鸟",
+        "note": "粤语“雀”是鸟。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

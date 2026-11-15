@@ -1,0 +1,187 @@
+[
+  {
+    "id": "yue-rhyme-dingding",
+    "type": "nursery_rhyme",
+    "title": "氹氹转",
+    "subtitle": "广府童谣 · 端午 · 龙船",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "氹氹转，菊花园，炒米饼，糯米圆。阿妈带我去睇龙船，我却只想睇鸡仔。",
+    "text": "氹氹转，菊花园，\n炒米饼，糯米圆。\n阿妈带我睇龙船。\n我唔睇，睇鸡仔。\n鸡仔大，捉去卖。\n卖得几多钱？\n卖得三百六十五个仙。",
+    "tags": [
+      "童谣",
+      "端午",
+      "龙船",
+      "童年"
+    ],
+    "motifs": [
+      "氹氹转",
+      "菊花园",
+      "炒米饼",
+      "龙船",
+      "鸡仔"
+    ],
+    "glossary": [
+      {
+        "term": "氹氹转",
+        "meaning": "转圈圈",
+        "note": "形容小孩围圈玩耍。"
+      },
+      {
+        "term": "睇龙船",
+        "meaning": "看龙舟",
+        "note": "端午扒龙船是珠三角重要民俗。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-insects",
+    "type": "nursery_rhyme",
+    "title": "点虫虫",
+    "subtitle": "广府童谣 · 荔枝 · 亲子",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "点虫虫，虫虫飞，飞到荔枝基。荔枝熟，摘满屋，伴住个细蚊公。",
+    "text": "点虫虫，\n虫虫飞。\n飞到荔枝基。\n荔枝熟，\n摘满屋，\n屋满红，\n伴住个细蚊公。",
+    "tags": [
+      "童谣",
+      "荔枝",
+      "亲子",
+      "昆虫"
+    ],
+    "motifs": [
+      "虫虫",
+      "荔枝基",
+      "细蚊公"
+    ],
+    "glossary": [
+      {
+        "term": "荔枝基",
+        "meaning": "荔枝园/荔枝树下的地方",
+        "note": "珠三角水乡常见荔枝基围。"
+      },
+      {
+        "term": "细蚊公",
+        "meaning": "小婴儿、小孩子",
+        "note": "粤语昵称，带亲昵意味。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-hide",
+    "type": "nursery_rhyme",
+    "title": "伏匿匿",
+    "subtitle": "广府童谣 · 捉迷藏 · 游戏",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "一就预备，二就匿埋，三就开盘，四就嚟到。一首捉迷藏的计数童谣。",
+    "text": "一就预备，\n二就匿埋，\n三就开盘，\n四就嚟到，\n砰到算数。",
+    "tags": [
+      "童谣",
+      "游戏",
+      "捉迷藏",
+      "计数"
+    ],
+    "motifs": [
+      "伏匿匿",
+      "匿埋",
+      "开盘"
+    ],
+    "glossary": [
+      {
+        "term": "伏匿匿",
+        "meaning": "捉迷藏",
+        "note": "粤语“匿”是躲藏。"
+      },
+      {
+        "term": "匿埋",
+        "meaning": "躲起来",
+        "note": "“埋”表示收拢、隐藏。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-point-soldiers",
+    "type": "nursery_rhyme",
+    "title": "点指兵兵",
+    "subtitle": "广府童谣 · 游戏 · 选人",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "点指兵兵，点着谁人做大兵；点指贼贼，点着谁人做大贼。一首选人游戏童谣。",
+    "text": "点指兵兵，\n点着谁人做大兵；\n点指贼贼，\n点着谁人做大贼。",
+    "tags": [
+      "童谣",
+      "游戏",
+      "选人",
+      "童年"
+    ],
+    "motifs": [
+      "点指兵兵",
+      "大兵",
+      "大贼"
+    ],
+    "glossary": [
+      {
+        "term": "点指兵兵",
+        "meaning": "一边点手指一边选人",
+        "note": "类似“点兵点将”的游戏。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

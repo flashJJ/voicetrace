@@ -1,0 +1,121 @@
+[
+  {
+    "id": "yue-tongue-monkey",
+    "type": "tongue_twister",
+    "title": "马骝仔",
+    "subtitle": "粤语急口令 · 猴子和沟渠",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "一群马骝仔去沟仔，跌落沟渠底，另一只马骝仔拿钩仔来钓。练“沟”“钩”“猴”的发音。",
+    "text": "一隻馬騮仔帶一群馬騮仔去溝仔，\n一群馬騮仔跌落溝渠底，\n一隻馬騮仔轉去提鉤仔，\n來釣馬騮仔。",
+    "tags": [
+      "急口令",
+      "绕口令",
+      "动物",
+      "粤语"
+    ],
+    "motifs": [
+      "马骝仔",
+      "沟渠",
+      "钩仔"
+    ],
+    "glossary": [
+      {
+        "term": "马骝仔",
+        "meaning": "小猴子",
+        "note": "粤语“马骝”是猴子。"
+      },
+      {
+        "term": "沟仔",
+        "meaning": "小水沟",
+        "note": "“仔”表示小。"
+      }
+    ],
+    "source": [
+      {
+        "title": "维基语录：粤语急口令",
+        "url": "https://zh.wikiquote.org/wiki/%E7%B2%A4%E8%AF%AD%E6%80%A5%E5%8F%A3%E4%BB%A4",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-tongue-names",
+    "type": "tongue_twister",
+    "title": "郭蔼明与郭可盈",
+    "subtitle": "粤语急口令 · 人名",
+    "region": "广州 / 香港",
+    "dialect": "粤语（广府片）",
+    "summary": "郭蔼明见过郭可盈，说郭可盈的袋型；郭可盈叫郭蔼明过来看看。练“郭”“角”“各”等发音。",
+    "text": "郭藹明見過郭可盈，\n話郭可盈個袋型，\n郭可盈叫郭藹明過……",
+    "tags": [
+      "急口令",
+      "绕口令",
+      "人名",
+      "粤语"
+    ],
+    "motifs": [
+      "郭蔼明",
+      "郭可盈",
+      "袋型"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "维基语录：粤语急口令",
+        "url": "https://zh.wikiquote.org/wiki/%E7%B2%A4%E8%AF%AD%E6%80%A5%E5%8F%A3%E4%BB%A4",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-tongue-cat-mouse",
+    "type": "tongue_twister",
+    "title": "猫捉鼠",
+    "subtitle": "粤语绕口令 · 猫和老鼠",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "粮仓里有稻谷，小猫来看护，忽然发现一只老鼠来偷吃。练“猫”“鼠”“谷”等发音。",
+    "text": "粮仓里边有稻谷，\n小猫来看护。\n睁大眼睛不马虎，\n忽然发现一只鼠，\n偷偷摸摸来吃谷。",
+    "tags": [
+      "绕口令",
+      "动物",
+      "猫",
+      "老鼠"
+    ],
+    "motifs": [
+      "猫",
+      "老鼠",
+      "稻谷"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "51test：广州话绕口令大全",
+        "url": "https://m.51test.net/show/8541338.html",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

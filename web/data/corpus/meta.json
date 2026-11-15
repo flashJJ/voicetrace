@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "updated": "2026-11-15",
+  "dialect": "粤语（广府片）",
+  "description": "声迹粤语故事资料库：按内容子集拆分，用于基础故事生成、三种叙事模式与 Agent 黄金样品验证。",
+  "licenseNote": "传统口传文学、童谣、谚语按公有领域处理；政府网站内容仅提取事实并改写，不直接复制长段原文；具体整理版本、录音、图片可能另有版权，正式商用前需复核。",
+  "modes": [
+    {
+      "key": "heritage",
+      "label": "正经模式",
+      "description": "温暖、克制、适合家庭与全年龄。"
+    },
+    {
+      "key": "ghost",
+      "label": "鬼故事模式",
+      "description": "悬疑、夜色、民俗解释；不血腥、不过度恐怖。"
+    },
+    {
+      "key": "wild_history",
+      "label": "野史模式",
+      "description": "说书人口吻、俏皮、明确标注“据传/野史”。"
+    }
+  ],
+  "categories": [
+    {
+      "key": "nursery_rhyme",
+      "label": "童谣"
+    },
+    {
+      "key": "legend",
+      "label": "传说"
+    },
+    {
+      "key": "folk_tale_catalog",
+      "label": "民间故事篇目"
+    },
+    {
+      "key": "proverb",
+      "label": "歇后语 / 俗语"
+    },
+    {
+      "key": "weather_proverb",
+      "label": "天气 / 农谚"
+    },
+    {
+      "key": "custom",
+      "label": "民俗 / 节庆"
+    },
+    {
+      "key": "riddle",
+      "label": "谜语"
+    },
+    {
+      "key": "tongue_twister",
+      "label": "绕口令"
+    }
+  ]
+}

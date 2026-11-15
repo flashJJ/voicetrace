@@ -1,0 +1,152 @@
+[
+  {
+    "id": "yue-rhyme-sell-lazy",
+    "type": "nursery_rhyme",
+    "title": "卖懒",
+    "subtitle": "广府童谣 · 年俗 · 除夕",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "卖懒，卖懒，卖到年卅晚，人懒我唔懒。广州除夕夜，小孩提灯笼“卖懒”，把懒惰卖掉。",
+    "text": "卖懒，卖懒，\n卖到年卅晚，\n人懒我唔懒。\n\n卖懒，卖懒，卖到年卅晚；\n卖穷，卖穷，卖畀猪婆龙；\n卖衰，卖衰，卖畀大头龟。",
+    "tags": [
+      "童谣",
+      "年俗",
+      "除夕",
+      "卖懒"
+    ],
+    "motifs": [
+      "卖懒",
+      "年卅晚",
+      "灯笼",
+      "红鸡蛋"
+    ],
+    "glossary": [
+      {
+        "term": "卖懒",
+        "meaning": "把懒惰“卖掉”的年俗",
+        "note": "小孩提灯笼、拿红鸡蛋，边走边唱。"
+      },
+      {
+        "term": "年卅晚",
+        "meaning": "除夕夜",
+        "note": "“卅”读作 saap，指三十。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      },
+      {
+        "title": "广州市政府：广府年俗的历史由来",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_8051423.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": true,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-coins",
+    "type": "nursery_rhyme",
+    "title": "我有几文鸡",
+    "subtitle": "广府童谣 · 过年 · 花街",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "我有几文鸡，过年买只鸡。夹畀阿妈食，阿妈话我乖，带我行花街。",
+    "text": "我有几文鸡，\n过年买只鸡。\n只鸡好好食，\n夹畀阿妈食。\n阿妈话我乖，\n带我行花街。",
+    "tags": [
+      "童谣",
+      "过年",
+      "花街",
+      "亲情"
+    ],
+    "motifs": [
+      "几文鸡",
+      "买鸡",
+      "行花街",
+      "阿妈"
+    ],
+    "glossary": [
+      {
+        "term": "几文鸡",
+        "meaning": "几块钱",
+        "note": "“文”是旧时货币单位，“鸡”是粤语俚语后缀。"
+      },
+      {
+        "term": "夹畀",
+        "meaning": "夹给",
+        "note": "用筷子夹菜给别人。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-new-year-days",
+    "type": "nursery_rhyme",
+    "title": "初一人拜神",
+    "subtitle": "广府童谣 · 正月 · 年俗",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "从初一到十五，拜神、拜人、赤口、乞米、游花地、开灯、采青。一首广府正月年俗日历。",
+    "text": "初一人拜神，\n初二人拜人，\n初三是赤口，\n初四人乞米，\n初五初六正是年，\n初七游花地，\n初八八不归，\n初九九头空，\n初十打春去。\n十一打仔回，\n十二搭灯棚，\n十三人开灯，\n十四灯火明，\n十五祈完灯，\n采青走百病。",
+    "tags": [
+      "童谣",
+      "正月",
+      "年俗",
+      "广府"
+    ],
+    "motifs": [
+      "拜神",
+      "赤口",
+      "游花地",
+      "开灯",
+      "采青"
+    ],
+    "glossary": [
+      {
+        "term": "赤口",
+        "meaning": "正月初三，旧俗不宜拜年",
+        "note": "传说这天容易口角，所以不探亲。"
+      },
+      {
+        "term": "采青",
+        "meaning": "正月十五后采青祈福",
+        "note": "不同地方形式不同。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

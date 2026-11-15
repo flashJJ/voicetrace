@@ -1,0 +1,166 @@
+[
+  {
+    "id": "yue-legend-hoxiangu",
+    "type": "legend",
+    "title": "何仙姑与挂绿传说",
+    "subtitle": "增城挂绿荔枝上的那道绿线",
+    "region": "广州 · 增城",
+    "dialect": "粤语（广府片）",
+    "summary": "何仙姑成仙后常回增城故乡。相传她在西园荔枝树下绣鞋、织带，离开时遗落一根绿色丝线，从此荔枝果壳上多了一道绿线，人称“挂绿”。",
+    "tags": [
+      "传说",
+      "何仙姑",
+      "挂绿",
+      "增城",
+      "荔枝"
+    ],
+    "motifs": [
+      "何仙姑",
+      "绿丝线",
+      "挂绿荔枝",
+      "八仙"
+    ],
+    "glossary": [
+      {
+        "term": "挂绿",
+        "meaning": "增城名种荔枝",
+        "note": "果壳上有一道绿线，传说与何仙姑有关。"
+      },
+      {
+        "term": "西园",
+        "meaning": "增城荔城西园",
+        "note": "挂绿母树所在地。"
+      }
+    ],
+    "source": [
+      {
+        "title": "光明网：何仙姑之约",
+        "url": "https://news.gmw.cn/2023-04/28/content_36529742.htm",
+        "license": "reference"
+      },
+      {
+        "title": "南方+：非遗广东“绿丝挂果”",
+        "url": "https://static.nfapp.southcn.com/content/202107/26/c5566572.html",
+        "license": "reference"
+      }
+    ],
+    "license": "original-retelling",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": true,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-golden-flower",
+    "type": "legend",
+    "title": "金花娘娘传说",
+    "subtitle": "广州人的生育保护神",
+    "region": "广州 · 黄埔长洲",
+    "dialect": "粤语（广府片）",
+    "summary": "相传明朝广州巡按夫人难产，梦见老者说“请金花姑娘来，可保母子平安”。众人寻来多位名叫金花的女子，其中一位到场后夫人顺利生产。金花后来投湖，尸体多日不腐、异香不散，乡人建庙祀奉，尊为“金花保子惠福夫人”。",
+    "tags": [
+      "传说",
+      "金花娘娘",
+      "生育",
+      "黄埔",
+      "金花诞"
+    ],
+    "motifs": [
+      "难产",
+      "金花",
+      "仙湖",
+      "沉香像",
+      "金花诞"
+    ],
+    "glossary": [
+      {
+        "term": "金花诞",
+        "meaning": "农历四月十七",
+        "note": "广州黄埔长洲等地有金花诞民俗。"
+      },
+      {
+        "term": "保子惠福夫人",
+        "meaning": "金花娘娘的封号",
+        "note": "民间把她视为生育保护神。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市情网：金花诞",
+        "url": "https://gzsqw.org.cn/c/sdfzpc/gfwh/40128.jhtml",
+        "license": "government-fact"
+      },
+      {
+        "title": "南方+：长洲金花诞",
+        "url": "https://static.nfapp.southcn.com/content/201705/10/c416891.html",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 3,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-pangu",
+    "type": "legend",
+    "title": "盘古王传说与盘古王诞",
+    "subtitle": "花都狮岭的开天辟地记忆",
+    "region": "广州 · 花都狮岭",
+    "dialect": "粤语（广府片）",
+    "summary": "花都狮岭有盘古王山、盘古王庙和盘古王神位碑。相传盘古开天辟地，后人立庙祭祀；每年农历八月十二盘古王诞，四乡民众上山祈福、舞狮、放花炮。",
+    "tags": [
+      "传说",
+      "盘古",
+      "花都",
+      "开天辟地",
+      "盘古王诞"
+    ],
+    "motifs": [
+      "盘古",
+      "开天辟地",
+      "神位碑",
+      "盘古王诞",
+      "花炮"
+    ],
+    "glossary": [
+      {
+        "term": "盘古王诞",
+        "meaning": "农历八月十二",
+        "note": "花都狮岭盘古王庙的诞日。"
+      },
+      {
+        "term": "神位碑",
+        "meaning": "盘古王神位石碑",
+        "note": "传说有1500多年历史。"
+      }
+    ],
+    "source": [
+      {
+        "title": "花都区政府：花都的文脉春秋",
+        "url": "https://www.huadu.gov.cn/zzzs/hdxw/content/post_10635692.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "百度百科：盘古王诞",
+        "url": "https://m.baike.com/wiki/%E7%9B%98%E5%8F%A4%E7%8E%8B%E8%AF%9E/3979105",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  }
+]

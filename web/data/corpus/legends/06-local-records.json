@@ -1,0 +1,113 @@
+[
+  {
+    "id": "yue-legend-zhan-ganquan",
+    "type": "legend",
+    "title": "湛甘泉故事",
+    "subtitle": "已列入广州非遗名录，故事文本待补充",
+    "region": "广州 · 增城",
+    "dialect": "粤语（广府片）",
+    "summary": "湛甘泉故事已列入广州市第九批市级非物质文化遗产代表性项目名录（民间文学）。湛甘泉是明代增城人、著名理学家，具体民间故事待补充。",
+    "tags": [
+      "传说",
+      "湛甘泉",
+      "增城",
+      "理学家",
+      "待补充"
+    ],
+    "motifs": [
+      "湛甘泉",
+      "增城",
+      "理学"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "广州市政府：第九批市级非遗名录",
+        "url": "https://www.gz.gov.cn/gkmlpt/content/10/10815/mpost_10815781.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 3,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-legend-bin-gong-fo",
+    "type": "legend",
+    "title": "宾公佛传说",
+    "subtitle": "已列入广州非遗名录，故事文本待补充",
+    "region": "广州 · 增城",
+    "dialect": "粤语（广府片）",
+    "summary": "宾公佛传说已列入广州市级非物质文化遗产代表性项目名录（民间文学），流传于增城一带。具体故事版本待补充。",
+    "tags": [
+      "传说",
+      "宾公佛",
+      "增城",
+      "待补充"
+    ],
+    "motifs": [
+      "宾公佛",
+      "增城"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "广州市文化广电旅游局：非遗名录",
+        "url": "https://wglj.gz.gov.cn/ggfw/whl/content/post_10609533.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 3,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-legend-taiping-heaven",
+    "type": "legend",
+    "title": "花县太平天国人物传说",
+    "subtitle": "已列入广州非遗名录，故事文本待补充",
+    "region": "广州 · 花都",
+    "dialect": "粤语（广府片）",
+    "summary": "花县（今花都）是太平天国领袖洪秀全的故乡，当地流传相关人物传说。该传说已列入广州市级非遗民间文学名录，具体故事待补充。",
+    "tags": [
+      "传说",
+      "花都",
+      "太平天国",
+      "洪秀全",
+      "待补充"
+    ],
+    "motifs": [
+      "花县",
+      "太平天国",
+      "洪秀全"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "广州市文化广电旅游局：非遗名录",
+        "url": "https://wglj.gz.gov.cn/ggfw/whl/content/post_10609533.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 3,
+    "difficulty": 4,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  }
+]

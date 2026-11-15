@@ -1,0 +1,206 @@
+[
+  {
+    "id": "golden-lun-wenxu-v1",
+    "storyId": "yue-legend-lun-wenxu",
+    "input": {
+      "title": "伦文叙故事",
+      "text": "伦文叙出身贫寒，却聪慧过人，后来高中状元。民间流传他少年时在石湾丰宁寺题字、在粥铺吃“状元及第粥”等故事。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": [
+        "伦文叙",
+        "状元",
+        "石湾",
+        "丰宁寺",
+        "状元及第粥"
+      ],
+      "glossary": [
+        {
+          "term": "状元及第粥",
+          "meaning": "广式粥品，传说与伦文叙有关"
+        },
+        {
+          "term": "丰宁寺",
+          "meaning": "石湾古寺"
+        }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "穷孩子伦文叙",
+          "summary": "伦文叙出身贫寒，却聪明好学，常到粥铺吃粥。",
+          "choices": [
+            "帮他付粥钱",
+            "问他为什么这么爱读书"
+          ]
+        },
+        {
+          "act": 2,
+          "title": "丰宁寺题字",
+          "summary": "少年伦文叙为石湾丰宁寺题写寺名，众人惊叹。",
+          "choices": [
+            "拍手叫好",
+            "问他怕不怕写坏"
+          ]
+        },
+        {
+          "act": 3,
+          "title": "状元及第",
+          "summary": "伦文叙高中状元，回乡感谢粥铺，为粥取名“状元及第粥”。",
+          "choices": []
+        }
+      ],
+      "endings": [
+        "人穷志不短，一碗粥也能记一辈子。"
+      ],
+      "translationZh": "伦文叙出身贫寒，但聪明好学，后来高中状元。民间流传他在石湾丰宁寺题字、在粥铺吃“状元及第粥”的故事。",
+      "safetyFlags": []
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "glossary_terms_present",
+      "translation_present",
+      "moral_or_ending_present"
+    ],
+    "mode": "heritage"
+  },
+  {
+    "id": "golden-polo-chicken-v1",
+    "storyId": "yue-proverb-polo-chicken",
+    "input": {
+      "title": "波罗鸡——靠黐",
+      "text": "波罗诞上卖的“波罗鸡”是用浆糊粘起来的工艺品，“黐”在粤语里是粘、赖着不走的意思。形容靠占便宜、攀附关系。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": [
+        "波罗鸡",
+        "波罗诞",
+        "浆糊",
+        "黐"
+      ],
+      "glossary": [
+        {
+          "term": "黐",
+          "meaning": "粘、赖着"
+        },
+        {
+          "term": "波罗鸡",
+          "meaning": "波罗诞传统工艺品"
+        }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "波罗诞的摊位",
+          "summary": "庙会上摆满波罗鸡，都是用浆糊粘起来的。",
+          "choices": [
+            "买一只波罗鸡",
+            "问老板为什么叫波罗鸡"
+          ]
+        },
+        {
+          "act": 2,
+          "title": "“黐”的双关",
+          "summary": "老板说，波罗鸡靠浆糊粘起来，人也有人靠“黐”关系。",
+          "choices": [
+            "笑一笑走开",
+            "问老板见过哪些“靠黐”的人"
+          ]
+        },
+        {
+          "act": 3,
+          "title": "一句歇后语",
+          "summary": "波罗鸡——靠黐，成了广府人形容占便宜的歇后语。",
+          "choices": []
+        }
+      ],
+      "endings": [
+        "一句歇后语，把庙会、手艺和人情世故都装了进去。"
+      ],
+      "translationZh": "波罗诞上的波罗鸡是用浆糊粘成的，“黐”在粤语里是粘、赖着的意思，所以“波罗鸡——靠黐”形容靠占便宜、攀附关系。",
+      "safetyFlags": []
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "glossary_terms_present",
+      "translation_present",
+      "explains_double_meaning"
+    ],
+    "mode": "heritage"
+  },
+  {
+    "id": "golden-flower-street-v1",
+    "storyId": "yue-custom-flower-street",
+    "input": {
+      "title": "行花街",
+      "text": "年三十团年饭后，广州人扶老携幼逛花市，买年花、年桔、桃花，寓意大吉大利、花开富贵。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": [
+        "年三十",
+        "团年饭",
+        "花市",
+        "年花",
+        "年桔",
+        "桃花"
+      ],
+      "glossary": [
+        {
+          "term": "行花街",
+          "meaning": "逛迎春花市"
+        },
+        {
+          "term": "年桔",
+          "meaning": "过年摆放的金桔"
+        }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "团年饭后",
+          "summary": "一家人吃完团年饭，准备去行花街。",
+          "choices": [
+            "跟阿妈去挑年花",
+            "跟阿爸去买年桔"
+          ]
+        },
+        {
+          "act": 2,
+          "title": "花街人挤人",
+          "summary": "花街上人山人海，桃花、年桔、水仙摆满一条街。",
+          "choices": [
+            "买一盆桃花",
+            "问老板年桔怎么挑"
+          ]
+        },
+        {
+          "act": 3,
+          "title": "花开富贵",
+          "summary": "一家人抱着年花回家，寓意大吉大利、花开富贵。",
+          "choices": []
+        }
+      ],
+      "endings": [
+        "行过花街，才算过了年。"
+      ],
+      "translationZh": "年三十团年饭后，广州人全家逛花市，买年花、年桔、桃花，寓意大吉大利、花开富贵。",
+      "safetyFlags": []
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "glossary_terms_present",
+      "translation_present",
+      "custom_accuracy"
+    ],
+    "mode": "heritage"
+  }
+]

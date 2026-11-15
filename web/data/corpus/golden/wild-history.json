@@ -1,0 +1,51 @@
+[
+  {
+    "id": "golden-chen-mengji-wild-v1",
+    "storyId": "yue-legend-chen-mengji",
+    "mode": "wild_history",
+    "input": {
+      "title": "陈梦吉·扭计师爷",
+      "text": "陈梦吉是明代新会的传奇人物，足智多谋，人称“扭计师爷”。他常替百姓出点子、惩恶扬善，故事在五邑和珠三角流传数百年。"
+    },
+    "expected": {
+      "language": "yue",
+      "entities": ["陈梦吉", "新会", "扭计", "师爷", "地主"],
+      "glossary": [
+        { "term": "扭计", "meaning": "想办法、出计谋" },
+        { "term": "师爷", "meaning": "旧时幕僚、参谋" }
+      ],
+      "scenes": [
+        {
+          "act": 1,
+          "title": "茶馆听古",
+          "summary": "说书人在茶馆讲陈梦吉，说他专门帮穷人整蛊恶地主。",
+          "choices": ["继续听下去", "追问说书人：真的假的？"]
+        },
+        {
+          "act": 2,
+          "title": "一条扭计",
+          "summary": "陈梦吉设了一个局，让地主自己把多收的租吐出来。",
+          "choices": ["帮陈梦吉递话", "替地主求情"]
+        },
+        {
+          "act": 3,
+          "title": "野史收尾",
+          "summary": "地主认输，百姓拍手。说书人补一句：野史唔一定真，但民间的气是真的。",
+          "choices": []
+        }
+      ],
+      "endings": ["野史唔一定真，但民间的气，是真的。"],
+      "translationZh": "茶馆里，说书人讲陈梦吉用一条“扭计”让恶地主把多收的租吐出来。故事真假难考，但它表达了百姓对公道的心愿。",
+      "safetyFlags": ["wild_history", "marked_as_legend", "no_defamation"]
+    },
+    "checks": [
+      "json_schema_valid",
+      "language == 'yue'",
+      "scene_count == 3",
+      "wild_history_tone",
+      "marked_as_legend",
+      "translation_present",
+      "no_hallucinated_entities"
+    ]
+  }
+]

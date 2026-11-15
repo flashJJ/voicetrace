@@ -1,0 +1,110 @@
+[
+  {
+    "id": "yue-custom-flower-street",
+    "type": "custom",
+    "title": "行花街",
+    "subtitle": "广州人除夕的仪式感",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "年三十团年饭后，广州人扶老携幼逛花市，买年花、年桔、桃花，寓意大吉大利、花开富贵。行花街是广州春节最有代表性的民俗之一。",
+    "text": "",
+    "tags": [
+      "年俗",
+      "春节",
+      "花市",
+      "广州"
+    ],
+    "motifs": [
+      "花街",
+      "年花",
+      "年桔",
+      "桃花",
+      "除夕"
+    ],
+    "glossary": [
+      {
+        "term": "行花街",
+        "meaning": "逛迎春花市",
+        "note": "“行”在粤语里是逛、走。"
+      },
+      {
+        "term": "年桔",
+        "meaning": "过年摆放的金桔",
+        "note": "寓意大吉大利。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：广府年俗的历史由来",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_8051423.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "光明网：春节，到广州行花街",
+        "url": "https://epaper.gmw.cn/wzb/html/2012-01/21/nw.D110000wzb_20120121_5-07.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 1,
+    "goldenSample": true,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-custom-sell-lazy",
+    "type": "custom",
+    "title": "卖懒",
+    "subtitle": "除夕夜，把懒惰卖掉",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "除夕夜，小孩提灯笼、拿红鸡蛋，到街头巷尾边走边唱“卖懒，卖到年卅晚，人懒我唔懒”，寓意把懒惰卖掉，来年勤奋聪明。",
+    "text": "卖懒，卖懒，卖到年卅晚，人懒我唔懒。",
+    "tags": [
+      "年俗",
+      "除夕",
+      "儿童",
+      "广州"
+    ],
+    "motifs": [
+      "卖懒",
+      "灯笼",
+      "红鸡蛋",
+      "年卅晚"
+    ],
+    "glossary": [
+      {
+        "term": "卖懒",
+        "meaning": "把懒惰“卖掉”",
+        "note": "旧时广州除夕习俗。"
+      },
+      {
+        "term": "年卅晚",
+        "meaning": "除夕夜",
+        "note": "粤语“卅”读 saap。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：广府年俗的历史由来",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_8051423.html",
+        "license": "government-fact"
+      },
+      {
+        "title": "南方农村报：年卅晚 行花街",
+        "url": "http://epaper.nfncb.cn/nfnc/content/20260212/Articel10002JQ.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  }
+]

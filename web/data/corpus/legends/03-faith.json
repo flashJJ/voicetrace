@@ -1,0 +1,169 @@
+[
+  {
+    "id": "yue-legend-zheng-xian",
+    "type": "legend",
+    "title": "郑仙传说",
+    "subtitle": "白云山上的九节菖蒲与仙鹤",
+    "region": "广州 · 白云山",
+    "dialect": "粤语（广府片）",
+    "summary": "郑安期在白云山隐居行医。瘟疫流行时，他上山采集仙草九节菖蒲，不慎坠崖，被仙鹤托起飞升。后人为纪念他建郑仙祠，并把他的飞升之日定为郑仙诞。",
+    "tags": [
+      "传说",
+      "郑安期",
+      "白云山",
+      "九节菖蒲",
+      "仙鹤"
+    ],
+    "motifs": [
+      "郑安期",
+      "九节菖蒲",
+      "仙鹤",
+      "坠崖",
+      "飞升"
+    ],
+    "glossary": [
+      {
+        "term": "郑仙诞",
+        "meaning": "纪念郑安期的民俗节日",
+        "note": "广州白云山一带流传。"
+      },
+      {
+        "term": "九节菖蒲",
+        "meaning": "传说中的仙草",
+        "note": "郑安期采药的对象。"
+      }
+    ],
+    "source": [
+      {
+        "title": "白云山风景区：郑仙传说",
+        "url": "https://www.baiyunshan.com.cn/bys/bygj/200511/c7178d1a90424750abd0e4f9259ea980.shtml",
+        "license": "government-fact"
+      },
+      {
+        "title": "广州市文化广电旅游局：郑仙诞",
+        "url": "http://wglj.gz.gov.cn/gkmlpt/content/9/9497/post_9497554.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
+  },
+  {
+    "id": "yue-legend-foshan-ancestral",
+    "type": "legend",
+    "title": "佛山祖庙与北帝诞",
+    "subtitle": "龟蛇二将、掟龟祈福",
+    "region": "佛山 · 禅城",
+    "dialect": "粤语（广府片）",
+    "summary": "佛山祖庙供奉北帝。传说北帝收服了争斗的龟精、蛇精，收为座下先锋；锦香池里的石龟蛇就是它们的化身。每逢春节、北帝诞、初一十五，市民到池边“掟龟”祈福。",
+    "tags": [
+      "传说",
+      "佛山祖庙",
+      "北帝",
+      "龟蛇",
+      "北帝诞"
+    ],
+    "motifs": [
+      "北帝",
+      "龟蛇二将",
+      "锦香池",
+      "掟龟",
+      "北帝诞"
+    ],
+    "glossary": [
+      {
+        "term": "北帝",
+        "meaning": "玄天大帝",
+        "note": "佛山祖庙主祀北帝。"
+      },
+      {
+        "term": "掟龟",
+        "meaning": "向石龟投币祈福",
+        "note": "投中龟头或蛇头被视为好兆头。"
+      }
+    ],
+    "source": [
+      {
+        "title": "佛山新闻：《祖庙有段古》",
+        "url": "https://www.fsonline.com.cn/FS_PLUS/1058815.html",
+        "license": "reference"
+      },
+      {
+        "title": "搜狐：石雕龟蛇座的传说",
+        "url": "https://m.sohu.com/a/50430713_355877/",
+        "license": "reference"
+      }
+    ],
+    "license": "original-retelling",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-legend-polodan",
+    "type": "legend",
+    "title": "波罗诞与南海神庙",
+    "subtitle": "达奚司空种下的波罗蜜树",
+    "region": "广州 · 黄埔庙头",
+    "dialect": "粤语（广府片）",
+    "summary": "南海神庙建于隋开皇十四年，是古代祭海神庙。相传唐朝波罗国使者达奚司空到庙拜祭，种下两棵波罗蜜树，因流连美景误了归船，望海悲泣。后人称庙为波罗庙，每年农历二月举办波罗诞。",
+    "tags": [
+      "传说",
+      "波罗诞",
+      "南海神庙",
+      "达奚司空",
+      "黄埔"
+    ],
+    "motifs": [
+      "南海神",
+      "波罗蜜树",
+      "达奚司空",
+      "扶胥港",
+      "波罗诞"
+    ],
+    "glossary": [
+      {
+        "term": "波罗诞",
+        "meaning": "南海神庙庙会",
+        "note": "每年农历二月，广州黄埔一带盛事。"
+      },
+      {
+        "term": "达奚司空",
+        "meaning": "传说中波罗国使者",
+        "note": "庙内有其塑像。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市情网：传承千年的波罗诞",
+        "url": "https://gzsqw.org.cn/c/sdfzpc/gfwh/2959.jhtml",
+        "license": "government-fact"
+      },
+      {
+        "title": "广州市政府：南海神庙“海事”一词自此始",
+        "url": "https://www.gz.gov.cn/zlgz/wlzx/content/post_10536486.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "ghost",
+      "wild_history"
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+import Link from "next/link";
+
+export const metadata = {
+  title: "关于与隐私 · 声迹",
+  description: "声迹为什么做、怎么做、如何保护录音与故事。",
+};
+
+export default function AboutPage() {
+  return (
+    <div className="container about-layout">
+      <div className="about-copy">
+        <span className="eyebrow">关于声迹</span>
+        <p className="about-quote">
+          我们不想做方言翻译器，
+          <br />
+          我们想做一个<strong>家庭的声音抽屉</strong>。
+        </p>
+        <p>
+          声迹的起点很简单：外婆讲了一个很长的故事，我听得懂一半，笑了一半。
+          后来想再听，才发现没有录下来。
+        </p>
+        <p>
+          市面上的方言产品，大多在解决“听不懂”的问题：翻译、朗读、识别。
+          但还有另一个问题没人解决：<strong>那些声音，怎么留下来？</strong>
+        </p>
+        <p>
+          声迹把一段真实录音，变成三幕互动故事：你可以听原声、看翻译、点开方言词，
+          最后带走一张声音卡。它不替代老人，也不生成虚构故事，只是把真实的声音
+          整理成可以传下去的样子。
+        </p>
+        <div className="tag-row">
+          <span className="tag">TRAE 好应用大赏赛</span>
+          <span className="tag">游戏娱乐 / 文化体验</span>
+          <span className="tag">粤语 · 第一季</span>
+          <span className="tag">原型版本</span>
+        </div>
+      </div>
+
+      <div>
+        <section className="about-card">
+          <h2>我们怎么做</h2>
+          <ul>
+            <li>
+              <strong>原声优先：</strong>真实录音是主角；AI 只做转写、翻译、注释和辅助朗读。
+            </li>
+            <li>
+              <strong>三幕互动：</strong>每幕两三个选择、两个结局，让听故事变成参与故事。
+            </li>
+            <li>
+              <strong>声音地图：</strong>把故事钉在发生的地方，形成家庭/社区的地方记忆。
+            </li>
+            <li>
+              <strong>可分享：</strong>生成声音故事卡，发给家人朋友，而不是看完即走。
+            </li>
+          </ul>
+        </section>
+
+        <section className="about-card">
+          <h2>录音、隐私与授权</h2>
+          <ul>
+            <li>录音前会说明用途：用于生成故事、可能在作品页展示；不会用于训练模型。</li>
+            <li>需要讲述者本人同意；涉及第三方故事时，需取得相关授权。</li>
+            <li>故事中不展示真实姓名、住址、电话等个人信息；可用“阿婆/外公”等称呼。</li>
+            <li>录音与故事可随时删除；删除后不再出现在作品页。</li>
+            <li>AI 合成音会明确标注；不会用 AI 冒充真实人物。</li>
+          </ul>
+        </section>
+
+        <section className="about-card">
+          <h2>关于这个原型</h2>
+          <p>
+            当前版本是 TRAE 好应用大赏赛的参赛原型，使用 3 个示例故事：
+            2 个公有领域改编（《月光光》《老鼠娶亲》）和 1 个虚构示例（《阿婆的艇仔粥》）。
+            正式版会替换为经授权的真实家庭故事，并加入真实录音上传、转写校对、家庭协作等功能。
+          </p>
+          <p>
+            如果你是粤语使用者，或者你家里也有一位爱讲故事的老人，欢迎告诉我们。
+            我们想找到第一批真实故事。
+          </p>
+          <Link className="btn btn-primary" href="/stories/moonlight">
+            先听一个故事 <span aria-hidden="true">→</span>
+          </Link>
+        </section>
+
+        <section className="about-card">
+          <h2>技术说明</h2>
+          <p>
+            前端使用 Next.js + React；语音示例使用浏览器语音合成，正式版计划接入
+            CosyVoice/FunASR 等方言语音能力；互动故事使用轻量 JSON 剧情结构，
+            不依赖重型游戏引擎。
+          </p>
+        </section>
+      </div>
+    </div>
+  );
+}

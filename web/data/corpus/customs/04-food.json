@@ -1,0 +1,102 @@
+[
+  {
+    "id": "yue-custom-yum-cha",
+    "type": "custom",
+    "title": "一盅两件",
+    "subtitle": "广式早茶的生活方式",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "“一盅两件”指一盅茶、两件点心。广州人早上到茶楼饮茶、吃虾饺、烧卖、叉烧包，聊天看报，是广府最具代表性的生活方式之一。",
+    "text": "",
+    "tags": [
+      "饮食",
+      "早茶",
+      "茶楼",
+      "点心",
+      "广府"
+    ],
+    "motifs": [
+      "一盅两件",
+      "虾饺",
+      "烧卖",
+      "叉烧包",
+      "茶楼"
+    ],
+    "glossary": [
+      {
+        "term": "一盅两件",
+        "meaning": "一盅茶、两件点心",
+        "note": "广式早茶的经典说法。"
+      },
+      {
+        "term": "饮茶",
+        "meaning": "去茶楼喝茶吃点心",
+        "note": "不只是喝茶，还包括吃点心、聊天。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：广府饮食文化",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9885722.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-custom-boat-congee",
+    "type": "custom",
+    "title": "艇仔粥",
+    "subtitle": "珠江上的水上人家味道",
+    "region": "广州 · 河南 / 荔湾",
+    "dialect": "粤语（广府片）",
+    "summary": "艇仔粥源于珠江水上人家，以鱼片、花生、油条、葱花、浮皮等入粥，粥底绵滑。旧时小艇在江上叫卖，是广州最有代表性的市井味道之一。",
+    "text": "",
+    "tags": [
+      "饮食",
+      "艇仔粥",
+      "珠江",
+      "水上人家",
+      "广州"
+    ],
+    "motifs": [
+      "艇仔粥",
+      "鱼片",
+      "花生",
+      "油条",
+      "珠江"
+    ],
+    "glossary": [
+      {
+        "term": "艇仔",
+        "meaning": "小船",
+        "note": "“艇”是小船，“仔”表示小。"
+      },
+      {
+        "term": "浮皮",
+        "meaning": "炸猪皮",
+        "note": "艇仔粥常见配料。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：广府饮食文化",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9885722.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "government-fact",
+    "storyPotential": 5,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

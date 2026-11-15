@@ -1,0 +1,119 @@
+[
+  {
+    "id": "yue-riddle-rain",
+    "type": "riddle",
+    "title": "千条线，万条线",
+    "subtitle": "广府童谣谜语 · 自然",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "谜底：雨。千条线、万条线，落到水里就看不见。",
+    "text": "千条线，万条线，\n掉到水里看不见。",
+    "answer": "雨",
+    "tags": [
+      "谜语",
+      "自然",
+      "下雨",
+      "童谣"
+    ],
+    "motifs": [
+      "线",
+      "水",
+      "雨"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "岭南传统童谣：广府童谣、客家童谣、潮汕童谣",
+        "url": "https://pdfyl.ertongbook.com/88/35023519.pdf",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-riddle-broom",
+    "type": "riddle",
+    "title": "千只脚，万只脚",
+    "subtitle": "广府童谣谜语 · 日常用品",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "谜底：扫帚。千只脚、万只脚，自己站不住，只能靠在墙角。",
+    "text": "千只脚，万只脚，\n站不住，靠墙角。",
+    "answer": "扫帚",
+    "tags": [
+      "谜语",
+      "日常用品",
+      "扫帚",
+      "童谣"
+    ],
+    "motifs": [
+      "脚",
+      "墙角",
+      "扫帚"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "岭南传统童谣：广府童谣、客家童谣、潮汕童谣",
+        "url": "https://pdfyl.ertongbook.com/88/35023519.pdf",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-riddle-lotus",
+    "type": "riddle",
+    "title": "一个芋头七个窿",
+    "subtitle": "广府童谣谜语 · 植物",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "谜底：莲藕。一个“芋头”里有七个孔，从生到死都见不到面。",
+    "text": "一个芋头七个窿，\n从生到死唔相见。",
+    "answer": "莲藕",
+    "tags": [
+      "谜语",
+      "植物",
+      "莲藕",
+      "童谣"
+    ],
+    "motifs": [
+      "芋头",
+      "窿",
+      "莲藕"
+    ],
+    "glossary": [
+      {
+        "term": "窿",
+        "meaning": "洞、孔",
+        "note": "粤语常用词。"
+      }
+    ],
+    "source": [
+      {
+        "title": "岭南传统童谣：广府童谣、客家童谣、潮汕童谣",
+        "url": "https://pdfyl.ertongbook.com/88/35023519.pdf",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

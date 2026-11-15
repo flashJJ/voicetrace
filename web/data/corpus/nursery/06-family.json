@@ -1,0 +1,104 @@
+[
+  {
+    "id": "yue-rhyme-rowrow",
+    "type": "nursery_rhyme",
+    "title": "排排坐（节选）",
+    "subtitle": "广府童谣 · 饮食 · 姑婆",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "排排坐，食粉果。猪拉柴，狗烧火，猫儿担凳姑婆坐。一幅热闹的广府家庭画面。",
+    "text": "排排坐，食粉果，\n猪拉柴，狗烧火，\n猫儿担凳姑婆坐。\n（节选，略去不雅句）",
+    "tags": [
+      "童谣",
+      "饮食",
+      "家庭",
+      "动物"
+    ],
+    "motifs": [
+      "排排坐",
+      "粉果",
+      "姑婆",
+      "猫儿"
+    ],
+    "glossary": [
+      {
+        "term": "粉果",
+        "meaning": "广式蒸点，米粉皮包馅",
+        "note": "常见馅料有猪肉、虾米、冬菇、萝卜等。"
+      },
+      {
+        "term": "担凳",
+        "meaning": "搬凳子",
+        "note": "“担”在粤语里可表示搬、抬。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-chicken",
+    "type": "nursery_rhyme",
+    "title": "鸡公仔",
+    "subtitle": "广府童谣 · 婚俗 · 女性",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "鸡公仔，尾弯弯，做人新抱甚艰难。一首旧时新娘唱叹、带心酸的广府童谣。",
+    "text": "鸡公仔，尾弯弯，\n做人新抱甚艰难。\n早早起身都话晏，\n眼泪唔干入下间。\n下间有个冬瓜仔，\n问安人煮定蒸？\n安人话煮，老爷话蒸，\n蒸蒸煮煮唔中意，\n拍起台头闹到晚。\n三朝打烂三条棍，\n四朝跪烂四条裙。\n重有十条花手巾，\n畀你揩眼泪，\n畀你抹心口。",
+    "tags": [
+      "童谣",
+      "婚俗",
+      "女性",
+      "旧时"
+    ],
+    "motifs": [
+      "鸡公仔",
+      "新抱",
+      "安人",
+      "冬瓜仔",
+      "花手巾"
+    ],
+    "glossary": [
+      {
+        "term": "新抱",
+        "meaning": "儿媳妇",
+        "note": "粤语“新抱”读 sam1 pou5。"
+      },
+      {
+        "term": "安人",
+        "meaning": "婆婆（丈夫的母亲）",
+        "note": "旧时对婆婆的称呼。"
+      },
+      {
+        "term": "晏",
+        "meaning": "晚、迟",
+        "note": "“咁晏”就是太晚了。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府童谣传统文本（民间口传）",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 3,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

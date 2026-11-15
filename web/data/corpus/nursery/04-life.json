@@ -1,0 +1,289 @@
+[
+  {
+    "id": "yue-rhyme-rain",
+    "type": "nursery_rhyme",
+    "title": "落雨大",
+    "subtitle": "广府童谣 · 下雨 · 市井",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "落雨大水浸街，阿哥担柴上街卖，阿嫂着花鞋。一首有画面、有市井气的童谣。",
+    "text": "落雨大，水浸街，\n阿哥担柴上街卖，\n阿嫂出街着花鞋。\n花鞋花袜花腰带，\n珍珠蝴蝶两边排。\n排排都有十二粒，\n粒粒圆亮冇疵瑕。",
+    "tags": [
+      "童谣",
+      "下雨",
+      "市井",
+      "广州"
+    ],
+    "motifs": [
+      "落雨",
+      "水浸街",
+      "花鞋",
+      "担柴"
+    ],
+    "glossary": [
+      {
+        "term": "水浸街",
+        "meaning": "街道被水淹",
+        "note": "广州雨季常见，旧时小孩会出门玩水。"
+      },
+      {
+        "term": "冇疵瑕",
+        "meaning": "没有瑕疵",
+        "note": "“冇”是没有。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-watermelon",
+    "type": "nursery_rhyme",
+    "title": "大西瓜",
+    "subtitle": "广府童谣 · 食物 · 幽默",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "大家一起分西瓜，不小心吞了核，妈妈笑说头顶会长出瓜。一首有幽默感的广府童谣。",
+    "text": "大西瓜，多好哇，\n个个都想食。\n大家分，切开它，\n味道顶呱呱。\n唔小心，吞左啦，\n圆圆几粒核。\n诶呀呀，问妈妈，\n点算吖，头顶长出瓜。\n妈妈笑住话，\n长左多瓜食，\n由春天到冬天，\n时时有西瓜。",
+    "tags": [
+      "童谣",
+      "食物",
+      "幽默",
+      "亲子"
+    ],
+    "motifs": [
+      "西瓜",
+      "西瓜核",
+      "妈妈",
+      "头顶长瓜"
+    ],
+    "glossary": [
+      {
+        "term": "顶呱呱",
+        "meaning": "非常好",
+        "note": "粤语常用夸赞词。"
+      },
+      {
+        "term": "点算吖",
+        "meaning": "怎么办呀",
+        "note": "“点算”是怎么办。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-mosquito-net",
+    "type": "nursery_rhyme",
+    "title": "打开蚊帐",
+    "subtitle": "广府童谣 · 睡前 · 动物",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "打开蚊帐有只蚊，打开张被有只猫，打开书包有只懒训猪。一首适合亲子互动的童谣。",
+    "text": "打开蚊帐，打开蚊帐，\n有只蚊，有只蚊。\n快啲拿把扇嚟，快啲摆把扇嚟，\n拨走佢，拨走佢。\n\n打开张被，打开张被，\n有只猫，有只猫。\n快啲拿枝竹嚟，快啲拿枝竹嚟，\n吓走佢，吓走佢。\n\n打开书包，打开书包，\n有只猪，懒训猪。\n快啲拿枝针嚟，快啲拿枝针嚟，\n咭走佢，咭走佢。",
+    "tags": [
+      "童谣",
+      "睡前",
+      "动物",
+      "亲子"
+    ],
+    "motifs": [
+      "蚊帐",
+      "蚊",
+      "猫",
+      "懒训猪"
+    ],
+    "glossary": [
+      {
+        "term": "蚊帐",
+        "meaning": "挂起来防蚊的帐子",
+        "note": "南方夏天常见。"
+      },
+      {
+        "term": "懒训猪",
+        "meaning": "爱睡觉的懒猪",
+        "note": "大人逗小孩的昵称。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-radish",
+    "type": "nursery_rhyme",
+    "title": "萝卜头",
+    "subtitle": "广府童谣 · 食物 · 幽默",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "萝卜头，点豉油。点得多，咸过头；点得少，淡茂茂。",
+    "text": "萝卜头，点豉油，\n点得多，咸过头，\n点得少，淡茂茂。",
+    "tags": [
+      "童谣",
+      "食物",
+      "幽默",
+      "广府"
+    ],
+    "motifs": [
+      "萝卜头",
+      "豉油",
+      "咸",
+      "淡"
+    ],
+    "glossary": [
+      {
+        "term": "点豉油",
+        "meaning": "蘸酱油",
+        "note": "“点”是蘸。"
+      },
+      {
+        "term": "淡茂茂",
+        "meaning": "淡淡的、没味道",
+        "note": "粤语叠词，带俏皮感。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-river-sheep",
+    "type": "nursery_rhyme",
+    "title": "河边有只羊",
+    "subtitle": "广府童谣 · 动物 · 绕口",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "河边有只羊，羊边有只象，象边有只马骝仔，好似你咁样。",
+    "text": "河边有只羊，\n羊边有只象，\n象边有只马骝仔，\n好似你咁样。",
+    "tags": [
+      "童谣",
+      "动物",
+      "绕口",
+      "亲子"
+    ],
+    "motifs": [
+      "羊",
+      "象",
+      "马骝仔"
+    ],
+    "glossary": [
+      {
+        "term": "马骝仔",
+        "meaning": "小猴子",
+        "note": "粤语“马骝”是猴子。"
+      },
+      {
+        "term": "好似你咁样",
+        "meaning": "像你这样子",
+        "note": "大人逗小孩时常用。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  },
+  {
+    "id": "yue-rhyme-big-elephant",
+    "type": "nursery_rhyme",
+    "title": "大笨象",
+    "subtitle": "广府童谣 · 动物 · 幽默",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "大笨象，揸支枪，去打仗。打完仗，返嚟食碗辣椒酱。",
+    "text": "大笨象，\n揸支枪，\n去打仗。\n打完仗，\n返嚟食碗辣椒酱。\n隔篱屋企烧炮仗，\n问你响唔响，\n唔响升你两巴掌。",
+    "tags": [
+      "童谣",
+      "动物",
+      "幽默",
+      "童年"
+    ],
+    "motifs": [
+      "大笨象",
+      "打仗",
+      "辣椒酱",
+      "炮仗"
+    ],
+    "glossary": [
+      {
+        "term": "揸支枪",
+        "meaning": "拿一支枪",
+        "note": "“揸”是拿、握。"
+      },
+      {
+        "term": "隔篱",
+        "meaning": "隔壁、旁边",
+        "note": "粤语常用词。"
+      }
+    ],
+    "source": [
+      {
+        "title": "搜狐：27首从小听到大的广州经典童谣",
+        "url": "https://mt.sohu.com/20161028/n471691505.shtml",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage"
+    ]
+  }
+]

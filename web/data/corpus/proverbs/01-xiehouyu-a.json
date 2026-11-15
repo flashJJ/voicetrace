@@ -1,0 +1,227 @@
+[
+  {
+    "id": "yue-proverb-mustard",
+    "type": "proverb",
+    "title": "十月芥菜——起心",
+    "subtitle": "粤语歇后语 · 植物 · 心思",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "农历十月芥菜开始抽心，粤语“起心”既指菜心，也指动了心思、起了念头。",
+    "text": "十月芥菜——起心",
+    "tags": [
+      "歇后语",
+      "植物",
+      "心思",
+      "广府"
+    ],
+    "motifs": [
+      "芥菜",
+      "起心"
+    ],
+    "source": [
+      {
+        "title": "广州市政府：九声六调说粤语",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9885722.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-cotton",
+    "type": "proverb",
+    "title": "湿水棉花——冇得弹",
+    "subtitle": "粤语歇后语 · 无法反驳",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "湿了水的棉花弹不起来，“弹”又指弹劾、批评。形容一件事没有可挑剔的地方，或一个人无可指责。",
+    "text": "湿水棉花——冇得弹",
+    "tags": [
+      "歇后语",
+      "棉花",
+      "批评",
+      "广府"
+    ],
+    "motifs": [
+      "湿水棉花",
+      "冇得弹"
+    ],
+    "source": [
+      {
+        "title": "广州市政府：九声六调说粤语",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9885722.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-polo-chicken",
+    "type": "proverb",
+    "title": "波罗鸡——靠黐",
+    "subtitle": "粤语歇后语 · 波罗诞 · 占便宜",
+    "region": "广州 · 黄埔",
+    "dialect": "粤语（广府片）",
+    "summary": "波罗诞上卖的“波罗鸡”是用浆糊粘起来的工艺品，“黐”在粤语里是粘、赖着不走的意思。形容靠占便宜、攀附关系。",
+    "text": "波罗鸡——靠黐",
+    "tags": [
+      "歇后语",
+      "波罗诞",
+      "手工艺",
+      "占便宜"
+    ],
+    "motifs": [
+      "波罗鸡",
+      "黐",
+      "波罗诞"
+    ],
+    "glossary": [
+      {
+        "term": "黐",
+        "meaning": "粘、赖着",
+        "note": "粤语读 ci1。"
+      },
+      {
+        "term": "波罗鸡",
+        "meaning": "波罗诞的传统工艺品",
+        "note": "用纸、浆糊等做成。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广州市政府：九声六调说粤语",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9885722.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": true,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-knotty-wood",
+    "type": "proverb",
+    "title": "扭纹柴——难搞",
+    "subtitle": "粤语歇后语 · 难对付",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "扭纹柴纹理扭曲，很难劈开。形容人固执、事情棘手、难以对付。",
+    "text": "扭纹柴——难搞",
+    "tags": [
+      "歇后语",
+      "木柴",
+      "难搞",
+      "广府"
+    ],
+    "motifs": [
+      "扭纹柴",
+      "难搞"
+    ],
+    "source": [
+      {
+        "title": "广州市政府：九声六调说粤语",
+        "url": "https://www.gz.gov.cn/zlgz/whgz/content/mpost_9885722.html",
+        "license": "government-fact"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-long-life",
+    "type": "proverb",
+    "title": "寿星公吊颈——嫌命长",
+    "subtitle": "粤语歇后语 · 自找危险",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "寿星公本来长寿，却去做危险的事。形容人不知死活、自找麻烦。",
+    "text": "寿星公吊颈——嫌命长",
+    "tags": [
+      "歇后语",
+      "寿星公",
+      "危险",
+      "广府"
+    ],
+    "motifs": [
+      "寿星公",
+      "吊颈",
+      "嫌命长"
+    ],
+    "source": [
+      {
+        "title": "广府文化研究中心：粤语歇后语",
+        "url": "https://gzgfwh.gzhu.edu.cn/info/1043/1358.htm",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-proverb-fishmonger",
+    "type": "proverb",
+    "title": "卖鱼佬——有声（腥）气",
+    "subtitle": "粤语歇后语 · 有消息",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "卖鱼的人身上有鱼腥味，“腥”与“声”同音。形容有消息、有动静；也常说“卖鱼佬洗身——无晒声气”，指没有消息。",
+    "text": "卖鱼佬——有声（腥）气",
+    "tags": [
+      "歇后语",
+      "卖鱼",
+      "谐音",
+      "消息"
+    ],
+    "motifs": [
+      "卖鱼佬",
+      "腥气",
+      "声气"
+    ],
+    "source": [
+      {
+        "title": "广东人精髓 200 条歇后语",
+        "url": "https://sauwing.com/wp-content/uploads/2018/01/200e6a29de6ad87e5be8ce8aa9e.pdf",
+        "license": "reference"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  }
+]

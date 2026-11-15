@@ -1,0 +1,305 @@
+[
+  {
+    "id": "yue-catalog-zhongxu-you",
+    "type": "folk_tale_catalog",
+    "title": "终须有与莫强求",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待从公开/授权资料补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "魔法故事",
+      "广府"
+    ],
+    "motifs": [
+      "命运",
+      "强求",
+      "劝诫"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 4,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-caihuo",
+    "type": "folk_tale_catalog",
+    "title": "财祸从天降",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "财富",
+      "广府"
+    ],
+    "motifs": [
+      "意外之财",
+      "祸福"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 3,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-silver-jar",
+    "type": "folk_tale_catalog",
+    "title": "一缸银",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "银子",
+      "广府"
+    ],
+    "motifs": [
+      "银子",
+      "藏宝",
+      "考验"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 3,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-half-bucket",
+    "type": "folk_tale_catalog",
+    "title": "“半桶水”做皇帝",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "皇帝",
+      "讽刺",
+      "广府"
+    ],
+    "motifs": [
+      "半桶水",
+      "皇帝",
+      "讽刺"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 4,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-ahuang-acai",
+    "type": "folk_tale_catalog",
+    "title": "阿煌与阿彩",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "爱情",
+      "广府"
+    ],
+    "motifs": [
+      "阿煌",
+      "阿彩",
+      "爱情"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 4,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-good-heart",
+    "type": "folk_tale_catalog",
+    "title": "好心得善报",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "善恶报应",
+      "广府"
+    ],
+    "motifs": [
+      "善心",
+      "善报"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-brother-bird",
+    "type": "folk_tale_catalog",
+    "title": "哥好鸟",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "鸟",
+      "兄弟",
+      "广府"
+    ],
+    "motifs": [
+      "哥好鸟",
+      "兄弟"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 3,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  },
+  {
+    "id": "yue-catalog-three-drops-blood",
+    "type": "folk_tale_catalog",
+    "title": "三滴血",
+    "subtitle": "广府民间故事篇目 · 魔法故事",
+    "region": "广府地区",
+    "dialect": "粤语（广府片）",
+    "summary": "《中国民间文学大系·故事·广东卷·广府分卷》收录篇目。正文待补充。",
+    "text": "",
+    "tags": [
+      "民间故事",
+      "篇目",
+      "血",
+      "考验",
+      "广府"
+    ],
+    "motifs": [
+      "三滴血",
+      "考验"
+    ],
+    "glossary": [],
+    "source": [
+      {
+        "title": "中国民间文学大系·故事·广东卷·广府分卷（书目）",
+        "url": "http://product.m.dangdang.com/detail11851829413-24823-1.html",
+        "license": "reference"
+      }
+    ],
+    "license": "reference",
+    "storyPotential": 4,
+    "difficulty": 3,
+    "needsResearch": true,
+    "goldenSample": false,
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
+  }
+]
