@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { featuredStories, stories, storyModes, heroImage, whyImage } from "../lib/stories";
 import StoryCard from "../components/StoryCard";
+import VoiceMoment from "../components/VoiceMoment";
 
 export default function HomePage() {
   return (
@@ -9,13 +10,14 @@ export default function HomePage() {
         <div className="hero-copy">
           <span className="eyebrow fade-in">方言故事书 · 第一季</span>
           <h1 className="hero-title fade-in-delay">
-            把阿婆讲的故事，
+            趁还会唱，
             <br />
-            留在<em>声音</em>里。
+            把乡音<em>留下来</em>。
           </h1>
           <p className="hero-lede fade-in-delay-2">
-            声迹把一段方言录音，变成一本可以点、可以听、可以分享的互动故事书。
-            原声是主角，AI 只负责让你听懂它。
+            很多家庭都有一把这样的声音：会唱童谣，会讲旧事，却只响在饭桌上。
+            声迹把它做成可以点、可以听、可以分享的互动故事书——原声是主角，
+            AI 只负责让你听懂它。
           </p>
           <div className="hero-actions fade-in-delay-2">
             <Link className="btn btn-primary" href="/stories/moonlight">
@@ -38,10 +40,7 @@ export default function HomePage() {
             decoding="async"
           />
           <div className="seal">留住<br />把声</div>
-          <div className="hero-caption">
-            <strong>广州 · 西关</strong>
-            粤语 · 骑楼 · 一碗茶的时间
-          </div>
+          <VoiceMoment />
         </div>
       </section>
 

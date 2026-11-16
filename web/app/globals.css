@@ -409,6 +409,7 @@ button {
 
 .hero-image {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 220px 220px var(--radius) var(--radius);
@@ -436,6 +437,80 @@ button {
   letter-spacing: 0.06em;
   color: var(--ink);
   margin-bottom: 2px;
+}
+
+.voice-moment {
+  position: absolute;
+  left: -16px;
+  bottom: 24px;
+  width: min(330px, calc(100% - 32px));
+  padding: 13px 16px 12px;
+  border: 1px solid var(--line);
+  background: rgba(251, 247, 238, 0.96);
+  box-shadow: 0 18px 40px rgba(54, 38, 22, 0.16);
+  backdrop-filter: blur(6px);
+}
+
+.voice-moment-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.voice-moment-note {
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.voice-moment-yue {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+}
+
+.voice-moment-yue span {
+  transition: color 0.24s ease;
+}
+
+.voice-moment-yue span.is-lit {
+  color: var(--cinnabar);
+}
+
+.voice-moment-zh {
+  margin: 3px 0 10px;
+  color: var(--ink-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.voice-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 34px;
+}
+
+.voice-bars span {
+  flex: 1;
+  min-width: 1px;
+  background: rgba(47, 93, 80, 0.2);
+  border-radius: 1px;
+  transition: background 0.24s ease;
+}
+
+.voice-bars span.is-lit {
+  background: var(--cinnabar);
 }
 
 .seal {
@@ -1588,7 +1663,11 @@ button {
   }
 
   .hero {
-    padding: 40px 0 56px;
+    padding: 24px 0 48px;
+  }
+
+  .hero-image {
+    aspect-ratio: 1 / 1;
   }
 
   .hero-title {
@@ -1597,12 +1676,41 @@ button {
 
   .hero-lede {
     font-size: 17px;
+    margin-bottom: 22px;
   }
 
   .hero-caption {
     left: -6px;
     bottom: 14px;
     padding: 10px 14px;
+  }
+
+  .voice-moment {
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    width: auto;
+    margin: 0 12px;
+    padding: 9px 12px 8px;
+    box-shadow: 0 12px 28px rgba(54, 38, 22, 0.14);
+  }
+
+  .voice-moment-head {
+    margin-bottom: 5px;
+  }
+
+  .voice-moment-yue {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .voice-moment-zh {
+    margin: 2px 0 6px;
+    font-size: 11px;
+  }
+
+  .voice-bars {
+    height: 20px;
   }
 
   .seal {

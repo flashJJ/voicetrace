@@ -85,7 +85,7 @@ npm run dev
 
 ### 主攻：声迹 · 方言故事书（游戏娱乐，可兼报学习生活）
 
-- **一句话**：把爷爷奶奶讲的故事，变成可以玩的方言互动书；同一批素材，三种讲法。
+- **一句话**：趁还会唱，把乡音留下来；同一批素材，三种讲法。
 - **为什么选它**：你暂时没有 B 端用户资源，但可以用公开资料库 + 家人/朋友的方言录音，做出 9 个互动故事；情绪价值强，容易命中“乐在其中奖/造物故事奖”，也适合官方传播。
 - **三种模式**：正经模式（家庭/长辈）、鬼故事模式（年轻人/悬疑）、野史模式（年轻人/八卦），用同一批粤语素材覆盖不同受众，解决“只吸引正经人、受众单一”的问题。
 - **核心差异**：不是方言翻译器（瓯小鹿）、不是固定历史信件（乡音计划·读侨批）、不是官方大制作游戏（瓷都小匠），而是 **同一批地方记忆 × 三种语气 × 3 幕互动 + 语音示例 + 分享卡 + 声音地图**。
@@ -191,3 +191,4 @@ npm run dev
 | 2026-11-16 | 《月光光》《阿婆的艇仔粥》补真分支；全部图片补宽高与懒加载 | web/lib/stories.js、web/app/page.js、web/app/stories/page.js、web/components/StoryCard.jsx、web/components/StoryReader.jsx、web/components/StoryMap.jsx | 9 故事均为 5 幕 / 2 结局；首屏只加载 hero |
 | 2026-11-16 | 封面转 900px WebP（2.12MB → 0.52MB）；新增 robots.txt | web/lib/image.js、web/public/covers、web/app/robots.js | 9 张封面实际传输约 308KB；爬虫可读取 robots.txt |
 | 2026-11-16 | 资料库 91 条改为 12 条/页分页；新增参赛加码迭代计划 | web/components/CorpusLibrary.jsx、web/app/globals.css、docs/13 | 列表 DOM 从 91 条降到 12 条；7 天路线文档化 |
+| 2026-11-16 | 首页改文案并新增逐字点亮的声音波形；修复 `aspect-ratio` 被图片 height 属性压制 | web/app/page.js、web/components/VoiceMoment.jsx、web/app/globals.css、web/app/layout.js、web/public/og.jpg、docs/05、09、11、12 | 首屏出现记忆点；口号在各材料中统一 |

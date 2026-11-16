@@ -4,7 +4,8 @@ import SiteFooter from "../components/SiteFooter";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-const description = "把爷爷奶奶讲的故事，变成可以玩的方言互动书。";
+const description =
+  "趁还会唱，把乡音留下来。声迹把粤语童谣、传说和家人的口述，做成可以点、可以听、可以分享的互动故事书。";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
