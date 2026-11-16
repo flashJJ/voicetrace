@@ -186,3 +186,4 @@ npm run dev
 | 2026-11-15 | 真实模型预生成 3 个模式各 1 个故事；新增 `/demo`；补齐模拟试玩、报名帖、3 分钟演示脚本                    | web/data/generated、web/app/demo、docs/08-10                 | 进入报名材料阶段；模拟数据不可当真实证据   |
 | 2026-11-16 | 声音地图同坐标 6 故事合并为点击下拉节点；新增产品说明与路演宣讲材料；本地 3 分钟演示视频及字幕已生成 | web/components/StoryMap.jsx、web/app/globals.css、docs/05、docs/11-12、README、deliverables | 地图桌面/移动端验证通过；模拟试玩仍不可作为真实证据 |
 | 2026-11-16 | 封面与主视觉 11 张图本地化到 `web/public/covers`；手机端新增汉堡导航 | web/lib/image.js、web/lib/stories*.js、web/public/covers、web/components/SiteHeader.jsx、web/app/globals.css | 静态站点不再依赖实时生图接口；≤680px 可访问全部页面 |
+| 2026-11-16 | 语音等待 `voiceschanged`；分享卡引文限 3 行；新增 Open Graph / Twitter Card、`og.jpg` 与 favicon | web/components/AudioButton.jsx、web/components/ShareCard.jsx、web/app/layout.js、web/app/icon.svg、web/public/og.jpg、web/next.config.mjs | 分享带缩略图；语音提示更准确；控制台无 404 |

@@ -5,6 +5,37 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const W = 1080;
 const H = 1440;
 
+const MAX_QUOTE_LINES = 3;
+
+function wrapQuote(ctx, text, maxWidth, maxLines) {
+  const chars = Array.from(text || "");
+  const lines = [];
+  let current = "";
+  let index = 0;
+
+  while (index < chars.length) {
+    const next = current + chars[index];
+    if (current && ctx.measureText(next).width > maxWidth) {
+      lines.push(current);
+      current = "";
+      if (lines.length === maxLines) {
+        let last = lines[maxLines - 1];
+        while (last && ctx.measureText(`${last}…`).width > maxWidth) {
+          last = last.slice(0, -1);
+        }
+        lines[maxLines - 1] = `${last}…`;
+        return lines;
+      }
+      continue;
+    }
+    current = next;
+    index += 1;
+  }
+
+  if (current) lines.push(current);
+  return lines;
+}
+
 function drawCard(canvas, story, quote) {
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
@@ -84,22 +115,12 @@ function drawCard(canvas, story, quote) {
   ctx.fillText("“", 92, 700);
 
   ctx.fillStyle = ink;
-  ctx.font = '600 56px "Noto Serif SC", "Songti SC", serif';
-  const words = quote.split("");
-  let line = "";
-  let y = 790;
+  ctx.font = '600 52px "Noto Serif SC", "Songti SC", serif';
   const maxWidth = W - 220;
-  words.forEach((char) => {
-    const test = line + char;
-    if (ctx.measureText(test).width > maxWidth && line) {
-      ctx.fillText(line, 132, y);
-      line = char;
-      y += 84;
-    } else {
-      line = test;
-    }
+  const quoteLines = wrapQuote(ctx, quote, maxWidth, MAX_QUOTE_LINES);
+  quoteLines.forEach((text, index) => {
+    ctx.fillText(text, 132, 790 + index * 82);
   });
-  if (line) ctx.fillText(line, 132, y);
 
   // seal
   ctx.save();

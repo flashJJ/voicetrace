@@ -20,6 +20,36 @@ export default function AudioButton({ text, audioUrl, label = "播放粤语原�
   const [message, setMessage] = useState("");
   const audioRef = useRef(null);
   const utteranceRef = useRef(null);
+  const pendingRef = useRef(false);
+  const aliveRef = useRef(true);
+
+  const loadVoices = () =>
+    new Promise((resolve) => {
+      const synth = window.speechSynthesis;
+      const ready = synth.getVoices();
+      if (ready.length) {
+        resolve(ready);
+        return;
+      }
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        synth.removeEventListener("voiceschanged", finish);
+        resolve(synth.getVoices());
+      };
+      synth.addEventListener("voiceschanged", finish);
+      window.setTimeout(finish, 1500);
+    });
+
+  useEffect(() => {
+    return () => {
+      aliveRef.current = false;
+      if (typeof window !== "undefined" && window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (!audioUrl) return undefined;
@@ -34,14 +64,6 @@ export default function AudioButton({ text, audioUrl, label = "播放粤语原�
     };
   }, [audioUrl]);
 
-  useEffect(() => {
-    return () => {
-      if (typeof window !== "undefined" && window.speechSynthesis) {
-        window.speechSynthesis.cancel();
-      }
-    };
-  }, []);
-
   const stop = () => {
     if (audioRef.current) {
       audioRef.current.pause();
@@ -53,18 +75,28 @@ export default function AudioButton({ text, audioUrl, label = "播放粤语原�
     setPlaying(false);
   };
 
-  const speak = () => {
+  const speak = async () => {
     if (typeof window === "undefined" || !window.speechSynthesis) {
       setMessage("当前浏览器不支持语音播放，请替换为真实录音。");
       return;
     }
-    const synth = window.speechSynthesis;
-    const voices = synth.getVoices();
+    if (pendingRef.current) return;
+    pendingRef.current = true;
+    const voices = await loadVoices();
+    pendingRef.current = false;
+    if (!aliveRef.current) return;
+
     const cantonese = voices.find((voice) =>
       /yue|zh-HK|zh_HK|Cantonese|Hong Kong/i.test(`${voice.lang} ${voice.name}`)
     );
     const fallback = voices.find((voice) => /^zh/i.test(voice.lang));
     const selected = cantonese || fallback;
+
+    if (!selected) {
+      setPlaying(false);
+      setMessage("当前浏览器未提供可用语音，请直接阅读文字；正式版会播放经授权的真实粤语录音。");
+      return;
+    }
 
     if (!cantonese) {
       setMessage(
@@ -74,9 +106,10 @@ export default function AudioButton({ text, audioUrl, label = "播放粤语原�
       setMessage("");
     }
 
+    const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = selected ? selected.lang : "zh-HK";
-    if (selected) utterance.voice = selected;
+    utterance.lang = selected.lang;
+    utterance.voice = selected;
     utterance.rate = 0.9;
     utterance.pitch = 1;
     utterance.onend = () => setPlaying(false);

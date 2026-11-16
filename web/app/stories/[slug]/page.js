@@ -13,6 +13,17 @@ export async function generateMetadata({ params }) {
   return {
     title: `${story.title} · 声迹`,
     description: story.subtitle,
+    openGraph: {
+      type: "article",
+      title: `${story.title} · 声迹`,
+      description: story.subtitle,
+      images: [
+        {
+          url: story.cover,
+          alt: `${story.title}封面`,
+        },
+      ],
+    },
   };
 }
 

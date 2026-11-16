@@ -8,6 +8,9 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_BASE_PATH: isStatic ? `/${repoName}` : "",
+    NEXT_PUBLIC_SITE_URL: isStatic
+      ? "https://flashjj.github.io"
+      : "http://localhost:3000",
   },
   ...(isStatic
     ? {
