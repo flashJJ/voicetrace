@@ -43,8 +43,8 @@ export default function StoriesPage() {
                     <img
                       src={story.cover}
                       alt={`${story.title}封面`}
-                      width="1216"
-                      height="912"
+                      width="900"
+                      height="675"
                       loading="lazy"
                       decoding="async"
                     />

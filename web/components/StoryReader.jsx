@@ -67,8 +67,8 @@ export default function StoryReader({ story }) {
             <img
               src={scene.image || story.cover}
               alt={`${story.title} · ${scene.title}`}
-              width="1216"
-              height="912"
+              width="900"
+              height="675"
               loading="eager"
               decoding="async"
             />

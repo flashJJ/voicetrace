@@ -31,8 +31,8 @@ export default function HomePage() {
             className="hero-image"
             src={heroImage}
             alt="西关骑楼下的阿婆"
-            width="1368"
-            height="768"
+            width="900"
+            height="505"
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -141,8 +141,8 @@ export default function HomePage() {
           className="manifesto-image"
           src={whyImage}
           alt="旧录音机与手写菜谱"
-          width="1216"
-          height="912"
+          width="900"
+          height="675"
           loading="lazy"
           decoding="async"
         />

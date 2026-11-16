@@ -244,8 +244,8 @@ export default function StoryMap() {
         <img
           src={active.cover}
           alt={`${active.title}封面`}
-          width="1216"
-          height="912"
+          width="900"
+          height="675"
           loading="eager"
           decoding="async"
           style={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", borderRadius: 6 }}
@@ -266,8 +266,8 @@ export default function StoryMap() {
               <img
                 src={story.cover}
                 alt=""
-                width="1216"
-                height="912"
+                width="900"
+                height="675"
                 loading="lazy"
                 decoding="async"
               />
