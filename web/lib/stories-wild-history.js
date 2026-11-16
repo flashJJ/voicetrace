@@ -1,4 +1,4 @@
-import { image } from "./image";
+import { cover } from "./image";
 
 export const wildHistoryStories = [
   {
@@ -11,9 +11,7 @@ export const wildHistoryStories = [
     dialect: "粤语 · 佛山南海",
     type: "野史 · 民间人物故事",
     duration: "4 分钟",
-    cover: image(
-      "old Cantonese congee shop at dawn, a poor scholar eating congee, steam, warm lantern light, cinematic, 4:3"
-    ),
+    cover: cover("lun-wenxu-congee"),
     quote: "一碗粥，都可以有出头天。",
     intro:
       "你系粥铺老板。每日天未光，都有一个瘦瘦哋嘅后生仔，喺门口闻粥香。",
@@ -121,9 +119,7 @@ export const wildHistoryStories = [
     dialect: "粤语 · 江门新会",
     type: "野史 · 机智人物故事",
     duration: "4 分钟",
-    cover: image(
-      "Qing dynasty Cantonese street, a clever lawyer with a fan, townspeople laughing, warm satirical illustration, 4:3"
-    ),
+    cover: cover("chen-mengji-trick"),
     quote: "扭计唔系害人，系帮人出头。",
     intro:
       "你系新会一条村的农户。地主加租，你交唔起，听讲城里有个陈梦吉，专门帮人扭计。",
@@ -231,9 +227,7 @@ export const wildHistoryStories = [
     dialect: "粤语 · 韶关南雄",
     type: "野史 · 广府根脉故事",
     duration: "5 分钟",
-    cover: image(
-      "ancient stone alley in Nanxiong, refugees with bamboo rafts on a river, dramatic sky, historical illustration, 4:3"
-    ),
+    cover: cover("zhuji-xiang-south"),
     quote: "走，唔系因为怕；系因为要活落去。",
     intro:
       "南宋末年，珠玑巷传出消息：官兵要来血洗。你系巷里一个后生仔，今晚要决定走唔走。",

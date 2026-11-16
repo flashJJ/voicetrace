@@ -6,6 +6,9 @@ const nextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isStatic ? `/${repoName}` : "",
+  },
   ...(isStatic
     ? {
         output: "export",

@@ -1,4 +1,4 @@
-import { image } from "./image";
+import { cover } from "./image";
 
 export const ghostStories = [
   {
@@ -11,9 +11,7 @@ export const ghostStories = [
     dialect: "粤语 · 广州海珠",
     type: "鬼故事 · 民间传说改编",
     duration: "4 分钟",
-    cover: image(
-      "eerie old Cantonese temple at night, a single oil lamp, an ancient well with an eagle-claw orchid, mist, cinematic, muted teal and amber, 4:3"
-    ),
+    cover: cover("eagle-orchid"),
     quote: "有些冤屈，会开成一株花。",
     intro:
       "海幢寺有句话：未有海幢寺，先有鹰爪兰。今晚，你一个人留在寺里抄经。",
@@ -121,9 +119,7 @@ export const ghostStories = [
     dialect: "粤语 · 广州黄埔",
     type: "鬼故事 · 民间传说改编",
     duration: "4 分钟",
-    cover: image(
-      "moonlit lake with a small shrine, floating lotus lamps, a woman in white in the distance, eerie but beautiful, cinematic, 4:3"
-    ),
+    cover: cover("golden-flower-lake"),
     quote: "湖面有灯，唔好随便应。",
     intro:
       "你是一个接生婆。今晚，有人拍门，请你去看一位难产的夫人。",
@@ -231,9 +227,7 @@ export const ghostStories = [
     dialect: "粤语 · 广州从化",
     type: "鬼故事 · 民间传说改编",
     duration: "4 分钟",
-    cover: image(
-      "misty hot spring in a forest at night, a glowing silver pot, dragon shadow in the water, cinematic, 4:3"
-    ),
+    cover: cover("dragon-spring"),
     quote: "泉水热，唔一定系地气。",
     intro:
       "阿公病咗，村里人话，后山个温泉可以医病。你半夜上山，见到一煲银锅。",

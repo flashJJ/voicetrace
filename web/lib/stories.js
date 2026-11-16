@@ -1,4 +1,4 @@
-import { image, heroImage, whyImage } from "./image";
+import { cover, heroImage, whyImage } from "./image";
 import { ghostStories } from "./stories-ghost";
 import { wildHistoryStories } from "./stories-wild-history";
 
@@ -15,9 +15,7 @@ const heritageStories = [
     dialect: '粤语 · 广州西关',
     type: '公有领域改编',
     duration: '3 分钟',
-    cover: image(
-      'moonlight over a traditional Cantonese qilou arcade house, paper lanterns, a grandmother and a child sitting on bamboo chairs, warm nostalgic cinematic illustration, muted warm tones, 4:3'
-    ),
+    cover: cover('moonlight'),
     quote: '月光光，照地堂。',
     intro:
       '阿婆说，她细个嗰阵，成条巷都系呢首歌。今晚月光正好，你坐低，听佢慢慢唱。',
@@ -126,9 +124,7 @@ const heritageStories = [
     dialect: '粤语 · 珠三角',
     type: '公有领域改编',
     duration: '4 分钟',
-    cover: image(
-      'Chinese folk tale illustration of a mouse wedding procession at night, red lanterns, tiny sedan chair, whimsical paper-cut style, warm colors, 4:3'
-    ),
+    cover: cover('mouse-wedding'),
     quote: '老鼠嫁女，最紧要有胆。',
     intro:
       '老鼠妈妈要嫁女，想搵个全世界最厉害嘅女婿。太阳、云、风、墙……到底边个最厉害？',
@@ -258,9 +254,7 @@ const heritageStories = [
     dialect: '粤语 · 广州河南',
     type: '示例故事（待替换为真实家庭故事）',
     duration: '4 分钟',
-    cover: image(
-      'steaming Cantonese boat congee bowl at a morning pier in old Guangzhou, elderly woman hands, morning mist, warm cinematic photograph, 4:3'
-    ),
+    cover: cover('grandma-congee'),
     quote: '粥要慢火，故事要慢慢讲。',
     intro:
       '天未光，阿婆就拎住保温壶，带你去码头买艇仔粥。她说，一碗粥里，藏住半条江的故事。',
