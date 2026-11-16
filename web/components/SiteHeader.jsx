@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { LIVE_STUDIO_URL, isStaticExport } from "../lib/live";
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -58,9 +59,15 @@ export default function SiteHeader() {
               <Link href="/library" onClick={close}>
                 资料库
               </Link>
-              <Link href="/studio" onClick={close}>
-                AI 工坊
-              </Link>
+              {isStaticExport ? (
+                <a href={LIVE_STUDIO_URL} target="_blank" rel="noreferrer" onClick={close}>
+                  AI 工坊 ↗
+                </a>
+              ) : (
+                <Link href="/studio" onClick={close}>
+                  AI 工坊
+                </Link>
+              )}
               <Link href="/demo" onClick={close}>
                 演示
               </Link>

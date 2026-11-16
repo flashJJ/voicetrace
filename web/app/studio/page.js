@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { getCorpusItem, goldenSamples, modeLabel } from "../../lib/corpus";
+import { LIVE_STUDIO_URL, isStaticExport } from "../../lib/live";
 
 const options = goldenSamples
   .map((sample) => {
@@ -24,9 +25,8 @@ export default function StudioPage() {
   const generate = async () => {
     if (!selected) return;
     if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
-      setError(
-        "这是 GitHub Pages 静态演示，不提供在线生成。请从顶部「创作 → 演示」查看预生成故事，或本地运行 npm run dev。"
-      );
+      window.open(LIVE_STUDIO_URL, "_blank", "noopener");
+      setError("GitHub Pages 是静态演示，已为你打开 Trae 云端在线工坊。");
       return;
     }
     setLoading(true);
@@ -65,6 +65,21 @@ export default function StudioPage() {
           没有配置 API Key 时，用黄金样品作为 Mock 输出，先把流程跑通。
         </p>
       </section>
+
+      {isStaticExport ? (
+        <section className="studio-live">
+          <div>
+            <strong>在线生成跑在 Trae 云端</strong>
+            <p>
+              GitHub Pages 只能托管静态页面，真实模型生成和验收在独立服务上。
+              点右侧按钮进入在线工坊，回来仍可看预生成演示。
+            </p>
+          </div>
+          <a className="btn btn-primary" href={LIVE_STUDIO_URL} target="_blank" rel="noreferrer">
+            打开在线 AI 工坊 <span aria-hidden="true">↗</span>
+          </a>
+        </section>
+      ) : null}
 
       <section className="studio-panel">
         <div className="studio-controls">

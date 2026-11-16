@@ -19,7 +19,7 @@ const nextConfig = {
         basePath: `/${repoName}`,
         assetPrefix: `/${repoName}/`,
       }
-    : {}),
+    : { output: "standalone" }),
 };
 
 export default nextConfig;
