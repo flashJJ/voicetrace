@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   corpusItems,
   corpusMeta,
@@ -14,6 +14,7 @@ import {
 
 const stats = corpusStats();
 const coverage = goldenCoverage();
+const PAGE_SIZE = 12;
 
 function StatCard({ value, label, hint }) {
   return (
@@ -32,11 +33,29 @@ export default function CorpusLibrary() {
   const [mode, setMode] = useState("all");
   const [onlyGolden, setOnlyGolden] = useState(false);
   const [selectedId, setSelectedId] = useState(corpusItems[0]?.id || "");
+  const [page, setPage] = useState(1);
+  const listTopRef = useRef(null);
 
   const filtered = useMemo(
     () => searchCorpus({ query, type, region, mode, onlyGolden }),
     [query, type, region, mode, onlyGolden]
   );
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const visibleItems = filtered.slice(
+    (currentPage - 1) * PAGE_SIZE,
+    currentPage * PAGE_SIZE
+  );
+
+  const resetPage = () => setPage(1);
+
+  const goToPage = (next) => {
+    setPage(next);
+    if (typeof listTopRef.current?.scrollIntoView === "function") {
+      listTopRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   const selected =
     corpusItems.find((item) => item.id === selectedId) || filtered[0] || corpusItems[0];
@@ -79,7 +98,10 @@ export default function CorpusLibrary() {
             <input
               id="corpus-query"
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                resetPage();
+              }}
               placeholder="搜标题、地区、标签、方言词……"
             />
           </div>
@@ -88,7 +110,10 @@ export default function CorpusLibrary() {
             <select
               id="corpus-type"
               value={type}
-              onChange={(event) => setType(event.target.value)}
+              onChange={(event) => {
+                setType(event.target.value);
+                resetPage();
+              }}
             >
               <option value="all">全部</option>
               {corpusMeta.categories.map((category) => (
@@ -103,7 +128,10 @@ export default function CorpusLibrary() {
             <select
               id="corpus-region"
               value={region}
-              onChange={(event) => setRegion(event.target.value)}
+              onChange={(event) => {
+                setRegion(event.target.value);
+                resetPage();
+              }}
             >
               <option value="all">全部</option>
               {stats.regions.map((item) => (
@@ -118,7 +146,10 @@ export default function CorpusLibrary() {
             <select
               id="corpus-mode"
               value={mode}
-              onChange={(event) => setMode(event.target.value)}
+              onChange={(event) => {
+                setMode(event.target.value);
+                resetPage();
+              }}
             >
               <option value="all">全部</option>
               {corpusMeta.modes.map((item) => (
@@ -132,7 +163,10 @@ export default function CorpusLibrary() {
             <input
               type="checkbox"
               checked={onlyGolden}
-              onChange={(event) => setOnlyGolden(event.target.checked)}
+              onChange={(event) => {
+                setOnlyGolden(event.target.checked);
+                resetPage();
+              }}
             />
             只看黄金样品
           </label>
@@ -142,15 +176,16 @@ export default function CorpusLibrary() {
         </div>
 
         <div className="corpus-layout">
-          <div>
+          <div ref={listTopRef}>
             <div className="corpus-result-line">
               共 {filtered.length} 条
+              {totalPages > 1 ? ` · 第 ${currentPage} / ${totalPages} 页` : ""}
               {query ? ` · 搜索“${query}”` : ""}
               {type !== "all" ? ` · ${typeLabel(type)}` : ""}
               {mode !== "all" ? ` · ${modeLabel(mode)}` : ""}
             </div>
             <div className="corpus-grid">
-              {filtered.map((item) => (
+              {visibleItems.map((item) => (
                 <button
                   type="button"
                   key={item.id}
@@ -184,6 +219,29 @@ export default function CorpusLibrary() {
                 </div>
               )}
             </div>
+            {totalPages > 1 && (
+              <nav className="corpus-pager" aria-label="资料库分页">
+                <button
+                  type="button"
+                  className="btn btn-ghost"
+                  onClick={() => goToPage(currentPage - 1)}
+                  disabled={currentPage === 1}
+                >
+                  上一页
+                </button>
+                <span className="corpus-pager-info">
+                  第 {currentPage} / {totalPages} 页
+                </span>
+                <button
+                  type="button"
+                  className="btn btn-ghost"
+                  onClick={() => goToPage(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                >
+                  下一页
+                </button>
+              </nav>
+            )}
           </div>
 
           <aside className="corpus-detail">

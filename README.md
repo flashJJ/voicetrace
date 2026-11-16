@@ -145,6 +145,7 @@ npm run dev
 | [10-3分钟演示脚本](docs/10-3分钟演示脚本.md)           | 早期录屏逐字稿、时间轴、现场应急、评委追问；模拟段落不可当真实证据 | 查看早期录制草稿      |
 | [11-产品说明文档](docs/11-产品说明文档.md) / [PDF 版](deliverables/VoiceTrace-声迹-产品说明文档.pdf) | 产品定位、核心功能、体验路径、AI 验收、部署、边界与可复制介绍 | 报名、评审、了解产品    |
 | [12-路演宣讲材料](docs/12-路演宣讲材料.md)             | 10 页路演文案与讲稿、3 分钟演示流程、评委问答、应急清单 | 正式路演与宣讲        |
+| [13-参赛加码迭代计划](docs/13-参赛加码迭代计划.md)       | 7 天加码路线：AI 可体验化、内容增量、多方言取舍与排期 | 决定是否加码时        |
 | [已排期/03-非遗方言叙事](已排期/03-非遗方言叙事/README.md)   | **已选定主攻方向**的一页概念书（声迹 · 方言故事书）         | 现在就看            |
 | [候选方案/01-交付验收官](候选方案/01-交付验收官/README.md)   | 未选中，保留备选                              | 后续 B 端产品化时      |
 | [候选方案/02-账单差异排查](候选方案/02-账单差异排查/README.md) | 未选中，保留备选                              | 有电商/财务资源时       |
@@ -189,3 +190,4 @@ npm run dev
 | 2026-11-16 | 语音等待 `voiceschanged`；分享卡引文限 3 行；新增 Open Graph / Twitter Card、`og.jpg` 与 favicon | web/components/AudioButton.jsx、web/components/ShareCard.jsx、web/app/layout.js、web/app/icon.svg、web/public/og.jpg、web/next.config.mjs | 分享带缩略图；语音提示更准确；控制台无 404 |
 | 2026-11-16 | 《月光光》《阿婆的艇仔粥》补真分支；全部图片补宽高与懒加载 | web/lib/stories.js、web/app/page.js、web/app/stories/page.js、web/components/StoryCard.jsx、web/components/StoryReader.jsx、web/components/StoryMap.jsx | 9 故事均为 5 幕 / 2 结局；首屏只加载 hero |
 | 2026-11-16 | 封面转 900px WebP（2.12MB → 0.52MB）；新增 robots.txt | web/lib/image.js、web/public/covers、web/app/robots.js | 9 张封面实际传输约 308KB；爬虫可读取 robots.txt |
+| 2026-11-16 | 资料库 91 条改为 12 条/页分页；新增参赛加码迭代计划 | web/components/CorpusLibrary.jsx、web/app/globals.css、docs/13 | 列表 DOM 从 91 条降到 12 条；7 天路线文档化 |

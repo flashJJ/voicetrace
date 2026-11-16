@@ -1801,6 +1801,28 @@ button {
   gap: 14px;
 }
 
+.corpus-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.corpus-pager-info {
+  font-size: 13px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+.corpus-pager .btn {
+  min-height: 38px;
+  padding: 8px 18px;
+  font-size: 13px;
+}
+
 .corpus-card {
   display: flex;
   flex-direction: column;
