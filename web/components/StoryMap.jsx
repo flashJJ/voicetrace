@@ -244,6 +244,10 @@ export default function StoryMap() {
         <img
           src={active.cover}
           alt={`${active.title}封面`}
+          width="1216"
+          height="912"
+          loading="eager"
+          decoding="async"
           style={{ width: "100%", aspectRatio: "4 / 3", objectFit: "cover", borderRadius: 6 }}
         />
         <p style={{ marginTop: 16 }}>{active.intro}</p>
@@ -259,7 +263,14 @@ export default function StoryMap() {
               className="map-story"
               onClick={() => selectStory(story.slug)}
             >
-              <img src={story.cover} alt="" />
+              <img
+                src={story.cover}
+                alt=""
+                width="1216"
+                height="912"
+                loading="lazy"
+                decoding="async"
+              />
               <span>
                 <span className="map-story-title" style={{ display: "block" }}>
                   {story.title}

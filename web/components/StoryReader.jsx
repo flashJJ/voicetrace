@@ -64,7 +64,14 @@ export default function StoryReader({ story }) {
 
         <div className="reader-shell">
           <div className="reader-visual">
-            <img src={scene.image || story.cover} alt={`${story.title} · ${scene.title}`} />
+            <img
+              src={scene.image || story.cover}
+              alt={`${story.title} · ${scene.title}`}
+              width="1216"
+              height="912"
+              loading="eager"
+              decoding="async"
+            />
             <div className="reader-audio">
               <AudioButton
                 text={scene.audioText || scene.textYue}

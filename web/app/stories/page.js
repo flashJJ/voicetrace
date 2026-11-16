@@ -40,7 +40,14 @@ export default function StoriesPage() {
                 const isSample = story.type.includes("示例");
                 return (
                   <article className="library-card" key={story.slug}>
-                    <img src={story.cover} alt={`${story.title}封面`} />
+                    <img
+                      src={story.cover}
+                      alt={`${story.title}封面`}
+                      width="1216"
+                      height="912"
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <div className="library-card-body">
                       <div className="story-meta">
                         <span>{story.dialect}</span>

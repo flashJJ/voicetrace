@@ -27,7 +27,16 @@ export default function HomePage() {
           </div>
         </div>
         <div className="hero-visual fade-in-delay">
-          <img className="hero-image" src={heroImage} alt="西关骑楼下的阿婆" />
+          <img
+            className="hero-image"
+            src={heroImage}
+            alt="西关骑楼下的阿婆"
+            width="1368"
+            height="768"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
           <div className="seal">留住<br />把声</div>
           <div className="hero-caption">
             <strong>广州 · 西关</strong>
@@ -128,7 +137,15 @@ export default function HomePage() {
       </section>
 
       <section className="container manifesto">
-        <img className="manifesto-image" src={whyImage} alt="旧录音机与手写菜谱" />
+        <img
+          className="manifesto-image"
+          src={whyImage}
+          alt="旧录音机与手写菜谱"
+          width="1216"
+          height="912"
+          loading="lazy"
+          decoding="async"
+        />
         <div>
           <span className="eyebrow">为什么做声迹</span>
           <p className="manifesto-quote">

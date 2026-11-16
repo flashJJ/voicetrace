@@ -4,7 +4,15 @@ export default function StoryCard({ story }) {
   const isSample = story.type.includes("示例");
   return (
     <article className="story-card">
-      <img className="story-cover" src={story.cover} alt={`${story.title}封面`} />
+      <img
+        className="story-cover"
+        src={story.cover}
+        alt={`${story.title}封面`}
+        width="1216"
+        height="912"
+        loading="lazy"
+        decoding="async"
+      />
       <div className="story-body">
         <div className="story-meta">
           <span>{story.dialect}</span>

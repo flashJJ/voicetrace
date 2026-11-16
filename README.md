@@ -187,3 +187,4 @@ npm run dev
 | 2026-11-16 | 声音地图同坐标 6 故事合并为点击下拉节点；新增产品说明与路演宣讲材料；本地 3 分钟演示视频及字幕已生成 | web/components/StoryMap.jsx、web/app/globals.css、docs/05、docs/11-12、README、deliverables | 地图桌面/移动端验证通过；模拟试玩仍不可作为真实证据 |
 | 2026-11-16 | 封面与主视觉 11 张图本地化到 `web/public/covers`；手机端新增汉堡导航 | web/lib/image.js、web/lib/stories*.js、web/public/covers、web/components/SiteHeader.jsx、web/app/globals.css | 静态站点不再依赖实时生图接口；≤680px 可访问全部页面 |
 | 2026-11-16 | 语音等待 `voiceschanged`；分享卡引文限 3 行；新增 Open Graph / Twitter Card、`og.jpg` 与 favicon | web/components/AudioButton.jsx、web/components/ShareCard.jsx、web/app/layout.js、web/app/icon.svg、web/public/og.jpg、web/next.config.mjs | 分享带缩略图；语音提示更准确；控制台无 404 |
+| 2026-11-16 | 《月光光》《阿婆的艇仔粥》补真分支；全部图片补宽高与懒加载 | web/lib/stories.js、web/app/page.js、web/app/stories/page.js、web/components/StoryCard.jsx、web/components/StoryReader.jsx、web/components/StoryMap.jsx | 9 故事均为 5 幕 / 2 结局；首屏只加载 hero |
