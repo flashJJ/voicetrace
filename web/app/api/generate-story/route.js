@@ -1,4 +1,28 @@
 import { getCorpusItem, getGoldenSample } from "../../../lib/corpus";
+import { acquire, getClientIp, hit, release, tooMany } from "../../../lib/rate-limit";
+
+const ALLOWED_MODES = new Set(["heritage", "ghost", "wild_history"]);
+const MAX_BODY_BYTES = 2048;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function intEnv(name, fallback) {
+  const value = Number.parseInt(process.env[name] || "", 10);
+  return Number.isFinite(value) && value > 0 ? value : fallback;
+}
+
+function limitsFor(hasKey) {
+  return hasKey
+    ? {
+        perMinute: intEnv("RATE_LIMIT_PER_MINUTE", 5),
+        perDay: intEnv("RATE_LIMIT_PER_DAY", 30),
+        globalPerDay: intEnv("RATE_LIMIT_GLOBAL_DAY", 300),
+      }
+    : {
+        perMinute: intEnv("MOCK_RATE_LIMIT_PER_MINUTE", 20),
+        perDay: intEnv("MOCK_RATE_LIMIT_PER_DAY", 200),
+        globalPerDay: intEnv("MOCK_RATE_LIMIT_GLOBAL_DAY", 2000),
+      };
+}
 
 const SYSTEM_PROMPT = `你是“声迹”的粤语文化故事编辑。请根据用户提供的素材，生成一个 3 幕互动故事。
 
@@ -119,9 +143,11 @@ async function callModel(item, mode) {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
     },
+    signal: AbortSignal.timeout(intEnv("LLM_TIMEOUT_MS", 25000)),
     body: JSON.stringify({
       model,
       temperature: 0.6,
+      max_tokens: 1400,
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
@@ -152,9 +178,50 @@ async function callModel(item, mode) {
 }
 
 export async function POST(request) {
+  const apiKey = process.env.LLM_API_KEY || process.env.OPENAI_API_KEY;
+  const ip = getClientIp(request);
+  const limits = limitsFor(Boolean(apiKey));
+  let locked = false;
+
   try {
-    const body = await request.json();
-    const { corpusId, mode = "heritage" } = body || {};
+    const raw = await request.text();
+    if (raw.length > MAX_BODY_BYTES) {
+      return Response.json({ error: "请求体过大" }, { status: 413 });
+    }
+
+    let body;
+    try {
+      body = JSON.parse(raw || "{}");
+    } catch {
+      return Response.json({ error: "请求格式不正确" }, { status: 400 });
+    }
+
+    const { corpusId } = body || {};
+    const mode = ALLOWED_MODES.has(body?.mode) ? body.mode : "heritage";
+
+    const minute = hit("minute", ip, limits.perMinute, 60 * 1000);
+    if (!minute.allowed) {
+      return tooMany(
+        `请求太频繁，每分钟最多 ${limits.perMinute} 次，请稍后再试。`,
+        minute.resetAt
+      );
+    }
+
+    const daily = hit("day", ip, limits.perDay, DAY_MS);
+    if (!daily.allowed) {
+      return tooMany("今天的生成次数已用完，明天再来。", daily.resetAt);
+    }
+
+    const global = hit("global-day", "all", limits.globalPerDay, DAY_MS);
+    if (!global.allowed) {
+      return tooMany("今日全站生成额度已用完，请明天再试。", global.resetAt);
+    }
+
+    if (!acquire(ip)) {
+      return tooMany("上一次生成还没结束，请稍等几秒。", Date.now() + 5000);
+    }
+    locked = true;
+
     const item = getCorpusItem(corpusId);
     if (!item) {
       return Response.json({ error: "找不到该素材" }, { status: 404 });
@@ -221,5 +288,7 @@ export async function POST(request) {
     });
   } catch (error) {
     return Response.json({ error: error.message }, { status: 500 });
+  } finally {
+    if (locked) release(ip);
   }
 }
