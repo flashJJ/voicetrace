@@ -39,7 +39,7 @@ const SYSTEM_PROMPT = `你是“声迹”的粤语文化故事编辑。请根据
       "act": 1,
       "title": "第一幕标题",
       "summary": "这一幕发生什么",
-      "textYue": "粤语叙述，80-150 字",
+      "textYue": "粤语叙述，60-100 字",
       "textZh": "普通话翻译",
       "choices": [
         { "label": "选择文案", "next": "s2" }
@@ -58,7 +58,8 @@ const SYSTEM_PROMPT = `你是“声迹”的粤语文化故事编辑。请根据
 4. 不得编造素材中没有的历史人物、地名、年份、事件。
 5. 不确定的内容用“传说中”“相传”表达，不要冒充史实。
 6. 不要生成医疗、法律、投资建议。
-7. 语言：粤语叙述用粤语书面表达，普通话翻译要自然。`;
+7. 语言：粤语叙述用粤语书面表达，普通话翻译要自然。
+8. 严格控制长度：每幕正文不超过 100 字，直接进入场景，不要铺陈背景。`;
 
 function buildPrompt(item, mode) {
   const modePrompt = {
@@ -137,17 +138,23 @@ async function callModel(item, mode) {
   const baseUrl = (process.env.LLM_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "");
   const model = process.env.LLM_MODEL || "gpt-4o-mini";
 
+  // 方舟的推理模型会先花大量 token 思考，容易顶到网关超时；默认关闭思考，可用环境变量覆盖。
+  const disableThinking = process.env.LLM_DISABLE_THINKING
+    ? process.env.LLM_DISABLE_THINKING === "true"
+    : baseUrl.includes("volces.com");
+
   const response = await fetch(`${baseUrl}/chat/completions`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
     },
-    signal: AbortSignal.timeout(intEnv("LLM_TIMEOUT_MS", 25000)),
+    signal: AbortSignal.timeout(intEnv("LLM_TIMEOUT_MS", 15000)),
     body: JSON.stringify({
       model,
       temperature: 0.6,
-      max_tokens: 1400,
+      max_tokens: intEnv("LLM_MAX_TOKENS", 1500),
+      ...(disableThinking ? { thinking: { type: "disabled" } } : {}),
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
@@ -164,6 +171,9 @@ async function callModel(item, mode) {
   const data = await response.json();
   const content = data.choices?.[0]?.message?.content;
   if (!content) throw new Error("模型没有返回内容");
+  if (data.choices?.[0]?.finish_reason === "length") {
+    throw new Error("模型输出被长度限制截断，请重试一次");
+  }
 
   try {
     return { output: JSON.parse(content), model };
@@ -175,6 +185,55 @@ async function callModel(item, mode) {
     }
     throw new Error("模型返回的不是合法 JSON");
   }
+}
+
+function streamResult(work) {
+  const encoder = new TextEncoder();
+
+  const stream = new ReadableStream({
+    async start(controller) {
+      let closed = false;
+      const send = (payload) => {
+        if (closed) return;
+        try {
+          controller.enqueue(encoder.encode(`${JSON.stringify(payload)}\n`));
+        } catch {
+          closed = true;
+        }
+      };
+
+      // 心跳保持连接，避免网关在模型生成期间判定请求超时。
+      const timer = setInterval(() => send({ type: "ping" }), 4000);
+
+      try {
+        const payload = await work();
+        send({ type: "result", ...payload });
+      } catch (error) {
+        send({
+          type: "error",
+          error: error.message,
+          hint: "模型响应超时或返回异常，请重试一次。",
+        });
+      } finally {
+        clearInterval(timer);
+        if (!closed) {
+          try {
+            controller.close();
+          } catch {
+            closed = true;
+          }
+        }
+      }
+    },
+  });
+
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "no-store, no-transform",
+      "X-Generation-Stream": "ndjson",
+    },
+  });
 }
 
 export async function POST(request) {
@@ -224,6 +283,8 @@ export async function POST(request) {
 
     const item = getCorpusItem(corpusId);
     if (!item) {
+      release(ip);
+      locked = false;
       return Response.json({ error: "找不到该素材" }, { status: 404 });
     }
 
@@ -237,26 +298,23 @@ export async function POST(request) {
       ...(item.tags || []),
     ].join(" ");
 
-    try {
-      const result = await callModel(item, mode);
-      if (result) {
-        return Response.json({
-          mock: false,
-          model: result.model,
-          corpusId: item.id,
-          mode,
-          output: result.output,
-          validation: validate(result.output, golden, sourceText),
-        });
-      }
-    } catch (error) {
-      return Response.json(
-        {
-          error: error.message,
-          hint: "检查 LLM_API_KEY / LLM_BASE_URL / LLM_MODEL；也可以删除 API Key 使用 Mock 模式。",
-        },
-        { status: 502 }
-      );
+    if (apiKey) {
+      return streamResult(async () => {
+        try {
+          const result = await callModel(item, mode);
+          return {
+            mock: false,
+            model: result.model,
+            corpusId: item.id,
+            mode,
+            output: result.output,
+            validation: validate(result.output, golden, sourceText),
+          };
+        } finally {
+          release(ip);
+          locked = false;
+        }
+      });
     }
 
     // 没有 API Key 时，用黄金样品作为 Mock 输出，保证 UI/流程可跑通。
@@ -277,6 +335,9 @@ export async function POST(request) {
           safetyFlags: [],
         };
 
+    release(ip);
+    locked = false;
+
     return Response.json({
       mock: true,
       model: "mock-golden-sample",
@@ -287,8 +348,7 @@ export async function POST(request) {
       note: "未配置 LLM_API_KEY，当前返回黄金样品作为 Mock 输出。配置 .env.local 后会调用真实模型。",
     });
   } catch (error) {
-    return Response.json({ error: error.message }, { status: 500 });
-  } finally {
     if (locked) release(ip);
+    return Response.json({ error: error.message }, { status: 500 });
   }
 }

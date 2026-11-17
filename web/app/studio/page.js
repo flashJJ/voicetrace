@@ -40,9 +40,35 @@ export default function StudioPage() {
           mode: selected.sample.mode || "heritage",
         }),
       });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || "生成失败");
-      setResult(data);
+
+      if (response.headers.get("x-generation-stream") === "ndjson" && response.body) {
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+        let payload = null;
+
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() || "";
+          for (const line of lines) {
+            if (!line.trim()) continue;
+            const message = JSON.parse(line);
+            if (message.type === "result") payload = message;
+            if (message.type === "error") throw new Error(message.error || "生成失败");
+          }
+        }
+
+        if (!payload) throw new Error("生成没有返回结果，请重试一次");
+        const { type: ignored, ...data } = payload;
+        setResult(data);
+      } else {
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || "生成失败");
+        setResult(data);
+      }
     } catch (err) {
       setError(err.message);
     } finally {
@@ -102,7 +128,7 @@ export default function StudioPage() {
             </select>
           </div>
           <button type="button" className="btn btn-primary" onClick={generate} disabled={loading}>
-            {loading ? "生成中……" : "生成互动版"}
+            {loading ? "生成中，约 10-20 秒……" : "生成互动版"}
           </button>
         </div>
 
