@@ -13,6 +13,8 @@ const options = goldenSamples
 
 export default function StudioPage() {
   const [selectedId, setSelectedId] = useState(options[0]?.item.id || "");
+  const [customText, setCustomText] = useState("");
+  const [customMode, setCustomMode] = useState("heritage");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
@@ -24,6 +26,11 @@ export default function StudioPage() {
 
   const generate = async () => {
     if (!selected) return;
+    const usingCustom = customText.trim().length > 0;
+    if (usingCustom && customText.trim().length < 10) {
+      setError("自定义素材至少需要 10 个字。");
+      return;
+    }
     if (typeof window !== "undefined" && window.location.hostname.endsWith("github.io")) {
       window.open(LIVE_STUDIO_URL, "_blank", "noopener");
       setError("GitHub Pages 是静态演示，已为你打开 Trae 云端在线工坊。");
@@ -35,10 +42,11 @@ export default function StudioPage() {
       const response = await fetch("/api/generate-story", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          corpusId: selected.item.id,
-          mode: selected.sample.mode || "heritage",
-        }),
+        body: JSON.stringify(
+          usingCustom
+            ? { text: customText.trim(), mode: customMode }
+            : { corpusId: selected.item.id, mode: selected.sample.mode || "heritage" }
+        ),
       });
 
       if (response.headers.get("x-generation-stream") === "ndjson" && response.body) {
@@ -132,7 +140,46 @@ export default function StudioPage() {
           </button>
         </div>
 
-        {selected ? (
+        <div className="studio-custom">
+          <label htmlFor="studio-custom-text">也可以直接输入一段素材（10-600 字）</label>
+          <textarea
+            id="studio-custom-text"
+            value={customText}
+            onChange={(event) => {
+              setCustomText(event.target.value);
+              setResult(null);
+              setError("");
+            }}
+            maxLength={600}
+            rows={4}
+            placeholder="例：我阿公以前在珠江边撑艇，讲过西关大屋趟栊门的故事……"
+          />
+          <div className="studio-custom-foot">
+            <span>{customText.length} / 600</span>
+            {customText.trim() ? (
+              <div className="corpus-filter">
+                <label htmlFor="studio-custom-mode">模式</label>
+                <select
+                  id="studio-custom-mode"
+                  value={customMode}
+                  onChange={(event) => setCustomMode(event.target.value)}
+                >
+                  <option value="heritage">正经 / 温情</option>
+                  <option value="ghost">鬼故事</option>
+                  <option value="wild_history">野史</option>
+                </select>
+              </div>
+            ) : null}
+          </div>
+        </div>
+
+        {customText.trim() ? (
+          <div className="studio-source">
+            <strong>自定义素材</strong>
+            <span>现场输入 · {customText.trim().length} 字</span>
+            <p>{customText.trim().slice(0, 120)}</p>
+          </div>
+        ) : selected ? (
           <div className="studio-source">
             <strong>{selected.item.title}</strong>
             <span>

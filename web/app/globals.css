@@ -2298,6 +2298,48 @@ button {
   flex-wrap: wrap;
 }
 
+.studio-custom {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.studio-custom > label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+}
+
+.studio-custom textarea {
+  width: 100%;
+  min-height: 92px;
+  resize: vertical;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(255, 253, 247, 0.92);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+
+.studio-custom textarea:focus {
+  outline: 2px solid rgba(166, 58, 43, 0.32);
+  outline-offset: 1px;
+}
+
+.studio-custom-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
 .studio-source {
   margin-top: 18px;
   padding: 16px;

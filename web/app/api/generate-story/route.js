@@ -2,7 +2,7 @@ import { getCorpusItem, getGoldenSample } from "../../../lib/corpus";
 import { acquire, getClientIp, hit, release, tooMany } from "../../../lib/rate-limit";
 
 const ALLOWED_MODES = new Set(["heritage", "ghost", "wild_history"]);
-const MAX_BODY_BYTES = 2048;
+const MAX_BODY_BYTES = 8192;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 function intEnv(name, fallback) {
@@ -256,7 +256,16 @@ export async function POST(request) {
     }
 
     const { corpusId } = body || {};
+    const customText = typeof body?.text === "string" ? body.text.trim() : "";
     const mode = ALLOWED_MODES.has(body?.mode) ? body.mode : "heritage";
+
+    if (customText && (customText.length < 10 || customText.length > 600)) {
+      return Response.json({ error: "自定义素材需要 10-600 个字" }, { status: 400 });
+    }
+
+    if (!customText && !corpusId) {
+      return Response.json({ error: "请选择素材或输入一段文字" }, { status: 400 });
+    }
 
     const minute = hit("minute", ip, limits.perMinute, 60 * 1000);
     if (!minute.allowed) {
@@ -281,7 +290,22 @@ export async function POST(request) {
     }
     locked = true;
 
-    const item = getCorpusItem(corpusId);
+    const item = customText
+      ? {
+          id: "custom-input",
+          title: "自定义素材",
+          subtitle: "现场输入",
+          type: "custom",
+          region: "自定义",
+          dialect: "粤语",
+          license: "用户提供",
+          summary: customText.slice(0, 120),
+          text: customText,
+          tags: [],
+          glossary: [],
+          modes: [mode],
+        }
+      : getCorpusItem(corpusId);
     if (!item) {
       release(ip);
       locked = false;
