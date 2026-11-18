@@ -1,0 +1,492 @@
+[
+  {
+    "id": "yue-saying-salted-fish",
+    "type": "proverb",
+    "title": "食得咸鱼抵得渴",
+    "subtitle": "粤语俗语 · 代价 · 担当",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "既然选择了想要的东西，就要承受它带来的代价。",
+    "text": "食得咸鱼抵得渴。",
+    "tags": ["俗语", "担当", "代价"],
+    "motifs": ["咸鱼", "口渴"],
+    "glossary": [
+      {
+        "term": "抵得",
+        "meaning": "受得住、值得",
+        "note": "粤语“抵”有承受、值得两个意思。"
+      },
+      {
+        "term": "咸鱼",
+        "meaning": "腌制的鱼",
+        "note": "咸鱼下饭，但吃多了容易口渴。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-saying-horse-walks",
+    "type": "proverb",
+    "title": "马死落地行",
+    "subtitle": "粤语俗语 · 失去依靠 · 自立",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "马死了就下地走路。比喻失去依靠之后，仍然要自己想办法走下去。",
+    "text": "马死落地行。",
+    "tags": ["俗语", "自立", "逆境"],
+    "motifs": ["马", "路"],
+    "glossary": [
+      {
+        "term": "落地",
+        "meaning": "下到地上",
+        "note": "这里指从马上下来，改走路。"
+      },
+      {
+        "term": "行",
+        "meaning": "走",
+        "note": "粤语“行”对应普通话的“走”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-saying-no-beggar",
+    "type": "proverb",
+    "title": "有早知，冇乞儿",
+    "subtitle": "粤语俗语 · 事后 · 悔恨",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "如果人人事前都知道结果，世上就不会有乞丐。说的是事后聪明没有用。",
+    "text": "有早知，冇乞儿。",
+    "tags": ["俗语", "后悔", "世事"],
+    "motifs": ["乞儿", "早知"],
+    "glossary": [
+      {
+        "term": "早知",
+        "meaning": "事先知道",
+        "note": "粤语常用“早知……就……”表达后悔。"
+      },
+      {
+        "term": "乞儿",
+        "meaning": "乞丐",
+        "note": "“儿”在这里读轻声，指人。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-saying-needle-pain",
+    "type": "proverb",
+    "title": "针唔拮到肉唔知痛",
+    "subtitle": "粤语俗语 · 共情 · 亲历",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "针没有扎到自己身上，就不知道有多痛。比喻不亲身经历，很难真正体会别人的难处。",
+    "text": "针唔拮到肉唔知痛。",
+    "tags": ["俗语", "共情", "亲历"],
+    "motifs": ["针", "肉"],
+    "glossary": [
+      {
+        "term": "唔",
+        "meaning": "不",
+        "note": "粤语最常用的否定词。"
+      },
+      {
+        "term": "拮",
+        "meaning": "扎、刺",
+        "note": "“拮”读作 gat1，指尖东西刺入。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "ghost"]
+  },
+  {
+    "id": "yue-saying-suzhou-boat",
+    "type": "proverb",
+    "title": "苏州过后无艇搭",
+    "subtitle": "粤语俗语 · 机会 · 错过",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "过了苏州，就没有船可搭了。比喻机会一旦错过，就再难遇上。",
+    "text": "苏州过后无艇搭。",
+    "tags": ["俗语", "机会", "错过"],
+    "motifs": ["苏州", "艇"],
+    "glossary": [
+      {
+        "term": "过后",
+        "meaning": "之后、过了以后",
+        "note": "粤语“过”有经过、过了的意思。"
+      },
+      {
+        "term": "艇",
+        "meaning": "小船",
+        "note": "旧时水路是主要交通方式。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-saying-lose-first",
+    "type": "proverb",
+    "title": "执输行头，惨过败家",
+    "subtitle": "粤语俗语 · 落后 · 好胜",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "落在别人后面、处处吃亏，比败家还惨。形容人极怕落后于人。",
+    "text": "执输行头，惨过败家。",
+    "tags": ["俗语", "好胜", "落后"],
+    "motifs": ["行头", "败家"],
+    "glossary": [
+      {
+        "term": "执输",
+        "meaning": "认输、落后吃亏",
+        "note": "“执”有拾取、承受的意思。"
+      },
+      {
+        "term": "行头",
+        "meaning": "走在最前面",
+        "note": "“行头”在这里指抢先、占先。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["wild_history"]
+  },
+  {
+    "id": "yue-saying-brothers-accounts",
+    "type": "proverb",
+    "title": "亲兄弟，明算账",
+    "subtitle": "粤语俗语 · 亲情 · 分寸",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "关系再亲，账目也要算清楚。说的是亲情里也要有分寸，免得日后生怨。",
+    "text": "亲兄弟，明算账。",
+    "tags": ["俗语", "亲情", "分寸"],
+    "motifs": ["兄弟", "账"],
+    "glossary": [
+      {
+        "term": "算账",
+        "meaning": "结清账目",
+        "note": "这里不是“报复”的意思。"
+      },
+      {
+        "term": "亲",
+        "meaning": "亲近、血缘",
+        "note": "粤语“亲”也可作动词，表示亲近。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"]
+  },
+  {
+    "id": "yue-saying-big-hat",
+    "type": "proverb",
+    "title": "冇咁大个头，唔好戴咁大顶帽",
+    "subtitle": "粤语俗语 · 量力 · 分寸",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "没有这么大的头，就不要戴这么大的帽子。比喻做事要量力而行，不要逞强。",
+    "text": "冇咁大个头，唔好戴咁大顶帽。",
+    "tags": ["俗语", "量力", "分寸"],
+    "motifs": ["头", "帽"],
+    "glossary": [
+      {
+        "term": "冇",
+        "meaning": "没有",
+        "note": "粤语常用否定词，与“有”相对。"
+      },
+      {
+        "term": "咁",
+        "meaning": "这么、那么",
+        "note": "“咁大”就是“这么大”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间俗语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-xiehouyu-chicken-coop",
+    "type": "proverb",
+    "title": "冇掩鸡笼——自出自入",
+    "subtitle": "粤语歇后语 · 无拘无束 · 随意",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "没有盖的鸡笼，鸡可以随便进出。形容地方或规矩松散，人来去自由。",
+    "text": "冇掩鸡笼——自出自入。",
+    "tags": ["歇后语", "随意", "规矩"],
+    "motifs": ["鸡笼", "门"],
+    "glossary": [
+      {
+        "term": "掩",
+        "meaning": "遮盖、关上",
+        "note": "“冇掩”就是没有盖、没有关。"
+      },
+      {
+        "term": "自出自入",
+        "meaning": "自由进出",
+        "note": "粤语“出出入入”表示频繁进出。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间歇后语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["wild_history", "heritage"]
+  },
+  {
+    "id": "yue-xiehouyu-turtle",
+    "type": "proverb",
+    "title": "老鼠拉龟——冇埞埋手",
+    "subtitle": "粤语歇后语 · 无从下手 · 为难",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "老鼠想拉乌龟，却找不到地方下手。形容事情棘手，不知道从哪里开始。",
+    "text": "老鼠拉龟——冇埞埋手。",
+    "tags": ["歇后语", "为难", "无从下手"],
+    "motifs": ["老鼠", "龟"],
+    "glossary": [
+      {
+        "term": "埞",
+        "meaning": "地方",
+        "note": "“冇埞”就是没有地方。"
+      },
+      {
+        "term": "埋手",
+        "meaning": "下手、动手",
+        "note": "“埋”在粤语里有靠近、收拢的意思。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间歇后语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["wild_history", "heritage"]
+  },
+  {
+    "id": "yue-xiehouyu-waxberry",
+    "type": "proverb",
+    "title": "黄皮树了哥——唔熟唔食",
+    "subtitle": "粤语歇后语 · 熟人 · 精明",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "了哥只吃熟了的黄皮果。借“熟”的双关，形容专挑熟人下手，或只做有把握的事。",
+    "text": "黄皮树了哥——唔熟唔食。",
+    "tags": ["歇后语", "双关", "熟人"],
+    "motifs": ["黄皮", "了哥"],
+    "glossary": [
+      {
+        "term": "了哥",
+        "meaning": "八哥鸟",
+        "note": "粤语把八哥叫作“了哥”。"
+      },
+      {
+        "term": "唔熟唔食",
+        "meaning": "不熟不吃",
+        "note": "“熟”既指果子成熟，也指人熟。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间歇后语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "modes": ["wild_history"]
+  },
+  {
+    "id": "yue-xiehouyu-blind-soup",
+    "type": "proverb",
+    "title": "盲公食汤丸——心中有数",
+    "subtitle": "粤语歇后语 · 有把握 · 清楚",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "盲人吃汤圆，虽然看不见，但碗里有多少心里清楚。形容对情况有把握。",
+    "text": "盲公食汤丸——心中有数。",
+    "tags": ["歇后语", "分寸", "把握"],
+    "motifs": ["盲公", "汤丸"],
+    "glossary": [
+      {
+        "term": "盲公",
+        "meaning": "盲人",
+        "note": "粤语对失明者的旧称。"
+      },
+      {
+        "term": "汤丸",
+        "meaning": "汤圆",
+        "note": "粤语多说“汤丸”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间歇后语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-xiehouyu-bitter",
+    "type": "proverb",
+    "title": "哑仔食黄连——有苦自己知",
+    "subtitle": "粤语歇后语 · 难言 · 隐忍",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "哑巴吃黄连，苦也说不出。形容有难处只能自己咽下。",
+    "text": "哑仔食黄连——有苦自己知。",
+    "tags": ["歇后语", "隐忍", "难言"],
+    "motifs": ["黄连", "哑仔"],
+    "glossary": [
+      {
+        "term": "哑仔",
+        "meaning": "不会说话的人",
+        "note": "“仔”在这里指年轻男子。"
+      },
+      {
+        "term": "黄连",
+        "meaning": "一味苦药",
+        "note": "黄连极苦，常用来比喻苦处。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间歇后语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "ghost"]
+  },
+  {
+    "id": "yue-xiehouyu-clay-buddha",
+    "type": "proverb",
+    "title": "泥菩萨过江——自身难保",
+    "subtitle": "粤语歇后语 · 自顾不暇 · 处境",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "泥做的菩萨过江，自己都保不住。形容连自己都顾不过来，更帮不了别人。",
+    "text": "泥菩萨过江——自身难保。",
+    "tags": ["歇后语", "处境", "自顾不暇"],
+    "motifs": ["菩萨", "江"],
+    "glossary": [
+      {
+        "term": "菩萨",
+        "meaning": "神像",
+        "note": "泥塑神像遇水会化。"
+      },
+      {
+        "term": "自身难保",
+        "meaning": "自己都保不住",
+        "note": "粤语里也常说“自身都难保”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "粤语民间歇后语 · 口耳相传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage", "wild_history"]
+  }
+]

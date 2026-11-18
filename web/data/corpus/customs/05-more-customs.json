@@ -1,0 +1,182 @@
+[
+  {
+    "id": "yue-custom-lion-dance",
+    "type": "custom",
+    "title": "醒狮",
+    "subtitle": "广府民俗 · 南狮 · 采青",
+    "region": "广州 / 佛山 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "南狮又称醒狮，逢年过节、开业庆典请狮队上门，采青、吐青，取生意兴隆、步步高升的好意头。",
+    "text": "锣鼓一响，狮头一摆，青枝高挂门楣。狮子采到青，主人家封一个红包，图个好意头。",
+    "tags": ["民俗", "醒狮", "春节", "好意头"],
+    "motifs": ["狮头", "锣鼓", "青", "红包"],
+    "glossary": [
+      {
+        "term": "采青",
+        "meaning": "狮子摘下悬挂的青枝",
+        "note": "青多用生菜、芹菜，取“生财”“勤快”的谐音。"
+      },
+      {
+        "term": "意头",
+        "meaning": "兆头、彩头",
+        "note": "粤语常说过年要讲意头。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-custom-private-music",
+    "type": "custom",
+    "title": "私伙局",
+    "subtitle": "广府民俗 · 粤曲 · 街坊",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "私伙局是粤曲爱好者自发组成的演唱小团体，常在公园、祠堂、街坊会所摆开锣鼓，自弹自唱。",
+    "text": "几张折凳，一把高胡，一只椰胡，街坊围成一圈。唱到熟处，台下有人跟着哼。",
+    "tags": ["民俗", "粤曲", "街坊", "公园"],
+    "motifs": ["高胡", "折凳", "街坊"],
+    "glossary": [
+      {
+        "term": "私伙局",
+        "meaning": "业余粤曲演唱组织",
+        "note": "“私伙”指自己的家当、班子。"
+      },
+      {
+        "term": "高胡",
+        "meaning": "粤曲主奏乐器",
+        "note": "音色高亢明亮，是粤乐的代表乐器。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage"]
+  },
+  {
+    "id": "yue-custom-qixi",
+    "type": "custom",
+    "title": "拜七姐",
+    "subtitle": "广府民俗 · 七夕 · 乞巧",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "七夕又称七姐诞，旧时姑娘们摆上瓜果、针线、巧品，向七姐乞巧，求手巧、求好姻缘。",
+    "text": "七月初六晚，天井摆一张小桌，摆上时令瓜果和亲手做的巧品。姑娘们穿针乞巧，说悄悄话。",
+    "tags": ["民俗", "七夕", "乞巧", "姑娘"],
+    "motifs": ["七姐", "瓜果", "针线"],
+    "glossary": [
+      {
+        "term": "七姐",
+        "meaning": "七夕传说中的仙女",
+        "note": "民间把七仙女称作七姐。"
+      },
+      {
+        "term": "乞巧",
+        "meaning": "向七姐求一双巧手",
+        "note": "穿针引线是乞巧的传统环节。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "ghost"]
+  },
+  {
+    "id": "yue-custom-ancestor-pork",
+    "type": "custom",
+    "title": "太公分猪肉",
+    "subtitle": "广府民俗 · 祭祖 · 宗族",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "旧时清明、重阳祭祖之后，宗族把祭肉按丁分给族人，称为太公分猪肉，象征祖先庇佑、族人和睦。",
+    "text": "祠堂门口摆开长桌，烧肉切成一份一份。族中长辈按名册叫名，领到的人说一句“多谢太公”。",
+    "tags": ["民俗", "祭祖", "宗族", "清明"],
+    "motifs": ["太公", "烧肉", "祠堂"],
+    "glossary": [
+      {
+        "term": "太公",
+        "meaning": "祖先、族中始祖",
+        "note": "粤语里“太公”也泛指曾祖父。"
+      },
+      {
+        "term": "分猪肉",
+        "meaning": "分配祭祖的烧肉",
+        "note": "旧俗按男丁分配，如今多改为按户或均分。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-custom-baby-lantern",
+    "type": "custom",
+    "title": "开灯",
+    "subtitle": "广府民俗 · 添丁 · 祠堂",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "旧时家中添了男丁，正月里到祠堂挂灯、点灯，称为开灯，向祖先报喜，也告诉族人家里添了人口。",
+    "text": "正月初几，祠堂梁上挂起一盏新灯。灯亮起来，族中长辈来看灯，主人家分糖、分红鸡蛋。",
+    "tags": ["民俗", "添丁", "正月", "祠堂"],
+    "motifs": ["灯", "祠堂", "红鸡蛋"],
+    "glossary": [
+      {
+        "term": "开灯",
+        "meaning": "正月为添丁挂灯",
+        "note": "“灯”与“丁”同音，取添丁之意。"
+      },
+      {
+        "term": "添丁",
+        "meaning": "家里添了人口",
+        "note": "旧时多指添男丁。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  }
+]

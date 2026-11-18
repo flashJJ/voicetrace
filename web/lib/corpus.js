@@ -15,10 +15,12 @@ import proverbsXiehouyuA from "../data/corpus/proverbs/01-xiehouyu-a.json";
 import proverbsXiehouyuB from "../data/corpus/proverbs/02-xiehouyu-b.json";
 import proverbsWeather from "../data/corpus/proverbs/03-weather.json";
 import proverbsFarming from "../data/corpus/proverbs/04-farming.json";
+import proverbsSayings from "../data/corpus/proverbs/05-sayings.json";
 import customsNewYear from "../data/corpus/customs/01-new-year.json";
 import customsFestivals from "../data/corpus/customs/02-festivals.json";
 import customsSeasonal from "../data/corpus/customs/03-seasonal.json";
 import customsFood from "../data/corpus/customs/04-food.json";
+import customsMore from "../data/corpus/customs/05-more-customs.json";
 import catalogFantasy from "../data/corpus/catalog/01-fantasy.json";
 import riddles from "../data/corpus/riddles/01-riddles.json";
 import tongueTwisters from "../data/corpus/riddles/02-tongue-twisters.json";
@@ -53,10 +55,12 @@ export const corpusItems = [
   ...proverbsXiehouyuB,
   ...proverbsWeather,
   ...proverbsFarming,
+  ...proverbsSayings,
   ...customsNewYear,
   ...customsFestivals,
   ...customsSeasonal,
   ...customsFood,
+  ...customsMore,
   ...catalogFantasy,
   ...riddles,
   ...tongueTwisters,

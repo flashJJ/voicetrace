@@ -410,6 +410,306 @@ const heritageStories = [
       },
     ],
   },
+  {
+    slug: 'five-goats',
+    mode: 'heritage',
+    modeLabel: '正经模式',
+    featured: false,
+    title: '五羊传说',
+    subtitle: '五只羊，一座城',
+    dialect: '粤语 · 广州越秀',
+    type: '公有领域传说改编',
+    duration: '4 分钟',
+    cover: cover('five-goats'),
+    quote: '五羊衔穗，从此冇饥荒。',
+    intro:
+      '阿爷拖住你行上越秀山，指着山脚五只石羊，话呢个故仔要由好耐好耐以前讲起。',
+    scenes: [
+      {
+        id: 'five-goats-1',
+        act: 1,
+        title: '山脚的五只羊',
+        textYue:
+          '阿爷拖住你行上越秀山。山脚有五只石羊，只只都抬高头，口里衔住一束谷穗。阿爷话，呢个故仔，要由好耐好耐以前讲起。',
+        textZh:
+          '爷爷牵着你走上越秀山。山脚有五只石羊，每一只都抬着头，口里衔着一束谷穗。爷爷说，这个故事要从很久很久以前讲起。',
+        audioText:
+          '阿爷拖住你行上越秀山。山脚有五只石羊，只只都抬高头，口里衔住一束谷穗。',
+        glossary: [
+          {
+            term: '行',
+            meaning: '走',
+            note: '粤语“行”对应普通话的“走”。',
+          },
+          {
+            term: '衔',
+            meaning: '用嘴含着',
+            note: '石羊口里衔着谷穗，是五羊石像的标志。',
+          },
+        ],
+        choices: [
+          { label: '问阿爷：点解系五只羊？', next: 'five-goats-2a' },
+          { label: '跟住阿爷上山', next: 'five-goats-2b' },
+        ],
+      },
+      {
+        id: 'five-goats-2a',
+        act: 2,
+        title: '仙人骑羊',
+        textYue:
+          '阿爷话，相传西周嘅时候，有五位仙人，骑住五只羊，从天上落嚟。仙人手里拎住谷穗，行到海边嘅小村，见当地人就快饿死。',
+        textZh:
+          '爷爷说，相传西周的时候，有五位仙人骑着五只羊从天上下来。仙人手里拿着谷穗，走到海边的小村，看见当地人快要饿死。',
+        audioText:
+          '阿爷话，相传西周嘅时候，有五位仙人，骑住五只羊，从天上落嚟。仙人手里拎住谷穗。',
+        glossary: [
+          {
+            term: '落嚟',
+            meaning: '下来',
+            note: '“嚟”是粤语的“来”。',
+          },
+          {
+            term: '拎住',
+            meaning: '拿着',
+            note: '“拎”读作 ling1。',
+          },
+        ],
+        choices: [
+          { label: '问仙人送咗啲咩', next: 'five-goats-3a' },
+          { label: '问啲羊去咗边', next: 'five-goats-3b' },
+        ],
+      },
+      {
+        id: 'five-goats-2b',
+        act: 2,
+        title: '山上的石像',
+        textYue:
+          '你哋一路行，一路数石羊。阿爷话，呢五只羊唔系普通石头，系仙人留低嘅。你摸住羊角，石面俾人摸到滑溜溜。',
+        textZh:
+          '你们一边走一边数石羊。爷爷说，这五只羊不是普通石头，是仙人留下的。你摸着羊角，石面被人摸得滑溜溜。',
+        audioText:
+          '你哋一路行，一路数石羊。阿爷话，呢五只羊唔系普通石头，系仙人留低嘅。',
+        glossary: [
+          {
+            term: '留低',
+            meaning: '留下',
+            note: '“低”在粤语里表示动作完成、留下。',
+          },
+          {
+            term: '滑溜溜',
+            meaning: '很光滑',
+            note: '形容石头被摸得发亮。',
+          },
+        ],
+        choices: [
+          { label: '问石羊点解会变石头', next: 'five-goats-3b' },
+          { label: '望住山下的广州城', next: 'five-goats-3a' },
+        ],
+      },
+      {
+        id: 'five-goats-3a',
+        act: 3,
+        title: '穗落成城',
+        textYue:
+          '仙人把谷穗送俾村民，祝佢哋从此冇饥荒。仙人走咗之后，五只羊化成石头，留喺山上。广州从此又叫羊城、穗城。',
+        textZh:
+          '仙人把谷穗送给村民，祝愿他们从此不再挨饿。仙人离开后，五只羊化成石头，留在山上。广州从此又叫羊城、穗城。',
+        audioText:
+          '仙人把谷穗送俾村民，祝佢哋从此冇饥荒。五只羊化成石头，留喺山上。',
+        glossary: [
+          {
+            term: '化成',
+            meaning: '变成',
+            note: '民间传说里常见“化为石”的说法。',
+          },
+          {
+            term: '穗',
+            meaning: '谷穗',
+            note: '广州别称“穗城”由此而来。',
+          },
+        ],
+        choices: [],
+        ending: true,
+        endingText: '五只羊留低嘅，唔止系石头，系一座城嘅名字。',
+      },
+      {
+        id: 'five-goats-3b',
+        act: 3,
+        title: '石羊睇住嘅城',
+        textYue:
+          '阿爷话，石羊睇住广州睇咗几千年。以前系海，而家系楼。你落山嗰阵回头望，石羊仍然抬高头，好似仲喺度等仙人返嚟。',
+        textZh:
+          '爷爷说，石羊看着广州看了几千年。以前是海，现在是高楼。你下山时回头望，石羊仍然抬着头，好像在等仙人回来。',
+        audioText:
+          '阿爷话，石羊睇住广州睇咗几千年。以前系海，而家系楼。',
+        glossary: [
+          {
+            term: '嗰阵',
+            meaning: '那时候',
+            note: '“嗰”是粤语的“那”。',
+          },
+          {
+            term: '仲喺度',
+            meaning: '还在',
+            note: '“仲”表示仍然。',
+          },
+        ],
+        choices: [],
+        ending: true,
+        endingText: '城市一直变，石羊一直喺度。',
+      },
+    ],
+  },
+  {
+    slug: 'chicken-lullaby',
+    mode: 'heritage',
+    modeLabel: '正经模式',
+    featured: false,
+    title: '鸡公仔',
+    subtitle: '一首唱到天光嘅广府童谣',
+    dialect: '粤语 · 广州西关',
+    type: '公有领域童谣改编',
+    duration: '3 分钟',
+    cover: cover('chicken-lullaby'),
+    quote: '鸡公仔，尾弯弯。',
+    intro:
+      '天未光，阿婆已经坐喺床尾，轻轻唱：“鸡公仔，尾弯弯，做人新抱几艰难……”',
+    scenes: [
+      {
+        id: 'chicken-1',
+        act: 1,
+        title: '天未光嘅歌声',
+        textYue:
+          '天蒙蒙光，阿婆坐喺床尾，轻轻唱：“鸡公仔，尾弯弯，做人新抱几艰难。”你未瞓醒，只觉得个调好熟。',
+        textZh:
+          '天刚蒙蒙亮，阿婆坐在床尾，轻轻唱：“鸡公仔，尾弯弯，做人新抱几艰难。”你还没睡醒，只觉得这个调子很熟。',
+        audioText:
+          '天蒙蒙光，阿婆坐喺床尾，轻轻唱：鸡公仔，尾弯弯，做人新抱几艰难。',
+        glossary: [
+          {
+            term: '新抱',
+            meaning: '媳妇',
+            note: '粤语称儿媳妇为“新抱”。',
+          },
+          {
+            term: '几艰难',
+            meaning: '多么艰难',
+            note: '“几”在这里表示程度，相当于“多”。',
+          },
+        ],
+        choices: [
+          { label: '跟住阿婆唱', next: 'chicken-2a' },
+          { label: '问阿婆咩系新抱', next: 'chicken-2b' },
+        ],
+      },
+      {
+        id: 'chicken-2a',
+        act: 2,
+        title: '早早起身都话晏',
+        textYue:
+          '你跟住唱：“早早起身都话晏，眼泪唔干入下间。”阿婆笑咗一下，话你唱得准，但系唔知呢句讲嘅系边个。',
+        textZh:
+          '你跟着唱：“早早起身都话晏，眼泪未干进下间。”阿婆笑了一下，说你唱得准，但不知道这句讲的是谁。',
+        audioText:
+          '你跟住唱：早早起身都话晏，眼泪唔干入下间。阿婆笑咗一下。',
+        glossary: [
+          {
+            term: '晏',
+            meaning: '晚、迟',
+            note: '粤语“晏”指时间晚，也指中午。',
+          },
+          {
+            term: '下间',
+            meaning: '厨房',
+            note: '旧时大屋的厨房多在下间。',
+          },
+        ],
+        choices: [
+          { label: '问系咪阿婆自己', next: 'chicken-3a' },
+          { label: '继续唱落去', next: 'chicken-3b' },
+        ],
+      },
+      {
+        id: 'chicken-2b',
+        act: 2,
+        title: '做人新抱',
+        textYue:
+          '阿婆话，旧时新抱入门，天未光就要起身煮饭。煮得晏又话晏，煮得早又话早，眼泪只可以吞落肚。',
+        textZh:
+          '阿婆说，旧时媳妇进门，天没亮就要起来做饭。煮晚了说晚，煮早了说早，眼泪只能往肚里咽。',
+        audioText:
+          '阿婆话，旧时新抱入门，天未光就要起身煮饭。眼泪只可以吞落肚。',
+        glossary: [
+          {
+            term: '入门',
+            meaning: '嫁进门',
+            note: '旧时婚礼后新妇入夫家门。',
+          },
+          {
+            term: '吞落肚',
+            meaning: '咽进肚子里',
+            note: '比喻把委屈藏起来。',
+          },
+        ],
+        choices: [
+          { label: '问阿婆有冇受过', next: 'chicken-3a' },
+          { label: '问点解唔讲出声', next: 'chicken-3b' },
+        ],
+      },
+      {
+        id: 'chicken-3a',
+        act: 3,
+        title: '一只冬瓜',
+        textYue:
+          '阿婆话，佢做新抱嗰阵，试过为咗一只冬瓜，俾人闹到天光。讲完，佢又笑：“而家好喇，你阿妈唔使咁。”',
+        textZh:
+          '阿婆说，她做媳妇的时候，为了一个冬瓜，被人骂到天亮。说完，她又笑：“现在好了，你妈妈不用这样。”',
+        audioText:
+          '阿婆话，佢做新抱嗰阵，试过为咗一只冬瓜，俾人闹到天光。',
+        glossary: [
+          {
+            term: '闹',
+            meaning: '骂',
+            note: '粤语“闹”常用于责骂。',
+          },
+          {
+            term: '而家',
+            meaning: '现在',
+            note: '粤语日常常用词。',
+          },
+        ],
+        choices: [],
+        ending: true,
+        endingText: '童谣唱嘅系旧时，日子已经唔同。',
+      },
+      {
+        id: 'chicken-3b',
+        act: 3,
+        title: '唱到天光',
+        textYue:
+          '你同阿婆一句一句唱，唱到窗外嘅天由灰变白。最后一句唱完，阿婆话：“呢首歌，你记住，第日唱返俾人听。”',
+        textZh:
+          '你和阿婆一句一句唱，唱到窗外的天由灰变白。最后一句唱完，阿婆说：“这首歌你记住，以后唱给别人听。”',
+        audioText:
+          '你同阿婆一句一句唱，唱到窗外嘅天由灰变白。阿婆话：呢首歌，你记住，第日唱返俾人听。',
+        glossary: [
+          {
+            term: '第日',
+            meaning: '以后、改天',
+            note: '粤语“第日”不指第二天，而指将来。',
+          },
+          {
+            term: '唱返',
+            meaning: '唱回去、再唱',
+            note: '“返”表示动作回到原处或继续。',
+          },
+        ],
+        choices: [],
+        ending: true,
+        endingText: '天光喇，歌留低咗。',
+      },
+    ],
+  },
 ];
 
 export const storyModes = [
