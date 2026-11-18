@@ -1,4 +1,4 @@
-import { cover } from "./image";
+import { cover } from "./image.js";
 
 export const wildHistoryStories = [
   {

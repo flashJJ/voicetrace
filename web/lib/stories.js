@@ -1,6 +1,6 @@
-import { cover, heroImage, whyImage } from "./image";
-import { ghostStories } from "./stories-ghost";
-import { wildHistoryStories } from "./stories-wild-history";
+import { cover, heroImage, whyImage } from "./image.js";
+import { ghostStories } from "./stories-ghost.js";
+import { wildHistoryStories } from "./stories-wild-history.js";
 
 export { heroImage, whyImage };
 

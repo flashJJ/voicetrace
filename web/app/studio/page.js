@@ -18,6 +18,8 @@ export default function StudioPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
+  const [stage, setStage] = useState(null);
+  const [copied, setCopied] = useState(false);
 
   const selected = useMemo(
     () => options.find((option) => option.item.id === selectedId) || options[0],
@@ -38,6 +40,8 @@ export default function StudioPage() {
     }
     setLoading(true);
     setError("");
+    setStage(null);
+    setCopied(false);
     try {
       const response = await fetch("/api/generate-story", {
         method: "POST",
@@ -64,6 +68,7 @@ export default function StudioPage() {
           for (const line of lines) {
             if (!line.trim()) continue;
             const message = JSON.parse(line);
+            if (message.type === "stage") setStage(message);
             if (message.type === "result") payload = message;
             if (message.type === "error") throw new Error(message.error || "生成失败");
           }
@@ -87,6 +92,54 @@ export default function StudioPage() {
   const output = result?.output;
   const passed = (result?.validation || []).filter((check) => check.pass).length;
   const total = (result?.validation || []).length;
+
+  const statusLabel = result?.fallback
+    ? "降级结果"
+    : result?.mock
+      ? "Mock 模式"
+      : "真实模型";
+
+  const fallbackLabel = {
+    timeout: "模型响应超时",
+    truncated: "输出被长度限制截断",
+    model_error: "模型返回异常",
+  }[result?.fallbackReason] || "模型返回异常";
+
+  const stageText = (() => {
+    if (!loading) return "";
+    if (stage?.stage === "generating") return `模型正在写故事，已写 ${stage.chars} 字`;
+    if (stage?.stage === "validating") return "正在对照黄金样品验收";
+    return "正在整理素材";
+  })();
+
+  const copyReport = async () => {
+    if (!result) return;
+    const lines = [
+      "# 声迹 · 生成验收报告",
+      "",
+      `- 素材：${result.corpusId}`,
+      `- 模式：${modeLabel(result.mode || "heritage")}`,
+      `- 模型：${result.model}`,
+      `- Prompt：${result.promptVersion || "未标注"}`,
+      `- 耗时：${typeof result.elapsedMs === "number" ? `${(result.elapsedMs / 1000).toFixed(1)}s` : "未知"}`,
+      `- 验收：${passed} / ${total} 通过`,
+      `- 状态：${result.fallback ? `降级（${fallbackLabel}）` : result.mock ? "Mock" : "真实生成"}`,
+      "",
+      "| 检查项 | 结果 |",
+      "|---|---|",
+      ...(result.validation || []).map(
+        (check) => `| ${check.name} | ${check.pass ? "通过" : "未通过"} |`
+      ),
+    ];
+
+    try {
+      await navigator.clipboard.writeText(lines.join("\n"));
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setError("复制失败，请手动选择验收内容。");
+    }
+  };
 
   return (
     <div className="container studio">
@@ -189,6 +242,13 @@ export default function StudioPage() {
           </div>
         ) : null}
 
+        {loading ? (
+          <div className="studio-progress" aria-live="polite">
+            <span className="studio-progress-dot" aria-hidden="true" />
+            <span>{stageText}</span>
+          </div>
+        ) : null}
+
         {error ? (
           <div className="studio-error">
             <strong>生成失败：</strong> {error}
@@ -197,18 +257,41 @@ export default function StudioPage() {
 
         {result ? (
           <>
-            <div className={`studio-mode ${result.mock ? "is-mock" : "is-live"}`}>
-              <strong>{result.mock ? "Mock 模式" : "真实模型"}</strong>
+            <div className={`studio-mode ${result.fallback ? "is-fallback" : result.mock ? "is-mock" : "is-live"}`}>
+              <strong>{statusLabel}</strong>
               <span>{result.model}</span>
+              <small>
+                {result.promptVersion ? `Prompt ${result.promptVersion}` : ""}
+                {typeof result.elapsedMs === "number"
+                  ? ` · ${(result.elapsedMs / 1000).toFixed(1)}s`
+                  : ""}
+              </small>
               {result.note ? <small>{result.note}</small> : null}
             </div>
+
+            {result.fallback ? (
+              <div className="studio-fallback">
+                <div>
+                  <strong>本次生成没有完成：{fallbackLabel}</strong>
+                  <p>当前展示的是该素材的黄金样品，不是模型输出。可以重试一次。</p>
+                </div>
+                <button type="button" className="btn btn-ghost" onClick={generate} disabled={loading}>
+                  重试一次
+                </button>
+              </div>
+            ) : null}
 
             <div className="studio-validation">
               <div className="studio-validation-head">
                 <strong>
                   验收结果：{passed} / {total} 通过
                 </strong>
-                <span>对照黄金样品 {result.corpusId}</span>
+                <div className="studio-validation-actions">
+                  <span>对照黄金样品 {result.corpusId}</span>
+                  <button type="button" className="btn btn-ghost studio-report-btn" onClick={copyReport}>
+                    {copied ? "已复制" : "复制验收报告"}
+                  </button>
+                </div>
               </div>
               <div className="studio-checks">
                 {(result.validation || []).map((check) => (
