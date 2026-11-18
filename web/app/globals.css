@@ -2726,6 +2726,32 @@ button {
   .studio-output-head h2 {
     font-size: 27px;
   }
+
+  .studio-controls {
+    align-items: stretch;
+  }
+
+  .studio-controls .btn {
+    width: 100%;
+  }
+
+  .studio-custom textarea {
+    font-size: 16px;
+  }
+
+  .studio-fallback {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .studio-fallback .btn {
+    width: 100%;
+  }
+
+  .studio-validation-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 /* Story modes */
