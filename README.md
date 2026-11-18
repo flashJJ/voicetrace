@@ -148,7 +148,8 @@ npm run dev
 | 文档 | 内容 |
 |---|---|
 | [后续开发方案归档规范](docs/development/README.md) | 方案文件怎么命名、怎么登记 |
-| [01-后续开发路线图](docs/development/01-后续开发路线图.md) | 报名前收尾、评审期稳定、赛后迭代、技术债 |
+| [01-后续开发路线图](docs/development/01-后续开发路线图.md) | 版本映射、报名前收尾、评审期稳定、赛后迭代、技术债 |
+| [02-v0.3 版本迭代计划](docs/development/02-v0.3-版本迭代计划.md) | v0.3 范围、关键方案、三个 Sprint、验收与回滚 |
 
 ### 3.3 技术博客
 
@@ -224,3 +225,4 @@ npm run dev
 | 2026-11-16 | 资料库 91 条改为 12 条/页分页；新增参赛加码迭代计划 | web/components/CorpusLibrary.jsx、web/app/globals.css、docs/contest/13 | 列表 DOM 从 91 条降到 12 条；7 天路线文档化 |
 | 2026-11-16 | 首页改文案并新增逐字点亮的声音波形；修复 `aspect-ratio` 被图片 height 属性压制 | web/app/page.js、web/components/VoiceMoment.jsx、web/app/globals.css、web/app/layout.js、web/public/og.jpg、docs/contest/05、contest/09、contest/11、contest/12 | 首屏出现记忆点；口号在各材料中统一 |
 | 2026-11-17 | 文档中心重组：比赛材料迁入 `docs/contest/`，新增 `guide/` 项目指导、`development/` 后续开发方案、`blog/` 技术分享 | docs/、README.md | 原 13 份比赛文档仅移动不改内容；新增 13 份文档 |
+| 2026-11-18 | 新增 v0.3 版本迭代计划，路线图补充版本映射 | docs/development/02-v0.3-版本迭代计划.md、01-后续开发路线图.md、docs/README.md、README.md | 比赛期间冻结 main，v0.3 在 release/v0.3 开发 |
