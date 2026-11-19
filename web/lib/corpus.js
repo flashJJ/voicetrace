@@ -5,6 +5,7 @@ import nurseryPlayWords from "../data/corpus/nursery/03-play-words.json";
 import nurseryLife from "../data/corpus/nursery/04-life.json";
 import nurseryNewYear from "../data/corpus/nursery/05-new-year.json";
 import nurseryFamily from "../data/corpus/nursery/06-family.json";
+import nurseryKidV08 from "../data/corpus/nursery/07-kid-v08.json";
 import legendsCity from "../data/corpus/legends/01-city-origins.json";
 import legendsDeities from "../data/corpus/legends/02-deities.json";
 import legendsFaith from "../data/corpus/legends/03-faith.json";
@@ -48,6 +49,7 @@ export const corpusItems = [
   ...nurseryLife,
   ...nurseryNewYear,
   ...nurseryFamily,
+  ...nurseryKidV08,
   ...legendsCity,
   ...legendsDeities,
   ...legendsFaith,

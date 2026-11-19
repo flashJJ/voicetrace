@@ -135,9 +135,19 @@ items.forEach((item) => {
 
   if (!item.title) fail(`${label} 缺少标题`);
   if (!item.summary) fail(`${label} 缺少摘要`);
+
+  if (typeof item.kidSafe !== "undefined" && typeof item.kidSafe !== "boolean") {
+    fail(`${label} 的 kidSafe 应为布尔值`);
+  }
+  if (item.kidSafe && !AGE_BANDS.has(item.ageBand)) {
+    fail(`${label} 是适龄素材，但缺少合法 ageBand`);
+  }
 });
 
-ok(`资料库素材 ${items.length} 条，来自 ${corpusFiles.length} 个文件`);
+const kidCorpus = items.filter((item) => item.kidSafe);
+ok(
+  `资料库素材 ${items.length} 条，来自 ${corpusFiles.length} 个文件，其中适龄素材 ${kidCorpus.length} 条`
+);
 
 // 3. 黄金样品
 const goldens = walkJson(goldenRoot).flatMap(readArray);

@@ -1,0 +1,538 @@
+[
+  {
+    "id": "yue-rhyme-tsing-tsam",
+    "type": "nursery_rhyme",
+    "title": "呈沉剪",
+    "subtitle": "广府童谣 · 猜拳 · 游戏",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "呈沉剪，呈沉包，呈沉糯米叉烧包。一首猜拳选人时唱的广府童谣。",
+    "text": "呈沉剪，呈沉包，\n呈沉糯米叉烧包。\n老鼠唔食香口胶，\n要食豆沙包。",
+    "tags": ["童谣", "猜拳", "游戏", "食物"],
+    "motifs": ["呈沉剪", "叉烧包", "豆沙包"],
+    "glossary": [
+      {
+        "term": "呈沉剪",
+        "meaning": "猜拳游戏，类似石头剪刀布",
+        "note": "一边出手一边唱，输赢决定谁做庄。"
+      },
+      {
+        "term": "香口胶",
+        "meaning": "口香糖",
+        "note": "粤语口语常用词。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府童谣整理（公有领域）",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-rhyme-sai-baak-baak",
+    "type": "nursery_rhyme",
+    "title": "洗白白",
+    "subtitle": "广府童谣 · 洗澡 · 亲子",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "洗白白，倒开盆水，洗完白白去街街。一首陪孩子洗澡的广府亲子童谣。",
+    "text": "洗白白，洗白白，\n倒开盆水喇，\n快洗白白。\n洗白白，洗白白，\n洗完白白去街街。",
+    "tags": ["童谣", "洗澡", "亲子", "低龄"],
+    "motifs": ["洗白白", "盆水", "去街街"],
+    "glossary": [
+      {
+        "term": "洗白白",
+        "meaning": "洗澡",
+        "note": "粤语对小孩说“洗白白”，带亲昵意味。"
+      },
+      {
+        "term": "去街街",
+        "meaning": "上街玩",
+        "note": "“街街”是儿语，指上街。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府童谣整理（公有领域）",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-rhyme-maa-jing",
+    "type": "nursery_rhyme",
+    "title": "麻鹰捉鸡仔",
+    "subtitle": "广府童谣 · 集体游戏 · 护住小鸡",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "麻鹰飞，鸡仔走，鸡乸张开翅膀护住鸡仔。一首边跑边玩的集体游戏口诀。",
+    "text": "麻鹰飞，鸡仔走，\n鸡乸张开翼，\n护住鸡仔慢慢走。",
+    "tags": ["童谣", "游戏", "集体", "动物"],
+    "motifs": ["麻鹰", "鸡仔", "鸡乸"],
+    "glossary": [
+      {
+        "term": "麻鹰",
+        "meaning": "老鹰",
+        "note": "粤语把老鹰叫“麻鹰”。"
+      },
+      {
+        "term": "鸡乸",
+        "meaning": "母鸡",
+        "note": "“乸”表示雌性。"
+      },
+      {
+        "term": "鸡仔",
+        "meaning": "小鸡",
+        "note": "“仔”表示小。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民间游戏口诀（整理版，公有领域）",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-riddle-lychee",
+    "type": "riddle",
+    "title": "谜语 · 荔枝",
+    "subtitle": "广府民间谜语 · 水果",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "红布包白布，白布包猪膏，猪膏包黑豆。猜一种夏天成熟的水果。",
+    "text": "红布包白布，\n白布包猪膏，\n猪膏包黑豆。",
+    "answer": "荔枝",
+    "tags": ["谜语", "水果", "荔枝", "夏天"],
+    "motifs": ["红布", "白布", "黑豆"],
+    "glossary": [
+      {
+        "term": "猪膏",
+        "meaning": "猪油，这里形容白色果肉",
+        "note": "荔枝果肉雪白半透明。"
+      },
+      {
+        "term": "黑豆",
+        "meaning": "黑豆，这里形容果核",
+        "note": "荔枝核黑褐色。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民间谜语（公有领域）",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-riddle-bombax",
+    "type": "riddle",
+    "title": "谜语 · 木棉花",
+    "subtitle": "声迹原创适龄谜语 · 花",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "春天一棵树，开花唔见叶。红红似火把，跌落满地红。猜一种广州常见的花。",
+    "text": "春天一棵树，\n开花唔见叶。\n红红似火把，\n跌落满地红。",
+    "answer": "木棉花",
+    "tags": ["谜语", "花", "春天", "广州"],
+    "motifs": ["木棉花", "火把", "春天"],
+    "glossary": [
+      {
+        "term": "唔见",
+        "meaning": "不见、没有",
+        "note": "粤语“唔”表示不。"
+      },
+      {
+        "term": "火把",
+        "meaning": "照明用的火把",
+        "note": "木棉花红得像火。"
+      }
+    ],
+    "source": [
+      {
+        "title": "声迹原创适龄谜语",
+        "license": "original"
+      }
+    ],
+    "license": "original",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "6-9"
+  },
+  {
+    "id": "yue-riddle-banyan",
+    "type": "riddle",
+    "title": "谜语 · 榕树",
+    "subtitle": "声迹原创适龄谜语 · 树",
+    "region": "广州",
+    "dialect": "粤语（广府片）",
+    "summary": "胡须一大把，夏天好遮阴。雀仔钟意住，树下好乘凉。猜一种广州常见的大树。",
+    "text": "胡须一大把，\n夏天好遮阴。\n雀仔钟意住，\n树下好乘凉。",
+    "answer": "榕树",
+    "tags": ["谜语", "树", "夏天", "街坊"],
+    "motifs": ["榕树", "树荫", "雀仔"],
+    "glossary": [
+      {
+        "term": "胡须",
+        "meaning": "胡子",
+        "note": "榕树的气根像长胡子。"
+      },
+      {
+        "term": "遮阴",
+        "meaning": "挡住太阳、留下阴凉",
+        "note": "榕树树冠很大。"
+      },
+      {
+        "term": "钟意",
+        "meaning": "喜欢",
+        "note": "粤语常用“钟意”。"
+      }
+    ],
+    "source": [
+      {
+        "title": "声迹原创适龄谜语",
+        "license": "original"
+      }
+    ],
+    "license": "original",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "6-9"
+  },
+  {
+    "id": "yue-custom-sang-choi-wui",
+    "type": "custom",
+    "title": "生菜会",
+    "subtitle": "广府民俗 · 正月 · 生菜包",
+    "region": "广州 / 南海",
+    "dialect": "粤语（广府片）",
+    "summary": "正月廿六前后，街坊聚在一起吃生菜包，取“生财”“生猛”的好意头。孩子最开心的是自己动手包。",
+    "text": "生菜会嗰日，台面摆满生菜、蚬肉、韭菜同花生。大人将馅料炒香，大家用生菜叶包住食。阿婆话：“生菜即系生财，食咗好意头。”",
+    "tags": ["民俗", "正月", "生菜", "社区"],
+    "motifs": ["生菜会", "生菜包", "好意头"],
+    "glossary": [
+      {
+        "term": "生菜会",
+        "meaning": "广府正月里的社区民俗活动",
+        "note": "吃生菜包，取生财、生猛之意。"
+      },
+      {
+        "term": "生菜包",
+        "meaning": "用生菜叶包着馅料吃",
+        "note": "馅料常有蚬肉、韭菜、花生。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "6-9"
+  },
+  {
+    "id": "yue-custom-morning-tea",
+    "type": "custom",
+    "title": "饮早茶",
+    "subtitle": "广府民俗 · 茶楼 · 一盅两件",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "周末一早去茶楼，一盅两件，虾饺、烧卖、叉烧包。孩子拿着点心卡，学会讲“唔该”。",
+    "text": "星期日朝早，阿公带你去茶楼。坐低先开一壶普洱，再拿点心卡去拣虾饺同烧卖。阿公话：“食完要讲唔该，人哋先会帮你添茶。”",
+    "tags": ["民俗", "茶楼", "点心", "礼貌"],
+    "motifs": ["饮早茶", "一盅两件", "点心卡", "虾饺"],
+    "glossary": [
+      {
+        "term": "一盅两件",
+        "meaning": "一壶茶配两样点心",
+        "note": "广府饮早茶的经典搭配。"
+      },
+      {
+        "term": "点心卡",
+        "meaning": "茶楼用来记录点了哪些点心的卡",
+        "note": "点心送到时会在卡上盖印。"
+      },
+      {
+        "term": "唔该",
+        "meaning": "谢谢、劳驾",
+        "note": "粤语最常用的礼貌用语之一。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-custom-kitchen-god",
+    "type": "custom",
+    "title": "年廿四谢灶",
+    "subtitle": "广府民俗 · 腊月廿四 · 送灶君",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "腊月廿四谢灶，摆上甘蔗、糖瓜，送灶君上天，希望他“上天讲好话，落地说好言”。",
+    "text": "年廿四，阿婆喺灶头摆两条甘蔗、几粒糖瓜，口中念念有词：“灶君老爷，上天讲好话，落地说好言。”细路最开心系谢完灶有糖食。",
+    "tags": ["民俗", "春节", "谢灶", "甜食"],
+    "motifs": ["谢灶", "灶君", "甘蔗", "糖瓜"],
+    "glossary": [
+      {
+        "term": "谢灶",
+        "meaning": "祭送灶君的习俗",
+        "note": "腊月廿四前后进行。"
+      },
+      {
+        "term": "灶君",
+        "meaning": "掌管厨房的神",
+        "note": "民间认为他会上天汇报一家的事。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "6-9"
+  },
+  {
+    "id": "yue-custom-new-year-visit",
+    "type": "custom",
+    "title": "年初二开年",
+    "subtitle": "广府民俗 · 春节 · 回娘家",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "正月初二开年，出嫁的女儿带丈夫孩子回娘家，吃开年饭。菜式讲意头，一家人热热闹闹。",
+    "text": "年初二，阿妈一早准备好年桔同礼盒，带你哋返外婆屋企。外婆煮开年饭，台上有鸡有鱼，话：“开年饭要齐齐整整。”",
+    "tags": ["民俗", "春节", "开年", "家庭"],
+    "motifs": ["开年", "回娘家", "开年饭"],
+    "glossary": [
+      {
+        "term": "开年",
+        "meaning": "正月初二开始新一年的走亲访友",
+        "note": "广府春节习俗。"
+      },
+      {
+        "term": "回娘家",
+        "meaning": "出嫁的女儿回父母家",
+        "note": "年初二常见。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-custom-red-packet",
+    "type": "custom",
+    "title": "利是",
+    "subtitle": "广府民俗 · 春节 · 红包",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "红纸包住压岁钱，长辈派给晚辈，取大吉大利。孩子接利是要讲“恭喜发财”。",
+    "text": "过年时，长辈拎出一叠利是，逐个派：“俾你，快高长大。”细路双手接住，讲：“恭喜发财，身体健康。”利是要放枕头底，压住睡一晚。",
+    "tags": ["民俗", "春节", "利是", "拜年"],
+    "motifs": ["利是", "红纸", "压岁钱", "拜年"],
+    "glossary": [
+      {
+        "term": "利是",
+        "meaning": "红包、压岁钱",
+        "note": "粤语把红包叫“利是”。"
+      },
+      {
+        "term": "派利是",
+        "meaning": "发红包",
+        "note": "长辈给晚辈，已婚人士给未婚人士。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-custom-new-year-greeting",
+    "type": "custom",
+    "title": "拜年",
+    "subtitle": "广府民俗 · 春节 · 说吉利话",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "年初一走亲访友，见面讲“恭喜发财”“身体健康”。带上年桔和礼盒，坐低饮杯茶。",
+    "text": "年初一，你换上新衫，跟阿爸阿妈去拜年。入门口先讲：“恭喜发财，身体健康！”主人家请你食全盒，全盒有糖莲子、瓜子同糖冬瓜。",
+    "tags": ["民俗", "春节", "拜年", "吉利话"],
+    "motifs": ["拜年", "全盒", "年桔", "吉利话"],
+    "glossary": [
+      {
+        "term": "全盒",
+        "meaning": "过年装糖果、瓜子的盒子",
+        "note": "有甜有咸，取好意头。"
+      },
+      {
+        "term": "吉利话",
+        "meaning": "吉祥的话",
+        "note": "拜年时讲的祝福语。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 2,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  },
+  {
+    "id": "yue-custom-yuanxiao-tangyuan",
+    "type": "custom",
+    "title": "元宵汤圆",
+    "subtitle": "广府民俗 · 正月十五 · 团圆",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "正月十五元宵节，一家人吃汤圆，取团团圆圆。晚上看花灯、猜灯谜。",
+    "text": "正月十五，阿妈煮一锅姜汁汤圆。阿婆话：“食汤圆，团团圆圆。”夜晚去睇花灯，灯上面写住灯谜，猜中就有小礼物。",
+    "tags": ["民俗", "元宵", "汤圆", "花灯"],
+    "motifs": ["元宵", "汤圆", "花灯", "灯谜"],
+    "glossary": [
+      {
+        "term": "汤圆",
+        "meaning": "糯米粉做的小圆子，常有馅",
+        "note": "元宵节吃，象征团圆。"
+      },
+      {
+        "term": "灯谜",
+        "meaning": "写在花灯上的谜语",
+        "note": "猜中有小礼物。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "6-9"
+  },
+  {
+    "id": "yue-custom-new-year-kumquat",
+    "type": "custom",
+    "title": "年桔",
+    "subtitle": "广府民俗 · 春节 · 好意头",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "过年买一盆年桔，桔与“吉”同音，取大吉大利。桔树上挂满利是封，红红火火。",
+    "text": "年廿九，你同阿爸去花市抬一盆年桔返屋企。阿妈将利是封挂满桔树，话：“桔即系吉，好意头。”",
+    "tags": ["民俗", "春节", "年桔", "花市"],
+    "motifs": ["年桔", "利是封", "花市", "好意头"],
+    "glossary": [
+      {
+        "term": "年桔",
+        "meaning": "过年摆的盆栽桔树",
+        "note": "桔与“吉”同音。"
+      },
+      {
+        "term": "花市",
+        "meaning": "春节前卖花卖年桔的集市",
+        "note": "广州迎春花市很有名。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗常识整理",
+        "license": "factual-reference"
+      }
+    ],
+    "license": "factual-reference",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "modes": ["heritage"],
+    "kidSafe": true,
+    "ageBand": "4-6"
+  }
+]
