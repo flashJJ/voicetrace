@@ -243,3 +243,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-16 | 首页改文案并新增逐字点亮的声音波形；修复 `aspect-ratio` 被图片 height 属性压制 | web/app/page.js、web/components/VoiceMoment.jsx、web/app/globals.css、web/app/layout.js、web/public/og.jpg、docs/contest/05、contest/09、contest/11、contest/12 | 首屏出现记忆点；口号在各材料中统一 |
 | 2026-11-17 | 文档中心重组：比赛材料迁入 `docs/contest/`，新增 `guide/` 项目指导、`development/` 后续开发方案、`blog/` 技术分享 | docs/、README.md | 原 13 份比赛文档仅移动不改内容；新增 13 份文档 |
 | 2026-11-18 | 新增 v0.3 版本迭代计划，路线图补充版本映射 | docs/development/02-v0.3-版本迭代计划.md、01-后续开发路线图.md、docs/README.md、README.md | 比赛期间冻结 main，v0.3 在 release/v0.3 开发 |
+| 2026-11-19 | 发布 v0.6 儿童模式：9 个适龄故事、儿童录音页、家长门、年龄标签、继续阅读与自测试 | web/app/kids、web/components、web/tests、web/scripts、docs/development/05-08 | GitHub Pages 与 Trae FunctionWeb 同日发布 |
