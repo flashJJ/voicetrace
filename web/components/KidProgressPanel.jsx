@@ -99,7 +99,7 @@ export default function KidProgressPanel() {
         ))}
       </ul>
       <div className="kid-progress-actions">
-        <span className="kid-learn-hint">记录只存在这台设备，可随时清除。</span>
+        <span className="kid-learn-hint">记录只存在这台设备，换手机不会同步，可随时清除。</span>
         <button type="button" className="kid-progress-clear-all" onClick={handleClearAll}>
           清除全部学习记录
         </button>

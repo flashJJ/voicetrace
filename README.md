@@ -247,3 +247,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-19 | v0.7 学习闭环：9 个故事词卡与小测、逐幕跟读回放、小测页、学习小结、本机进度与家长页清除入口 | web/data/kids、web/lib/kid-learning.js、web/lib/kid-progress.js、web/components/Kid*.jsx、web/app/kids/[slug]/quiz、web/app/kids/[slug]/summary、web/app/kids/parent、web/scripts、web/tests、docs/development/07 | 跟读为练习录音，不写入声音档案；进度只存本机 |
 | 2026-11-19 | v0.8 适龄内容：5 个儿童独立故事与封面、儿童池增至 14 个、14 条适龄素材、脚本自测记录、材料收尾清单与 `v0.8.0` 冻结 | web/lib/stories-kids.js、web/public/covers、web/data/kids/learning.json、web/data/corpus/nursery/07-kid-v08.json、web/scripts、web/tests、docs/development/08-10 | 真实亲子试用未完成，已在试用记录中标注 |
 | 2026-11-20 | 收尾材料按双入口重做：产品说明、路演 10 页、报名帖、3 分钟脚本、截图清单；统一 25/14/164/8 数字 | docs/contest/06-14、docs/development/01、05、10、README | 真实试用缺口保持显式标注；PDF/PPT/视频仍待制作 |
+| 2026-11-20 | 修复亲子角色走查 P1：儿童词注去重、首屏跟读入口、跟读听示例、小测听题目、跨设备提示 | web/hooks/useSpeechPlayback.js、StoryReader、KidReadAlong、KidQuiz、KidWordCards、kids/parent、globals.css、web/tests、web/scripts | 单测增至 25 项；静态检查覆盖新按钮与提示 |
