@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import AudioButton from "./AudioButton";
+import SceneAudio from "./SceneAudio";
 import ShareCard from "./ShareCard";
 
 export default function StoryReader({ story }) {
@@ -77,12 +77,7 @@ export default function StoryReader({ story }) {
               loading="eager"
               decoding="async"
             />
-            <div className="reader-audio">
-              <AudioButton
-                text={scene.audioText || scene.textYue}
-                label="播放本幕粤语示例语音"
-              />
-            </div>
+            <SceneAudio story={story} scene={scene} />
           </div>
 
           <div className="reader-body" ref={bodyRef}>
@@ -140,6 +135,12 @@ export default function StoryReader({ story }) {
                   <button type="button" className="btn btn-primary" onClick={restart}>
                     再读一次
                   </button>
+                  <Link
+                    className="btn btn-ghost"
+                    href={`/record?story=${story.slug}&scene=${firstScene}`}
+                  >
+                    录下我家的版本
+                  </Link>
                   <Link className="btn btn-ghost" href="/map">
                     去声音地图
                   </Link>

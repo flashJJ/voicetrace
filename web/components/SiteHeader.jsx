@@ -56,6 +56,12 @@ export default function SiteHeader() {
               创作 <span aria-hidden="true">▾</span>
             </button>
             <div className="nav-dropdown-menu">
+              <Link href="/record" onClick={close}>
+                录音棚
+              </Link>
+              <Link href="/archive" onClick={close}>
+                我的声音
+              </Link>
               <Link href="/library" onClick={close}>
                 资料库
               </Link>
