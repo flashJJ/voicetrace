@@ -81,11 +81,22 @@ if (!bundleContains(path.join(outDir, "_next/static"), "/kids/record")) {
   errors.push("客户端产物里找不到 /kids/record 链接");
 }
 
+const parentHtml = exists("kids/parent/index.html") ? read("kids/parent/index.html") : "";
+if (parentHtml && !parentHtml.includes("这一步请家长完成")) {
+  errors.push("家长说明页缺少家长门确认");
+}
+
+const chunksDir = path.join(outDir, "_next/static");
+if (!bundleContains(chunksDir, "voicetrace:last-kid-story")) {
+  errors.push("客户端产物里找不到「记住上次故事」逻辑");
+}
+
 console.log("声迹静态产物检查");
 console.log("--------------------------------------");
 console.log(`  儿童故事页 ${kidStories().length} 个`);
 console.log(`  基础页面 ${basePages.length} 个`);
-console.log(`  儿童录音链接 ${bundleContains(path.join(outDir, "_next/static"), "/kids/record") ? "已打包" : "缺失"}`);
+console.log(`  儿童录音链接 ${bundleContains(chunksDir, "/kids/record") ? "已打包" : "缺失"}`);
+console.log(`  家长门 ${parentHtml.includes("这一步请家长完成") ? "已生成" : "缺失"}`);
 console.log("--------------------------------------");
 
 if (errors.length) {

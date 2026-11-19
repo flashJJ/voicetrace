@@ -1,4 +1,5 @@
 import Link from "next/link";
+import KidsContinue from "../../components/KidsContinue";
 import { kidGroups, kidStories } from "../../lib/kids";
 
 export const metadata = {
@@ -8,6 +9,7 @@ export const metadata = {
 
 export default function KidsPage() {
   const groups = kidGroups();
+  const pool = kidStories().map(({ slug, title, ageBand }) => ({ slug, title, ageBand }));
 
   return (
     <main className="container kids-page">
@@ -29,8 +31,10 @@ export default function KidsPage() {
       </section>
 
       <p className="kids-note">
-        儿童模式不会出现鬼故事、野史和 AI 工坊。家长可以随时从右上角回到成人模式。
+        儿童模式不会出现鬼故事、野史和 AI 工坊。家长可以从右上角「家长说明」回到成人模式。
       </p>
+
+      <KidsContinue stories={pool} />
 
       <div id="stories">
         {groups.map((group) => (
@@ -84,8 +88,8 @@ export default function KidsPage() {
           <Link className="btn btn-ghost" href="/kids/parent">
             适龄与隐私说明
           </Link>
-          <Link className="btn btn-ghost" href="/">
-            回成人模式
+          <Link className="btn btn-ghost" href="/kids/parent#exit">
+            回成人模式（家长确认）
           </Link>
         </div>
       </section>

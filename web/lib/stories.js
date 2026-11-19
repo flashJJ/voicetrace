@@ -6,6 +6,16 @@ import { moreStories } from "./stories-more.js";
 
 export { heroImage, whyImage };
 
+export const AGE_BAND_LABELS = {
+  "4-6": "4-6 岁",
+  "6-9": "6-9 岁",
+  "10+": "10 岁以上",
+};
+
+export function ageBandLabel(value) {
+  return AGE_BAND_LABELS[value] || value || "";
+}
+
 const heritageStories = [
   {
     slug: 'moonlight',

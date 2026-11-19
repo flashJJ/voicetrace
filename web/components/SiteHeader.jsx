@@ -64,11 +64,8 @@ export default function SiteHeader() {
               <Link href="/archive" onClick={close}>
                 我的录音
               </Link>
-              <Link href="/kids/parent" onClick={close}>
+              <Link href="/kids/parent" className="nav-cta" onClick={close}>
                 家长说明
-              </Link>
-              <Link href="/" className="nav-cta" onClick={close}>
-                回成人模式
               </Link>
             </>
           ) : (

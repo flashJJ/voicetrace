@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { KID_BANDS, getKidStory, isKidSafe, kidGroups, kidStories } from "../lib/kids.js";
-import { stories } from "../lib/stories.js";
+import { ageBandLabel, stories } from "../lib/stories.js";
 
 test("儿童故事池不含鬼故事与成人内容", () => {
   const pool = kidStories();
@@ -42,4 +42,11 @@ test("getKidStory 与 isKidSafe 只认儿童池", () => {
   assert.equal(getKidStory("not-exist"), null);
   assert.equal(isKidSafe(kid.slug), true);
   assert.equal(isKidSafe("eagle-orchid"), false);
+});
+
+test("年龄标签覆盖所有分级", () => {
+  assert.equal(ageBandLabel("4-6"), "4-6 岁");
+  assert.equal(ageBandLabel("6-9"), "6-9 岁");
+  assert.equal(ageBandLabel("10+"), "10 岁以上");
+  assert.equal(ageBandLabel(""), "");
 });

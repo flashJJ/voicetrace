@@ -1,4 +1,5 @@
 import Link from "next/link";
+import KidsExitGate from "../../../components/KidsExitGate";
 import { kidStories } from "../../../lib/kids";
 
 export const metadata = {
@@ -44,7 +45,7 @@ export default function KidsParentPage() {
         <ul>
           <li>录音与转写：进入「声音档案」查看、试听、删除。</li>
           <li>换设备：先在档案页导出完整档案，再在新设备导入。</li>
-          <li>回到成人模式：点右上角「回成人模式」，或直接访问首页。</li>
+          <li>回到成人模式：点右上角「家长说明」，在页面底部由家长完成确认。</li>
         </ul>
       </section>
 
@@ -55,10 +56,13 @@ export default function KidsParentPage() {
         <Link className="btn btn-ghost" href="/archive">
           声音档案
         </Link>
-        <Link className="btn btn-ghost" href="/">
-          回成人模式
-        </Link>
       </div>
+
+      <section className="kids-parent-card kids-parent-block kids-exit-section">
+        <h2>离开儿童模式</h2>
+        <p>为了避免孩子误点，请家长完成下面的确认。</p>
+        <KidsExitGate />
+      </section>
     </main>
   );
 }

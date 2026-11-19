@@ -31,6 +31,15 @@ export default function StoryReader({ story, kidMode = false }) {
   const scene = scenes[sceneId];
 
   useEffect(() => {
+    if (!kidMode) return;
+    try {
+      window.localStorage.setItem("voicetrace:last-kid-story", story.slug);
+    } catch (error) {
+      // 隐私模式可能禁用 localStorage，不影响阅读。
+    }
+  }, [kidMode, story.slug]);
+
+  useEffect(() => {
     if (!scene?.ending) {
       setFamilyQuote("");
       return undefined;

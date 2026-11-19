@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ageBandLabel } from "../lib/stories.js";
 
 export default function StoryCard({ story }) {
   const isSample = story.type.includes("示例");
@@ -17,6 +18,7 @@ export default function StoryCard({ story }) {
         <div className="story-meta">
           <span>{story.dialect}</span>
           <span className={isSample ? "badge badge-warn" : "badge"}>{story.type}</span>
+          {story.ageBand ? <span>{ageBandLabel(story.ageBand)}</span> : null}
         </div>
         <h3 className="story-title">{story.title}</h3>
         <p className="story-subtitle">{story.subtitle}</p>
