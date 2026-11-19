@@ -1,4 +1,5 @@
 import { cover, heroImage, whyImage } from "./image.js";
+import { kidStories as originalKidStories } from "./stories-kids.js";
 import { ghostStories } from "./stories-ghost.js";
 import { wildHistoryStories } from "./stories-wild-history.js";
 import { longStories } from "./stories-long.js";
@@ -761,6 +762,7 @@ export const storyModes = [
 ];
 
 export const stories = [
+  ...originalKidStories,
   ...heritageStories,
   ...ghostStories,
   ...wildHistoryStories,
