@@ -1,4 +1,6 @@
 import Link from "next/link";
+import AudioButton from "../../components/AudioButton";
+import { voiceSamples } from "../../lib/voice-samples";
 
 export const metadata = {
   title: "关于与隐私 · 声迹",
@@ -56,6 +58,43 @@ export default function AboutPage() {
         </section>
 
         <section className="about-card">
+          <h2>真人粤语样本</h2>
+          <p>
+            下面三段不是合成音，来自香港社区粤语读本项目「冚唪唥」，由真人朗读、以
+            CC BY 4.0 授权。我们只做了裁剪与响度归一化，用来说明「原声」应该是什么质感；
+            它们不是本站故事的录音。
+          </p>
+          <ul className="voice-list">
+            {voiceSamples.map((sample) => (
+              <li className="voice-item" key={sample.id}>
+                <div className="voice-head">
+                  <strong>{sample.title}</strong>
+                  <span>{sample.duration}</span>
+                </div>
+                <p className="voice-note">{sample.note}</p>
+                <AudioButton
+                  audioUrl={sample.src}
+                  label={`播放${sample.title} · ${sample.reader}`}
+                  hint={`${sample.credit} · CC BY 4.0`}
+                />
+                <a
+                  className="voice-source"
+                  href={sample.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  原始页面 ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="voice-license">
+            音频版权归原作者与朗读者所有，依 CC BY 4.0 使用；已裁剪至 60-90 秒并统一响度，
+            完整录音见各段来源页。
+          </p>
+        </section>
+
+        <section className="about-card">
           <h2>录音、隐私与授权</h2>
           <ul>
             <li>录音前会说明用途：用于生成故事、可能在作品页展示；不会用于训练模型。</li>
@@ -85,9 +124,9 @@ export default function AboutPage() {
         <section className="about-card">
           <h2>技术说明</h2>
           <p>
-            前端使用 Next.js + React；语音示例使用浏览器语音合成，正式版计划接入
-            CosyVoice/FunASR 等方言语音能力；互动故事使用轻量 JSON 剧情结构，
-            不依赖重型游戏引擎。
+            前端使用 Next.js + React；默认语音使用浏览器语音合成，并附 3 段 CC BY 4.0
+            真人粤语样本；正式版计划接入 CosyVoice/FunASR 等方言语音能力。互动故事使用
+            轻量 JSON 剧情结构，不依赖重型游戏引擎。
           </p>
         </section>
       </div>

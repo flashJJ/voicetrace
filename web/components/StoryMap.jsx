@@ -8,6 +8,9 @@ const pins = {
   moonlight: { x: 330, y: 300, label: "西关" },
   "mouse-wedding": { x: 520, y: 250, label: "珠三角" },
   "grandma-congee": { x: 430, y: 390, label: "广州河南" },
+  "five-goats": { x: 250, y: 210, label: "越秀山" },
+  "boluo-festival": { x: 640, y: 430, label: "黄埔庙头" },
+  "chicken-lullaby": { x: 300, y: 350, label: "西关" },
 };
 
 const pinGroups = Object.values(

@@ -15,7 +15,12 @@ function PlayIcon({ playing }) {
   );
 }
 
-export default function AudioButton({ text, audioUrl, label = "播放粤语原声" }) {
+export default function AudioButton({
+  text,
+  audioUrl,
+  label = "播放粤语原声",
+  hint = "当前原型使用浏览器语音作为示例；正式版将播放经授权的真实方言录音，并标注 AI 合成部分。",
+}) {
   const [playing, setPlaying] = useState(false);
   const [message, setMessage] = useState("");
   const audioRef = useRef(null);
@@ -159,10 +164,7 @@ export default function AudioButton({ text, audioUrl, label = "播放粤语原�
           <div className="audio-note">{label}</div>
         </div>
       </div>
-      <p className="audio-hint">
-        {message ||
-          "当前原型使用浏览器语音作为示例；正式版将播放经授权的真实方言录音，并标注 AI 合成部分。"}
-      </p>
+      <p className="audio-hint">{message || hint}</p>
     </div>
   );
 }

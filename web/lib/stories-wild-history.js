@@ -1,4 +1,4 @@
-import { cover } from "./image";
+import { cover } from "./image.js";
 
 export const wildHistoryStories = [
   {
@@ -322,6 +322,116 @@ export const wildHistoryStories = [
         choices: [],
         ending: true,
         endingText: "有人走，有人留；都是为了让故事有人记得。",
+      },
+    ],
+  },
+  {
+    slug: "boluo-festival",
+    mode: "wild_history",
+    modeLabel: "野史模式",
+    featured: false,
+    title: "波罗鸡",
+    subtitle: "庙头村 · 一只纸鸡的野史",
+    dialect: "粤语 · 广州黄埔",
+    type: "野史 · 民俗传说",
+    duration: "4 分钟",
+    cover: cover("boluo-festival"),
+    quote: "波罗鸡，靠黐。",
+    intro:
+      "农历二月，黄埔庙头村人山人海。你挤入南海神庙，见到一档档波罗鸡，纸糊的鸡公，红红绿绿。",
+    scenes: [
+      {
+        id: "boluo-1",
+        act: 1,
+        title: "庙头村的墟",
+        textYue:
+          "波罗诞正日，庙头村逼到行唔到。你见到阿伯摆档，一只只纸扎波罗鸡，鸡冠红到发亮。阿伯话：“后生仔，买只啦，好意头。”",
+        textZh:
+          "波罗诞正日，庙头村挤得走不动。你看见阿伯摆摊，一只只纸扎波罗鸡，鸡冠红得发亮。阿伯说：“年轻人，买一只吧，好意头。”",
+        audioText:
+          "波罗诞正日，庙头村逼到行唔到。阿伯话：后生仔，买只啦，好意头。",
+        glossary: [
+          { term: "逼", meaning: "拥挤", note: "“逼”在粤语里表示挤。" },
+          { term: "好意头", meaning: "好兆头", note: "粤语常讲意头。" },
+        ],
+        choices: [
+          { label: "买一只波罗鸡", next: "boluo-2a" },
+          { label: "问阿伯点解叫波罗鸡", next: "boluo-2b" },
+        ],
+      },
+      {
+        id: "boluo-2a",
+        act: 2,
+        title: "纸鸡的来历",
+        textYue:
+          "阿伯一边用浆糊黐鸡毛，一边讲：“听讲以前有个波罗国嘅商人，嚟到南海神庙，带咗两只鸡。后来佢冇走，留喺庙度。”",
+        textZh:
+          "阿伯一边用浆糊粘鸡毛，一边说：“听说以前有个波罗国的商人来到南海神庙，带了两只鸡。后来他没有走，留在庙里。”",
+        audioText:
+          "阿伯一边用浆糊黐鸡毛，一边讲：听讲以前有个波罗国嘅商人，嚟到南海神庙。",
+        glossary: [
+          { term: "黐", meaning: "粘", note: "“黐”读作 ci1，也引申为赖着不去。" },
+          { term: "听讲", meaning: "听说", note: "说书人常用“听讲”引出传闻。" },
+        ],
+        choices: [
+          { label: "问商人叫咩名", next: "boluo-3a" },
+          { label: "问两只鸡去咗边", next: "boluo-3b" },
+        ],
+      },
+      {
+        id: "boluo-2b",
+        act: 2,
+        title: "达奚司空",
+        textYue:
+          "阿伯压低声音：“个商人叫达奚司空。佢望住家乡方向，望到化成石。村民觉得佢可怜，就扎纸鸡拜佢。”",
+        textZh:
+          "阿伯压低声音：“那个商人叫达奚司空。他望着家乡的方向，望到化成石头。村民觉得他可怜，就扎纸鸡拜他。”",
+        audioText:
+          "阿伯压低声音：个商人叫达奚司空。佢望住家乡方向，望到化成石。",
+        glossary: [
+          { term: "望住", meaning: "望着", note: "“住”表示动作持续。" },
+          { term: "化成", meaning: "变成", note: "民间传说常用“化为石”。" },
+        ],
+        choices: [
+          { label: "去庙里睇石像", next: "boluo-3a" },
+          { label: "买只鸡带走", next: "boluo-3b" },
+        ],
+      },
+      {
+        id: "boluo-3a",
+        act: 3,
+        title: "庙里的石像",
+        textYue:
+          "你入到庙，见到一尊石像，脸朝向海。香火好旺，石像前面摆满波罗鸡。有人合掌，有人只系静静企一阵。",
+        textZh:
+          "你走进庙里，看见一尊石像，脸朝着海。香火很旺，石像前面摆满波罗鸡。有人合掌，有人只是静静站一会儿。",
+        audioText:
+          "你入到庙，见到一尊石像，脸朝向海。石像前面摆满波罗鸡。",
+        glossary: [
+          { term: "香火", meaning: "供奉的香烛", note: "香火旺表示参拜的人多。" },
+          { term: "企", meaning: "站", note: "粤语“企”对应普通话的“站”。" },
+        ],
+        choices: [],
+        ending: true,
+        endingText: "一只纸鸡，拜的是一个返唔到屋企的人。",
+      },
+      {
+        id: "boluo-3b",
+        act: 3,
+        title: "带一只鸡返屋企",
+        textYue:
+          "你买咗只波罗鸡，阿伯帮你用红绳绑好。返到屋企，阿妈笑：“波罗鸡——靠黐㗎。”你都笑，但系冇拆穿。",
+        textZh:
+          "你买了一只波罗鸡，阿伯帮你用红绳绑好。回到家，妈妈笑：“波罗鸡——靠粘的。”你也笑，但没有拆穿。",
+        audioText:
+          "你买咗只波罗鸡，阿伯帮你用红绳绑好。阿妈笑：波罗鸡，靠黐㗎。",
+        glossary: [
+          { term: "靠黐", meaning: "靠粘；也指靠占便宜", note: "歇后语“波罗鸡——靠黐”的双关。" },
+          { term: "拆穿", meaning: "说破", note: "粤语常说“拆穿西洋镜”。" },
+        ],
+        choices: [],
+        ending: true,
+        endingText: "有啲故仔，靠黐先留得住。",
       },
     ],
   },
