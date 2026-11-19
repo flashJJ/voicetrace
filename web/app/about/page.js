@@ -36,28 +36,8 @@ export default function AboutPage() {
           <span className="tag">粤语 · 第一季</span>
           <span className="tag">原型版本</span>
         </div>
-      </div>
 
-      <div>
-        <section className="about-card">
-          <h2>我们怎么做</h2>
-          <ul>
-            <li>
-              <strong>原声优先：</strong>真实录音是主角；AI 只做转写、翻译、注释和辅助朗读。
-            </li>
-            <li>
-              <strong>三幕互动：</strong>每幕两三个选择、两个结局，让听故事变成参与故事。
-            </li>
-            <li>
-              <strong>声音地图：</strong>把故事钉在发生的地方，形成家庭/社区的地方记忆。
-            </li>
-            <li>
-              <strong>可分享：</strong>生成声音故事卡，发给家人朋友，而不是看完即走。
-            </li>
-          </ul>
-        </section>
-
-        <section className="about-card">
+        <section className="about-card about-card-left">
           <h2>真人粤语样本</h2>
           <p>
             下面三段不是合成音，来自香港社区粤语读本项目「冚唪唥」，由真人朗读、以
@@ -93,6 +73,26 @@ export default function AboutPage() {
             完整录音见各段来源页。
           </p>
         </section>
+      </div>
+
+      <div>
+        <section className="about-card">
+          <h2>我们怎么做</h2>
+          <ul>
+            <li>
+              <strong>原声优先：</strong>真实录音是主角；AI 只做转写、翻译、注释和辅助朗读。
+            </li>
+            <li>
+              <strong>多幕互动：</strong>故事 3-8 幕随机，每幕一到两个选择、两个结局，让听故事变成参与故事。
+            </li>
+            <li>
+              <strong>声音地图：</strong>把故事钉在发生的地方，形成家庭/社区的地方记忆。
+            </li>
+            <li>
+              <strong>可分享：</strong>生成声音故事卡，发给家人朋友，而不是看完即走。
+            </li>
+          </ul>
+        </section>
 
         <section className="about-card">
           <h2>录音、隐私与授权</h2>
@@ -108,8 +108,8 @@ export default function AboutPage() {
         <section className="about-card">
           <h2>关于这个原型</h2>
           <p>
-            当前版本是 TRAE 好应用大赏赛的参赛原型，使用 3 个示例故事：
-            2 个公有领域改编（《月光光》《老鼠娶亲》）和 1 个虚构示例（《阿婆的艇仔粥》）。
+            当前版本是 TRAE 好应用大赏赛的参赛原型，共 16 个互动故事，长度 3-8 幕：
+            既有《月光光》《老鼠娶亲》这样的公有领域改编，也有广州地方传说、民俗与野史。
             正式版会替换为经授权的真实家庭故事，并加入真实录音上传、转写校对、家庭协作等功能。
           </p>
           <p>

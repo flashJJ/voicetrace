@@ -1,0 +1,362 @@
+[
+  {
+    "id": "yue-custom-flower-market",
+    "type": "custom",
+    "title": "行花街",
+    "subtitle": "广府民俗 · 年宵花市 · 好意头",
+    "region": "广州 / 佛山 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "除夕前行年宵花市，买年花、年桔，取大吉大利、花开富贵的好意头。",
+    "text": "年廿八之后，花街开档。桃花、剑兰、年桔摆满一条街，行到边都要讲句“恭喜发财”。",
+    "tags": ["民俗", "春节", "花市", "好意头"],
+    "motifs": ["花街", "年桔", "桃花", "挥春"],
+    "glossary": [
+      {
+        "term": "行花街",
+        "meaning": "逛年宵花市",
+        "note": "广州人过年必做的事。"
+      },
+      {
+        "term": "年桔",
+        "meaning": "过年摆的盆栽桔",
+        "note": "桔与“吉”同音。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-custom-clean-house",
+    "type": "custom",
+    "title": "年廿八洗邋遢",
+    "subtitle": "广府民俗 · 扫尘 · 辞旧",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "年廿八全屋大扫除，洗被铺、抹窗、清杂物，把一年的霉气扫走，迎接新年。",
+    "text": "年廿八，家家户户搬凳抹窗，被铺洗到竹竿都挂满。阿妈话：“今日唔洗，明年都唔使洗。”",
+    "tags": ["民俗", "春节", "扫尘"],
+    "motifs": ["扫帚", "抹窗", "被铺"],
+    "glossary": [
+      {
+        "term": "洗邋遢",
+        "meaning": "大扫除",
+        "note": "“邋遢”指脏乱。"
+      },
+      {
+        "term": "被铺",
+        "meaning": "被褥",
+        "note": "粤语称床上用品为被铺。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage"]
+  },
+  {
+    "id": "yue-custom-winter-feast",
+    "type": "custom",
+    "title": "冬至做冬",
+    "subtitle": "广府民俗 · 冬至大过年",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "广府人说“冬至大过年”，一家人齐齐食饭，劏鸡、煮汤圆，祭祖之后团聚。",
+    "text": "冬至嗰日，街市鸡档最旺。阿婆话：“冬大过年，点都要返嚟食餐饭。”",
+    "tags": ["民俗", "冬至", "团圆"],
+    "motifs": ["鸡", "汤圆", "一家人"],
+    "glossary": [
+      {
+        "term": "做冬",
+        "meaning": "过冬至",
+        "note": "广府人称过冬至为做冬。"
+      },
+      {
+        "term": "劏鸡",
+        "meaning": "杀鸡",
+        "note": "“劏”是宰杀。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 1,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage"]
+  },
+  {
+    "id": "yue-custom-dragonboat-race",
+    "type": "custom",
+    "title": "扒龙舟",
+    "subtitle": "广府民俗 · 端午 · 起龙",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "端午前后起龙、采青、扒龙舟，锣鼓一响，河涌两岸站满人。",
+    "text": "四月底起龙，龙船由涌底挖上来，洗刷、上油。五月初五，鼓声一响，几十支桨一齐落水。",
+    "tags": ["民俗", "端午", "龙舟", "河涌"],
+    "motifs": ["龙船", "鼓", "桨", "涌"],
+    "glossary": [
+      {
+        "term": "扒龙舟",
+        "meaning": "划龙舟",
+        "note": "粤语“扒”是划。"
+      },
+      {
+        "term": "起龙",
+        "meaning": "把埋在水底的龙船挖出来",
+        "note": "珠三角村落传统。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-custom-fire-dragon",
+    "type": "custom",
+    "title": "舞火龙",
+    "subtitle": "广府民俗 · 中秋 · 香火",
+    "region": "广州白云 / 佛山",
+    "dialect": "粤语（广府片）",
+    "summary": "中秋夜以稻草扎龙，插满燃着的香，由青壮年舞动游村，祈求驱疫平安。",
+    "text": "八月十五，龙身插满线香，火光点点。舞龙人赤膊上阵，沿村道走一圈，火星落满地。",
+    "tags": ["民俗", "中秋", "火龙", "祈福"],
+    "motifs": ["火龙", "线香", "月"],
+    "glossary": [
+      {
+        "term": "线香",
+        "meaning": "细长的香",
+        "note": "舞火龙时插在龙身上。"
+      },
+      {
+        "term": "赤膊",
+        "meaning": "光着上身",
+        "note": "舞龙人常赤膊上阵。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "ghost"]
+  },
+  {
+    "id": "yue-custom-yulan",
+    "type": "custom",
+    "title": "盂兰节",
+    "subtitle": "广府民俗 · 七月十四 · 烧街衣",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "农历七月十四前后，街坊在路边烧纸钱、街衣，祭奠无主孤魂，也提醒细路夜晚早点返屋企。",
+    "text": "七月十四晚，巷口一堆堆火光。阿婆边烧边念：“有主归主，无主归庙。”细路唔敢行近。",
+    "tags": ["民俗", "盂兰", "祭祀", "禁忌"],
+    "motifs": ["街衣", "纸钱", "火光"],
+    "glossary": [
+      {
+        "term": "烧街衣",
+        "meaning": "在路边烧纸祭品",
+        "note": "广府盂兰节习俗。"
+      },
+      {
+        "term": "有主归主",
+        "meaning": "有家的回到自家",
+        "note": "烧街衣时的念词。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 5,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "ghost"]
+  },
+  {
+    "id": "yue-custom-double-ninth",
+    "type": "custom",
+    "title": "重阳登高",
+    "subtitle": "广府民俗 · 九月九 · 登高",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "九月初九登高，广州人多去白云山，取其“步步高”的好意头，也顺道祭祖。",
+    "text": "重阳前一晚，白云山已经有人上山。天光时分，山顶人山人海，风车转个不停。",
+    "tags": ["民俗", "重阳", "登高", "白云山"],
+    "motifs": ["白云山", "风车", "登高"],
+    "glossary": [
+      {
+        "term": "登高",
+        "meaning": "爬山登顶",
+        "note": "重阳节传统。"
+      },
+      {
+        "term": "风车",
+        "meaning": "纸扎小风车",
+        "note": "登高时常买，寓意转运。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage"]
+  },
+  {
+    "id": "yue-custom-hot-pot",
+    "type": "custom",
+    "title": "打边炉",
+    "subtitle": "广府民俗 · 火锅 · 一家人",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "冬天一家人围炉，汤底滚起，先落鱼片、再落牛肉，边煮边食，最紧要系热闹。",
+    "text": "天冷，阿妈一声“打边炉啦”，全屋人围埋。筷子一齐落锅，阿爸总系抢到最后一片鱼。",
+    "tags": ["民俗", "饮食", "冬天", "团圆"],
+    "motifs": ["炉", "汤底", "鱼片"],
+    "glossary": [
+      {
+        "term": "打边炉",
+        "meaning": "吃火锅",
+        "note": "粤语称火锅为打边炉。"
+      },
+      {
+        "term": "围埋",
+        "meaning": "围在一起",
+        "note": "“埋”表示聚拢。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage"]
+  },
+  {
+    "id": "yue-custom-wedding-cake",
+    "type": "custom",
+    "title": "嫁女饼",
+    "subtitle": "广府民俗 · 婚嫁 · 派饼",
+    "region": "广州 / 佛山",
+    "dialect": "粤语（广府片）",
+    "summary": "广府婚嫁要派嫁女饼，分给亲戚街坊，饼有不同馅料，数量与礼数都有讲究。",
+    "text": "过大礼嗰日，一担担嫁女饼抬入巷。阿婆逐家派，边派边话：“食过饼，就知我家嫁女。”",
+    "tags": ["民俗", "婚嫁", "礼饼"],
+    "motifs": ["嫁女饼", "红纸", "担"],
+    "glossary": [
+      {
+        "term": "嫁女饼",
+        "meaning": "婚嫁时派送的礼饼",
+        "note": "广府婚俗重要一环。"
+      },
+      {
+        "term": "过大礼",
+        "meaning": "婚前送聘礼",
+        "note": "粤语称送聘为过大礼。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 4,
+    "difficulty": 2,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  },
+  {
+    "id": "yue-custom-lucky-money",
+    "type": "custom",
+    "title": "开工利是",
+    "subtitle": "广府民俗 · 新年 · 利是",
+    "region": "广州 / 珠三角",
+    "dialect": "粤语（广府片）",
+    "summary": "新年开工，老板派开工利是，同事互相讲恭喜说话，图一年顺顺利利。",
+    "text": "初八开工，门口摆住全盒。老板逐封利是派，人人讲句“生意兴隆”，气氛先算真正返工。",
+    "tags": ["民俗", "春节", "利是", "开工"],
+    "motifs": ["利是", "全盒", "恭喜"],
+    "glossary": [
+      {
+        "term": "利是",
+        "meaning": "红包",
+        "note": "粤语称红包为利是。"
+      },
+      {
+        "term": "全盒",
+        "meaning": "装贺年糖果的盒子",
+        "note": "过年待客用。"
+      }
+    ],
+    "source": [
+      {
+        "title": "广府民俗 · 民间口传",
+        "license": "traditional-public-domain"
+      }
+    ],
+    "license": "traditional-public-domain",
+    "storyPotential": 3,
+    "difficulty": 1,
+    "goldenSample": false,
+    "needsResearch": false,
+    "modes": ["heritage", "wild_history"]
+  }
+]

@@ -1192,7 +1192,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   gap: 42px;
-  align-items: start;
+  align-items: center;
 }
 
 .share-panel h2 {
@@ -1244,7 +1244,8 @@ button {
   background: linear-gradient(180deg, #f2e7d4, #e9dcc6);
   padding: 18px;
   box-shadow: var(--shadow);
-  position: relative;
+  position: sticky;
+  top: 92px;
   overflow: visible;
 }
 
@@ -1369,6 +1370,17 @@ button {
   margin: 0 0 18px;
 }
 
+.map-story-list {
+  margin-top: 20px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.map-story-list .map-story:first-child {
+  border-top: 0;
+}
+
 .map-story {
   display: flex;
   gap: 14px;
@@ -1438,6 +1450,11 @@ button {
   background: rgba(251, 247, 238, 0.66);
   padding: 26px;
   margin-bottom: 18px;
+}
+
+.about-card-left {
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
 .about-card h2 {
@@ -1610,6 +1627,14 @@ button {
 
   .reader-visual {
     min-height: 380px;
+  }
+
+  .map-frame {
+    position: static;
+  }
+
+  .map-story-list {
+    max-height: none;
   }
 
   .library-grid {

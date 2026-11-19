@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { getCorpusItem, goldenSamples, modeLabel } from "../../lib/corpus";
+import { MAX_ACTS, MIN_ACTS, SKELETON_LABELS } from "../../lib/narrative";
 import { LIVE_STUDIO_URL, isStaticExport } from "../../lib/live";
 
 const options = goldenSamples
@@ -15,6 +16,7 @@ export default function StudioPage() {
   const [selectedId, setSelectedId] = useState(options[0]?.item.id || "");
   const [customText, setCustomText] = useState("");
   const [customMode, setCustomMode] = useState("heritage");
+  const [acts, setActs] = useState("auto");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
@@ -48,8 +50,8 @@ export default function StudioPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(
           usingCustom
-            ? { text: customText.trim(), mode: customMode }
-            : { corpusId: selected.item.id, mode: selected.sample.mode || "heritage" }
+            ? { text: customText.trim(), mode: customMode, acts }
+            : { corpusId: selected.item.id, mode: selected.sample.mode || "heritage", acts }
         ),
       });
 
@@ -120,6 +122,7 @@ export default function StudioPage() {
       `- 素材：${result.corpusId}`,
       `- 模式：${modeLabel(result.mode || "heritage")}`,
       `- 模型：${result.model}`,
+      `- 结构：${result.actCount ? `${result.actCount} 幕` : "黄金样品"}${result.skeleton ? ` / ${SKELETON_LABELS[result.skeleton] || result.skeleton}` : ""}${result.seed ? ` / seed ${result.seed}` : ""}`,
       `- Prompt：${result.promptVersion || "未标注"}`,
       `- 耗时：${typeof result.elapsedMs === "number" ? `${(result.elapsedMs / 1000).toFixed(1)}s` : "未知"}`,
       `- 验收：${passed} / ${total} 通过`,
@@ -147,7 +150,7 @@ export default function StudioPage() {
         <span className="eyebrow">AI 工坊 · 黄金样品验收</span>
         <h1 className="page-title">让模型先跑一遍，再决定要不要信。</h1>
         <p className="page-lede">
-          选一条资料库素材，生成 3 幕互动故事、普通话翻译和方言词注释。
+          选一条资料库素材，生成 3-8 幕互动故事、普通话翻译和方言词注释；幕数与叙事骨架随机，也可手动指定。
           输出会立刻对照黄金样品做检查：三幕、结局、注释、翻译、实体是否幻觉。
           没有配置 API Key 时，用黄金样品作为 Mock 输出，先把流程跑通。
         </p>
@@ -188,8 +191,27 @@ export default function StudioPage() {
               ))}
             </select>
           </div>
+          <div className="corpus-filter">
+            <label htmlFor="studio-acts">幕数</label>
+            <select
+              id="studio-acts"
+              value={acts}
+              onChange={(event) => {
+                setActs(event.target.value);
+                setResult(null);
+                setError("");
+              }}
+            >
+              <option value="auto">随机 {MIN_ACTS}-{MAX_ACTS} 幕</option>
+              {[3, 4, 5, 6, 7, 8].map((count) => (
+                <option key={count} value={count}>
+                  {count} 幕
+                </option>
+              ))}
+            </select>
+          </div>
           <button type="button" className="btn btn-primary" onClick={generate} disabled={loading}>
-            {loading ? "生成中，约 10-20 秒……" : "生成互动版"}
+            {loading ? "生成中，约 10-25 秒……" : "生成互动版"}
           </button>
         </div>
 
@@ -266,6 +288,11 @@ export default function StudioPage() {
                   ? ` · ${(result.elapsedMs / 1000).toFixed(1)}s`
                   : ""}
               </small>
+              <small>
+                {result.actCount ? `${result.actCount} 幕` : ""}
+                {result.skeleton ? ` · ${SKELETON_LABELS[result.skeleton] || result.skeleton}` : ""}
+                {result.seed ? ` · seed ${result.seed}` : ""}
+              </small>
               {result.note ? <small>{result.note}</small> : null}
             </div>
 
@@ -325,7 +352,7 @@ export default function StudioPage() {
 
                 <div className="studio-scenes">
                   {(output.scenes || []).map((scene) => (
-                    <article className="studio-scene" key={`${scene.act}-${scene.title}`}>
+                    <article className="studio-scene" key={scene.id || `${scene.act}-${scene.title}`}>
                       <div className="studio-scene-head">
                         <span>第 {scene.act} 幕</span>
                         <h3>{scene.title}</h3>
