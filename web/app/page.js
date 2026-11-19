@@ -52,7 +52,7 @@ export default function HomePage() {
           <div className="section-heading">
             <div>
               <span className="eyebrow">故事馆</span>
-              <h2 className="section-title">二十个故事，三种乡音</h2>
+              <h2 className="section-title">{stories.length} 个故事，三种乡音</h2>
             </div>
             <p className="section-desc">
               先从一段童谣、一个民间故事、一碗艇仔粥开始。
