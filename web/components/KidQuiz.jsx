@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSpeechPlayback } from "../hooks/useSpeechPlayback";
 import { saveKidQuiz } from "../lib/kid-progress";
 
 export default function KidQuiz({ slug, storyTitle, quiz }) {
+  const { speaking, message: listenMessage, speak, stop } = useSpeechPlayback();
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState(null);
   const [solved, setSolved] = useState(false);
@@ -14,6 +16,21 @@ export default function KidQuiz({ slug, storyTitle, quiz }) {
 
   const question = quiz[index];
   const isLast = index + 1 >= quiz.length;
+
+  useEffect(() => {
+    stop();
+  }, [index, finished, stop]);
+
+  const readQuestion = () => {
+    if (speaking) {
+      stop();
+      return;
+    }
+    const options = question.options
+      .map((option, optionIndex) => `第 ${optionIndex + 1} 个：${option}`)
+      .join("。");
+    speak(`${question.question}。${options}`, { lang: "zh" });
+  };
 
   const choose = (optionIndex) => {
     if (solved) return;
@@ -90,6 +107,14 @@ export default function KidQuiz({ slug, storyTitle, quiz }) {
         第 {index + 1} 题 / 共 {quiz.length} 题
       </p>
       <h2 className="kid-quiz-question">{question.question}</h2>
+
+      <div className="kid-quiz-read">
+        <button type="button" className="kid-quiz-listen" onClick={readQuestion}>
+          {speaking ? "停止" : "听题目"}
+        </button>
+        <span>不认识字？点「听题目」，或请家长读一遍。</span>
+      </div>
+      {listenMessage ? <p className="kid-quiz-listen-hint">{listenMessage}</p> : null}
 
       <div className="kid-quiz-options">
         {question.options.map((option, optionIndex) => {

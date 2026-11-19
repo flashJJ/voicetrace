@@ -61,10 +61,16 @@ for (const story of kidStories()) {
     if (!html.includes("本幕词语")) {
       errors.push(`儿童故事页 ${story.slug} 缺少关键词卡`);
     }
+    if (!html.includes("听示例")) {
+      errors.push(`儿童故事页 ${story.slug} 缺少跟读「听示例」按钮`);
+    }
   }
   const quizHtml = requirePage(`kids/${story.slug}/quiz/index.html`);
   if (quizHtml && !quizHtml.includes("故事小测")) {
     errors.push(`儿童小测页 ${story.slug} 缺少「故事小测」标识`);
+  }
+  if (quizHtml && !quizHtml.includes("听题目")) {
+    errors.push(`儿童小测页 ${story.slug} 缺少「听题目」按钮`);
   }
   const summaryHtml = requirePage(`kids/${story.slug}/summary/index.html`);
   if (summaryHtml && !summaryHtml.includes("学习小结")) {
@@ -98,6 +104,9 @@ if (!bundleContains(path.join(outDir, "_next/static"), "/kids/record")) {
 const parentHtml = exists("kids/parent/index.html") ? read("kids/parent/index.html") : "";
 if (parentHtml && !parentHtml.includes("这一步请家长完成")) {
   errors.push("家长说明页缺少家长门确认");
+}
+if (parentHtml && !parentHtml.includes("换手机不会自动同步")) {
+  errors.push("家长说明页缺少学习记录跨设备提示");
 }
 
 const chunksDir = path.join(outDir, "_next/static");

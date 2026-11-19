@@ -28,6 +28,18 @@ test("每个儿童故事都有词卡与至少 3 道小测", () => {
   }
 });
 
+test("每个儿童场景都有词卡，隐藏成人词注不会丢词", () => {
+  for (const story of kidStories()) {
+    const entry = learning[story.slug];
+    for (const scene of story.scenes) {
+      assert.ok(
+        entry.sceneWords?.[scene.id]?.length > 0,
+        `${story.slug} 的 ${scene.id} 没有词卡`
+      );
+    }
+  }
+});
+
 test("词卡场景合法且词条来自原文或词注", () => {
   for (const story of kidStories()) {
     const entry = learning[story.slug];

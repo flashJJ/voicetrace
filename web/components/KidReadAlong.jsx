@@ -3,22 +3,30 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRecorder } from "../hooks/useRecorder";
+import { useSpeechPlayback } from "../hooks/useSpeechPlayback";
 import { formatDuration } from "../lib/recordings";
 import { markSceneRecorded, readKidProgress } from "../lib/kid-progress";
 
 export default function KidReadAlong({ story, scene }) {
   const { status, error, elapsed, clip, start, stop, reset, setError } = useRecorder();
+  const {
+    speaking,
+    message: listenMessage,
+    speak,
+    stop: stopSpeaking,
+  } = useSpeechPlayback();
   const [marked, setMarked] = useState(false);
 
   useEffect(() => {
     reset();
+    stopSpeaking();
     setMarked(false);
     try {
       setMarked(readKidProgress(story.slug).recorded.includes(scene.id));
     } catch (readError) {
       setMarked(false);
     }
-  }, [reset, story.slug, scene.id]);
+  }, [reset, stopSpeaking, story.slug, scene.id]);
 
   useEffect(() => {
     if (status !== "ready" || !clip) return;
@@ -29,12 +37,12 @@ export default function KidReadAlong({ story, scene }) {
   const isRecording = status === "recording";
 
   return (
-    <section className="kid-readalong" aria-label="跟读练习">
+    <section className="kid-readalong" id="kid-readalong" aria-label="跟读练习">
       <div className="kid-readalong-head">
         <div>
           <h3>跟读一次</h3>
           <p className="kid-learn-hint">
-            听清楚再读，录下来自己回放。练习录音不会上传，也不会进声音档案。
+            先听一次，再录下来自己回放。练习录音不会上传，也不会进声音档案；换一幕会清空。
           </p>
         </div>
         {marked ? <span className="kid-readalong-done">已跟读过</span> : null}
@@ -69,7 +77,21 @@ export default function KidReadAlong({ story, scene }) {
           </p>
         ) : null}
 
+        {listenMessage ? (
+          <p className="kid-readalong-listen-hint">{listenMessage}</p>
+        ) : null}
+
         <div className="kid-readalong-actions">
+          <button
+            type="button"
+            className="btn btn-ghost"
+            onClick={() =>
+              speaking ? stopSpeaking() : speak(scene.audioText || scene.textYue)
+            }
+            disabled={isRecording || status === "requesting" || status === "processing"}
+          >
+            {speaking ? "停止播放" : "听示例"}
+          </button>
           {isRecording ? (
             <button type="button" className="btn btn-primary" onClick={stop}>
               停止

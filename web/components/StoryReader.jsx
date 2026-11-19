@@ -37,6 +37,8 @@ export default function StoryReader({ story, kidMode = false }) {
     () => (kidMode ? getKidLearning(story.slug) : null),
     [kidMode, story.slug]
   );
+  const sceneKidWords = learning?.sceneWords?.[scene.id] || [];
+  const showGlossary = scene.glossary?.length > 0 && (!kidMode || sceneKidWords.length === 0);
 
   useEffect(() => {
     if (!kidMode) return;
@@ -141,11 +143,23 @@ export default function StoryReader({ story, kidMode = false }) {
             <div className="act-label">
               第 {scene.act} 幕 / 共 {actCount} 幕
             </div>
+            {kidMode && learning ? (
+              <div className="kid-quick-links" aria-label="本幕快捷入口">
+                <a className="kid-quick-link" href="#kid-readalong">
+                  跟读这一句
+                </a>
+                {sceneKidWords.length ? (
+                  <a className="kid-quick-link" href="#kid-wordcards">
+                    看本幕词语
+                  </a>
+                ) : null}
+              </div>
+            ) : null}
             <h1 className="scene-title">{scene.title}</h1>
             <p className="scene-text">{scene.textYue}</p>
             <p className="scene-text-zh">{scene.textZh}</p>
 
-            {scene.glossary?.length > 0 && (
+            {showGlossary && (
               <>
                 <div className="glossary" aria-label="方言词注释">
                   {scene.glossary.map((item) => (
@@ -175,7 +189,7 @@ export default function StoryReader({ story, kidMode = false }) {
             {learning ? (
               <div className="kid-learn">
                 <KidReadAlong story={story} scene={scene} />
-                <KidWordCards slug={story.slug} words={learning.sceneWords?.[scene.id] || []} />
+                <KidWordCards slug={story.slug} words={sceneKidWords} />
               </div>
             ) : null}
 
