@@ -2,6 +2,7 @@ import { getCorpusItem, getGoldenSample } from "../../../lib/corpus";
 import { acquire, getClientIp, hit, release, tooMany } from "../../../lib/rate-limit";
 import { ALLOWED_MODES, PROMPT_VERSION, SYSTEM_PROMPT, buildPrompt } from "../../../lib/prompt";
 import { planNarrative } from "../../../lib/narrative";
+import { repairStory } from "../../../lib/repair-story";
 import { validateStory } from "../../../lib/validate-story";
 
 const MAX_BODY_BYTES = 8192;
@@ -302,6 +303,7 @@ export async function POST(request) {
 
           const result = await callModel(item, mode, plan, reportProgress);
           send({ type: "stage", stage: "validating" });
+          const repaired = repairStory(result.output, plan);
 
           return {
             mock: false,
@@ -313,9 +315,10 @@ export async function POST(request) {
             actCount: plan.actCount,
             skeleton: plan.skeleton,
             seed: String(plan.seed),
+            repairs: repaired.repairs,
             elapsedMs: Date.now() - startedAt,
-            output: result.output,
-            validation: validateStory(result.output, golden, sourceText, plan),
+            output: repaired.output,
+            validation: validateStory(repaired.output, golden, sourceText, plan),
           };
         } catch (error) {
           if (!golden?.expected) throw error;
