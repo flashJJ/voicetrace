@@ -10,6 +10,8 @@ const fail = (message) => errors.push(message);
 const ok = (message) => notes.push(message);
 
 const MODES = new Set(["heritage", "ghost", "wild_history"]);
+const AUDIENCES = new Set(["kid", "family", "adult"]);
+const AGE_BANDS = new Set(["4-6", "6-9", "10+"]);
 
 function walkJson(dir) {
   if (!fs.existsSync(dir)) return [];
@@ -46,6 +48,19 @@ stories.forEach((story) => {
   slugs.add(story.slug);
 
   if (!MODES.has(story.mode)) fail(`${label} 的 mode 非法：${story.mode}`);
+  if (!AUDIENCES.has(story.audience)) fail(`${label} 的 audience 非法：${story.audience}`);
+  if (!AGE_BANDS.has(story.ageBand)) fail(`${label} 的 ageBand 非法：${story.ageBand}`);
+  if (typeof story.kidSafe !== "boolean") fail(`${label} 缺少 kidSafe 布尔值`);
+  if (story.kidSafe && story.mode === "ghost") fail(`${label} 是鬼故事，不能进儿童模式`);
+  if (story.kidSafe && story.audience === "adult") {
+    fail(`${label} 标记 kidSafe 但 audience 是 adult`);
+  }
+  if (story.kidSafe && story.ageBand === "10+") {
+    fail(`${label} 标记 kidSafe 但 ageBand 是 10+`);
+  }
+  if (story.kidNote && typeof story.kidNote !== "string") {
+    fail(`${label} 的 kidNote 应为字符串`);
+  }
   if (!Array.isArray(story.scenes) || story.scenes.length < 3) {
     fail(`${label} 场景数量不足，实际 ${story.scenes?.length ?? 0}`);
     return;
@@ -86,7 +101,7 @@ stories.forEach((story) => {
   if (!fs.existsSync(cover)) fail(`${label} 缺少封面：public/covers/${story.slug}.webp`);
 });
 
-ok(`故事 ${stories.length} 个`);
+ok(`故事 ${stories.length} 个，其中儿童模式 ${stories.filter((story) => story.kidSafe).length} 个`);
 
 // 2. 资料库素材
 const corpusRoot = path.join(root, "data/corpus");

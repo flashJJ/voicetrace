@@ -29,7 +29,9 @@ jobs:
           cache-dependency-path: web/package-lock.json
       - run: npm ci
       - run: node scripts/validate-content.mjs
+      - run: npm test
       - run: node scripts/build-static.mjs
+      - run: node scripts/check-static.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

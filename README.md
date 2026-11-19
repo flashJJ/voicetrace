@@ -14,7 +14,7 @@
 ## 在线演示
 
 - **GitHub Pages（静态演示）**：https://flashjj.github.io/voicetrace/
-- 静态版包含：`/demo`、`/stories`、`/library`、`/map`、`/record`、`/archive`、`/about`
+- 静态版包含：`/demo`、`/stories`、`/kids`、`/library`、`/map`、`/record`、`/archive`、`/about`
 - `/studio` 的在线生成需要服务端，GitHub Pages 静态版会提示去 `/demo` 看预生成故事；完整生成版请本地运行或部署到 Vercel
 
 ## CI / 部署
@@ -61,6 +61,16 @@ npm run dev
 ```
 
 打开 <http://localhost:3000。环境变量参考> `web/.env.example`；`.env.local` 不提交。
+
+测试与校验：
+
+```bash
+cd web
+npm test              # 单元测试：儿童分级、叙事计划、choices 修复、家庭任务包
+npm run check:content # 故事、资料库与黄金样品内容校验
+node scripts/build-static.mjs
+npm run test:static   # 静态产物路由、儿童页面与录音链接
+```
 
 ## 0. 一句话结论
 
@@ -125,6 +135,7 @@ npm run dev
 - **声音档案**：`/archive` 按故事分组试听、改转写、导出、删除；故事页有录音时优先播放「我家的版本」
 - **家庭任务包**：按故事导出待录清单给家人，录完导出档案包，再导入合并，全程不经过服务器
 - **录音联动**：首页显示我家的声音统计，故事馆显示「已录 x/n」，AI 工坊可把转写填入素材，结局声音卡可用录音金句
+- **儿童模式**：`/kids` 按 4-6、6-9 岁分组，9 个适龄故事，隐藏鬼故事与 AI 工坊，含家长说明
 - **黄金样品**：8 个（正经 6 + 鬼故事 1 + 野史 1）
 - **AI 工坊**：`/studio` 选素材 + 模式 → 生成 3 幕/翻译/注释 → 自动对照黄金样品验收；已配置火山方舟 Agent Plan（`deepseek-v4.1-flash`），8 个黄金样品全部 7/7 通过（单篇约 36-66 秒）
 - **预生成演示**：`/demo` 已用真实模型预生成 3 个模式各 1 个故事（五羊传说 / 金花娘娘 / 波罗诞），现场不用等模型

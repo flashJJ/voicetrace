@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { stories, storyModes } from "../../lib/stories";
+import { ageBandLabel, stories, storyModes } from "../../lib/stories";
 import StoryRecordBadge from "../../components/StoryRecordBadge";
 
 export const metadata = {
@@ -56,6 +56,7 @@ export default function StoriesPage() {
                         <span className={isSample ? "badge badge-warn" : "badge"}>
                           {story.modeLabel}
                         </span>
+                        {story.ageBand ? <span>{ageBandLabel(story.ageBand)}</span> : null}
                       </div>
                       <h2 className="story-title">{story.title}</h2>
                       <p className="story-subtitle">{story.subtitle}</p>

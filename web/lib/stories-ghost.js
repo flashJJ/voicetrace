@@ -3,6 +3,9 @@ import { cover } from "./image.js";
 export const ghostStories = [
   {
     slug: "eagle-orchid",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "ghost",
     modeLabel: "鬼故事模式",
     featured: false,
@@ -111,6 +114,9 @@ export const ghostStories = [
   },
   {
     slug: "golden-flower-lake",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "ghost",
     modeLabel: "鬼故事模式",
     featured: false,
@@ -219,6 +225,9 @@ export const ghostStories = [
   },
   {
     slug: "dragon-spring",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "ghost",
     modeLabel: "鬼故事模式",
     featured: false,

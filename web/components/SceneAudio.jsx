@@ -18,7 +18,7 @@ function PlayIcon({ playing }) {
   );
 }
 
-export default function SceneAudio({ story, scene }) {
+export default function SceneAudio({ story, scene, recordBase = "/record" }) {
   const [status, setStatus] = useState("loading");
   const [record, setRecord] = useState(null);
   const [url, setUrl] = useState("");
@@ -93,7 +93,7 @@ export default function SceneAudio({ story, scene }) {
           </div>
           <Link
             className="scene-audio-edit"
-            href={`/record?story=${record.storySlug}&scene=${record.sceneId}`}
+            href={`${recordBase}?story=${record.storySlug}&scene=${record.sceneId}`}
           >
             重录
           </Link>
@@ -117,7 +117,7 @@ export default function SceneAudio({ story, scene }) {
       />
       <Link
         className="scene-record-link"
-        href={`/record?story=${story.slug}&scene=${scene.id}`}
+        href={`${recordBase}?story=${story.slug}&scene=${scene.id}`}
       >
         录下这一段的粤语 →
       </Link>

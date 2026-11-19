@@ -6,7 +6,7 @@ import SceneAudio from "./SceneAudio";
 import ShareCard from "./ShareCard";
 import { getRecording, recordingId } from "../lib/recordings";
 
-export default function StoryReader({ story }) {
+export default function StoryReader({ story, kidMode = false }) {
   const scenes = useMemo(
     () =>
       story.scenes.reduce((acc, scene) => {
@@ -21,6 +21,7 @@ export default function StoryReader({ story }) {
     return Math.max(...story.scenes.map((item) => Number(item.act) || 1));
   }, [story]);
   const firstScene = story.scenes[0].id;
+  const recordBase = kidMode ? "/kids/record" : "/record";
   const [sceneId, setSceneId] = useState(firstScene);
   const [history, setHistory] = useState([]);
   const [activeTerm, setActiveTerm] = useState(null);
@@ -28,6 +29,15 @@ export default function StoryReader({ story }) {
   const bodyRef = useRef(null);
 
   const scene = scenes[sceneId];
+
+  useEffect(() => {
+    if (!kidMode) return;
+    try {
+      window.localStorage.setItem("voicetrace:last-kid-story", story.slug);
+    } catch (error) {
+      // 隐私模式可能禁用 localStorage，不影响阅读。
+    }
+  }, [kidMode, story.slug]);
 
   useEffect(() => {
     if (!scene?.ending) {
@@ -78,14 +88,14 @@ export default function StoryReader({ story }) {
   }, [firstScene]);
 
   return (
-    <div className="reader">
+    <div className={`reader ${kidMode ? "is-kid" : ""}`}>
       <div className="container">
         <div className="reader-top">
-          <Link href="/stories" className="reader-back">
-            <span aria-hidden="true">←</span> 返回故事馆
+          <Link href={kidMode ? "/kids" : "/stories"} className="reader-back">
+            <span aria-hidden="true">←</span> {kidMode ? "返回儿童故事" : "返回故事馆"}
           </Link>
           <span>
-            {story.dialect} · {story.type}
+            {kidMode ? `${story.ageBand} 岁 · 儿童模式` : `${story.dialect} · ${story.type}`}
           </span>
         </div>
 
@@ -99,7 +109,7 @@ export default function StoryReader({ story }) {
               loading="eager"
               decoding="async"
             />
-            <SceneAudio story={story} scene={scene} />
+            <SceneAudio story={story} scene={scene} recordBase={recordBase} />
           </div>
 
           <div className="reader-body" ref={bodyRef}>
@@ -159,12 +169,12 @@ export default function StoryReader({ story }) {
                   </button>
                   <Link
                     className="btn btn-ghost"
-                    href={`/record?story=${story.slug}&scene=${firstScene}`}
+                    href={`${recordBase}?story=${story.slug}&scene=${firstScene}`}
                   >
                     录下我家的版本
                   </Link>
-                  <Link className="btn btn-ghost" href="/map">
-                    去声音地图
+                  <Link className="btn btn-ghost" href={kidMode ? "/kids" : "/map"}>
+                    {kidMode ? "回儿童故事" : "去声音地图"}
                   </Link>
                 </div>
               </div>
