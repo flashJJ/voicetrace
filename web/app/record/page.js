@@ -13,6 +13,7 @@ import {
 } from "../../lib/recordings";
 import { MAX_RECORD_MS } from "../../lib/recorder";
 import { useRecorder } from "../../hooks/useRecorder";
+import { useSpeechRecognition } from "../../hooks/useSpeech";
 
 const relations = ["本人", "阿爷", "阿婆", "爸爸", "妈妈", "外公", "外婆", "其他"];
 
@@ -23,12 +24,15 @@ export default function RecordPage() {
   const [relation, setRelation] = useState("本人");
   const [consent, setConsent] = useState(false);
   const [transcript, setTranscript] = useState("");
+  const [manualEdit, setManualEdit] = useState(false);
+  const [autoTranscribe, setAutoTranscribe] = useState(true);
   const [existing, setExisting] = useState(null);
   const [storage, setStorage] = useState(null);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
   const [saveError, setSaveError] = useState("");
   const { status, error, elapsed, clip, start, stop, reset, setError } = useRecorder();
+  const speech = useSpeechRecognition();
   const initializedRef = useRef(false);
 
   const story = useMemo(
@@ -64,12 +68,13 @@ export default function RecordPage() {
       .then((record) => {
         if (!alive) return;
         setExisting(record);
-        setTranscript(record?.transcript || scene.textYue);
+        setTranscript(record?.transcript || "");
+        setManualEdit(false);
         if (record?.speaker) setSpeaker(record.speaker);
         if (record?.relation) setRelation(record.relation);
       })
       .catch(() => {
-        if (alive) setTranscript(scene.textYue);
+        if (alive) setTranscript("");
       });
     getStorageInfo()
       .then((info) => {
@@ -80,6 +85,26 @@ export default function RecordPage() {
       alive = false;
     };
   }, [reset, story.slug, scene.id, scene.textYue]);
+
+  useEffect(() => {
+    const shouldListen = (status === "recording" || status === "processing") && autoTranscribe;
+    if (shouldListen) speech.start();
+    else speech.stop();
+  }, [status, autoTranscribe, speech.start, speech.stop]);
+
+  useEffect(() => {
+    if (!autoTranscribe || manualEdit) return;
+    const combined = `${speech.transcript}${speech.interim}`;
+    if (combined) setTranscript(combined);
+  }, [speech.transcript, speech.interim, autoTranscribe, manualEdit]);
+
+  const handleStart = () => {
+    setManualEdit(false);
+    setSaveError("");
+    setMessage("");
+    if (autoTranscribe) setTranscript("");
+    start();
+  };
 
   const handleStoryChange = (event) => {
     const next = stories.find((item) => item.slug === event.target.value);
@@ -210,7 +235,7 @@ export default function RecordPage() {
                   <button
                     type="button"
                     className="btn btn-primary"
-                    onClick={start}
+                    onClick={handleStart}
                     disabled={status === "requesting" || status === "processing"}
                   >
                     {clip ? "重新录音" : "开始录音"}
@@ -266,12 +291,44 @@ export default function RecordPage() {
                 </select>
               </label>
             </div>
+            <label className="record-asr">
+              <input
+                type="checkbox"
+                checked={autoTranscribe}
+                onChange={(event) => {
+                  setAutoTranscribe(event.target.checked);
+                  if (!event.target.checked) speech.stop();
+                }}
+              />
+              <span>录音时自动转写（由浏览器语音服务处理）</span>
+            </label>
+            {autoTranscribe ? (
+              <p className={`record-asr-status ${speech.error ? "is-error" : ""}`}>
+                {!speech.supported
+                  ? "当前浏览器不支持自动转写，可以手动输入。"
+                  : speech.error
+                    ? speech.error
+                    : speech.listening
+                      ? "正在自动转写，边录边出字…"
+                      : status === "recording"
+                        ? "正在准备识别…"
+                        : "录完后自动填入，识别不准可以直接改。"}
+              </p>
+            ) : (
+              <p className="record-asr-status is-off">
+                自动转写已关闭。若在意隐私，保持关闭，录完手动输入即可。
+              </p>
+            )}
             <label className="record-transcript">
               <span>转写文字（可修改，方便长辈校对）</span>
               <textarea
                 rows={4}
                 value={transcript}
-                onChange={(event) => setTranscript(event.target.value)}
+                placeholder="自动转写会出现在这里，也可以手动输入"
+                onChange={(event) => {
+                  setManualEdit(true);
+                  setTranscript(event.target.value);
+                }}
               />
             </label>
             <label className="record-consent">
@@ -280,7 +337,9 @@ export default function RecordPage() {
                 checked={consent}
                 onChange={(event) => setConsent(event.target.checked)}
               />
-              <span>同意把这段录音保存在本机浏览器，不上传服务器。</span>
+              <span>
+                同意把这段录音保存在本机浏览器；声迹不会上传录音。自动转写若开启，由浏览器语音服务处理。
+              </span>
             </label>
             <div className="record-submit">
               <button type="button" className="btn btn-primary" onClick={handleSave} disabled={!canSave}>
@@ -309,6 +368,7 @@ export default function RecordPage() {
             <h2>只存在这台设备</h2>
             <p>
               录音保存在浏览器本地数据库，刷新和关掉页面都还在。清理浏览器数据会一并删除。
+              自动转写由浏览器语音服务完成，音频可能发送给浏览器厂商；在意的话可以在右侧关掉。
             </p>
             {storage ? (
               <p className="record-storage">

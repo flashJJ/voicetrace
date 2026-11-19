@@ -3165,6 +3165,36 @@ button {
   background: rgba(251, 247, 238, 0.6);
 }
 
+.record-asr {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 4px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.record-asr input {
+  margin-top: 3px;
+  accent-color: var(--jade);
+}
+
+.record-asr-status {
+  margin: -6px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--jade);
+}
+
+.record-asr-status.is-error {
+  color: var(--cinnabar);
+}
+
+.record-asr-status.is-off {
+  color: var(--ink-muted);
+}
+
 .record-consent {
   display: flex;
   align-items: flex-start;
