@@ -2,6 +2,7 @@ import { cover, heroImage, whyImage } from "./image.js";
 import { ghostStories } from "./stories-ghost.js";
 import { wildHistoryStories } from "./stories-wild-history.js";
 import { longStories } from "./stories-long.js";
+import { moreStories } from "./stories-more.js";
 
 export { heroImage, whyImage };
 
@@ -739,6 +740,7 @@ export const stories = [
   ...ghostStories,
   ...wildHistoryStories,
   ...longStories,
+  ...moreStories,
 ];
 export const featuredStories = stories.filter((story) => story.featured);
 

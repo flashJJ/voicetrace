@@ -26,6 +26,7 @@ import customsFestival from "../data/corpus/customs/06-festival-customs.json";
 import catalogFantasy from "../data/corpus/catalog/01-fantasy.json";
 import riddles from "../data/corpus/riddles/01-riddles.json";
 import tongueTwisters from "../data/corpus/riddles/02-tongue-twisters.json";
+import mixedMore from "../data/corpus/mixed/01-v0.5.json";
 import goldenHeritageOne from "../data/corpus/golden/heritage-01.json";
 import goldenHeritageTwo from "../data/corpus/golden/heritage-02.json";
 import goldenGhost from "../data/corpus/golden/ghost.json";
@@ -68,6 +69,7 @@ export const corpusItems = [
   ...catalogFantasy,
   ...riddles,
   ...tongueTwisters,
+  ...mixedMore,
 ];
 
 const typeLabels = Object.fromEntries(

@@ -1,38 +1,48 @@
 [
   {
-    "id": "yue-saying-regret",
+    "id": "yue-saying-good-son",
     "type": "proverb",
-    "title": "执输行头，惨过败家",
-    "subtitle": "粤语俗语 · 争先后 · 执输",
+    "title": "好仔不论爷田地",
+    "subtitle": "粤语俗语 · 自立 · 不靠祖荫",
     "region": "广州 / 珠三角",
     "dialect": "粤语（广府片）",
-    "summary": "落在人后、错失先机，比败家还惨。形容做事要抢在前面，别等机会溜走。",
-    "text": "执输行头，惨过败家。",
-    "tags": ["俗语", "机会", "先后"],
-    "motifs": ["行头", "败家"],
+    "summary": "有出息的后生，不靠父辈留下的田产，靠自己挣。",
+    "text": "好仔不论爷田地。",
+    "tags": [
+      "俗语",
+      "自立",
+      "祖荫"
+    ],
+    "motifs": [
+      "田地",
+      "好仔"
+    ],
     "glossary": [
       {
-        "term": "执输",
-        "meaning": "吃亏、落在下风",
-        "note": "粤语“执输”指认输、落后。"
+        "term": "不论",
+        "meaning": "不依赖、不计较",
+        "note": "这里指不靠祖产。"
       },
       {
-        "term": "行头",
-        "meaning": "走在最前面",
-        "note": "“行头”在这里指位置靠前。"
+        "term": "爷",
+        "meaning": "父亲",
+        "note": "粤语称父亲为“老豆”，书面说“爷”。"
       }
     ],
     "source": [
       {
-        "title": "粤语民间俗语 · 口耳相传",
+        "title": "广府民俗 · 民间口传",
         "license": "traditional-public-domain"
       }
     ],
     "license": "traditional-public-domain",
     "storyPotential": 3,
-    "difficulty": 1,
+    "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
     "id": "yue-saying-ox-drink",
@@ -43,8 +53,16 @@
     "dialect": "粤语（广府片）",
     "summary": "牛不渴，按它的头也不会喝水。比喻不能强迫别人做不愿意的事。",
     "text": "牛唔饮水唔揿得牛头低。",
-    "tags": ["俗语", "自愿", "勉强"],
-    "motifs": ["牛", "饮水", "牛头"],
+    "tags": [
+      "俗语",
+      "自愿",
+      "勉强"
+    ],
+    "motifs": [
+      "牛",
+      "饮水",
+      "牛头"
+    ],
     "glossary": [
       {
         "term": "揿",
@@ -62,7 +80,10 @@
     "storyPotential": 3,
     "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
     "id": "yue-saying-bowl-face",
@@ -73,8 +94,16 @@
     "dialect": "粤语（广府片）",
     "summary": "吃完面把碗倒扣过来。比喻受了恩惠却翻脸不认人。",
     "text": "食碗面反碗底。",
-    "tags": ["俗语", "忘恩", "人情"],
-    "motifs": ["碗面", "碗底", "反扣"],
+    "tags": [
+      "俗语",
+      "忘恩",
+      "人情"
+    ],
+    "motifs": [
+      "碗面",
+      "碗底",
+      "反扣"
+    ],
     "glossary": [
       {
         "term": "反碗底",
@@ -92,7 +121,11 @@
     "storyPotential": 4,
     "difficulty": 1,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history", "ghost"]
+    "modes": [
+      "heritage",
+      "wild_history",
+      "ghost"
+    ]
   },
   {
     "id": "yue-saying-big-stone-crab",
@@ -103,8 +136,15 @@
     "dialect": "粤语（广府片）",
     "summary": "用大石头压住螃蟹。比喻仗势压人，让人无从申辩。",
     "text": "大石砸死蟹。",
-    "tags": ["俗语", "权势", "委屈"],
-    "motifs": ["大石", "蟹"],
+    "tags": [
+      "俗语",
+      "权势",
+      "委屈"
+    ],
+    "motifs": [
+      "大石",
+      "蟹"
+    ],
     "glossary": [
       {
         "term": "砸",
@@ -122,7 +162,10 @@
     "storyPotential": 4,
     "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
     "id": "yue-saying-fingers-in",
@@ -133,8 +176,15 @@
     "dialect": "粤语（广府片）",
     "summary": "手指只会向里弯，不会向外弯。比喻人总是偏向自己人。",
     "text": "手指拗出唔拗入。",
-    "tags": ["俗语", "亲疏", "一家人"],
-    "motifs": ["手指", "拗"],
+    "tags": [
+      "俗语",
+      "亲疏",
+      "一家人"
+    ],
+    "motifs": [
+      "手指",
+      "拗"
+    ],
     "glossary": [
       {
         "term": "拗",
@@ -152,42 +202,55 @@
     "storyPotential": 3,
     "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
-    "id": "yue-xiehouyu-mute-bitter",
+    "id": "yue-xiehouyu-mason-door",
     "type": "proverb",
-    "title": "哑仔食黄连——有苦自己知",
-    "subtitle": "粤语歇后语 · 苦衷 · 说不出",
+    "title": "泥水佬开门口——过得自己过得人",
+    "subtitle": "粤语歇后语 · 将心比心 · 留余地",
     "region": "广州 / 珠三角",
     "dialect": "粤语（广府片）",
-    "summary": "哑巴吃黄连，再苦也说不出来。比喻有苦衷却无法向外人诉说。",
-    "text": "哑仔食黄连——有苦自己知。",
-    "tags": ["歇后语", "苦衷", "难言"],
-    "motifs": ["哑仔", "黄连", "苦"],
+    "summary": "泥水匠开的门，既要自己过得去，也要别人过得去。比喻做事要留余地、讲公道。",
+    "text": "泥水佬开门口——过得自己过得人。",
+    "tags": [
+      "歇后语",
+      "公道",
+      "余地"
+    ],
+    "motifs": [
+      "泥水佬",
+      "门口"
+    ],
     "glossary": [
       {
-        "term": "哑仔",
-        "meaning": "哑巴男孩",
-        "note": "粤语“仔”指男孩子。"
+        "term": "泥水佬",
+        "meaning": "泥水匠",
+        "note": "粤语对建筑泥水工人的称呼。"
       },
       {
-        "term": "黄连",
-        "meaning": "一味很苦的中药",
-        "note": "常用来比喻苦处。"
+        "term": "过得人",
+        "meaning": "让别人也过得去",
+        "note": "引申为对得起人。"
       }
     ],
     "source": [
       {
-        "title": "粤语民间歇后语 · 口耳相传",
+        "title": "广府民俗 · 民间口传",
         "license": "traditional-public-domain"
       }
     ],
     "license": "traditional-public-domain",
-    "storyPotential": 4,
-    "difficulty": 1,
+    "storyPotential": 3,
+    "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "ghost", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
     "id": "yue-xiehouyu-wet-firecracker",
@@ -198,8 +261,15 @@
     "dialect": "粤语（广府片）",
     "summary": "受了潮的炮仗点不着、响不了。比喻事情没动静，或人不敢出声。",
     "text": "湿水炮仗——唔响。",
-    "tags": ["歇后语", "失灵", "沉默"],
-    "motifs": ["炮仗", "湿水"],
+    "tags": [
+      "歇后语",
+      "失灵",
+      "沉默"
+    ],
+    "motifs": [
+      "炮仗",
+      "湿水"
+    ],
     "glossary": [
       {
         "term": "炮仗",
@@ -217,34 +287,44 @@
     "storyPotential": 3,
     "difficulty": 1,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
-    "id": "yue-xiehouyu-blind-tangyuan",
+    "id": "yue-xiehouyu-kite",
     "type": "proverb",
-    "title": "盲公食汤丸——心中有数",
-    "subtitle": "粤语歇后语 · 清楚 · 有把握",
+    "title": "冇尾飞堠——一去冇回头",
+    "subtitle": "粤语歇后语 · 一去不返 · 断线",
     "region": "广州 / 珠三角",
     "dialect": "粤语（广府片）",
-    "summary": "盲人吃汤圆，虽然看不见，心里却清楚个数。比喻对情况心里有底。",
-    "text": "盲公食汤丸——心中有数。",
-    "tags": ["歇后语", "清楚", "把握"],
-    "motifs": ["盲公", "汤丸"],
+    "summary": "没有尾巴的风筝，放出去就收不回来。比喻人一走就没了音信。",
+    "text": "冇尾飞堠——一去冇回头。",
+    "tags": [
+      "歇后语",
+      "离别",
+      "断线"
+    ],
+    "motifs": [
+      "飞堠",
+      "风筝"
+    ],
     "glossary": [
       {
-        "term": "盲公",
-        "meaning": "盲人男子",
-        "note": "粤语对盲人的称呼。"
+        "term": "飞堠",
+        "meaning": "风筝",
+        "note": "粤语称风筝为飞堠。"
       },
       {
-        "term": "汤丸",
-        "meaning": "汤圆",
-        "note": "粤语多说“汤丸”。"
+        "term": "冇回头",
+        "meaning": "不回头",
+        "note": "形容一去不返。"
       }
     ],
     "source": [
       {
-        "title": "粤语民间歇后语 · 口耳相传",
+        "title": "广府民俗 · 民间口传",
         "license": "traditional-public-domain"
       }
     ],
@@ -252,29 +332,44 @@
     "storyPotential": 3,
     "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "ghost"
+    ]
   },
   {
-    "id": "yue-xiehouyu-mouse-turtle",
+    "id": "yue-xiehouyu-chicken-glowworm",
     "type": "proverb",
-    "title": "老鼠拉龟——无从入手",
-    "subtitle": "粤语歇后语 · 无从下手 · 尴尬",
+    "title": "鸡食放光虫——心知肚明",
+    "subtitle": "粤语歇后语 · 心里清楚 · 不说破",
     "region": "广州 / 珠三角",
     "dialect": "粤语（广府片）",
-    "summary": "老鼠拖乌龟，找不到可以下口的地方。比喻事情不知从哪里做起。",
-    "text": "老鼠拉龟——无从入手。",
-    "tags": ["歇后语", "无从下手", "难办"],
-    "motifs": ["老鼠", "龟"],
+    "summary": "鸡吃了发光的虫子，肚子里亮，自己知道。比喻心里清楚，只是不说出来。",
+    "text": "鸡食放光虫——心知肚明。",
+    "tags": [
+      "歇后语",
+      "心知肚明",
+      "看破"
+    ],
+    "motifs": [
+      "鸡",
+      "放光虫"
+    ],
     "glossary": [
       {
-        "term": "拉",
-        "meaning": "拖、拽",
-        "note": "粤语“拉”有拖的意思。"
+        "term": "放光虫",
+        "meaning": "萤火虫",
+        "note": "粤语称萤火虫为放光虫。"
+      },
+      {
+        "term": "心知肚明",
+        "meaning": "心里明白",
+        "note": "不必说穿。"
       }
     ],
     "source": [
       {
-        "title": "粤语民间歇后语 · 口耳相传",
+        "title": "广府民俗 · 民间口传",
         "license": "traditional-public-domain"
       }
     ],
@@ -282,7 +377,10 @@
     "storyPotential": 3,
     "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   },
   {
     "id": "yue-xiehouyu-leather-lantern",
@@ -293,8 +391,15 @@
     "dialect": "粤语（广府片）",
     "summary": "牛皮做的灯笼，怎么点都不透亮。比喻怎么解释都不明白，或人不通情理。",
     "text": "牛皮灯笼——点极唔明。",
-    "tags": ["歇后语", "不明白", "固执"],
-    "motifs": ["牛皮灯笼", "点灯"],
+    "tags": [
+      "歇后语",
+      "不明白",
+      "固执"
+    ],
+    "motifs": [
+      "牛皮灯笼",
+      "点灯"
+    ],
     "glossary": [
       {
         "term": "点极唔明",
@@ -312,6 +417,9 @@
     "storyPotential": 4,
     "difficulty": 2,
     "goldenSample": false,
-    "modes": ["heritage", "wild_history"]
+    "modes": [
+      "heritage",
+      "wild_history"
+    ]
   }
 ]

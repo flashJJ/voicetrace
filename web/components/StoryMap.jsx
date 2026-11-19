@@ -15,6 +15,10 @@ const pins = {
   "guangxiao-bodhi": { x: 380, y: 190, label: "光孝寺" },
   "litchi-bay-ghost": { x: 300, y: 405, label: "荔枝湾" },
   "thirteen-factories-silver": { x: 350, y: 325, label: "十三行" },
+  "dragonboat-meal": { x: 470, y: 330, label: "番禺水乡" },
+  "qingming-hill": { x: 420, y: 175, label: "白云山" },
+  "herbal-tea-night": { x: 285, y: 330, label: "西关老铺" },
+  "whampoa-foreigner": { x: 610, y: 360, label: "黄埔古港" },
 };
 
 const pinGroups = Object.values(
