@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getCorpusItem, goldenSamples, modeLabel } from "../../lib/corpus";
+import { formatDuration, listRecordings } from "../../lib/recordings";
 import { MAX_ACTS, MIN_ACTS, SKELETON_LABELS } from "../../lib/narrative";
 import { LIVE_STUDIO_URL, isStaticExport } from "../../lib/live";
 
@@ -22,6 +23,32 @@ export default function StudioPage() {
   const [result, setResult] = useState(null);
   const [stage, setStage] = useState(null);
   const [copied, setCopied] = useState(false);
+  const [voiceRecords, setVoiceRecords] = useState([]);
+
+  useEffect(() => {
+    let alive = true;
+    listRecordings()
+      .then((items) => {
+        if (alive) setVoiceRecords(items.filter((item) => (item.transcript || "").trim()));
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  const fillFromRecording = (id) => {
+    const record = voiceRecords.find((item) => item.id === id);
+    if (!record) return;
+    const text = (record.transcript || "").trim();
+    if (text.length < 10) {
+      setError("这段转写太短，至少需要 10 个字才能生成。");
+      return;
+    }
+    setCustomText(text.slice(0, 600));
+    setResult(null);
+    setError("");
+  };
 
   const selected = useMemo(
     () => options.find((option) => option.item.id === selectedId) || options[0],
@@ -216,6 +243,24 @@ export default function StudioPage() {
         </div>
 
         <div className="studio-custom">
+          {voiceRecords.length > 0 ? (
+            <div className="studio-voice">
+              <label htmlFor="studio-voice">从我的录音填入</label>
+              <select
+                id="studio-voice"
+                value=""
+                onChange={(event) => fillFromRecording(event.target.value)}
+              >
+                <option value="">选一段转写…</option>
+                {voiceRecords.map((record) => (
+                  <option key={record.id} value={record.id}>
+                    {record.storyTitle || record.storySlug} · {record.sceneTitle}（
+                    {formatDuration(record.duration)}）
+                  </option>
+                ))}
+              </select>
+            </div>
+          ) : null}
           <label htmlFor="studio-custom-text">也可以直接输入一段素材（10-600 字）</label>
           <textarea
             id="studio-custom-text"

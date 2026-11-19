@@ -1,9 +1,10 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import SceneAudio from "./SceneAudio";
 import ShareCard from "./ShareCard";
+import { getRecording, recordingId } from "../lib/recordings";
 
 export default function StoryReader({ story }) {
   const scenes = useMemo(
@@ -23,9 +24,30 @@ export default function StoryReader({ story }) {
   const [sceneId, setSceneId] = useState(firstScene);
   const [history, setHistory] = useState([]);
   const [activeTerm, setActiveTerm] = useState(null);
+  const [familyQuote, setFamilyQuote] = useState("");
   const bodyRef = useRef(null);
 
   const scene = scenes[sceneId];
+
+  useEffect(() => {
+    if (!scene?.ending) {
+      setFamilyQuote("");
+      return undefined;
+    }
+    let alive = true;
+    getRecording(recordingId(story.slug, scene.id))
+      .then((record) => {
+        if (!alive) return;
+        const text = (record?.transcript || "").trim();
+        setFamilyQuote(text ? (text.length > 64 ? `${text.slice(0, 64)}…` : text) : "");
+      })
+      .catch(() => {
+        if (alive) setFamilyQuote("");
+      });
+    return () => {
+      alive = false;
+    };
+  }, [story.slug, scene?.id, scene?.ending]);
   const activeGlossary = scene.glossary?.find((item) => item.term === activeTerm);
 
   const goTo = useCallback(
@@ -188,7 +210,9 @@ export default function StoryReader({ story }) {
         {scene.ending && (
           <section className="share-panel">
             <div>
-              <span className="eyebrow">带走一张声音卡</span>
+              <span className="eyebrow">
+                {familyQuote ? "带走一张我家的声音卡" : "带走一张声音卡"}
+              </span>
               <h2>把这段乡音，发给你想念的人</h2>
               <p>
                 故事卡会带上故事名、方言、地点和一句金句。下载后可以发微信、发朋友圈，
@@ -198,7 +222,11 @@ export default function StoryReader({ story }) {
                 当前为原型示例卡；正式版会加入真实录音二维码和家族故事页。
               </p>
             </div>
-            <ShareCard story={story} quote={scene.endingText || story.quote} />
+            <ShareCard
+              story={story}
+              quote={familyQuote || scene.endingText || story.quote}
+              source={familyQuote ? "family" : "sample"}
+            />
           </section>
         )}
       </div>

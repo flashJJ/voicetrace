@@ -3412,6 +3412,98 @@ button {
   color: var(--cinnabar-dark);
 }
 
+.home-voice-wrap {
+  padding: 4px 0 36px;
+}
+
+.home-voice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 26px 30px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--jade);
+  background: rgba(251, 247, 238, 0.78);
+}
+
+.home-voice h2 {
+  margin: 8px 0 6px;
+  font-family: var(--serif);
+  font-size: 27px;
+  letter-spacing: 0.03em;
+}
+
+.home-voice p {
+  margin: 0;
+  max-width: 640px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.home-voice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.story-record {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 7px 10px;
+  border: 1px dashed var(--line);
+  font-size: 12px;
+}
+
+.story-record-label {
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+}
+
+.story-record-count {
+  color: var(--ink-muted);
+}
+
+.story-record-count.is-active {
+  color: var(--jade);
+  font-weight: 600;
+}
+
+.story-record-link {
+  margin-left: auto;
+  color: var(--cinnabar);
+  white-space: nowrap;
+}
+
+.studio-voice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.studio-voice label {
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.studio-voice select {
+  flex: 1;
+  min-width: 220px;
+  padding: 9px 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--paper-light);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+}
+
 .scene-audio-edit {
   margin-left: auto;
   flex: 0 0 auto;
@@ -3667,5 +3759,27 @@ button {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+  }
+
+  .home-voice {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+  }
+
+  .home-voice-actions {
+    width: 100%;
+  }
+
+  .home-voice-actions .btn {
+    flex: 1;
+  }
+
+  .story-record {
+    flex-wrap: wrap;
+  }
+
+  .story-record-link {
+    margin-left: 0;
   }
 }
