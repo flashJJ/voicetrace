@@ -1,0 +1,1255 @@
+{
+  "moonlight": {
+    "sceneWords": {
+      "moonlight-1": [
+        {
+          "term": "月光光",
+          "meaning": "月光很亮，也是这首童谣的开头",
+          "example": "月光光，照地堂。"
+        },
+        {
+          "term": "地堂",
+          "meaning": "天井、屋前的空地",
+          "example": "月光光，照地堂。"
+        },
+        {
+          "term": "年卅晚",
+          "meaning": "除夕夜",
+          "example": "年卅晚，摘槟榔。"
+        }
+      ],
+      "moonlight-2a": [
+        {
+          "term": "唔使怕丑",
+          "meaning": "不用害羞",
+          "example": "唔使怕丑，跟住我唱。"
+        },
+        {
+          "term": "跟住",
+          "meaning": "跟着",
+          "example": "跟住我唱。"
+        },
+        {
+          "term": "笑住",
+          "meaning": "笑着",
+          "example": "阿婆笑住拍你只手。"
+        }
+      ],
+      "moonlight-2b": [
+        {
+          "term": "好意头",
+          "meaning": "好兆头、吉利",
+          "example": "旧时嫁女，槟榔系好意头。"
+        },
+        {
+          "term": "嫁女",
+          "meaning": "把女儿嫁出去",
+          "example": "旧时嫁女，槟榔系好意头。"
+        },
+        {
+          "term": "心事",
+          "meaning": "心里装着的事",
+          "example": "月光照住一代代人嘅心事。"
+        }
+      ],
+      "moonlight-3a": [
+        {
+          "term": "第日",
+          "meaning": "以后、将来",
+          "example": "第日唱畀你啲细路听。"
+        },
+        {
+          "term": "细路",
+          "meaning": "小孩",
+          "example": "第日唱畀你啲细路听。"
+        },
+        {
+          "term": "识唱",
+          "meaning": "会唱",
+          "example": "识唱就好。"
+        }
+      ],
+      "moonlight-3b": [
+        {
+          "term": "细个",
+          "meaning": "小时候",
+          "example": "你细个嗰阵，又系点样？"
+        },
+        {
+          "term": "嗰阵",
+          "meaning": "那时候",
+          "example": "你细个嗰阵，又系点样？"
+        },
+        {
+          "term": "录音键",
+          "meaning": "录音按钮",
+          "example": "你把录音键按停。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "阿婆坐在哪里唱童谣？",
+        "options": ["骑楼底", "天井中间", "船头"],
+        "answer": 0,
+        "hint": "故事第一幕写了阿婆坐的位置。"
+      },
+      {
+        "question": "旧时嫁女，槟榔代表什么？",
+        "options": ["好意头", "坏运气", "聘礼钱"],
+        "answer": 0,
+        "hint": "阿婆在第二幕解释过槟榔的意思。"
+      },
+      {
+        "question": "阿婆希望“我”以后做什么？",
+        "options": ["唱给自己的孩子听", "把童谣忘掉", "只写在本子上"],
+        "answer": 0,
+        "hint": "最后一幕阿婆说“第日唱畀你啲细路听”。"
+      }
+    ]
+  },
+  "mouse-wedding": {
+    "sceneWords": {
+      "mouse-1": [
+        {
+          "term": "嫁畀",
+          "meaning": "嫁给",
+          "example": "一定要嫁畀全世界最厉害嘅人。"
+        },
+        {
+          "term": "咁靓",
+          "meaning": "这么漂亮",
+          "example": "我个女咁靓。"
+        },
+        {
+          "term": "全世界",
+          "meaning": "全世界",
+          "example": "一定要嫁畀全世界最厉害嘅人。"
+        }
+      ],
+      "mouse-2a": [
+        {
+          "term": "惊",
+          "meaning": "怕",
+          "example": "我惊云，云一遮，我就冇光。"
+        },
+        {
+          "term": "遮",
+          "meaning": "遮挡",
+          "example": "云一遮，我就冇光。"
+        },
+        {
+          "term": "穿",
+          "meaning": "破、穿透",
+          "example": "老鼠一钻，我就穿。"
+        }
+      ],
+      "mouse-2b": [
+        {
+          "term": "花轿",
+          "meaning": "迎亲时抬新娘的轿子",
+          "example": "老鼠队伍抬住花轿。"
+        },
+        {
+          "term": "眼定定",
+          "meaning": "目不转睛地盯着",
+          "example": "大花猫眼定定咁望住佢哋。"
+        },
+        {
+          "term": "滴滴答",
+          "meaning": "吹吹打打的声音",
+          "example": "吹住滴滴答，行过骑楼。"
+        }
+      ],
+      "mouse-3a": [
+        {
+          "term": "醒起",
+          "meaning": "想起来、意识到",
+          "example": "老鼠妈妈醒起。"
+        },
+        {
+          "term": "够胆",
+          "meaning": "有胆量",
+          "example": "你够唔够胆。"
+        },
+        {
+          "term": "转个弯",
+          "meaning": "换个方向、换个想法",
+          "example": "识唔识转个弯。"
+        }
+      ],
+      "mouse-3b": [
+        {
+          "term": "睇落",
+          "meaning": "看起来",
+          "example": "我睇落好硬。"
+        },
+        {
+          "term": "最紧要",
+          "meaning": "最重要的是",
+          "example": "最紧要系，知道自己怕乜。"
+        },
+        {
+          "term": "仲敢",
+          "meaning": "还敢",
+          "example": "仲敢行落去。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "老鼠妈妈一开始觉得谁最厉害？",
+        "options": ["太阳", "云", "大花猫"],
+        "answer": 0,
+        "hint": "她抬头一望，就下了结论。"
+      },
+      {
+        "question": "墙最怕什么？",
+        "options": ["老鼠", "风", "太阳"],
+        "answer": 0,
+        "hint": "墙在第二幕自己说了出来。"
+      },
+      {
+        "question": "故事最想告诉我们什么？",
+        "options": ["每个人都有害怕的东西，重要的是还敢往前走", "谁最大谁就最厉害", "猫永远最厉害"],
+        "answer": 0,
+        "hint": "看看两个结局最后那句话。"
+      }
+    ]
+  },
+  "grandma-congee": {
+    "sceneWords": {
+      "congee-1": [
+        {
+          "term": "拖住",
+          "meaning": "拉着",
+          "example": "阿婆拖住你只手。"
+        },
+        {
+          "term": "湿湿哋",
+          "meaning": "有点湿",
+          "example": "行过湿湿哋嘅石板路。"
+        },
+        {
+          "term": "冇",
+          "meaning": "没有",
+          "example": "去迟咗就冇油条。"
+        }
+      ],
+      "congee-2a": [
+        {
+          "term": "逐样",
+          "meaning": "一样一样地",
+          "example": "料要逐样落。"
+        },
+        {
+          "term": "滚",
+          "meaning": "沸腾",
+          "example": "粥底滚咗。"
+        },
+        {
+          "term": "唔可以急",
+          "meaning": "不能着急",
+          "example": "料要逐样落，唔可以急。"
+        }
+      ],
+      "congee-2b": [
+        {
+          "term": "水上人家",
+          "meaning": "过去生活在船上的人家",
+          "example": "旧时艇仔粥系水上人家煮嘅。"
+        },
+        {
+          "term": "一日嘅开始",
+          "meaning": "一天的开始",
+          "example": "一碗热粥，系一日嘅开始。"
+        },
+        {
+          "term": "太公",
+          "meaning": "曾祖父",
+          "example": "你太公以前都系喺江上做嘢。"
+        }
+      ],
+      "congee-3a": [
+        {
+          "term": "撑船",
+          "meaning": "用竹篙撑船前行",
+          "example": "太公以前喺江上撑船。"
+        },
+        {
+          "term": "煲",
+          "meaning": "煮、熬",
+          "example": "天未光就煲一大锅粥。"
+        },
+        {
+          "term": "船工",
+          "meaning": "船上做工的人",
+          "example": "畀船工食饱先开船。"
+        }
+      ],
+      "congee-3b": [
+        {
+          "term": "抱实",
+          "meaning": "抱紧",
+          "example": "只系将壶抱实啲。"
+        },
+        {
+          "term": "第日",
+          "meaning": "以后、将来",
+          "example": "第日你煮畀边个食？"
+        },
+        {
+          "term": "慢慢行",
+          "meaning": "慢慢走",
+          "example": "两个人沿住江边慢慢行。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "天还没亮，阿婆带“我”去哪里？",
+        "options": ["码头买艇仔粥", "茶楼饮茶", "市场买菜"],
+        "answer": 0,
+        "hint": "故事开头就说了目的地。"
+      },
+      {
+        "question": "艇仔粥的配料要怎么下？",
+        "options": ["一样一样地下", "全部一起倒进去", "不用下配料"],
+        "answer": 0,
+        "hint": "阿婆说“唔可以急”。"
+      },
+      {
+        "question": "太公以前在江上做什么？",
+        "options": ["撑船", "卖粥", "打鱼"],
+        "answer": 0,
+        "hint": "阿婆讲太公“喺江上撑船”。"
+      }
+    ]
+  },
+  "five-goats": {
+    "sceneWords": {
+      "five-goats-1": [
+        {
+          "term": "石羊",
+          "meaning": "石头做的羊",
+          "example": "山脚有五只石羊。"
+        },
+        {
+          "term": "谷穗",
+          "meaning": "稻谷结出的穗",
+          "example": "口里衔住一束谷穗。"
+        },
+        {
+          "term": "好耐好耐",
+          "meaning": "很久很久",
+          "example": "要由好耐好耐以前讲起。"
+        }
+      ],
+      "five-goats-2a": [
+        {
+          "term": "仙人",
+          "meaning": "神话里会法术的人",
+          "example": "有五位仙人，骑住五只羊。"
+        },
+        {
+          "term": "落嚟",
+          "meaning": "下来",
+          "example": "从天上落嚟。"
+        },
+        {
+          "term": "拎住",
+          "meaning": "拿着",
+          "example": "仙人手里拎住谷穗。"
+        }
+      ],
+      "five-goats-2b": [
+        {
+          "term": "留低",
+          "meaning": "留下",
+          "example": "系仙人留低嘅。"
+        },
+        {
+          "term": "滑溜溜",
+          "meaning": "很光滑",
+          "example": "石面俾人摸到滑溜溜。"
+        },
+        {
+          "term": "羊角",
+          "meaning": "羊头上的角",
+          "example": "你摸住羊角。"
+        }
+      ],
+      "five-goats-3a": [
+        {
+          "term": "化成",
+          "meaning": "变成",
+          "example": "五只羊化成石头。"
+        },
+        {
+          "term": "饥荒",
+          "meaning": "没有粮食、挨饿的日子",
+          "example": "祝佢哋从此冇饥荒。"
+        },
+        {
+          "term": "穗城",
+          "meaning": "广州的别称",
+          "example": "广州从此又叫羊城、穗城。"
+        }
+      ],
+      "five-goats-3b": [
+        {
+          "term": "睇住",
+          "meaning": "看着",
+          "example": "石羊睇住广州睇咗几千年。"
+        },
+        {
+          "term": "嗰阵",
+          "meaning": "那时候",
+          "example": "你落山嗰阵回头望。"
+        },
+        {
+          "term": "仲喺度",
+          "meaning": "还在",
+          "example": "好似仲喺度等仙人返嚟。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "五羊石像嘴里衔着什么？",
+        "options": ["谷穗", "花", "石头"],
+        "answer": 0,
+        "hint": "第一幕写得很清楚。"
+      },
+      {
+        "question": "仙人把什么送给村民？",
+        "options": ["谷穗", "羊", "金子"],
+        "answer": 0,
+        "hint": "仙人祝村民从此不再挨饿。"
+      },
+      {
+        "question": "因为五羊传说，广州又别名什么？",
+        "options": ["羊城、穗城", "花城、珠城", "鹅城"],
+        "answer": 0,
+        "hint": "最后一幕说广州“又叫羊城、穗城”。"
+      }
+    ]
+  },
+  "chicken-lullaby": {
+    "sceneWords": {
+      "chicken-1": [
+        {
+          "term": "新抱",
+          "meaning": "媳妇",
+          "example": "做人新抱几艰难。"
+        },
+        {
+          "term": "几艰难",
+          "meaning": "多么艰难",
+          "example": "做人新抱几艰难。"
+        },
+        {
+          "term": "蒙蒙光",
+          "meaning": "天刚亮、蒙蒙亮",
+          "example": "天蒙蒙光，阿婆坐喺床尾。"
+        }
+      ],
+      "chicken-2a": [
+        {
+          "term": "晏",
+          "meaning": "晚、迟",
+          "example": "早早起身都话晏。"
+        },
+        {
+          "term": "下间",
+          "meaning": "厨房",
+          "example": "眼泪唔干入下间。"
+        },
+        {
+          "term": "眼泪唔干",
+          "meaning": "眼泪还没干",
+          "example": "眼泪唔干入下间。"
+        }
+      ],
+      "chicken-2b": [
+        {
+          "term": "入门",
+          "meaning": "嫁进门",
+          "example": "旧时新抱入门。"
+        },
+        {
+          "term": "吞落肚",
+          "meaning": "咽进肚子里，比喻把委屈藏起来",
+          "example": "眼泪只可以吞落肚。"
+        },
+        {
+          "term": "起身",
+          "meaning": "起床",
+          "example": "天未光就要起身煮饭。"
+        }
+      ],
+      "chicken-3a": [
+        {
+          "term": "闹",
+          "meaning": "骂",
+          "example": "俾人闹到天光。"
+        },
+        {
+          "term": "而家",
+          "meaning": "现在",
+          "example": "而家好喇。"
+        },
+        {
+          "term": "冬瓜",
+          "meaning": "冬瓜",
+          "example": "为咗一只冬瓜。"
+        }
+      ],
+      "chicken-3b": [
+        {
+          "term": "唱返",
+          "meaning": "再唱、唱回去",
+          "example": "第日唱返俾人听。"
+        },
+        {
+          "term": "窗外",
+          "meaning": "窗户外面",
+          "example": "唱到窗外嘅天由灰变白。"
+        },
+        {
+          "term": "记住",
+          "meaning": "记住",
+          "example": "呢首歌，你记住。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "天还没亮，阿婆坐在哪里唱童谣？",
+        "options": ["床尾", "骑楼底", "厨房"],
+        "answer": 0,
+        "hint": "第一幕写了阿婆坐的位置。"
+      },
+      {
+        "question": "“做人新抱”是什么意思？",
+        "options": ["做媳妇", "做母亲", "做女儿"],
+        "answer": 0,
+        "hint": "词卡里解释过“新抱”。"
+      },
+      {
+        "question": "阿婆最后让“我”做什么？",
+        "options": ["记住这首歌，以后唱给别人听", "以后不要再唱", "把歌写下来卖掉"],
+        "answer": 0,
+        "hint": "最后一幕阿婆说“第日唱返俾人听”。"
+      }
+    ]
+  },
+  "dragonboat-meal": {
+    "sceneWords": {
+      "dragon-1": [
+        {
+          "term": "祠堂",
+          "meaning": "家族祭祖、议事的屋子",
+          "example": "祠堂前摆开几十张圆台。"
+        },
+        {
+          "term": "圆台",
+          "meaning": "圆桌",
+          "example": "祠堂前摆开几十张圆台。"
+        },
+        {
+          "term": "龙舟饭",
+          "meaning": "端午龙舟活动后的村宴",
+          "example": "阿婆叫你负责龙舟饭。"
+        }
+      ],
+      "dragon-2a": [
+        {
+          "term": "墟市",
+          "meaning": "集市",
+          "example": "你踩三轮车去墟市。"
+        },
+        {
+          "term": "猪肉佬",
+          "meaning": "卖猪肉的人",
+          "example": "猪肉佬开价高两成。"
+        },
+        {
+          "term": "讲价",
+          "meaning": "讨价还价",
+          "example": "你唔识讲价。"
+        }
+      ],
+      "dragon-2b": [
+        {
+          "term": "龙船头",
+          "meaning": "龙舟队的领头人",
+          "example": "龙船头正在上油。"
+        },
+        {
+          "term": "平啲",
+          "meaning": "便宜一点",
+          "example": "龙船队要嘅，平啲。"
+        },
+        {
+          "term": "够热",
+          "meaning": "足够热",
+          "example": "饭唔使贵，最紧要够热。"
+        }
+      ],
+      "dragon-3": [
+        {
+          "term": "雨布",
+          "meaning": "防雨的布",
+          "example": "你哋几个后生仔，赶紧拉雨布。"
+        },
+        {
+          "term": "后生仔",
+          "meaning": "年轻人",
+          "example": "你哋几个后生仔。"
+        },
+        {
+          "term": "唔出声",
+          "meaning": "不出声",
+          "example": "阿婆望住天，唔出声。"
+        }
+      ],
+      "dragon-4a": [
+        {
+          "term": "雨棚",
+          "meaning": "挡雨的棚子",
+          "example": "雨棚撑起。"
+        },
+        {
+          "term": "舀饭",
+          "meaning": "盛饭",
+          "example": "你舀第一碗饭。"
+        },
+        {
+          "term": "返来",
+          "meaning": "回来",
+          "example": "人陆续返来。"
+        }
+      ],
+      "dragon-4b": [
+        {
+          "term": "落足",
+          "meaning": "下了（多长时间）",
+          "example": "雨落足两个钟。"
+        },
+        {
+          "term": "凉了",
+          "meaning": "凉了",
+          "example": "菜都凉了。"
+        },
+        {
+          "term": "热菜",
+          "meaning": "把菜加热",
+          "example": "你赶紧热菜。"
+        }
+      ],
+      "dragon-e1": [
+        {
+          "term": "起筷",
+          "meaning": "动筷子开吃",
+          "example": "几十围人齐齐起筷。"
+        },
+        {
+          "term": "敬人",
+          "meaning": "尊敬别人",
+          "example": "识得先敬人。"
+        },
+        {
+          "term": "呢餐饭",
+          "meaning": "这顿饭",
+          "example": "呢餐饭就成功。"
+        }
+      ],
+      "dragon-e2": [
+        {
+          "term": "见牙唔见眼",
+          "meaning": "笑得合不拢嘴",
+          "example": "佢笑到见牙唔见眼。"
+        },
+        {
+          "term": "一围",
+          "meaning": "一桌（宴席）",
+          "example": "角落还有一围未动。"
+        },
+        {
+          "term": "抬鼓",
+          "meaning": "抬龙船鼓",
+          "example": "帮手抬鼓嘅阿伯。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "端午前一天，阿婆让“我”负责什么？",
+        "options": ["龙舟饭", "扒龙船", "洗祠堂"],
+        "answer": 0,
+        "hint": "故事开头阿婆递来一张单。"
+      },
+      {
+        "question": "龙船头说，饭最紧要么？",
+        "options": ["够热", "够贵", "够多"],
+        "answer": 0,
+        "hint": "他说“饭唔使贵”。"
+      },
+      {
+        "question": "两个结局都在强调什么？",
+        "options": ["先敬人，别漏掉任何一个人", "饭越贵越好", "下雨就不开席"],
+        "answer": 0,
+        "hint": "看两个结局最后那句话。"
+      }
+    ]
+  },
+  "qingming-hill": {
+    "sceneWords": {
+      "qingming-1": [
+        {
+          "term": "拜山",
+          "meaning": "上山扫墓",
+          "example": "清明正日，一家人去拜山。"
+        },
+        {
+          "term": "孭",
+          "meaning": "背",
+          "example": "你记得细个嗰阵，系阿爷孭你上嚟。"
+        },
+        {
+          "term": "湿滑",
+          "meaning": "又湿又滑",
+          "example": "山路湿滑。"
+        }
+      ],
+      "qingming-2a": [
+        {
+          "term": "木工",
+          "meaning": "做木器的活",
+          "example": "阿爷以前做木工。"
+        },
+        {
+          "term": "成条村",
+          "meaning": "整条村",
+          "example": "成条村嘅门都系佢整。"
+        },
+        {
+          "term": "整",
+          "meaning": "做、修理",
+          "example": "成条村嘅门都系佢整。"
+        }
+      ],
+      "qingming-2b": [
+        {
+          "term": "描红",
+          "meaning": "用红漆描字",
+          "example": "阿妈话要重新描红。"
+        },
+        {
+          "term": "褪色",
+          "meaning": "颜色变淡",
+          "example": "碑上褪色嘅字。"
+        },
+        {
+          "term": "碑",
+          "meaning": "墓碑",
+          "example": "你望住碑上褪色嘅字。"
+        }
+      ],
+      "qingming-3": [
+        {
+          "term": "压纸",
+          "meaning": "在坟头压纸钱",
+          "example": "阿爸叫你压纸。"
+        },
+        {
+          "term": "坟头",
+          "meaning": "坟墓上面",
+          "example": "把纸钱一张张压在坟头。"
+        },
+        {
+          "term": "纸角",
+          "meaning": "纸的边缘",
+          "example": "风一吹，纸角翻起。"
+        }
+      ],
+      "qingming-4": [
+        {
+          "term": "烧肉",
+          "meaning": "烧过的猪肉",
+          "example": "阿妈切开烧肉。"
+        },
+        {
+          "term": "甘蔗",
+          "meaning": "甘蔗",
+          "example": "阿爸削甘蔗。"
+        },
+        {
+          "term": "摆低",
+          "meaning": "放下",
+          "example": "第一截照旧摆低。"
+        }
+      ],
+      "qingming-5a": [
+        {
+          "term": "歪歪斜斜",
+          "meaning": "不直、歪斜",
+          "example": "你削得歪歪斜斜。"
+        },
+        {
+          "term": "示范",
+          "meaning": "做样板给人看",
+          "example": "阿爸接过刀，慢慢示范。"
+        },
+        {
+          "term": "黏黏的",
+          "meaning": "黏黏的",
+          "example": "甘蔗汁滴喺手，黏黏的。"
+        }
+      ],
+      "qingming-5b": [
+        {
+          "term": "碑脚",
+          "meaning": "墓碑底部",
+          "example": "你见到碑脚刻住一行细字。"
+        },
+        {
+          "term": "冻",
+          "meaning": "冷",
+          "example": "石头冻。"
+        },
+        {
+          "term": "温度",
+          "meaning": "温度",
+          "example": "字却好似有温度。"
+        }
+      ],
+      "qingming-e1": [
+        {
+          "term": "落山",
+          "meaning": "下山",
+          "example": "落山时，阿爸行得慢。"
+        },
+        {
+          "term": "纸灰",
+          "meaning": "烧纸后的灰",
+          "example": "纸灰飞起，又慢慢落下。"
+        },
+        {
+          "term": "扶住",
+          "meaning": "扶着",
+          "example": "你扶住佢。"
+        }
+      ],
+      "qingming-e2": [
+        {
+          "term": "带路",
+          "meaning": "走在前面引路",
+          "example": "明年你带路。"
+        },
+        {
+          "term": "应承",
+          "meaning": "答应",
+          "example": "你应承。"
+        },
+        {
+          "term": "转角",
+          "meaning": "拐弯的地方",
+          "example": "心里记住每个转角。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "今年清明，谁负责带路？",
+        "options": ["“我”", "阿爸", "阿妈"],
+        "answer": 0,
+        "hint": "开头和结局都提到这件事。"
+      },
+      {
+        "question": "阿妈拿出红纸和毛笔做什么？",
+        "options": ["重新描红", "写春联", "包东西"],
+        "answer": 0,
+        "hint": "她说要重新描红。"
+      },
+      {
+        "question": "阿爸为什么把第一截甘蔗摆低？",
+        "options": ["甜的留给先人", "甘蔗坏了", "怕人偷"],
+        "answer": 0,
+        "hint": "他说“甜嘅，要留畀先人”。"
+      }
+    ]
+  },
+  "chen-clan-frieze": {
+    "sceneWords": {
+      "chen-1": [
+        {
+          "term": "灰塑",
+          "meaning": "用灰料在屋脊上塑形的岭南工艺",
+          "example": "雨水渗入灰塑。"
+        },
+        {
+          "term": "瓦脊",
+          "meaning": "屋顶的瓦脊",
+          "example": "陈家祠嘅瓦脊裂咗一道口。"
+        },
+        {
+          "term": "孭住",
+          "meaning": "背着",
+          "example": "你孭住灰桶。"
+        }
+      ],
+      "chen-2a": [
+        {
+          "term": "灰匙",
+          "meaning": "抹灰用的小铲",
+          "example": "灰匙一落，旧灰碎开。"
+        },
+        {
+          "term": "企唔稳",
+          "meaning": "站不稳",
+          "example": "风大到企唔稳。"
+        },
+        {
+          "term": "铜丝",
+          "meaning": "做骨架的铜丝",
+          "example": "露出里面一条铜丝。"
+        }
+      ],
+      "chen-2b": [
+        {
+          "term": "揸住",
+          "meaning": "握着",
+          "example": "你揸住笔。"
+        },
+        {
+          "term": "功劳",
+          "meaning": "功绩、贡献",
+          "example": "修好之后，功劳归他。"
+        },
+        {
+          "term": "半空",
+          "meaning": "空中",
+          "example": "手停喺半空。"
+        }
+      ],
+      "chen-3": [
+        {
+          "term": "收唔切",
+          "meaning": "来不及收",
+          "example": "楼下收唔切嘅游客。"
+        },
+        {
+          "term": "一冲就散",
+          "meaning": "一冲就散开",
+          "example": "未干嘅灰最怕水，一冲就散。"
+        },
+        {
+          "term": "游客",
+          "meaning": "游客",
+          "example": "楼下收唔切嘅游客。"
+        }
+      ],
+      "chen-4a": [
+        {
+          "term": "白霜",
+          "meaning": "一层白色的霜",
+          "example": "灰面起咗一层白霜。"
+        },
+        {
+          "term": "批灰",
+          "meaning": "抹灰",
+          "example": "呢个时候要批一层薄灰。"
+        },
+        {
+          "term": "手一抖",
+          "meaning": "手抖了一下",
+          "example": "你手一抖，批厚咗。"
+        }
+      ],
+      "chen-4b": [
+        {
+          "term": "冒雨",
+          "meaning": "冒着雨",
+          "example": "你冒雨赶工。"
+        },
+        {
+          "term": "鱼鳞",
+          "meaning": "鱼的鳞片",
+          "example": "好似鱼鳞。"
+        },
+        {
+          "term": "由得佢",
+          "meaning": "随它去",
+          "example": "由得佢，远睇唔觉。"
+        }
+      ],
+      "chen-5": [
+        {
+          "term": "闹",
+          "meaning": "骂",
+          "example": "佢冇闹你。"
+        },
+        {
+          "term": "边度",
+          "meaning": "哪里",
+          "example": "你觉得，边度仲未够？"
+        },
+        {
+          "term": "扫过",
+          "meaning": "扫过",
+          "example": "手指喺灰面轻轻扫过。"
+        }
+      ],
+      "chen-e1": [
+        {
+          "term": "落款",
+          "meaning": "题写名字",
+          "example": "落款时，你写低师傅个名。"
+        },
+        {
+          "term": "骨架",
+          "meaning": "支撑结构",
+          "example": "骨架在，灰先企得稳。"
+        },
+        {
+          "term": "独立",
+          "meaning": "一个人完成",
+          "example": "你独立修另一条屋脊。"
+        }
+      ],
+      "chen-e2": [
+        {
+          "term": "学得识",
+          "meaning": "学得会",
+          "example": "肯承认未够，先学得识。"
+        },
+        {
+          "term": "承认",
+          "meaning": "承认",
+          "example": "肯承认未够。"
+        },
+        {
+          "term": "旧玉",
+          "meaning": "旧玉",
+          "example": "好似一块旧玉。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "师傅病了，“我”要独自修什么？",
+        "options": ["陈家祠的屋脊", "一扇木门", "一面围墙"],
+        "answer": 0,
+        "hint": "故事开头提到瓦脊裂了一道口。"
+      },
+      {
+        "question": "灰塑里面的铜丝有什么作用？",
+        "options": ["骨架", "装饰", "排水"],
+        "answer": 0,
+        "hint": "师傅说过，铜丝不可以抽走。"
+      },
+      {
+        "question": "师傅最看重“我”哪一点？",
+        "options": ["肯承认不够、愿意改", "手快", "会讲价"],
+        "answer": 0,
+        "hint": "看两个结局师傅说的话。"
+      }
+    ]
+  },
+  "guangxiao-bodhi": {
+    "sceneWords": {
+      "guang-1": [
+        {
+          "term": "沙弥",
+          "meaning": "年轻的出家僧人",
+          "example": "你系光孝寺嘅小沙弥。"
+        },
+        {
+          "term": "菩提叶",
+          "meaning": "菩提树的叶子",
+          "example": "你拎住竹扫帚扫菩提叶。"
+        },
+        {
+          "term": "扫帚",
+          "meaning": "扫把",
+          "example": "你拎住竹扫帚。"
+        }
+      ],
+      "guang-2a": [
+        {
+          "term": "传落嚟",
+          "meaning": "传下来",
+          "example": "真系传落嚟嗰棵？"
+        },
+        {
+          "term": "讲得清",
+          "meaning": "说得清",
+          "example": "真假无人讲得清。"
+        },
+        {
+          "term": "枯过",
+          "meaning": "枯死过",
+          "example": "菩提树枯过、又生过。"
+        }
+      ],
+      "guang-2b": [
+        {
+          "term": "合埋眼",
+          "meaning": "闭上眼睛",
+          "example": "佢冇拍走，只系合埋眼。"
+        },
+        {
+          "term": "乜嘢",
+          "meaning": "什么",
+          "example": "系喺度等乜嘢。"
+        },
+        {
+          "term": "肩上",
+          "meaning": "肩膀上",
+          "example": "一片叶落喺外乡人肩上。"
+        }
+      ],
+      "guang-3": [
+        {
+          "term": "幡旗",
+          "meaning": "寺院里的旗帜",
+          "example": "师父指住殿前嘅幡旗。"
+        },
+        {
+          "term": "仁者",
+          "meaning": "对人的尊称",
+          "example": "系仁者心动。"
+        },
+        {
+          "term": "心动",
+          "meaning": "心在动",
+          "example": "系仁者心动。"
+        }
+      ],
+      "guang-4": [
+        {
+          "term": "旧相",
+          "meaning": "旧照片",
+          "example": "外乡人由袋里摸出一张旧相。"
+        },
+        {
+          "term": "摸出",
+          "meaning": "掏出",
+          "example": "由袋里摸出一张旧相。"
+        },
+        {
+          "term": "返来",
+          "meaning": "回来",
+          "example": "阿公走之前，一直想返来。"
+        }
+      ],
+      "guang-5a": [
+        {
+          "term": "沙沙响",
+          "meaning": "沙沙作响",
+          "example": "风一吹，叶子沙沙响。"
+        },
+        {
+          "term": "无人讲嘢",
+          "meaning": "没人说话",
+          "example": "你们坐喺树下，无人讲嘢。"
+        },
+        {
+          "term": "咳",
+          "meaning": "咳嗽",
+          "example": "好似阿公喺度咳。"
+        }
+      ],
+      "guang-5b": [
+        {
+          "term": "册子",
+          "meaning": "本子、册子",
+          "example": "客堂本册子记满名字。"
+        },
+        {
+          "term": "褪色",
+          "meaning": "颜色变淡",
+          "example": "有啲已经褪色。"
+        },
+        {
+          "term": "画咗",
+          "meaning": "画了",
+          "example": "名下面画咗一片叶。"
+        }
+      ],
+      "guang-6": [
+        {
+          "term": "执起",
+          "meaning": "捡起",
+          "example": "佢喺树下执起一片叶。"
+        },
+        {
+          "term": "相簿",
+          "meaning": "相册",
+          "example": "夹入相簿。"
+        },
+        {
+          "term": "睇树啦",
+          "meaning": "看树吧，意思是随缘",
+          "example": "你问佢明年会唔会再来，佢话：睇树啦。"
+        }
+      ],
+      "guang-e1": [
+        {
+          "term": "山门",
+          "meaning": "寺院正门",
+          "example": "你送到山门。"
+        },
+        {
+          "term": "文物",
+          "meaning": "文物",
+          "example": "菩提树唔系一件文物。"
+        },
+        {
+          "term": "牵住",
+          "meaning": "牵着",
+          "example": "系一条线，牵住走远嘅人。"
+        }
+      ],
+      "guang-e2": [
+        {
+          "term": "新叶",
+          "meaning": "新长出的叶子",
+          "example": "发现树顶发咗新叶。"
+        },
+        {
+          "term": "生气",
+          "meaning": "生机",
+          "example": "寺院先有生气。"
+        },
+        {
+          "term": "静",
+          "meaning": "安静",
+          "example": "你扫得更慢，也更静。"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "“我”在寺里每天做什么？",
+        "options": ["扫菩提叶", "卖香", "敲钟"],
+        "answer": 0,
+        "hint": "第一幕就写了每天做的事。"
+      },
+      {
+        "question": "外乡人为什么坐在树下不肯走？",
+        "options": ["外公曾在这里，他想回来看看", "他迷路了", "他在等人送饭"],
+        "answer": 0,
+        "hint": "第四幕他拿出一张旧照片。"
+      },
+      {
+        "question": "师父问“是风动还是幡动”，外乡人怎么答？",
+        "options": ["仁者心动", "风动", "幡动"],
+        "answer": 0,
+        "hint": "第三幕他接上了师父的话。"
+      }
+    ]
+  }
+}
