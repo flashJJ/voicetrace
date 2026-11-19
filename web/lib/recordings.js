@@ -58,6 +58,12 @@ export function recordingId(storySlug, sceneId) {
   return `${storySlug}::${sceneId}`;
 }
 
+function announceChange() {
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new Event("voicetrace:recordings-changed"));
+  }
+}
+
 export function listRecordings() {
   return run("readonly", (store) => {
     const request = store.getAll();
@@ -90,12 +96,17 @@ export function saveRecording(record) {
       createdAt: record.createdAt || now,
       updatedAt: now,
     };
-    return run("readwrite", (store) => store.put(payload)).then(() => payload);
+    return run("readwrite", (store) => store.put(payload)).then(() => {
+      announceChange();
+      return payload;
+    });
   });
 }
 
 export function deleteRecording(id) {
-  return run("readwrite", (store) => store.delete(id));
+  return run("readwrite", (store) => store.delete(id)).then(() => {
+    announceChange();
+  });
 }
 
 export function updateTranscript(id, transcript) {

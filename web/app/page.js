@@ -2,6 +2,7 @@ import Link from "next/link";
 import { featuredStories, stories, storyModes, heroImage, whyImage } from "../lib/stories";
 import StoryCard from "../components/StoryCard";
 import VoiceMoment from "../components/VoiceMoment";
+import HomeVoice from "../components/HomeVoice";
 
 export default function HomePage() {
   return (
@@ -44,16 +45,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      <HomeVoice />
+
       <section className="section">
         <div className="container">
           <div className="section-heading">
             <div>
               <span className="eyebrow">故事馆</span>
-              <h2 className="section-title">三个故事，三种乡音</h2>
+              <h2 className="section-title">二十个故事，三种乡音</h2>
             </div>
             <p className="section-desc">
               先从一段童谣、一个民间故事、一碗艇仔粥开始。
-              每个故事三幕，两三个选择，最后留下一张可以发给家人的声音卡。
+              每个故事 3-8 幕，两三个选择，最后留下一张可以发给家人的声音卡。
             </p>
           </div>
           <div className="story-grid">
@@ -127,7 +130,7 @@ export default function HomePage() {
               <div className="step-number">03</div>
               <h3>变成一本可以玩的书</h3>
               <p>
-                三幕剧情、两三个选择、两个结局。读完生成一张声音故事卡，
+                3-8 幕剧情、两三个选择、两个结局。读完生成一张声音故事卡，
                 发给那个你想念的人。
               </p>
             </div>

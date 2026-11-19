@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { stories, storyModes } from "../../lib/stories";
+import StoryRecordBadge from "../../components/StoryRecordBadge";
 
 export const metadata = {
   title: "故事馆 · 声迹",
-  description: "三种粤语叙事模式：正经、鬼故事、野史。月光光、井边的鹰爪兰、状元及第粥等 9 个互动故事。",
+  description: "三种粤语叙事模式：正经、鬼故事、野史。20 个 3-8 幕互动故事，可录下自家的粤语版本。",
 };
 
 export default function StoriesPage() {
@@ -14,7 +15,8 @@ export default function StoriesPage() {
         <h1 className="page-title">同一个广州，三种讲法。</h1>
         <p className="page-lede">
           正经模式留给家里人，鬼故事模式留给半夜不睡的人，野史模式留给爱听八卦的人。
-          每个故事三幕、两三个选择、两个结局；可以听语音示例、看普通话翻译、点开方言词注释。
+          每个故事 3-8 幕、两三个选择、两个结局；可以听语音示例、看普通话翻译、点开方言词注释，
+          也可以录下自家的粤语版本。
         </p>
         <div className="mode-nav">
           {storyModes.map((mode) => (
@@ -58,6 +60,7 @@ export default function StoriesPage() {
                       <h2 className="story-title">{story.title}</h2>
                       <p className="story-subtitle">{story.subtitle}</p>
                       <p className="story-intro">{story.intro}</p>
+                      <StoryRecordBadge story={story} />
                       <div className="story-meta" style={{ marginTop: "auto" }}>
                         <span>{story.duration}</span>
                         <Link className="story-link" href={`/stories/${story.slug}`}>

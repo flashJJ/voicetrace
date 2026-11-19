@@ -36,7 +36,7 @@ function wrapQuote(ctx, text, maxWidth, maxLines) {
   return lines;
 }
 
-function drawCard(canvas, story, quote) {
+function drawCard(canvas, story, quote, source) {
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
   canvas.width = W;
@@ -157,20 +157,26 @@ function drawCard(canvas, story, quote) {
 
   ctx.fillStyle = muted;
   ctx.font = '400 18px "Noto Sans SC", "PingFang SC", sans-serif';
-  ctx.fillText("示例内容 · 正式版将替换为经授权的真实家庭故事", 96, 1330);
+  ctx.fillText(
+    source === "family"
+      ? "我家的版本 · 录音只保存在本机"
+      : "示例内容 · 正式版将替换为经授权的真实家庭故事",
+    96,
+    1330
+  );
 
   // gold accent
   ctx.fillStyle = gold;
   ctx.fillRect(96, 1360, 120, 4);
 }
 
-export default function ShareCard({ story, quote }) {
+export default function ShareCard({ story, quote, source = "sample" }) {
   const canvasRef = useRef(null);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    if (canvasRef.current) drawCard(canvasRef.current, story, quote || story.quote);
-  }, [story, quote]);
+    if (canvasRef.current) drawCard(canvasRef.current, story, quote || story.quote, source);
+  }, [story, quote, source]);
 
   const download = useCallback(() => {
     const canvas = canvasRef.current;
@@ -182,7 +188,9 @@ export default function ShareCard({ story, quote }) {
   }, [story]);
 
   const copy = useCallback(async () => {
-    const text = `${story.title}｜${story.quote}\n${story.dialect}\n—— 声迹 · 方言故事书`;
+    const text = `${story.title}｜${quote || story.quote}${
+      source === "family" ? "（我家的版本）" : ""
+    }\n${story.dialect}\n—— 声迹 · 方言故事书`;
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -190,7 +198,7 @@ export default function ShareCard({ story, quote }) {
     } catch {
       setCopied(false);
     }
-  }, [story]);
+  }, [story, quote, source]);
 
   return (
     <div>
