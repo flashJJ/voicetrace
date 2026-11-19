@@ -244,3 +244,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-17 | 文档中心重组：比赛材料迁入 `docs/contest/`，新增 `guide/` 项目指导、`development/` 后续开发方案、`blog/` 技术分享 | docs/、README.md | 原 13 份比赛文档仅移动不改内容；新增 13 份文档 |
 | 2026-11-18 | 新增 v0.3 版本迭代计划，路线图补充版本映射 | docs/development/02-v0.3-版本迭代计划.md、01-后续开发路线图.md、docs/README.md、README.md | 比赛期间冻结 main，v0.3 在 release/v0.3 开发 |
 | 2026-11-19 | 发布 v0.6 儿童模式：9 个适龄故事、儿童录音页、家长门、年龄标签、继续阅读与自测试 | web/app/kids、web/components、web/tests、web/scripts、docs/development/05-08 | GitHub Pages 与 Trae FunctionWeb 同日发布 |
+| 2026-11-19 | v0.7 学习闭环：9 个故事词卡与小测、逐幕跟读回放、小测页、学习小结、本机进度与家长页清除入口 | web/data/kids、web/lib/kid-learning.js、web/lib/kid-progress.js、web/components/Kid*.jsx、web/app/kids/[slug]/quiz、web/app/kids/[slug]/summary、web/app/kids/parent、web/scripts、web/tests、docs/development/07 | 跟读为练习录音，不写入声音档案；进度只存本机 |

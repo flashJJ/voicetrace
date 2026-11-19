@@ -165,7 +165,106 @@ goldens.forEach((sample) => {
 
 ok(`黄金样品 ${goldens.length} 个`);
 
-// 4. 汇总
+// 4. 儿童学习内容
+const learningFile = path.join(root, "data/kids/learning.json");
+let learning = {};
+
+try {
+  learning = JSON.parse(fs.readFileSync(learningFile, "utf8"));
+  if (!learning || typeof learning !== "object" || Array.isArray(learning)) {
+    fail("data/kids/learning.json 应为以故事 slug 为键的对象");
+    learning = {};
+  }
+} catch (error) {
+  fail(`data/kids/learning.json 解析失败：${error.message}`);
+}
+
+const kidPool = stories.filter((story) => story.kidSafe);
+
+Object.keys(learning).forEach((slug) => {
+  if (!kidPool.some((story) => story.slug === slug)) {
+    fail(`学习内容 ${slug} 找不到对应的儿童故事`);
+  }
+});
+
+kidPool.forEach((story) => {
+  const label = `学习内容「${story.title}」`;
+  const entry = learning[story.slug];
+
+  if (!entry) {
+    fail(`${label} 缺少 data/kids/learning.json 条目`);
+    return;
+  }
+
+  const scenesById = new Map(story.scenes.map((scene) => [scene.id, scene]));
+  const terms = new Set();
+
+  if (!entry.sceneWords || typeof entry.sceneWords !== "object") {
+    fail(`${label} 缺少 sceneWords`);
+  } else {
+    Object.entries(entry.sceneWords).forEach(([sceneId, words]) => {
+      const scene = scenesById.get(sceneId);
+      if (!scene) {
+        fail(`${label} 的词卡场景 id 不存在：${sceneId}`);
+        return;
+      }
+      if (!Array.isArray(words) || words.length === 0) {
+        fail(`${label} 的场景 ${sceneId} 没有词条`);
+        return;
+      }
+
+      words.forEach((word) => {
+        if (!word?.term) fail(`${label} 的场景 ${sceneId} 有词条缺少 term`);
+        if (!word?.meaning) fail(`${label} 词条「${word?.term}」缺少 meaning`);
+        if (!word?.example) fail(`${label} 词条「${word?.term}」缺少 example`);
+        if (!word?.term) return;
+
+        if (terms.has(word.term)) fail(`${label} 词条重复：${word.term}`);
+        terms.add(word.term);
+
+        const source = `${scene.textYue || ""}${scene.audioText || ""}`;
+        const glossaryTerms = (scene.glossary || []).map((item) => item.term);
+        if (!source.includes(word.term) && !glossaryTerms.includes(word.term)) {
+          fail(`${label} 词条「${word.term}」不在 ${sceneId} 原文或词注中`);
+        }
+      });
+    });
+  }
+
+  if (terms.size < 3) {
+    fail(`${label} 关键词少于 3 个，实际 ${terms.size}`);
+  }
+
+  if (!Array.isArray(entry.quiz) || entry.quiz.length < 3) {
+    fail(`${label} 小测少于 3 题`);
+  } else {
+    entry.quiz.forEach((question, index) => {
+      const quizLabel = `${label} 第 ${index + 1} 题`;
+      if (!question?.question) fail(`${quizLabel} 缺少题干`);
+      if (!question?.hint) fail(`${quizLabel} 缺少提示`);
+
+      if (!Array.isArray(question?.options) || question.options.length < 2) {
+        fail(`${quizLabel} 选项少于 2 个`);
+      } else {
+        if (question.options.length > 4) fail(`${quizLabel} 选项多于 4 个`);
+        if (new Set(question.options).size !== question.options.length) {
+          fail(`${quizLabel} 选项重复`);
+        }
+        if (
+          !Number.isInteger(question.answer) ||
+          question.answer < 0 ||
+          question.answer >= question.options.length
+        ) {
+          fail(`${quizLabel} 的 answer 越界：${question.answer}`);
+        }
+      }
+    });
+  }
+});
+
+ok(`儿童学习内容 ${Object.keys(learning).length} 个故事`);
+
+// 5. 汇总
 console.log("声迹内容校验");
 console.log("--------------------------------------");
 notes.forEach((note) => console.log(`  ${note}`));

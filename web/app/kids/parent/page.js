@@ -1,5 +1,6 @@
 import Link from "next/link";
 import KidsExitGate from "../../../components/KidsExitGate";
+import KidProgressPanel from "../../../components/KidProgressPanel";
 import { kidStories } from "../../../lib/kids";
 
 export const metadata = {
@@ -44,9 +45,19 @@ export default function KidsParentPage() {
         <h2>怎么管理</h2>
         <ul>
           <li>录音与转写：进入「声音档案」查看、试听、删除。</li>
+          <li>学习记录：在下面查看每个故事读了几幕、跟读几段、认识几个词，可单独或全部清除。</li>
           <li>换设备：先在档案页导出完整档案，再在新设备导入。</li>
           <li>回到成人模式：点右上角「家长说明」，在页面底部由家长完成确认。</li>
         </ul>
+      </section>
+
+      <section className="kids-parent-card kids-parent-block">
+        <h2>孩子的学习记录</h2>
+        <p>
+          学习记录只保存在这台设备的浏览器里，不上传服务器，也不做账号和排名。
+          清除记录不会删除录音。
+        </p>
+        <KidProgressPanel />
       </section>
 
       <div className="kids-hero-actions">

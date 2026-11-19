@@ -4,7 +4,11 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import SceneAudio from "./SceneAudio";
 import ShareCard from "./ShareCard";
+import KidReadAlong from "./KidReadAlong";
+import KidWordCards from "./KidWordCards";
 import { getRecording, recordingId } from "../lib/recordings";
+import { getKidLearning } from "../lib/kid-learning";
+import { markSceneVisited } from "../lib/kid-progress";
 
 export default function StoryReader({ story, kidMode = false }) {
   const scenes = useMemo(
@@ -29,6 +33,10 @@ export default function StoryReader({ story, kidMode = false }) {
   const bodyRef = useRef(null);
 
   const scene = scenes[sceneId];
+  const learning = useMemo(
+    () => (kidMode ? getKidLearning(story.slug) : null),
+    [kidMode, story.slug]
+  );
 
   useEffect(() => {
     if (!kidMode) return;
@@ -38,6 +46,11 @@ export default function StoryReader({ story, kidMode = false }) {
       // 隐私模式可能禁用 localStorage，不影响阅读。
     }
   }, [kidMode, story.slug]);
+
+  useEffect(() => {
+    if (!kidMode) return;
+    markSceneVisited(story.slug, sceneId);
+  }, [kidMode, story.slug, sceneId]);
 
   useEffect(() => {
     if (!scene?.ending) {
@@ -159,14 +172,40 @@ export default function StoryReader({ story, kidMode = false }) {
               </>
             )}
 
+            {learning ? (
+              <div className="kid-learn">
+                <KidReadAlong story={story} scene={scene} />
+                <KidWordCards slug={story.slug} words={learning.sceneWords?.[scene.id] || []} />
+              </div>
+            ) : null}
+
             {scene.ending ? (
               <div className="ending-card">
                 <h3>故事读完了</h3>
                 <p>{scene.endingText}</p>
                 <div className="share-actions">
-                  <button type="button" className="btn btn-primary" onClick={restart}>
+                  {learning?.quiz?.length ? (
+                    <Link
+                      className="btn btn-primary"
+                      href={`/kids/${story.slug}/quiz`}
+                    >
+                      做 {learning.quiz.length} 道小测
+                    </Link>
+                  ) : null}
+                  <button
+                    type="button"
+                    className={`btn ${
+                      kidMode && learning?.quiz?.length ? "btn-ghost" : "btn-primary"
+                    }`}
+                    onClick={restart}
+                  >
                     再读一次
                   </button>
+                  {learning ? (
+                    <Link className="btn btn-ghost" href={`/kids/${story.slug}/summary`}>
+                      看学习小结
+                    </Link>
+                  ) : null}
                   <Link
                     className="btn btn-ghost"
                     href={`${recordBase}?story=${story.slug}&scene=${firstScene}`}
