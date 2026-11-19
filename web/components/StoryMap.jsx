@@ -262,7 +262,7 @@ export default function StoryMap() {
           读这个故事 <span aria-hidden="true">→</span>
         </Link>
 
-        <div style={{ marginTop: 24 }}>
+        <div className="map-story-list">
           {stories.map((story) => (
             <button
               type="button"
