@@ -11,6 +11,10 @@ const pins = {
   "five-goats": { x: 250, y: 210, label: "越秀山" },
   "boluo-festival": { x: 640, y: 430, label: "黄埔庙头" },
   "chicken-lullaby": { x: 300, y: 350, label: "西关" },
+  "chen-clan-frieze": { x: 400, y: 230, label: "陈家祠" },
+  "guangxiao-bodhi": { x: 380, y: 190, label: "光孝寺" },
+  "litchi-bay-ghost": { x: 300, y: 405, label: "荔枝湾" },
+  "thirteen-factories-silver": { x: 350, y: 325, label: "十三行" },
 };
 
 const pinGroups = Object.values(

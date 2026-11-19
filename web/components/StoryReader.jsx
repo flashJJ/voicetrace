@@ -14,6 +14,11 @@ export default function StoryReader({ story }) {
       }, {}),
     [story]
   );
+  const actCount = useMemo(() => {
+    const explicit = Number(story.actCount);
+    if (explicit > 0) return explicit;
+    return Math.max(...story.scenes.map((item) => Number(item.act) || 1));
+  }, [story]);
   const firstScene = story.scenes[0].id;
   const [sceneId, setSceneId] = useState(firstScene);
   const [history, setHistory] = useState([]);
@@ -81,8 +86,8 @@ export default function StoryReader({ story }) {
           </div>
 
           <div className="reader-body" ref={bodyRef}>
-            <div className="act-progress" aria-label={`第 ${scene.act} 幕，共 3 幕`}>
-              {[1, 2, 3].map((act) => (
+            <div className="act-progress" aria-label={`第 ${scene.act} 幕，共 ${actCount} 幕`}>
+              {Array.from({ length: actCount }, (_, index) => index + 1).map((act) => (
                 <div
                   key={act}
                   className={`act-step ${
@@ -93,7 +98,9 @@ export default function StoryReader({ story }) {
                 </div>
               ))}
             </div>
-            <div className="act-label">第 {scene.act} 幕 / 共 3 幕</div>
+            <div className="act-label">
+              第 {scene.act} 幕 / 共 {actCount} 幕
+            </div>
             <h1 className="scene-title">{scene.title}</h1>
             <p className="scene-text">{scene.textYue}</p>
             <p className="scene-text-zh">{scene.textZh}</p>

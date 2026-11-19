@@ -46,8 +46,8 @@ stories.forEach((story) => {
   slugs.add(story.slug);
 
   if (!MODES.has(story.mode)) fail(`${label} 的 mode 非法：${story.mode}`);
-  if (!Array.isArray(story.scenes) || story.scenes.length !== 5) {
-    fail(`${label} 应有 5 幕，实际 ${story.scenes?.length ?? 0}`);
+  if (!Array.isArray(story.scenes) || story.scenes.length < 3) {
+    fail(`${label} 场景数量不足，实际 ${story.scenes?.length ?? 0}`);
     return;
   }
 
@@ -60,18 +60,27 @@ stories.forEach((story) => {
     if (!scene.textZh) fail(`${label} 场景 ${scene.id} 缺少普通话翻译`);
   });
 
+  const acts = new Set(
+    story.scenes.map((scene) => Number(scene.act)).filter((act) => Number.isInteger(act))
+  );
+  const actCount = Number(story.actCount) || Math.max(...acts);
+  if (actCount < 3 || actCount > 8) fail(`${label} 幕数应在 3-8，实际 ${actCount}`);
+
   const choices = story.scenes.flatMap((scene) => scene.choices || []);
-  if (choices.length !== 6) fail(`${label} 应有 6 个选择，实际 ${choices.length}`);
-
-  const targets = new Set(choices.map((choice) => choice.next).filter(Boolean));
-  if (targets.size !== 4) fail(`${label} 应有 4 个唯一目标场景，实际 ${targets.size}`);
-
-  targets.forEach((target) => {
-    if (!ids.has(target)) fail(`${label} 存在悬空引用：${target}`);
+  choices.forEach((choice) => {
+    if (!choice.next) fail(`${label} 有选择缺少 next`);
+    else if (!ids.has(choice.next)) fail(`${label} 存在悬空引用：${choice.next}`);
   });
 
-  const endings = story.scenes.filter((scene) => (scene.choices || []).length === 0);
-  if (endings.length !== 2) fail(`${label} 应有 2 个结局，实际 ${endings.length}`);
+  story.scenes.forEach((scene) => {
+    const count = (scene.choices || []).length;
+    if (!scene.ending && count < 1) fail(`${label} 场景 ${scene.id} 没有选择`);
+    if (!scene.ending && count > 3) fail(`${label} 场景 ${scene.id} 选择过多`);
+    if (scene.ending && count !== 0) fail(`${label} 结局 ${scene.id} 不应有选择`);
+  });
+
+  const endings = story.scenes.filter((scene) => scene.ending);
+  if (endings.length < 2) fail(`${label} 应有至少 2 个结局，实际 ${endings.length}`);
 
   const cover = path.join(root, "public/covers", `${story.slug}.webp`);
   if (!fs.existsSync(cover)) fail(`${label} 缺少封面：public/covers/${story.slug}.webp`);

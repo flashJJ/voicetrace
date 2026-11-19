@@ -1,6 +1,7 @@
 import { cover, heroImage, whyImage } from "./image.js";
 import { ghostStories } from "./stories-ghost.js";
 import { wildHistoryStories } from "./stories-wild-history.js";
+import { longStories } from "./stories-long.js";
 
 export { heroImage, whyImage };
 
@@ -733,7 +734,12 @@ export const storyModes = [
   },
 ];
 
-export const stories = [...heritageStories, ...ghostStories, ...wildHistoryStories];
+export const stories = [
+  ...heritageStories,
+  ...ghostStories,
+  ...wildHistoryStories,
+  ...longStories,
+];
 export const featuredStories = stories.filter((story) => story.featured);
 
 export function getStory(slug) {

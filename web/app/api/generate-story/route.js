@@ -1,6 +1,7 @@
 import { getCorpusItem, getGoldenSample } from "../../../lib/corpus";
 import { acquire, getClientIp, hit, release, tooMany } from "../../../lib/rate-limit";
 import { ALLOWED_MODES, PROMPT_VERSION, SYSTEM_PROMPT, buildPrompt } from "../../../lib/prompt";
+import { planNarrative } from "../../../lib/narrative";
 import { validateStory } from "../../../lib/validate-story";
 
 const MAX_BODY_BYTES = 8192;
@@ -44,7 +45,7 @@ function timeoutReason(error) {
   return "model_error";
 }
 
-async function callModel(item, mode, onProgress) {
+async function callModel(item, mode, plan, onProgress) {
   const apiKey = process.env.LLM_API_KEY || process.env.OPENAI_API_KEY;
   if (!apiKey) return null;
 
@@ -63,17 +64,19 @@ async function callModel(item, mode, onProgress) {
       "Content-Type": "application/json",
       Authorization: `Bearer ${apiKey}`,
     },
-    signal: AbortSignal.timeout(intEnv("LLM_TIMEOUT_MS", 15000)),
+    signal: AbortSignal.timeout(
+      Math.min(intEnv("LLM_TIMEOUT_MS", 18000 + plan.actCount * 2500), 45000)
+    ),
     body: JSON.stringify({
       model,
       temperature: 0.6,
-      max_tokens: intEnv("LLM_MAX_TOKENS", 1500),
+      max_tokens: intEnv("LLM_MAX_TOKENS", 1200 + plan.actCount * 360),
       ...(disableThinking ? { thinking: { type: "disabled" } } : {}),
       response_format: { type: "json_object" },
       ...(useStream ? { stream: true } : {}),
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: buildPrompt(item, mode) },
+        { role: "user", content: buildPrompt(item, mode, plan) },
       ],
     }),
   });
@@ -275,6 +278,11 @@ export async function POST(request) {
       ...(item.tags || []),
     ].join(" ");
 
+    const seedInput = body?.seed
+      ? String(body.seed)
+      : `${item.id}-${mode}-${Date.now()}-${Math.random()}`;
+    const plan = planNarrative(seedInput, body?.acts);
+
     if (apiKey) {
       return streamResult(async (send) => {
         const startedAt = Date.now();
@@ -292,7 +300,7 @@ export async function POST(request) {
             send({ type: "stage", stage: "generating", chars });
           };
 
-          const result = await callModel(item, mode, reportProgress);
+          const result = await callModel(item, mode, plan, reportProgress);
           send({ type: "stage", stage: "validating" });
 
           return {
@@ -302,9 +310,12 @@ export async function POST(request) {
             promptVersion: PROMPT_VERSION,
             corpusId: item.id,
             mode,
+            actCount: plan.actCount,
+            skeleton: plan.skeleton,
+            seed: String(plan.seed),
             elapsedMs: Date.now() - startedAt,
             output: result.output,
-            validation: validateStory(result.output, golden, sourceText),
+            validation: validateStory(result.output, golden, sourceText, plan),
           };
         } catch (error) {
           if (!golden?.expected) throw error;
@@ -317,9 +328,12 @@ export async function POST(request) {
             promptVersion: PROMPT_VERSION,
             corpusId: item.id,
             mode,
+            actCount: null,
+            plannedActs: plan.actCount,
+            seed: String(plan.seed),
             elapsedMs: Date.now() - startedAt,
             output: golden.expected,
-            validation: validateStory(golden.expected, golden, sourceText),
+            validation: validateStory(golden.expected, golden, sourceText, null),
             note: "本次生成没有完成，已降级为黄金样品。可以重试一次。",
           };
         } finally {
@@ -357,9 +371,11 @@ export async function POST(request) {
       promptVersion: PROMPT_VERSION,
       corpusId: item.id,
       mode,
+      actCount: 3,
+      seed: String(plan.seed),
       elapsedMs: 0,
       output: mockOutput,
-      validation: validateStory(mockOutput, golden, sourceText),
+      validation: validateStory(mockOutput, golden, sourceText, null),
       note: "未配置 LLM_API_KEY，当前返回黄金样品作为 Mock 输出。配置 .env.local 后会调用真实模型。",
     });
   } catch (error) {
