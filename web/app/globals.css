@@ -1462,6 +1462,63 @@ button {
   margin-bottom: 8px;
 }
 
+.voice-list {
+  list-style: none;
+  padding-left: 0 !important;
+  margin: 14px 0 0 !important;
+  display: grid;
+  gap: 14px;
+}
+
+.voice-item {
+  border-top: 1px dashed var(--line);
+  padding-top: 14px;
+}
+
+.voice-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.voice-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.voice-head strong {
+  font-family: var(--serif);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.voice-head span {
+  font-size: 11px;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+.voice-note {
+  margin: 2px 0 10px !important;
+  font-size: 12px !important;
+  color: var(--ink-muted) !important;
+}
+
+.voice-source {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--cinnabar);
+}
+
+.voice-license {
+  margin-top: 14px !important;
+  font-size: 11px !important;
+  color: var(--ink-muted) !important;
+}
+
 .tag-row {
   display: flex;
   gap: 8px;
