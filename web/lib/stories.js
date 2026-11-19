@@ -9,6 +9,9 @@ export { heroImage, whyImage };
 const heritageStories = [
   {
     slug: 'moonlight',
+    audience: "kid",
+    ageBand: "4-6",
+    kidSafe: true,
     mode: 'heritage',
     modeLabel: '正经模式',
     featured: true,
@@ -144,6 +147,9 @@ const heritageStories = [
   },
   {
     slug: 'mouse-wedding',
+    audience: "kid",
+    ageBand: "4-6",
+    kidSafe: true,
     mode: 'heritage',
     modeLabel: '正经模式',
     featured: true,
@@ -274,6 +280,9 @@ const heritageStories = [
   },
   {
     slug: 'grandma-congee',
+    audience: "kid",
+    ageBand: "6-9",
+    kidSafe: true,
     mode: 'heritage',
     modeLabel: '正经模式',
     featured: true,
@@ -414,6 +423,9 @@ const heritageStories = [
   },
   {
     slug: 'five-goats',
+    audience: "kid",
+    ageBand: "6-9",
+    kidSafe: true,
     mode: 'heritage',
     modeLabel: '正经模式',
     featured: false,
@@ -564,6 +576,9 @@ const heritageStories = [
   },
   {
     slug: 'chicken-lullaby',
+    audience: "kid",
+    ageBand: "4-6",
+    kidSafe: true,
     mode: 'heritage',
     modeLabel: '正经模式',
     featured: false,

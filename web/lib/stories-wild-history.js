@@ -3,6 +3,9 @@ import { cover } from "./image.js";
 export const wildHistoryStories = [
   {
     slug: "lun-wenxu-congee",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "wild_history",
     modeLabel: "野史模式",
     featured: false,
@@ -111,6 +114,9 @@ export const wildHistoryStories = [
   },
   {
     slug: "chen-mengji-trick",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "wild_history",
     modeLabel: "野史模式",
     featured: false,
@@ -219,6 +225,9 @@ export const wildHistoryStories = [
   },
   {
     slug: "zhuji-xiang-south",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "wild_history",
     modeLabel: "野史模式",
     featured: false,
@@ -327,6 +336,9 @@ export const wildHistoryStories = [
   },
   {
     slug: "boluo-festival",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "wild_history",
     modeLabel: "野史模式",
     featured: false,

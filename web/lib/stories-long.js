@@ -3,6 +3,9 @@ import { cover } from "./image.js";
 export const longStories = [
   {
     slug: "chen-clan-frieze",
+    audience: "kid",
+    ageBand: "6-9",
+    kidSafe: true,
     mode: "heritage",
     modeLabel: "正经模式",
     featured: false,
@@ -188,6 +191,10 @@ export const longStories = [
   },
   {
     slug: "guangxiao-bodhi",
+    audience: "kid",
+    ageBand: "6-9",
+    kidSafe: true,
+    kidNote: "涉及寺院与传说，建议家长陪同。",
     mode: "heritage",
     modeLabel: "正经模式",
     featured: false,
@@ -391,6 +398,9 @@ export const longStories = [
   },
   {
     slug: "litchi-bay-ghost",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "ghost",
     modeLabel: "鬼故事模式",
     featured: false,
@@ -594,6 +604,9 @@ export const longStories = [
   },
   {
     slug: "thirteen-factories-silver",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "wild_history",
     modeLabel: "野史模式",
     featured: false,

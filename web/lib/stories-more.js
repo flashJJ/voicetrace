@@ -3,6 +3,9 @@ import { cover } from "./image.js";
 export const moreStories = [
   {
     slug: "dragonboat-meal",
+    audience: "kid",
+    ageBand: "6-9",
+    kidSafe: true,
     mode: "heritage",
     modeLabel: "正经模式",
     featured: false,
@@ -167,6 +170,10 @@ export const moreStories = [
   },
   {
     slug: "qingming-hill",
+    audience: "family",
+    ageBand: "6-9",
+    kidSafe: true,
+    kidNote: "涉及祭祖与离别，建议家长陪同。",
     mode: "heritage",
     modeLabel: "正经模式",
     featured: false,
@@ -347,6 +354,9 @@ export const moreStories = [
   },
   {
     slug: "herbal-tea-night",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "ghost",
     modeLabel: "鬼故事模式",
     featured: false,
@@ -529,6 +539,9 @@ export const moreStories = [
   },
   {
     slug: "whampoa-foreigner",
+    audience: "adult",
+    ageBand: "10+",
+    kidSafe: false,
     mode: "wild_history",
     modeLabel: "野史模式",
     featured: false,

@@ -3504,6 +3504,470 @@ button {
   font-size: 14px;
 }
 
+.kids-page {
+  padding-bottom: 90px;
+}
+
+.kids-hero {
+  padding: 58px 0 26px;
+}
+
+.kids-hero h1 {
+  margin: 14px 0 16px;
+  font-family: var(--serif);
+  font-size: clamp(38px, 4.6vw, 62px);
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.kids-hero p {
+  margin: 0;
+  max-width: 700px;
+  color: var(--ink-soft);
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.kids-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.kids-note {
+  margin: 12px 0 42px;
+  padding: 12px 16px;
+  border-left: 3px solid var(--jade);
+  background: rgba(47, 93, 80, 0.08);
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.kids-band {
+  margin-bottom: 46px;
+}
+
+.kids-band-head {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 32px;
+  align-items: end;
+  padding-top: 26px;
+  margin-bottom: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.kids-band-head h2 {
+  margin: 8px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(26px, 3vw, 36px);
+  letter-spacing: 0.03em;
+}
+
+.kids-band-head p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.kids-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.kids-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: rgba(251, 247, 238, 0.7);
+  min-height: 230px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kids-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(54, 38, 22, 0.1);
+}
+
+.kids-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kids-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+}
+
+.kids-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.kids-card-meta span {
+  padding: 2px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+
+.kids-card h3 {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: 27px;
+  letter-spacing: 0.03em;
+}
+
+.kids-card p {
+  margin: 0 0 6px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.kids-card-note {
+  color: var(--gold) !important;
+  font-size: 12px !important;
+}
+
+.kids-card-link {
+  margin-top: auto;
+  padding-top: 12px;
+  color: var(--cinnabar);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.kids-parent-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 42px;
+  padding: 26px 30px;
+  border: 1px solid var(--line);
+  background: rgba(251, 247, 238, 0.72);
+}
+
+.kids-parent-card h2 {
+  margin: 0 0 8px;
+  font-family: var(--serif);
+  font-size: 24px;
+}
+
+.kids-parent-card p {
+  margin: 0;
+  max-width: 700px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.kids-parent-page .kids-hero {
+  padding-bottom: 12px;
+}
+
+.kids-parent-block {
+  display: block;
+  margin-top: 18px;
+}
+
+.kids-parent-block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.reader.is-kid .reader-visual {
+  min-height: 620px;
+}
+
+.reader.is-kid .scene-title {
+  font-size: clamp(34px, 3.6vw, 50px);
+}
+
+.reader.is-kid .scene-text {
+  font-size: 21px;
+  line-height: 2.05;
+}
+
+.reader.is-kid .scene-text-zh {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.reader.is-kid .choice-btn {
+  padding: 16px 18px;
+  font-size: 17px;
+}
+
+.reader.is-kid .glossary-chip {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.reader.is-kid .reader-actions .btn,
+.reader.is-kid .share-actions .btn {
+  min-height: 48px;
+  font-size: 15px;
+}
+
+.kids-record-page {
+  max-width: 1000px;
+}
+
+.kids-record-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 26px 28px 30px;
+  border: 1px solid var(--line);
+  background: rgba(251, 247, 238, 0.72);
+}
+
+.kids-record-selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.kids-record-selects label,
+.kids-record-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--ink-muted);
+  font-size: 13px;
+}
+
+.kids-record-selects select,
+.kids-record-field textarea,
+.kids-record-field input {
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--paper-light);
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+}
+
+.kids-record-selects select:focus-visible,
+.kids-record-field textarea:focus-visible,
+.kids-record-field input:focus-visible {
+  outline: 2px solid var(--jade);
+  outline-offset: 1px;
+}
+
+.kids-record-prompt {
+  padding: 20px 22px;
+  border-left: 3px solid var(--cinnabar);
+  background: rgba(255, 252, 245, 0.9);
+}
+
+.kids-record-prompt-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--ink-muted);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.kids-record-prompt p {
+  margin: 10px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(21px, 2.4vw, 26px);
+  line-height: 1.8;
+}
+
+.kids-record-prompt details {
+  margin-top: 10px;
+}
+
+.kids-record-prompt summary {
+  color: var(--ink-muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.kids-record-prompt details p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.kids-recorder {
+  padding: 20px 22px;
+  border: 1px dashed var(--line-strong);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.kids-recorder.is-recording {
+  border-color: var(--cinnabar);
+  box-shadow: 0 0 0 3px rgba(178, 58, 42, 0.12);
+}
+
+.kids-recorder-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.kids-recorder-label {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 22px;
+}
+
+.kids-recorder-time {
+  margin: 4px 0 0;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+.kids-recorder-limit {
+  margin: 2px 0 0;
+  color: var(--ink-muted);
+  font-size: 12px;
+}
+
+.kids-recorder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.kids-recorder-actions .btn {
+  min-height: 48px;
+}
+
+.kids-recorder-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.kids-recorder-preview audio {
+  flex: 1;
+  min-width: 220px;
+}
+
+.kids-recorder-preview span {
+  color: var(--ink-muted);
+  font-size: 12px;
+}
+
+.kids-recorder-error {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 14px 0 0;
+  color: var(--cinnabar);
+  font-size: 13px;
+}
+
+.kids-recorder-error button {
+  border: none;
+  background: none;
+  color: var(--ink-muted);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.kids-asr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.kids-asr input,
+.kids-consent input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--jade);
+  flex: 0 0 auto;
+}
+
+.kids-asr-status {
+  margin: -8px 0 0;
+  color: var(--ink-muted);
+  font-size: 12px;
+}
+
+.kids-asr-status.is-error {
+  color: var(--cinnabar);
+}
+
+.kids-record-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 18px;
+  align-items: end;
+}
+
+.kids-consent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.kids-record-submit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.kids-record-submit .btn {
+  min-height: 48px;
+}
+
+.kids-record-error {
+  margin: 0;
+  color: var(--cinnabar);
+  font-size: 13px;
+}
+
+.kids-record-success {
+  margin: 0;
+  padding: 12px 16px;
+  border-left: 3px solid var(--jade);
+  background: rgba(47, 93, 80, 0.08);
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.kids-record-success a {
+  color: var(--cinnabar);
+  font-weight: 600;
+}
+
 .scene-audio-edit {
   margin-left: auto;
   flex: 0 0 auto;
@@ -3696,6 +4160,20 @@ button {
   .record-aside {
     position: static;
   }
+
+  .kids-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kids-band-head {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .kids-parent-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 680px) {
@@ -3728,6 +4206,45 @@ button {
 
   .record-submit .btn {
     width: 100%;
+  }
+
+  .kids-hero p {
+    font-size: 17px;
+  }
+
+  .kids-hero-actions .btn {
+    flex: 1;
+  }
+
+  .kids-card {
+    grid-template-columns: 1fr;
+  }
+
+  .kids-card img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .reader.is-kid .reader-visual {
+    min-height: 360px;
+  }
+
+  .kids-record-card {
+    padding: 20px;
+  }
+
+  .kids-record-selects,
+  .kids-record-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .kids-recorder-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .kids-record-submit .btn {
+    flex: 1;
   }
 
   .archive-item-head {
