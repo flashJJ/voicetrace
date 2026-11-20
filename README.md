@@ -138,6 +138,7 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 - **儿童模式**：`/kids` 按 4-6、6-9 岁分组，14 个独立适龄故事；跟读、词卡、3 道小测、学习小结与家长清除；隐藏鬼故事与 AI 工坊
 - **国际化**：全站简 / 繁 / EN 切换（同一路由）；25 个故事有完整英文覆盖，14 个儿童故事有英文词卡与小测；繁中由 opencc-js 统一转换；录音棚、档案、资料库、地图、AI 工坊与关于页均已接入
 - **学习播放**：示例语音与读题支持慢速 / 标准 / 原速三档，偏好本机记忆；故事翻译可收起为「点开普通话翻译」，方便先听后看；儿童词卡可逐词听粤语发音
+- **移动与离线**：`manifest` + Service Worker，可安装到主屏；已打开过的页面和封面离线可看；故事搜索、年龄筛选、收藏与继续阅读；故事页支持系统分享，失败时复制链接
 - **黄金样品**：8 个（正经 6 + 鬼故事 1 + 野史 1）
 - **AI 工坊**：`/studio` 选素材 + 模式 → 生成 3-8 幕/翻译/注释 → 自动对照黄金样品跑 8 项检查；已配置火山方舟 Agent Plan（`deepseek-v4.1-flash`）。历史记录（v0.3，7 项规则）为 8 个样品 7/7 通过，不等同于新规则结果
 - **预生成演示**：`/demo` 已用真实模型预生成 3 个模式各 1 个故事（五羊传说 / 金花娘娘 / 波罗诞），现场不用等模型
@@ -250,5 +251,6 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-19 | v0.8 适龄内容：5 个儿童独立故事与封面、儿童池增至 14 个、14 条适龄素材、脚本自测记录、材料收尾清单与 `v0.8.0` 冻结 | web/lib/stories-kids.js、web/public/covers、web/data/kids/learning.json、web/data/corpus/nursery/07-kid-v08.json、web/scripts、web/tests、docs/development/08-10 | 真实亲子试用未完成，已在试用记录中标注 |
 | 2026-11-20 | v0.9 国际化：简 / 繁 / EN 全站切换、25 个故事英文覆盖、14 个儿童故事英文词卡与小测、各工具页文案英文化、语言偏好记忆与英文覆盖测试 | web/components/LocaleProvider.jsx、web/data/i18n、web/lib/i18n-content.js、web/app、web/components、web/hooks、web/tests/i18n.test.mjs、scripts/check-static.mjs、docs/development/13 | 暂停真实试用，先面向香港与海外华侨家庭；`v0.9.0` 冻结 |
 | 2026-11-20 | v0.10 学习体验：朗读速度三档与本机记忆、故事翻译收起/点开、儿童词卡逐词发音 | web/lib/playback.js、web/hooks/usePlaybackRate.js、web/components/SpeechRateControl.jsx、StoryReader、KidReadAlong、KidQuiz、KidWordCards、AudioButton、globals.css、tests/playback.test.mjs | `v0.10.0` 冻结 |
+| 2026-11-20 | v0.11 移动与离线：PWA manifest / Service Worker / 离线页与安装提示、系统分享、故事搜索年龄筛选收藏与继续阅读 | web/public/manifest.webmanifest、sw.js、offline.html、icons、PwaRegister、PwaInstall、ShareStoryButton、StoryFavoriteButton、ContinueReading、stories/page.js、lib/favorites.js、lib/story-search.js、tests/story-search.test.mjs | `v0.11.0` 冻结 |
 | 2026-11-20 | 收尾材料按双入口重做：产品说明、路演 10 页、报名帖、3 分钟脚本、截图清单；统一 25/14/164/8 数字 | docs/contest/06-14、docs/development/01、05、10、README | 真实试用缺口保持显式标注；PDF/PPT/视频仍待制作 |
 | 2026-11-20 | 修复亲子角色走查 P1：儿童词注去重、首屏跟读入口、跟读听示例、小测听题目、跨设备提示 | web/hooks/useSpeechPlayback.js、StoryReader、KidReadAlong、KidQuiz、KidWordCards、kids/parent、globals.css、web/tests、web/scripts | 单测增至 25 项；静态检查覆盖新按钮与提示 |

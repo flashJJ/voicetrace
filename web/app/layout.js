@@ -2,6 +2,8 @@ import "./globals.css";
 import LocaleProvider from "../components/LocaleProvider";
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
+import PwaRegister from "../components/PwaRegister";
+import PwaInstall from "../components/PwaInstall";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -12,6 +14,15 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   title: "声迹 · 方言故事书",
   description,
+  manifest: `${basePath}/manifest.webmanifest`,
+  appleWebApp: {
+    capable: true,
+    title: "声迹",
+    statusBarStyle: "default",
+  },
+  icons: {
+    apple: `${basePath}/icons/icon-192.png`,
+  },
   openGraph: {
     type: "website",
     locale: "zh_CN",
@@ -36,6 +47,10 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  themeColor: "#a63a2b",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-Hans" data-scroll-behavior="smooth">
@@ -44,6 +59,8 @@ export default function RootLayout({ children }) {
           <SiteHeader />
           <main>{children}</main>
           <SiteFooter />
+          <PwaInstall />
+          <PwaRegister />
         </LocaleProvider>
       </body>
     </html>

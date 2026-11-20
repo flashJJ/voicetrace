@@ -143,6 +143,27 @@ if (!bundleContains(chunksDir, "voicetrace:show-translation")) {
   errors.push("客户端产物里找不到翻译显示偏好");
 }
 
+const pwaFiles = [
+  "manifest.webmanifest",
+  "sw.js",
+  "offline.html",
+  "icons/icon-192.png",
+  "icons/icon-512.png",
+  "icons/icon-maskable-512.png",
+];
+for (const file of pwaFiles) {
+  if (!exists(file)) errors.push(`缺少 PWA 文件：out/${file}`);
+}
+if (homeHtml && !homeHtml.includes("manifest.webmanifest")) {
+  errors.push("首页缺少 manifest 引用");
+}
+if (!bundleContains(chunksDir, "voicetrace:favorites")) {
+  errors.push("客户端产物里找不到故事收藏逻辑");
+}
+if (!bundleContains(chunksDir, "voicetrace:install-dismissed")) {
+  errors.push("客户端产物里找不到安装提示逻辑");
+}
+
 console.log("声迹静态产物检查");
 console.log("--------------------------------------");
 console.log(`  儿童故事页 ${kidStories().length} 个`);
