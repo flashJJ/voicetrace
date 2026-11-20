@@ -1,6 +1,6 @@
 {
   "name": "voicetrace",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "private": true,
   "description": "VoiceTrace · Dialect Storybook — 声迹 · 方言故事书",
   "scripts": {

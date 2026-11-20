@@ -1797,5 +1797,359 @@
         "hint": "Look at the second ending."
       }
     ]
+  },
+  "star-ferry": {
+    "sceneWords": {
+      "star-1": [
+        {
+          "term": "过海",
+          "meaning": "Cross the harbour by boat",
+          "example": "Grandma says we will cross the harbour by boat today."
+        },
+        {
+          "term": "嘟一嘟",
+          "meaning": "Tap an Octopus card",
+          "example": "Grandma taps her Octopus card."
+        },
+        {
+          "term": "靠岸",
+          "meaning": "Come alongside the pier",
+          "example": "The green Star Ferry slowly comes alongside."
+        }
+      ],
+      "star-2a": [
+        {
+          "term": "上层",
+          "meaning": "Upper deck",
+          "example": "We sit upstairs to watch the view."
+        },
+        {
+          "term": "嗰边",
+          "meaning": "That side",
+          "example": "Grandma points that way: Central is over there."
+        },
+        {
+          "term": "喊",
+          "meaning": "Cry",
+          "example": "When you were little, you were still crying."
+        }
+      ],
+      "star-2b": [
+        {
+          "term": "水手",
+          "meaning": "Sailor, deckhand",
+          "example": "The sailor throws the thick rope onto the pier."
+        },
+        {
+          "term": "抛绳",
+          "meaning": "Throw a rope",
+          "example": "The sailor throws a rope to steady the ferry."
+        },
+        {
+          "term": "坐定定",
+          "meaning": "Sit still",
+          "example": "Grandma tells me to sit still."
+        }
+      ],
+      "star-3a": [
+        {
+          "term": "栏杆",
+          "meaning": "Railing",
+          "example": "You lean on the railing and count the boats."
+        },
+        {
+          "term": "数",
+          "meaning": "Count",
+          "example": "You count the boats one by one."
+        },
+        {
+          "term": "舍得",
+          "meaning": "Be willing to let go or leave",
+          "example": "Count any more and you will not want to leave."
+        }
+      ],
+      "star-3b": [
+        {
+          "term": "讲故",
+          "meaning": "Tell a story",
+          "example": "When I grow up, I want to learn to tell stories like you."
+        },
+        {
+          "term": "见牙唔见眼",
+          "meaning": "Grin from ear to ear",
+          "example": "Grandma grins so widely her eyes almost disappear."
+        },
+        {
+          "term": "钟声",
+          "meaning": "Bell sound",
+          "example": "The ferry docks, and the bell rings again."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What do you and Grandma ride across the harbour?",
+        "options": [
+          "The Star Ferry",
+          "A bus",
+          "The MTR"
+        ],
+        "hint": "The pier bell rings and a green ferry comes alongside."
+      },
+      {
+        "question": "Which places do you see from the upper deck?",
+        "options": [
+          "Central and Wan Chai",
+          "Sha Tin",
+          "Stanley"
+        ],
+        "hint": "Grandma points across the harbour and names two places."
+      },
+      {
+        "question": "What secret do you tell Grandma?",
+        "options": [
+          "You want to learn to tell stories",
+          "You want ice cream",
+          "You want a toy"
+        ],
+        "hint": "You say you want to learn storytelling like her."
+      }
+    ]
+  },
+  "tram-token": {
+    "sceneWords": {
+      "tram-1": [
+        {
+          "term": "叮叮",
+          "meaning": "Hong Kong tram",
+          "example": "A green ding-ding slowly pulls into the stop."
+        },
+        {
+          "term": "埋站",
+          "meaning": "Pull into a stop",
+          "example": "The ding-ding slowly pulls into the stop."
+        },
+        {
+          "term": "车票",
+          "meaning": "Ticket",
+          "example": "Grandpa finds an old tram ticket."
+        }
+      ],
+      "tram-2a": [
+        {
+          "term": "车头",
+          "meaning": "Front of the vehicle",
+          "example": "You sit in the front row."
+        },
+        {
+          "term": "后生",
+          "meaning": "Young, in one's younger days",
+          "example": "Grandpa says trams had to be stopped with a rope when he was young."
+        },
+        {
+          "term": "拉绳",
+          "meaning": "Pull a rope",
+          "example": "Old trams had to have a rope pulled to stop."
+        }
+      ],
+      "tram-2b": [
+        {
+          "term": "遮",
+          "meaning": "Umbrella",
+          "example": "Umbrellas are packed tightly at the market entrance."
+        },
+        {
+          "term": "车长",
+          "meaning": "Tram conductor",
+          "example": "Grandpa used to be a tram conductor."
+        },
+        {
+          "term": "北角",
+          "meaning": "North Point",
+          "example": "The tram passes North Point."
+        }
+      ],
+      "tram-3a": [
+        {
+          "term": "八达通",
+          "meaning": "Octopus card",
+          "example": "Before Octopus cards, conductors collected every fare."
+        },
+        {
+          "term": "手心",
+          "meaning": "Palm of the hand",
+          "example": "Grandpa puts the ticket back in your palm."
+        },
+        {
+          "term": "行人",
+          "meaning": "Pedestrian",
+          "example": "The ding-ding warns pedestrians to step aside."
+        }
+      ],
+      "tram-3b": [
+        {
+          "term": "落车",
+          "meaning": "Get off the vehicle",
+          "example": "Grandpa leads you off the tram."
+        },
+        {
+          "term": "返工",
+          "meaning": "Go to work",
+          "example": "It was Grandpa's first day at work."
+        },
+        {
+          "term": "下昼",
+          "meaning": "Afternoon",
+          "example": "It holds the afternoon of his first day at work."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Where does Grandpa take you to ride the ding-ding?",
+        "options": [
+          "Kennedy Town",
+          "Tsim Sha Tsui",
+          "Sha Tin"
+        ],
+        "hint": "At the terminus, a green ding-ding pulls in."
+      },
+      {
+        "question": "Why does the ding-ding ring?",
+        "options": [
+          "To warn pedestrians",
+          "To announce rain",
+          "To wake passengers"
+        ],
+        "hint": "Grandpa explains what the bell is for."
+      },
+      {
+        "question": "What memory does the old ticket hold?",
+        "options": [
+          "The afternoon of his first day at work",
+          "His first trip",
+          "A birthday present"
+        ],
+        "hint": "At Causeway Bay, Grandpa explains where the ticket came from."
+      }
+    ]
+  },
+  "cha-chaan-teng": {
+    "sceneWords": {
+      "cha-1": [
+        {
+          "term": "茶餐厅",
+          "meaning": "Hong Kong-style cafe",
+          "example": "Mum takes you into a cha chaan teng to shelter from the rain."
+        },
+        {
+          "term": "唔该",
+          "meaning": "Thank you, please",
+          "example": "Mum teaches you to say “m goi”."
+        },
+        {
+          "term": "菠萝油",
+          "meaning": "Pineapple bun with butter",
+          "example": "You see the pineapple bun at the next table."
+        }
+      ],
+      "cha-2a": [
+        {
+          "term": "落单",
+          "meaning": "Place an order",
+          "example": "You raise your hand and order by yourself."
+        },
+        {
+          "term": "少甜",
+          "meaning": "Less sugar",
+          "example": "One iced lemon tea, less sweet."
+        },
+        {
+          "term": "冻柠茶",
+          "meaning": "Iced lemon tea",
+          "example": "You order a glass of iced lemon tea."
+        }
+      ],
+      "cha-2b": [
+        {
+          "term": "叻",
+          "meaning": "Clever, capable",
+          "example": "The waiter says the kid is clever."
+        },
+        {
+          "term": "点头",
+          "meaning": "Nod",
+          "example": "The waiter nods."
+        },
+        {
+          "term": "伙计",
+          "meaning": "Waiter",
+          "example": "The waiter nods."
+        }
+      ],
+      "cha-3a": [
+        {
+          "term": "上枱",
+          "meaning": "Served at the table",
+          "example": "The pineapple bun arrives at the table."
+        },
+        {
+          "term": "暖笠笠",
+          "meaning": "Warm and cozy",
+          "example": "The table feels warm and cozy."
+        },
+        {
+          "term": "牛油",
+          "meaning": "Butter",
+          "example": "Hot bread holds cold butter."
+        }
+      ],
+      "cha-3b": [
+        {
+          "term": "唔该晒",
+          "meaning": "Thank you very much",
+          "example": "You tell the waiter “m goi saai”."
+        },
+        {
+          "term": "蛋挞",
+          "meaning": "Egg tart",
+          "example": "He gives you a small egg tart."
+        },
+        {
+          "term": "柜台",
+          "meaning": "Counter",
+          "example": "You walk to the counter to say thank you."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Why do you go into the cha chaan teng?",
+        "options": [
+          "To shelter from the rain",
+          "To wait for a bus",
+          "To buy bread"
+        ],
+        "hint": "It is raining outside."
+      },
+      {
+        "question": "How sweet do you order the iced lemon tea?",
+        "options": [
+          "Less sweet",
+          "No sugar",
+          "Extra sweet"
+        ],
+        "hint": "You say “less sweet” when ordering."
+      },
+      {
+        "question": "What do you say to the waiter?",
+        "options": [
+          "Thank you very much",
+          "Good morning",
+          "Goodbye"
+        ],
+        "hint": "You walk to the counter and thank him."
+      }
+    ]
   }
 }

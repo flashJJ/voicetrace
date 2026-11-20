@@ -18,6 +18,7 @@ const storyFiles = [
   "stories-heritage-long-en.json",
   "stories-ghost-en.json",
   "stories-wild-en.json",
+  "stories-hk-en.json",
 ];
 
 const overlays = storyFiles.reduce(
@@ -29,8 +30,8 @@ const learningZh = JSON.parse(
   fs.readFileSync(path.join(root, "data/kids/learning.json"), "utf8")
 );
 
-test("25 个故事都有完整的英文覆盖", () => {
-  assert.equal(stories.length, 25);
+test("28 个故事都有完整的英文覆盖", () => {
+  assert.equal(stories.length, 28);
   assert.equal(Object.keys(overlays).length, stories.length);
 
   for (const story of stories) {
@@ -75,9 +76,9 @@ test("25 个故事都有完整的英文覆盖", () => {
   }
 });
 
-test("14 个儿童故事都有英文词卡与小测覆盖", () => {
+test("17 个儿童故事都有英文词卡与小测覆盖", () => {
   const pool = kidStories();
-  assert.equal(pool.length, 14);
+  assert.equal(pool.length, 17);
 
   for (const story of pool) {
     const zh = learningZh[story.slug];

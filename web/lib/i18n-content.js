@@ -3,6 +3,7 @@ import heritageKidEn from "../data/i18n/stories-heritage-kid-en.json";
 import heritageLongEn from "../data/i18n/stories-heritage-long-en.json";
 import ghostEn from "../data/i18n/stories-ghost-en.json";
 import wildEn from "../data/i18n/stories-wild-en.json";
+import hkEn from "../data/i18n/stories-hk-en.json";
 import learningEn from "../data/i18n/learning-en.json";
 
 const storiesEn = {
@@ -11,6 +12,7 @@ const storiesEn = {
   ...heritageLongEn,
   ...ghostEn,
   ...wildEn,
+  ...hkEn,
 };
 
 const MODE_LABELS = {

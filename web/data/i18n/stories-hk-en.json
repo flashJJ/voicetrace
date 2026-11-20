@@ -1,0 +1,242 @@
+{
+  "star-ferry": {
+    "title": "The Star Ferry Crosses the Harbour",
+    "subtitle": "A ferry ride with Grandma",
+    "quote": "Crossing the harbour is not just a crossing; it is sitting with Grandma for a while.",
+    "intro": "On Sunday, Grandma takes you to Tsim Sha Tsui to ride the Star Ferry across the harbour. The pier bell rings, and the green ferry comes alongside.",
+    "dialect": "Cantonese · Victoria Harbour, Hong Kong",
+    "type": "An original Hong Kong story",
+    "duration": "3 min",
+    "scenes": {
+      "star-1": {
+        "title": "Tsim Sha Tsui Pier",
+        "text": "On Sunday, Grandma holds your hand and walks you to the Tsim Sha Tsui pier. The sea breeze tastes a little salty. The bell rings, and the green Star Ferry slowly comes alongside. Grandma taps her Octopus card: “Today we cross the harbour by boat.”"
+      },
+      "star-2a": {
+        "title": "Sea breeze upstairs",
+        "text": "You and Grandma sit upstairs. The wooden bench is a little cool, and the sea wind messes up your hair. Grandma points to the far shore: “That side is Central, and further along is Wan Chai. When you were small, I took you on this ferry for the first time, and you were still crying.”"
+      },
+      "star-2b": {
+        "title": "Sounds downstairs",
+        "text": "You sit downstairs. The ferry rocks gently. A sailor throws a thick rope onto the pier and pulls it tight. Grandma teaches you: “Sit still and watch the sea, and you will not feel seasick.”"
+      },
+      "star-3a": {
+        "title": "Ending · Seven boats",
+        "text": "You lean on the railing and count the boats: one, two, three… By the seventh, the ferry has already reached the pier. Grandma laughs: “That is enough. Count any more and you will not want to leave.”",
+        "endingText": "Some views only come clear when you sit down and look slowly."
+      },
+      "star-3b": {
+        "title": "Ending · Grandma's listener",
+        "text": "You lean close to Grandma's ear: “When I grow up, I want to learn to tell stories like you.” Grandma pauses, then smiles so widely her eyes almost disappear: “Good. Next time you tell one, and I will listen.” The ferry reaches the pier, and the bell rings again.",
+        "endingText": "Crossing the harbour is not just a crossing; it is sitting with Grandma for a while."
+      }
+    },
+    "choices": {
+      "star-1": ["Sit upstairs and watch the view", "Sit downstairs and listen to the ferry"],
+      "star-2a": ["Count the boats going by", "Tell Grandma a secret"],
+      "star-2b": ["Count the boats going by", "Tell Grandma a secret"]
+    },
+    "glossary": {
+      "过海": {
+        "meaning": "Cross the harbour by boat",
+        "note": "Hong Kong people call a ferry crossing “crossing the sea”."
+      },
+      "嘟一嘟": {
+        "meaning": "Tap an Octopus card",
+        "note": "The Octopus is Hong Kong's common transit card."
+      },
+      "嗰边": {
+        "meaning": "That side",
+        "note": "Cantonese uses “go” for “that”."
+      },
+      "喊": {
+        "meaning": "Cry",
+        "note": "In Cantonese, “haam” means to cry, not to shout."
+      },
+      "水手": {
+        "meaning": "Sailor, deckhand",
+        "note": "On the Star Ferry, sailors throw the mooring rope when docking."
+      },
+      "抛绳": {
+        "meaning": "Throw a rope",
+        "note": "“Throw” is pronounced “paau” in Cantonese."
+      },
+      "栏杆": {
+        "meaning": "Railing",
+        "note": "Hold the railing when you look at the sea."
+      },
+      "靠岸": {
+        "meaning": "Come alongside the pier",
+        "note": "Once the ferry has docked, passengers can get off."
+      },
+      "讲故": {
+        "meaning": "Tell a story",
+        "note": "Hong Kong people say “gong gu” for storytelling."
+      },
+      "见牙唔见眼": {
+        "meaning": "Smile so widely that your eyes disappear",
+        "note": "A playful way to say someone is grinning from ear to ear."
+      }
+    }
+  },
+  "tram-token": {
+    "title": "The Old Tram Ticket",
+    "subtitle": "Grandpa and an old tram ticket",
+    "quote": "One ding-ding, and the whole street slows down.",
+    "intro": "Grandpa is tidying a drawer when he finds an old tram ticket. He takes you from Kennedy Town to Causeway Bay on the ding-ding and promises a story about a tram conductor.",
+    "dialect": "Cantonese · Hong Kong Island",
+    "type": "An original Hong Kong story",
+    "duration": "4 min",
+    "scenes": {
+      "tram-1": {
+        "title": "Kennedy Town Terminus",
+        "text": "Grandpa tidies a drawer and finds a yellowed tram ticket. He says: “Today I will take you on the ding-ding, from Kennedy Town all the way to Causeway Bay.” At the terminus, a green tram goes ding-ding and slowly pulls in."
+      },
+      "tram-2a": {
+        "title": "Front-row seat",
+        "text": "You sit in the front row. The driver presses a foot pedal, the bell goes ding-ding, and the whole street seems to slow down. Grandpa says: “When I was young, the tram still had a rope you pulled to stop.”"
+      },
+      "tram-2b": {
+        "title": "Window seat upstairs",
+        "text": "You and Grandpa sit by the upstairs window. The tram passes North Point, where the market entrance is crowded and umbrellas are packed shoulder to shoulder. Grandpa looks out: “I used to be a conductor on this very line.”"
+      },
+      "tram-3a": {
+        "title": "Ending · Why ding-ding",
+        "text": "Grandpa says: “The tram rings ding-ding before a stop to warn people to step aside. Before Octopus cards, the conductor collected every fare and remembered who had not paid.” The tram reaches Causeway Bay, and Grandpa puts the old ticket back in your palm.",
+        "endingText": "Tickets grow old, but the ding-ding sounds the same."
+      },
+      "tram-3b": {
+        "title": "Ending · His first day at work",
+        "text": "The tram reaches Causeway Bay, and Grandpa leads you off. You look back as the ding-ding rings again, carrying a car full of people slowly away. Grandpa says: “One old ticket holds the whole afternoon of my first day at work.”",
+        "endingText": "One old ticket holds a whole afternoon."
+      }
+    },
+    "choices": {
+      "tram-1": ["Sit in the front row", "Sit by the upstairs window"],
+      "tram-2a": ["Ask Grandpa why it is called ding-ding", "Help Grandpa watch for our stop"],
+      "tram-2b": ["Ask Grandpa why it is called ding-ding", "Help Grandpa watch for our stop"]
+    },
+    "glossary": {
+      "叮叮": {
+        "meaning": "Hong Kong tram",
+        "note": "The tram rings “ding-ding” at stops, so people call it the ding-ding."
+      },
+      "埋站": {
+        "meaning": "Pull into a stop",
+        "note": "Used for buses and trams arriving at a stop."
+      },
+      "车头": {
+        "meaning": "The front of the vehicle",
+        "note": "The front row gives the clearest view ahead."
+      },
+      "后生": {
+        "meaning": "Young, in one's younger days",
+        "note": "“Hau saang” refers to youth and prime years."
+      },
+      "遮": {
+        "meaning": "Umbrella",
+        "note": "Hong Kong people call an umbrella a “je”."
+      },
+      "车长": {
+        "meaning": "Tram or bus conductor",
+        "note": "Old tram conductors pulled a rope to signal the driver."
+      },
+      "八达通": {
+        "meaning": "Octopus card",
+        "note": "Hong Kong's all-purpose transit and payment card."
+      },
+      "手心": {
+        "meaning": "Palm of the hand",
+        "note": "Elders often place small things in a child's palm."
+      },
+      "落车": {
+        "meaning": "Get off a vehicle",
+        "note": "Cantonese says “get down from the vehicle”."
+      },
+      "返工": {
+        "meaning": "Go to work",
+        "note": "Going to work is “fan gung”; finishing work is “sau gung”."
+      }
+    }
+  },
+  "cha-chaan-teng": {
+    "title": "Pineapple Bun at the Cha Chaan Teng",
+    "subtitle": "A glass of iced lemon tea on a rainy day",
+    "quote": "One “m goi”, and the whole cha chaan teng feels warmer.",
+    "intro": "On a rainy day, Mum takes you into a cha chaan teng to shelter from the rain. The waiter hands over a menu, but you only see the pineapple bun at the next table.",
+    "dialect": "Cantonese · Hong Kong cha chaan teng",
+    "type": "An original Hong Kong story",
+    "duration": "3 min",
+    "scenes": {
+      "cha-1": {
+        "title": "A rainy day at the cha chaan teng",
+        "text": "It is raining, and Mum pulls you into a cha chaan teng to shelter. The waiter calls out loudly: “Sit anywhere!” You see the pineapple bun at the next table, butter slowly melting into the warm bread. Mum teaches you: “When you want something, say ‘m goi’.”"
+      },
+      "cha-2a": {
+        "title": "Ordering by yourself",
+        "text": "You raise your hand and say quietly: “M goi, one pineapple bun, one iced lemon tea, less sweet.” The waiter repeats it with a smile and even winks at you: “Clever one!”"
+      },
+      "cha-2b": {
+        "title": "Learning to order",
+        "text": "Mum orders for you: “One pineapple bun, one iced lemon tea, less sweet.” You repeat after her, phrase by phrase, and the waiter nods: “This kid is good.”"
+      },
+      "cha-3a": {
+        "title": "Ending · Half each",
+        "text": "The pineapple bun arrives. Hot bread holds a slab of cold butter, melting bit by bit. Mum cuts it in half: one half for you, one for her. Outside the rain keeps falling, and the table feels warm.",
+        "endingText": "The best pineapple bun is the one shared with Mum."
+      },
+      "cha-3b": {
+        "title": "Ending · One big thank you",
+        "text": "You walk to the counter and tell the waiter: “M goi saai!” He grins from ear to ear and gives you a small egg tart. Mum says: “One thank-you, and the whole shop is happy.”",
+        "endingText": "One “m goi”, and the whole cha chaan teng feels warmer."
+      }
+    },
+    "choices": {
+      "cha-1": ["Try ordering by yourself", "Ask Mum to order for you"],
+      "cha-2a": ["Wait for the food", "Thank the waiter"],
+      "cha-2b": ["Wait for the food", "Thank the waiter"]
+    },
+    "glossary": {
+      "茶餐厅": {
+        "meaning": "Hong Kong-style cafe",
+        "note": "A casual cafe serving milk tea, pineapple buns, and rice dishes."
+      },
+      "唔该": {
+        "meaning": "Thank you, excuse me, please",
+        "note": "One of Hong Kong's most common polite phrases."
+      },
+      "落单": {
+        "meaning": "Place an order",
+        "note": "Hong Kong people say “lok daan” for ordering food."
+      },
+      "少甜": {
+        "meaning": "Less sugar",
+        "note": "Common when ordering iced lemon tea; “no sugar” is “zau tim”."
+      },
+      "冻柠茶": {
+        "meaning": "Iced lemon tea",
+        "note": "A cha chaan teng classic; you usually muddle the lemon yourself."
+      },
+      "叻": {
+        "meaning": "Clever, capable",
+        "note": "Pronounced “lek”, used to praise someone."
+      },
+      "上枱": {
+        "meaning": "Served at the table",
+        "note": "Food being brought to the table is “seung toi”."
+      },
+      "暖笠笠": {
+        "meaning": "Warm and cozy",
+        "note": "Describes a warm, comfortable feeling."
+      },
+      "唔该晒": {
+        "meaning": "Thank you very much",
+        "note": "Adding “saai” to “m goi” makes the thanks stronger."
+      },
+      "蛋挞": {
+        "meaning": "Egg tart",
+        "note": "A favourite fresh from the oven at cha chaan tengs and bakeries."
+      }
+    }
+  }
+}

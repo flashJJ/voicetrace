@@ -7,7 +7,7 @@
 > 最后更新：2026-11-17\
 > 比赛周期：2026-11-10 至 2026-12-06\
 > 报名截止：2026-11-23 23:59（北京时间）\
-> 当前状态：3 种模式 / 25 个互动故事 / 14 个儿童故事 / 164 条资料库 / 3 段署名真人粤语示例 / 8 个黄金样品 / 8 项自动检查
+> 当前状态：3 种模式 / 28 个互动故事 / 17 个儿童故事 / 164 条资料库 / 3 段署名真人粤语示例 / 8 个黄金样品 / 8 项自动检查
 
 [![Deploy demo to GitHub Pages](https://github.com/flashJJ/voicetrace/actions/workflows/pages.yml/badge.svg)](https://github.com/flashJJ/voicetrace/actions/workflows/pages.yml)
 
@@ -127,7 +127,7 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 
 - 目录：[web](web/README.md)
 - 技术栈：Next.js 16 + React 19
-- 已实现：首页、故事馆、**3 种模式 / 25 个互动故事**（3-8 幕）、结局、方言词注释、普通话翻译、声音故事卡（Canvas 下载）、声音地图（示意）、关于/隐私页
+- 已实现：首页、故事馆、**3 种模式 / 28 个互动故事**（3-8 幕）、结局、方言词注释、普通话翻译、声音故事卡（Canvas 下载）、声音地图（示意）、关于/隐私页
 - **粤语资料库**：164 条素材，按内容子集拆成 29 个文件，每条有 `modes` 字段；页面 `/library` 支持搜索/类型/地区/模式筛选、详情、导出
 - **真人粤语录音**：3 段（67-74 秒），来自 CC BY 4.0 的「冚唪唥」项目，在 `/about` 播放并逐段署名
 - **本地录音棚**：`/record` 选故事片段录音、试听、重录；音频只存在 IndexedDB，不上传
@@ -135,8 +135,9 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 - **声音档案**：`/archive` 按故事分组试听、改转写、导出、删除；故事页有录音时优先播放「我家的版本」
 - **家庭任务包**：按故事导出待录清单给家人，录完导出档案包，再导入合并，全程不经过服务器
 - **录音联动**：首页显示我家的声音统计，故事馆显示「已录 x/n」，AI 工坊可把转写填入素材，结局声音卡可用录音金句
-- **儿童模式**：`/kids` 按 4-6、6-9 岁分组，14 个独立适龄故事；跟读、词卡、3 道小测、学习小结与家长清除；隐藏鬼故事与 AI 工坊
-- **国际化**：全站简 / 繁 / EN 切换（同一路由）；25 个故事有完整英文覆盖，14 个儿童故事有英文词卡与小测；繁中由 opencc-js 统一转换；录音棚、档案、资料库、地图、AI 工坊与关于页均已接入
+- **儿童模式**：`/kids` 按 4-6、6-9 岁分组，17 个独立适龄故事；跟读、词卡、3 道小测、学习小结与家长清除；隐藏鬼故事与 AI 工坊
+- **香港内容包**：天星小轮、叮叮电车、茶餐厅 3 个原创儿童故事，含粤语原文、普通话/英文翻译、词卡与小测
+- **国际化**：全站简 / 繁 / EN 切换（同一路由）；28 个故事有完整英文覆盖，17 个儿童故事有英文词卡与小测；繁中由 opencc-js 统一转换；录音棚、档案、资料库、地图、AI 工坊与关于页均已接入
 - **学习播放**：示例语音与读题支持慢速 / 标准 / 原速三档，偏好本机记忆；故事翻译可收起为「点开普通话翻译」，方便先听后看；儿童词卡可逐词听粤语发音
 - **移动与离线**：`manifest` + Service Worker，可安装到主屏；已打开过的页面和封面离线可看；故事搜索、年龄筛选、收藏与继续阅读；故事页支持系统分享，失败时复制链接
 - **黄金样品**：8 个（正经 6 + 鬼故事 1 + 野史 1）
@@ -218,7 +219,7 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 - [x] 建立粤语故事资料库：164 条素材 + 8 个黄金样品（`/library`）。
 - [x] 用黄金样品跑通“素材 → 3-8 幕结构 + 方言词注释 + 普通话翻译”。
 - [x] 接入火山方舟 Agent Plan；历史 7 项规则下 8 个样品 7/7 通过，v0.4 起升级为 8 项检查。
-- [x] 3 种模式 / 25 个互动故事（3-8 幕）+ 14 个儿童故事 + `/demo` 预生成。
+- [x] 3 种模式 / 28 个互动故事（3-8 幕）+ 17 个儿童故事 + `/demo` 预生成。
 - [ ] 真实亲子试用暂停：按现有仿真记录做材料，不再声称真实用户证据。
 - [ ] 按 `docs/contest/09` 补齐报名帖：视频链接、TRAE Session ID；用户证据只写仿真与自测。
 - [ ] 3 分钟演示视频与字幕待重录上传；当前仓库没有 `deliverables/` 成品。
@@ -252,5 +253,6 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | v0.9 国际化：简 / 繁 / EN 全站切换、25 个故事英文覆盖、14 个儿童故事英文词卡与小测、各工具页文案英文化、语言偏好记忆与英文覆盖测试 | web/components/LocaleProvider.jsx、web/data/i18n、web/lib/i18n-content.js、web/app、web/components、web/hooks、web/tests/i18n.test.mjs、scripts/check-static.mjs、docs/development/13 | 暂停真实试用，先面向香港与海外华侨家庭；`v0.9.0` 冻结 |
 | 2026-11-20 | v0.10 学习体验：朗读速度三档与本机记忆、故事翻译收起/点开、儿童词卡逐词发音 | web/lib/playback.js、web/hooks/usePlaybackRate.js、web/components/SpeechRateControl.jsx、StoryReader、KidReadAlong、KidQuiz、KidWordCards、AudioButton、globals.css、tests/playback.test.mjs | `v0.10.0` 冻结 |
 | 2026-11-20 | v0.11 移动与离线：PWA manifest / Service Worker / 离线页与安装提示、系统分享、故事搜索年龄筛选收藏与继续阅读 | web/public/manifest.webmanifest、sw.js、offline.html、icons、PwaRegister、PwaInstall、ShareStoryButton、StoryFavoriteButton、ContinueReading、stories/page.js、lib/favorites.js、lib/story-search.js、tests/story-search.test.mjs | `v0.11.0` 冻结 |
+| 2026-11-20 | v0.12 香港内容包：天星小轮、叮叮电车、茶餐厅 3 个原创儿童故事与封面，补齐英文覆盖、词卡与小测；故事总数 28、儿童池 17 | web/lib/stories-hk.js、stories.js、public/covers、data/i18n/stories-hk-en.json、data/i18n/learning-en.json、data/kids/learning.json、tests/i18n.test.mjs、README、about | `v0.12.0` 截稿冻结 |
 | 2026-11-20 | 收尾材料按双入口重做：产品说明、路演 10 页、报名帖、3 分钟脚本、截图清单；统一 25/14/164/8 数字 | docs/contest/06-14、docs/development/01、05、10、README | 真实试用缺口保持显式标注；PDF/PPT/视频仍待制作 |
 | 2026-11-20 | 修复亲子角色走查 P1：儿童词注去重、首屏跟读入口、跟读听示例、小测听题目、跨设备提示 | web/hooks/useSpeechPlayback.js、StoryReader、KidReadAlong、KidQuiz、KidWordCards、kids/parent、globals.css、web/tests、web/scripts | 单测增至 25 项；静态检查覆盖新按钮与提示 |

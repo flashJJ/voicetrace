@@ -48,7 +48,7 @@ const COPY = {
     ],
     prototypeTitle: "关于这个原型",
     prototype1:
-      "当前版本是 TRAE 好应用大赏赛的参赛原型，共 25 个互动故事，长度 3-8 幕：既有《月光光》《老鼠娶亲》这样的公有领域改编，也有广州地方传说、民俗与野史。现在已经加入本地录音棚、逐句转写校对、家庭任务包与简体/繁体/英文切换；云端上传、账号与自动转写会在赛后版本补上。",
+      "当前版本是 TRAE 好应用大赏赛的参赛原型，共 28 个互动故事，长度 3-8 幕：既有《月光光》《老鼠娶亲》这样的公有领域改编，也有广州地方传说、民俗与野史，以及天星小轮、叮叮电车、茶餐厅 3 个香港原创儿童故事。现在已经加入本地录音棚、逐句转写校对、家庭任务包、简体/繁体/英文切换与离线安装；云端上传、账号与自动转写会在赛后版本补上。",
     prototype2: "如果你是粤语使用者，或者你家里也有一位爱讲故事的老人，欢迎告诉我们。我们想找到第一批真实故事。",
     cta: "先听一个故事",
     techTitle: "技术说明",
@@ -107,7 +107,7 @@ const COPY = {
     ],
     prototypeTitle: "About this prototype",
     prototype1:
-      "This is the prototype submitted to the TRAE App Awards: 25 interactive stories of 3-8 acts, mixing public-domain adaptations such as “Moonlight Bright” and “The Mouse Wedding” with Guangzhou legends, folk customs, and hearsay. It now includes a local recording studio, line-by-line transcript proofreading, family task packs, and Simplified Chinese / Traditional Chinese / English switching. Cloud upload, accounts, and automatic transcription will follow after the contest.",
+      "This is the prototype submitted to the TRAE App Awards: 28 interactive stories of 3-8 acts, mixing public-domain adaptations such as “Moonlight Bright” and “The Mouse Wedding” with Guangzhou legends, folk customs, and hearsay, plus three original Hong Kong kid stories about the Star Ferry, the ding-ding tram, and a cha chaan teng. It now includes a local recording studio, line-by-line transcript proofreading, family task packs, Simplified Chinese / Traditional Chinese / English switching, and offline installation. Cloud upload, accounts, and automatic transcription will follow after the contest.",
     prototype2:
       "If you speak Cantonese, or if there is an elder in your family who loves telling stories, we would love to hear from you. We are looking for the first real stories.",
     cta: "Listen to a story",
