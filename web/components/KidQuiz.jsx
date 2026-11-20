@@ -6,6 +6,7 @@ import { useSpeechPlayback } from "../hooks/useSpeechPlayback";
 import { saveKidQuiz } from "../lib/kid-progress";
 import { localizeLearning, localizeStory } from "../lib/i18n-content";
 import { useLocale } from "./LocaleProvider";
+import SpeechRateControl from "./SpeechRateControl";
 
 const COPY = {
   zh: {
@@ -192,6 +193,7 @@ export default function KidQuiz({ story, learning }) {
             </button>
             <span>{c.listenHint}</span>
           </div>
+          <SpeechRateControl />
           {listenMessage ? <p className="kid-quiz-listen-hint">{listenMessage}</p> : null}
 
           <div className="kid-quiz-options">

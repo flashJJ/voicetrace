@@ -33,6 +33,10 @@ const COPY = {
     kidsHome: "回儿童故事",
     sampleNotice:
       "这是示例故事，用于演示产品体验。正式版会替换为经本人授权的真实家庭故事；录音可随时删除，AI 合成音会明确标注。",
+    hideTranslation: "收起翻译",
+    showTranslation: "显示翻译",
+    revealTranslation: "点开普通话翻译",
+    translationToggleAria: "显示或隐藏普通话翻译",
     shareEyebrowFamily: "带走一张我家的声音卡",
     shareEyebrow: "带走一张声音卡",
     shareTitle: "把这段乡音，发给你想念的人",
@@ -61,6 +65,10 @@ const COPY = {
     kidsHome: "Back to kids",
     sampleNotice:
       "This is a sample story used to demonstrate the product. A future release will use authorized family stories; recordings can be deleted at any time, and synthetic audio is clearly labeled.",
+    hideTranslation: "Hide translation",
+    showTranslation: "Show translation",
+    revealTranslation: "Tap for the English translation",
+    translationToggleAria: "Show or hide the translation",
     shareEyebrowFamily: "Take home a family voice card",
     shareEyebrow: "Take home a voice card",
     shareTitle: "Send a piece of home to someone you miss",
@@ -97,6 +105,7 @@ export default function StoryReader({ story, kidMode = false }) {
   const [history, setHistory] = useState([]);
   const [activeTerm, setActiveTerm] = useState(null);
   const [familyQuote, setFamilyQuote] = useState("");
+  const [showTranslation, setShowTranslation] = useState(true);
   const bodyRef = useRef(null);
 
   const scene = scenes[sceneId];
@@ -109,6 +118,28 @@ export default function StoryReader({ story, kidMode = false }) {
   );
   const sceneKidWords = learning?.sceneWords?.[scene.id] || [];
   const showGlossary = scene.glossary?.length > 0 && (!kidMode || sceneKidWords.length === 0);
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem("voicetrace:show-translation") === "0") {
+        setShowTranslation(false);
+      }
+    } catch (error) {
+      // 隐私模式禁用 localStorage 时保持默认显示。
+    }
+  }, []);
+
+  const toggleTranslation = useCallback(() => {
+    setShowTranslation((prev) => {
+      const next = !prev;
+      try {
+        window.localStorage.setItem("voicetrace:show-translation", next ? "1" : "0");
+      } catch (error) {
+        // 写不进去也不影响当前会话。
+      }
+      return next;
+    });
+  }, []);
 
   useEffect(() => {
     if (!kidMode) return;
@@ -228,10 +259,33 @@ export default function StoryReader({ story, kidMode = false }) {
             <h1 className="scene-title">{scene.title}</h1>
             <span className="scene-text-label">{c.cantonese}</span>
             <p className="scene-text">{scene.textYue}</p>
-            <span className="scene-text-label">{locale === "en" ? c.english : c.mandarin}</span>
-            <p className="scene-text-zh">
-              {locale === "en" ? scene.textEn || scene.textZh : scene.textZh}
-            </p>
+            <div className="translation-head">
+              <span className="scene-text-label">
+                {locale === "en" ? c.english : c.mandarin}
+              </span>
+              <button
+                type="button"
+                className="translation-toggle"
+                onClick={toggleTranslation}
+                aria-expanded={showTranslation}
+                aria-label={c.translationToggleAria}
+              >
+                {showTranslation ? c.hideTranslation : c.showTranslation}
+              </button>
+            </div>
+            {showTranslation ? (
+              <p className="scene-text-zh">
+                {locale === "en" ? scene.textEn || scene.textZh : scene.textZh}
+              </p>
+            ) : (
+              <button
+                type="button"
+                className="translation-reveal"
+                onClick={toggleTranslation}
+              >
+                {c.revealTranslation}
+              </button>
+            )}
 
             {showGlossary && (
               <>

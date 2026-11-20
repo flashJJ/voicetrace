@@ -136,6 +136,12 @@ if (!bundleContains(chunksDir, "Round and Round, the Chrysanthemum Garden")) {
 if (!bundleContains(chunksDir, "Learning summary")) {
   errors.push("客户端产物里找不到学习小结英文文案");
 }
+if (!bundleContains(chunksDir, "voicetrace:speech-rate")) {
+  errors.push("客户端产物里找不到朗读速度偏好");
+}
+if (!bundleContains(chunksDir, "voicetrace:show-translation")) {
+  errors.push("客户端产物里找不到翻译显示偏好");
+}
 
 console.log("声迹静态产物检查");
 console.log("--------------------------------------");
