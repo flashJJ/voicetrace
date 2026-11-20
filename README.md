@@ -265,3 +265,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | 关于页与报名帖补浏览器兼容说明：Chrome / Edge 全功能，Safari 需手动安装且转写不可用，夸克 / UC / 微信内置浏览器可能受限；产品说明 PDF 与路演 PPT 同步 | web/app/about/page.js、docs/contest/09、deliverables、README | 自动转写与 PWA 安装列为降级项 |
 | 2026-11-20 | 修复儿童故事页间距：跟读保存链接改为独立一行，词卡改固定两列网格并底部对齐，词卡与选项留 24px；重拍 06 截图并重导路演 PPT / PDF | web/app/globals.css、deliverables/screenshots/v0.12/06-kid-readalong.png、deliverables、README | 手机端保持单列 |
 | 2026-11-20 | 重剪 3 分钟演示：章节旁白间隔从 4-10 秒压到约 2 秒，总长 2:27；重生成 SRT；关于页、报名帖与 README 补作者 flashJJ | deliverables 视频 / SRT、web/app/about/page.js、web/app/globals.css、docs/contest/09、README | 未新增真实用户数据 |
+| 2026-11-20 | 故事馆卡片排版：文字栏加宽，地区 / 模式 / 年龄标签不拆字，1024-1440 宽度下 28 张卡片均为单行；980 以下改单列避免挤行 | web/app/globals.css、web/app/stories/page.js、README | 英文站标签较长时整行换行，不拆词 |

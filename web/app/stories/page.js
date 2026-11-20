@@ -175,7 +175,7 @@ export default function StoriesPage() {
                     decoding="async"
                   />
                   <div className="library-card-body">
-                    <div className="story-meta">
+                    <div className="story-meta story-meta-tags">
                       <span>{story.dialect}</span>
                       <span className={story.isSample ? "badge badge-warn" : "badge"}>
                         {story.modeLabel}
