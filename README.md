@@ -262,3 +262,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | 补真机主屏截图：`17-pwa-home.png` 为 Chrome 快捷方式（图标带 Chrome 徽标），v0.12 截图合计 18 张 | deliverables/screenshots/v0.12、docs/contest/14、README | 独立窗口未取证，材料按实际形态标注 |
 | 2026-11-20 | 隐私卖点上位：首页与关于页写清无需注册、录音只存本机、无广告与第三方统计；报名帖、产品说明、路演稿同步，重导 PDF 与 PPT | web/app/page.js、about/page.js、globals.css、docs/contest/09/11/12、deliverables、README | 自动转写与 AI 工坊的数据边界保留说明 |
 | 2026-11-20 | 关于页与报名帖补浏览器兼容说明：Chrome / Edge 全功能，Safari 需手动安装且转写不可用，夸克 / UC / 微信内置浏览器可能受限；产品说明 PDF 与路演 PPT 同步 | web/app/about/page.js、docs/contest/09、deliverables、README | 自动转写与 PWA 安装列为降级项 |
+| 2026-11-20 | 修复儿童故事页间距：跟读保存链接改为独立一行，词卡改固定两列网格并底部对齐，词卡与选项留 24px；重拍 06 截图并重导路演 PPT / PDF | web/app/globals.css、deliverables/screenshots/v0.12/06-kid-readalong.png、deliverables、README | 手机端保持单列 |
