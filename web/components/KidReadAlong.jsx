@@ -7,6 +7,7 @@ import { useSpeechPlayback } from "../hooks/useSpeechPlayback";
 import { formatDuration } from "../lib/recordings";
 import { markSceneRecorded, readKidProgress } from "../lib/kid-progress";
 import { useLocale } from "./LocaleProvider";
+import SpeechRateControl from "./SpeechRateControl";
 
 const COPY = {
   zh: {
@@ -120,6 +121,8 @@ export default function KidReadAlong({ story, scene }) {
         {listenMessage ? (
           <p className="kid-readalong-listen-hint">{listenMessage}</p>
         ) : null}
+
+        <SpeechRateControl />
 
         <div className="kid-readalong-actions">
           <button

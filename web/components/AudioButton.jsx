@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLocale } from "./LocaleProvider";
+import { usePlaybackRate } from "../hooks/usePlaybackRate";
+import SpeechRateControl from "./SpeechRateControl";
 
 const COPY = {
   zh: {
@@ -48,6 +50,9 @@ function PlayIcon({ playing }) {
 export default function AudioButton({ text, audioUrl, label, hint }) {
   const { pick } = useLocale();
   const c = pick(COPY);
+  const { rate } = usePlaybackRate();
+  const rateRef = useRef(rate);
+  rateRef.current = rate;
   const shownLabel = label || c.label;
   const shownHint = hint || c.hint;
   const [playing, setPlaying] = useState(false);
@@ -142,7 +147,7 @@ export default function AudioButton({ text, audioUrl, label, hint }) {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = selected.lang;
     utterance.voice = selected;
-    utterance.rate = 0.9;
+    utterance.rate = rateRef.current;
     utterance.pitch = 1;
     utterance.onend = () => setPlaying(false);
     utterance.onerror = () => {
@@ -191,6 +196,7 @@ export default function AudioButton({ text, audioUrl, label, hint }) {
           <div className="audio-note">{shownLabel}</div>
         </div>
       </div>
+      {audioUrl ? null : <SpeechRateControl />}
       <p className="audio-hint">{message || shownHint}</p>
     </div>
   );

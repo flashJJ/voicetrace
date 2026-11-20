@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale } from "../components/LocaleProvider";
+import { usePlaybackRate } from "./usePlaybackRate";
 
 const CANTONESE = /yue|zh-HK|zh_HK|Cantonese|Hong Kong/i;
 
@@ -45,6 +46,9 @@ export function useSpeechPlayback() {
   const { pick } = useLocale();
   const copyRef = useRef(COPY.zh);
   copyRef.current = pick(COPY);
+  const { rate } = usePlaybackRate();
+  const rateRef = useRef(rate);
+  rateRef.current = rate;
   const [speaking, setSpeaking] = useState(false);
   const [message, setMessage] = useState("");
   const aliveRef = useRef(true);
@@ -69,7 +73,7 @@ export function useSpeechPlayback() {
     setMessage("");
   }, []);
 
-  const speak = useCallback(async (text, { lang = "yue" } = {}) => {
+  const speak = useCallback(async (text, { lang = "yue", rate: overrideRate } = {}) => {
     if (!text) return;
     if (typeof window === "undefined" || !window.speechSynthesis) {
       setMessage(copyRef.current.unsupported);
@@ -105,7 +109,7 @@ export function useSpeechPlayback() {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = selected.lang;
     utterance.voice = selected;
-    utterance.rate = 0.9;
+    utterance.rate = overrideRate || rateRef.current;
     utterance.pitch = 1;
     utterance.onend = () => {
       if (requestId === requestRef.current) setSpeaking(false);
