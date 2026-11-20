@@ -1,6 +1,36 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLocale } from "./LocaleProvider";
+
+const COPY = {
+  zh: {
+    label: "播放粤语原声",
+    hint: "当前原型使用浏览器语音作为示例；正式版将播放经授权的真实方言录音，并标注 AI 合成部分。",
+    playing: "正在播放",
+    audioLabel: "原声 / 示例语音",
+    stop: "停止播放",
+    unsupported: "当前浏览器不支持语音播放，请替换为真实录音。",
+    noVoice: "当前浏览器未提供可用语音，请直接阅读文字；正式版会播放经授权的真实粤语录音。",
+    fallbackVoice: "当前浏览器没有粤语语音，已切换为中文语音示例；正式版会播放经授权的真实粤语录音。",
+    speakFail: "语音播放失败，请替换为真实录音。",
+    audioFail: "音频加载失败，已切换为浏览器语音。",
+  },
+  en: {
+    label: "Play Cantonese audio",
+    hint: "This prototype uses browser speech as a stand-in. A future release will play authorized real dialect recordings and label any AI-generated audio.",
+    playing: "Playing",
+    audioLabel: "Original / sample audio",
+    stop: "Stop",
+    unsupported: "This browser does not support speech playback. Please use a real recording.",
+    noVoice:
+      "No usable voice is available in this browser. Please read the text; a future release will play authorized Cantonese recordings.",
+    fallbackVoice:
+      "This browser has no Cantonese voice, so a Mandarin sample is playing instead. A future release will play authorized Cantonese recordings.",
+    speakFail: "Speech playback failed. Please use a real recording.",
+    audioFail: "Audio failed to load, switching to browser speech.",
+  },
+};
 
 function PlayIcon({ playing }) {
   return playing ? (
@@ -15,12 +45,11 @@ function PlayIcon({ playing }) {
   );
 }
 
-export default function AudioButton({
-  text,
-  audioUrl,
-  label = "播放粤语原声",
-  hint = "当前原型使用浏览器语音作为示例；正式版将播放经授权的真实方言录音，并标注 AI 合成部分。",
-}) {
+export default function AudioButton({ text, audioUrl, label, hint }) {
+  const { pick } = useLocale();
+  const c = pick(COPY);
+  const shownLabel = label || c.label;
+  const shownHint = hint || c.hint;
   const [playing, setPlaying] = useState(false);
   const [message, setMessage] = useState("");
   const audioRef = useRef(null);
@@ -82,7 +111,7 @@ export default function AudioButton({
 
   const speak = async () => {
     if (typeof window === "undefined" || !window.speechSynthesis) {
-      setMessage("当前浏览器不支持语音播放，请替换为真实录音。");
+      setMessage(c.unsupported);
       return;
     }
     if (pendingRef.current) return;
@@ -99,14 +128,12 @@ export default function AudioButton({
 
     if (!selected) {
       setPlaying(false);
-      setMessage("当前浏览器未提供可用语音，请直接阅读文字；正式版会播放经授权的真实粤语录音。");
+      setMessage(c.noVoice);
       return;
     }
 
     if (!cantonese) {
-      setMessage(
-        "当前浏览器没有粤语语音，已切换为中文语音示例；正式版会播放经授权的真实粤语录音。"
-      );
+      setMessage(c.fallbackVoice);
     } else {
       setMessage("");
     }
@@ -120,7 +147,7 @@ export default function AudioButton({
     utterance.onend = () => setPlaying(false);
     utterance.onerror = () => {
       setPlaying(false);
-      setMessage("语音播放失败，请替换为真实录音。");
+      setMessage(c.speakFail);
     };
     utteranceRef.current = utterance;
     synth.cancel();
@@ -140,7 +167,7 @@ export default function AudioButton({
         .play()
         .then(() => setPlaying(true))
         .catch(() => {
-          setMessage("音频加载失败，已切换为浏览器语音。");
+          setMessage(c.audioFail);
           speak();
         });
       return;
@@ -155,16 +182,16 @@ export default function AudioButton({
           type="button"
           className="audio-play"
           onClick={handleClick}
-          aria-label={playing ? "停止播放" : label}
+          aria-label={playing ? c.stop : shownLabel}
         >
           <PlayIcon playing={playing} />
         </button>
         <div className="audio-meta">
-          <div className="audio-label">{playing ? "正在播放" : "原声 / 示例语音"}</div>
-          <div className="audio-note">{label}</div>
+          <div className="audio-label">{playing ? c.playing : c.audioLabel}</div>
+          <div className="audio-note">{shownLabel}</div>
         </div>
       </div>
-      <p className="audio-hint">{message || hint}</p>
+      <p className="audio-hint">{message || shownHint}</p>
     </div>
   );
 }

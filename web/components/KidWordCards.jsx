@@ -2,8 +2,28 @@
 
 import { useEffect, useState } from "react";
 import { readKidProgress, toggleKnownWord } from "../lib/kid-progress";
+import { useLocale } from "./LocaleProvider";
+
+const COPY = {
+  zh: {
+    aria: "本幕词语",
+    title: "本幕词语",
+    hint: "点开看意思，认识了就点一下。",
+    known: "学会了 ✓",
+    unknown: "我学会了",
+  },
+  en: {
+    aria: "Words in this act",
+    title: "Words in this act",
+    hint: "Tap to see the meaning. Tap again once you know it.",
+    known: "Known ✓",
+    unknown: "I know it",
+  },
+};
 
 export default function KidWordCards({ slug, words }) {
+  const { pick } = useLocale();
+  const c = pick(COPY);
   const [expanded, setExpanded] = useState(null);
   const [known, setKnown] = useState([]);
 
@@ -24,10 +44,10 @@ export default function KidWordCards({ slug, words }) {
   };
 
   return (
-    <section className="kid-wordcards" id="kid-wordcards" aria-label="本幕词语">
+    <section className="kid-wordcards" id="kid-wordcards" aria-label={c.aria}>
       <div className="kid-wordcards-head">
-        <h3>本幕词语</h3>
-        <span className="kid-learn-hint">点开看意思，认识了就点一下。</span>
+        <h3>{c.title}</h3>
+        <span className="kid-learn-hint">{c.hint}</span>
       </div>
       <div className="kid-wordcards-list">
         {words.map((word) => {
@@ -57,7 +77,7 @@ export default function KidWordCards({ slug, words }) {
                 className="kid-wordcard-toggle"
                 onClick={() => handleToggle(word.term)}
               >
-                {isKnown ? "学会了 ✓" : "我学会了"}
+                {isKnown ? c.known : c.unknown}
               </button>
             </article>
           );

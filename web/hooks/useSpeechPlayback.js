@@ -1,8 +1,24 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useLocale } from "../components/LocaleProvider";
 
 const CANTONESE = /yue|zh-HK|zh_HK|Cantonese|Hong Kong/i;
+
+const COPY = {
+  zh: {
+    unsupported: "当前浏览器不支持语音播放，可以请家长读。",
+    noVoice: "当前浏览器没有可用语音，可以请家长读。",
+    noCantonese: "当前浏览器没有粤语语音，已使用中文语音示例。",
+    playFail: "语音播放失败，可以请家长读。",
+  },
+  en: {
+    unsupported: "This browser cannot play speech. Ask a grown-up to read it.",
+    noVoice: "No voice is available in this browser. Ask a grown-up to read it.",
+    noCantonese: "This browser has no Cantonese voice, so a Mandarin sample is playing.",
+    playFail: "Speech playback failed. Ask a grown-up to read it.",
+  },
+};
 
 function loadVoices() {
   return new Promise((resolve) => {
@@ -26,6 +42,9 @@ function loadVoices() {
 
 // 儿童跟读与读题共用的浏览器语音播放，不保存任何音频。
 export function useSpeechPlayback() {
+  const { pick } = useLocale();
+  const copyRef = useRef(COPY.zh);
+  copyRef.current = pick(COPY);
   const [speaking, setSpeaking] = useState(false);
   const [message, setMessage] = useState("");
   const aliveRef = useRef(true);
@@ -53,7 +72,7 @@ export function useSpeechPlayback() {
   const speak = useCallback(async (text, { lang = "yue" } = {}) => {
     if (!text) return;
     if (typeof window === "undefined" || !window.speechSynthesis) {
-      setMessage("当前浏览器不支持语音播放，可以请家长读。");
+      setMessage(copyRef.current.unsupported);
       return;
     }
 
@@ -75,12 +94,12 @@ export function useSpeechPlayback() {
 
     if (!selected) {
       setSpeaking(false);
-      setMessage("当前浏览器没有可用语音，可以请家长读。");
+      setMessage(copyRef.current.noVoice);
       return;
     }
 
     if (lang === "yue" && !cantonese) {
-      setMessage("当前浏览器没有粤语语音，已使用中文语音示例。");
+      setMessage(copyRef.current.noCantonese);
     }
 
     const utterance = new SpeechSynthesisUtterance(text);
@@ -94,7 +113,7 @@ export function useSpeechPlayback() {
     utterance.onerror = () => {
       if (requestId !== requestRef.current) return;
       setSpeaking(false);
-      setMessage("语音播放失败，可以请家长读。");
+      setMessage(copyRef.current.playFail);
     };
 
     window.speechSynthesis.cancel();

@@ -1,28 +1,51 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useLocale } from "../components/LocaleProvider";
 
 const LANGUAGES = ["yue-Hant-HK", "zh-HK", "zh-CN"];
+
+const COPY = {
+  zh: {
+    createFail: "当前浏览器无法启动语音转写，可以手动输入。",
+    denied: "浏览器语音服务被拒绝或不可用，可以手动输入转写。",
+    network: "语音服务需要网络，当前连接不上，可以手动输入转写。",
+    audioCapture: "没有可用的麦克风，自动转写已停止。",
+    startFail: "自动转写没有启动，可以手动输入。",
+    unsupported: "当前浏览器不支持自动转写，可以手动输入。",
+  },
+  en: {
+    createFail: "This browser could not start speech transcription. You can type the transcript instead.",
+    denied: "The browser speech service was denied or is unavailable. You can type the transcript instead.",
+    network: "The speech service needs a network connection and could not connect. You can type the transcript instead.",
+    audioCapture: "No microphone is available. Automatic transcription has stopped.",
+    startFail: "Automatic transcription did not start. You can type the transcript instead.",
+    unsupported: "This browser does not support automatic transcription. You can type the transcript instead.",
+  },
+};
 
 function getRecognition() {
   if (typeof window === "undefined") return null;
   return window.SpeechRecognition || window.webkitSpeechRecognition || null;
 }
 
-function describeSpeechError(code) {
+function describeSpeechError(code, c) {
   if (code === "not-allowed" || code === "service-not-allowed") {
-    return "浏览器语音服务被拒绝或不可用，可以手动输入转写。";
+    return c.denied;
   }
   if (code === "network") {
-    return "语音服务需要网络，当前连接不上，可以手动输入转写。";
+    return c.network;
   }
   if (code === "audio-capture") {
-    return "没有可用的麦克风，自动转写已停止。";
+    return c.audioCapture;
   }
   return "";
 }
 
 export function useSpeechRecognition() {
+  const { pick } = useLocale();
+  const copyRef = useRef(COPY.zh);
+  copyRef.current = pick(COPY);
   const [supported, setSupported] = useState(false);
   const [listening, setListening] = useState(false);
   const [transcript, setTranscript] = useState("");
@@ -57,7 +80,7 @@ export function useSpeechRecognition() {
     try {
       recognition = new Recognition();
     } catch (createError) {
-      setError("当前浏览器无法启动语音转写，可以手动输入。");
+      setError(copyRef.current.createFail);
       shouldListenRef.current = false;
       return;
     }
@@ -97,7 +120,7 @@ export function useSpeechRecognition() {
         return;
       }
       if (code === "no-speech" || code === "aborted") return;
-      const message = describeSpeechError(code);
+      const message = describeSpeechError(code, copyRef.current);
       if (message) {
         shouldListenRef.current = false;
         setError(message);
@@ -118,14 +141,14 @@ export function useSpeechRecognition() {
     try {
       recognition.start();
     } catch (startError) {
-      setError("自动转写没有启动，可以手动输入。");
+      setError(copyRef.current.startFail);
       shouldListenRef.current = false;
     }
   }, []);
 
   const start = useCallback(() => {
     if (!getRecognition()) {
-      setError("当前浏览器不支持自动转写，可以手动输入。");
+      setError(copyRef.current.unsupported);
       return;
     }
     if (shouldListenRef.current) return;

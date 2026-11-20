@@ -1,11 +1,49 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useLocale } from "./LocaleProvider";
 
 const W = 1080;
 const H = 1440;
 
 const MAX_QUOTE_LINES = 3;
+
+const COPY = {
+  zh: {
+    brand: "声迹",
+    brandSub: "方言故事书 · DIALECT STORYBOOK",
+    sealTop: "留住",
+    sealBottom: "把声",
+    footer: "把爷爷奶奶讲的故事，变成可以玩的方言互动书。",
+    credit: "声迹 · 方言故事书  |  TRAE 好应用大赏赛参赛原型",
+    familySource: "我家的版本 · 录音只保存在本机",
+    sampleSource: "示例内容 · 正式版将替换为经授权的真实家庭故事",
+    fileSuffix: "声音故事卡",
+    previewAria: (title) => `${title}声音故事卡预览`,
+    download: "下载故事卡",
+    copied: "已复制",
+    copy: "复制分享文案",
+    familyTag: "（我家的版本）",
+    copyCredit: "声迹 · 方言故事书",
+  },
+  en: {
+    brand: "VoiceTrace",
+    brandSub: "DIALECT STORYBOOK",
+    sealTop: "KEEP",
+    sealBottom: "THE VOICE",
+    footer: "Turn the stories grandparents tell into a dialect storybook you can play.",
+    credit: "VoiceTrace · Dialect Storybook  |  TRAE App Awards prototype",
+    familySource: "Our family version · audio stays on this device",
+    sampleSource: "Sample content · a future release will use authorized family stories",
+    fileSuffix: "voice-story-card",
+    previewAria: (title) => `${title} voice story card preview`,
+    download: "Download story card",
+    copied: "Copied",
+    copy: "Copy share text",
+    familyTag: " (our family version)",
+    copyCredit: "VoiceTrace · Dialect Storybook",
+  },
+};
 
 function wrapQuote(ctx, text, maxWidth, maxLines) {
   const chars = Array.from(text || "");
@@ -36,7 +74,7 @@ function wrapQuote(ctx, text, maxWidth, maxLines) {
   return lines;
 }
 
-function drawCard(canvas, story, quote, source) {
+function drawCard(canvas, story, quote, source, c) {
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
   canvas.width = W;
@@ -75,16 +113,16 @@ function drawCard(canvas, story, quote, source) {
   ctx.font = '600 30px "Noto Serif SC", "Songti SC", serif';
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
-  ctx.fillText("声", 132, 152);
+  ctx.fillText(c.brand.slice(0, 1), 132, 152);
 
   ctx.textAlign = "left";
   ctx.textBaseline = "alphabetic";
   ctx.fillStyle = ink;
-  ctx.font = '600 42px "Noto Serif SC", "Songti SC", serif';
-  ctx.fillText("声迹", 190, 150);
+  ctx.font = '600 42px "Noto Serif SC", "Songti SC", "Georgia", serif';
+  ctx.fillText(c.brand, 190, 150);
   ctx.fillStyle = muted;
   ctx.font = '400 18px "Noto Sans SC", "PingFang SC", sans-serif';
-  ctx.fillText("方言故事书 · DIALECT STORYBOOK", 190, 182);
+  ctx.fillText(c.brandSub, 190, 182);
 
   // dialect tag
   ctx.fillStyle = jade;
@@ -93,7 +131,7 @@ function drawCard(canvas, story, quote, source) {
 
   // title
   ctx.fillStyle = ink;
-  ctx.font = '700 92px "Noto Serif SC", "Songti SC", serif';
+  ctx.font = '700 92px "Noto Serif SC", "Songti SC", "Georgia", serif';
   ctx.fillText(story.title, 92, 430);
 
   // subtitle
@@ -111,11 +149,11 @@ function drawCard(canvas, story, quote, source) {
 
   // quote
   ctx.fillStyle = cinnabar;
-  ctx.font = '700 116px "Noto Serif SC", "Songti SC", serif';
+  ctx.font = '700 116px "Noto Serif SC", "Songti SC", "Georgia", serif';
   ctx.fillText("“", 92, 700);
 
   ctx.fillStyle = ink;
-  ctx.font = '600 52px "Noto Serif SC", "Songti SC", serif';
+  ctx.font = '600 52px "Noto Serif SC", "Songti SC", "Georgia", serif';
   const maxWidth = W - 220;
   const quoteLines = wrapQuote(ctx, quote, maxWidth, MAX_QUOTE_LINES);
   quoteLines.forEach((text, index) => {
@@ -134,19 +172,19 @@ function drawCard(canvas, story, quote, source) {
   ctx.fillStyle = cinnabar;
   ctx.font = '600 26px "Noto Serif SC", "Songti SC", serif';
   ctx.textAlign = "center";
-  ctx.fillText("留住", 0, -12);
-  ctx.fillText("把声", 0, 26);
+  ctx.fillText(c.sealTop, 0, -12);
+  ctx.fillText(c.sealBottom, 0, 26);
   ctx.restore();
 
   // bottom
   ctx.textAlign = "left";
   ctx.fillStyle = soft;
   ctx.font = '400 24px "Noto Sans SC", "PingFang SC", sans-serif';
-  ctx.fillText("把爷爷奶奶讲的故事，变成可以玩的方言互动书。", 96, 1190);
+  ctx.fillText(c.footer, 96, 1190);
 
   ctx.fillStyle = muted;
   ctx.font = '400 20px "Noto Sans SC", "PingFang SC", sans-serif';
-  ctx.fillText("声迹 · 方言故事书  |  TRAE 好应用大赏赛参赛原型", 96, 1240);
+  ctx.fillText(c.credit, 96, 1240);
 
   // footer line
   ctx.strokeStyle = "rgba(31,27,22,0.18)";
@@ -157,13 +195,7 @@ function drawCard(canvas, story, quote, source) {
 
   ctx.fillStyle = muted;
   ctx.font = '400 18px "Noto Sans SC", "PingFang SC", sans-serif';
-  ctx.fillText(
-    source === "family"
-      ? "我家的版本 · 录音只保存在本机"
-      : "示例内容 · 正式版将替换为经授权的真实家庭故事",
-    96,
-    1330
-  );
+  ctx.fillText(source === "family" ? c.familySource : c.sampleSource, 96, 1330);
 
   // gold accent
   ctx.fillStyle = gold;
@@ -171,26 +203,28 @@ function drawCard(canvas, story, quote, source) {
 }
 
 export default function ShareCard({ story, quote, source = "sample" }) {
+  const { pick } = useLocale();
+  const c = pick(COPY);
   const canvasRef = useRef(null);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    if (canvasRef.current) drawCard(canvasRef.current, story, quote || story.quote, source);
-  }, [story, quote, source]);
+    if (canvasRef.current) drawCard(canvasRef.current, story, quote || story.quote, source, c);
+  }, [story, quote, source, c]);
 
   const download = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const link = document.createElement("a");
-    link.download = `${story.title}-声音故事卡.png`;
+    link.download = `${story.title}-${c.fileSuffix}.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
-  }, [story]);
+  }, [story, c]);
 
   const copy = useCallback(async () => {
     const text = `${story.title}｜${quote || story.quote}${
-      source === "family" ? "（我家的版本）" : ""
-    }\n${story.dialect}\n—— 声迹 · 方言故事书`;
+      source === "family" ? c.familyTag : ""
+    }\n${story.dialect}\n—— ${c.copyCredit}`;
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -198,19 +232,19 @@ export default function ShareCard({ story, quote, source = "sample" }) {
     } catch {
       setCopied(false);
     }
-  }, [story, quote, source]);
+  }, [story, quote, source, c]);
 
   return (
     <div>
       <div className="share-preview">
-        <canvas ref={canvasRef} aria-label={`${story.title}声音故事卡预览`} />
+        <canvas ref={canvasRef} aria-label={c.previewAria(story.title)} />
       </div>
       <div className="share-actions" style={{ marginTop: 16 }}>
         <button type="button" className="btn btn-primary" onClick={download}>
-          下载故事卡
+          {c.download}
         </button>
         <button type="button" className="btn btn-ghost" onClick={copy}>
-          {copied ? "已复制" : "复制分享文案"}
+          {copied ? c.copied : c.copy}
         </button>
       </div>
     </div>

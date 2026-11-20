@@ -1,0 +1,476 @@
+{
+  "chen-clan-frieze": {
+    "title": "The Plaster Frieze of Chen Clan Hall",
+    "subtitle": "Chen Clan Hall · An Apprentice's Summer",
+    "quote": "Plaster ages; craft has no fear of age.",
+    "intro": "You are the apprentice of a lime-plaster master. The roof ridge of Chen Clan Hall needs mending, your master has fallen ill at the last minute, and all that is left is you and half a bucket of plaster.",
+    "dialect": "Cantonese · Liwan, Guangzhou",
+    "type": "Heritage · Craft Story",
+    "duration": "7 min",
+    "scenes": {
+      "chen-1": {
+        "title": "The Gap in the Roof Ridge",
+        "text": "A crack has opened along the tile ridge of Chen Clan Hall, and rainwater is seeping into the plaster. Your master says between coughs: 'Go up there and do as I taught you.' You shoulder the bucket of plaster, and your legs turn weak."
+      },
+      "chen-2a": {
+        "title": "The First Stroke",
+        "text": "You climb onto the ridge, where the wind is strong enough to make you unsteady on your feet. The moment your trowel comes down, the old plaster crumbles and a copper wire shows through. Your master said the copper wire is the skeleton—it must not be pulled out."
+      },
+      "chen-2b": {
+        "title": "Your Uncle-Master's Terms",
+        "text": "Your uncle-master is willing to help, but on one condition: you sign a paper saying that once the repair is done, the credit belongs to him. You hold the pen, your hand frozen in mid-air."
+      },
+      "chen-3": {
+        "title": "The Rain Comes",
+        "text": "Halfway through, it starts to rain. Wet plaster fears water more than anything—one wash and it falls apart. You look at the roof ridge, then at the visitors below who cannot get out of the rain in time."
+      },
+      "chen-4a": {
+        "title": "Colour After the Rain",
+        "text": "When the rain stops, a white bloom has risen on the surface of the plaster. Your master said that at a time like this you must lay on a thin coat, and only then will the colour come out even. Your hand slips, and you put it on too thick."
+      },
+      "chen-4b": {
+        "title": "Cracks Made in Haste",
+        "text": "You rush the work in the rain and paint before the plaster dries. The next day the colour has cracked into flakes, like fish scales. Visitors look up and point at the ridge, laughing."
+      },
+      "chen-5": {
+        "title": "The Master Comes to Look",
+        "text": "Before the day is over, your master returns from the hospital. He does not scold you; he only brushes his fingers lightly over the plaster and asks: 'Where do you think it still is not good enough?'"
+      },
+      "chen-e1": {
+        "title": "Ending · A Name on the Roof Ridge",
+        "text": "Your master nods: 'With the skeleton in place, the plaster can stand firm.' Years later, you repair another roof ridge at Chen Clan Hall on your own. When it comes time to sign, you write down your master's name first, then your own.",
+        "endingText": "Plaster ages; craft has no fear of age."
+      },
+      "chen-e2": {
+        "title": "Ending · One More Thin Coat",
+        "text": "Your master smiles: 'Only those who admit it is not enough can truly learn.' You scrape away the thick layer overnight and lay it thin again. By dawn, the colour on the ridge is as even as a piece of old jade.",
+        "endingText": "Slow work does not always mean fine work, but being willing to change is always better than not."
+      }
+    },
+    "choices": {
+      "chen-1": ["Do as the master said—go up alone", "Go and find your uncle-master for help"],
+      "chen-2a": ["Keep the copper wire and patch it slowly", "Pull out the rotten wire and redo it"],
+      "chen-2b": ["Sign it—fix the roof first, talk later", "Do not sign—take it on yourself"],
+      "chen-3": ["Cover it with a rain sheet and wait for the rain to stop", "Work through the rain to save time"],
+      "chen-4a": ["Scrape it off and re-coat", "Leave it—you cannot tell from far away"],
+      "chen-4b": ["Admit the mistake openly and redo it", "While no one is looking, touch up the colour"],
+      "chen-5": ["Tell your master the copper wire was saved", "Tell your master the colour is not even enough"],
+      "chen-e1": [],
+      "chen-e2": []
+    },
+    "glossary": {
+      "灰塑": {
+        "meaning": "A Lingnan craft of sculpting shapes on roof ridges with lime plaster",
+        "note": "The plasterwork of Chen Clan Hall is national-level intangible cultural heritage."
+      },
+      "孭": {
+        "meaning": "to carry on one's back or shoulder",
+        "note": "A common Cantonese word."
+      },
+      "灰匙": {
+        "meaning": "a small trowel for spreading plaster",
+        "note": "A plasterer's basic tool."
+      },
+      "企唔稳": {
+        "meaning": "unable to stand steady",
+        "note": "'企' means to stand."
+      },
+      "揸住": {
+        "meaning": "to hold, to grip",
+        "note": "'揸' means to hold or grasp."
+      },
+      "功劳": {
+        "meaning": "credit, merit",
+        "note": "In craft trades, having one's name credited matters a great deal."
+      },
+      "收唔切": {
+        "meaning": "unable to get away in time",
+        "note": "'切' means in time, able to."
+      },
+      "灰": {
+        "meaning": "the plaster material",
+        "note": "Made from lime, paper fibre, straw and more."
+      },
+      "冚住": {
+        "meaning": "to cover",
+        "note": "A common Cantonese word."
+      },
+      "批灰": {
+        "meaning": "to apply plaster",
+        "note": "The base step in plasterwork."
+      },
+      "由得佢": {
+        "meaning": "let it be",
+        "note": "Colloquial Cantonese."
+      },
+      "鱼鳞": {
+        "meaning": "fish scales",
+        "note": "Here it describes the cracks."
+      },
+      "闹": {
+        "meaning": "to scold",
+        "note": "In Cantonese, '闹' means to tell off."
+      },
+      "边度": {
+        "meaning": "where",
+        "note": "A common Cantonese question word."
+      },
+      "落款": {
+        "meaning": "to sign, to inscribe one's name",
+        "note": "Craftworks often bear the maker's name."
+      },
+      "学得识": {
+        "meaning": "to be able to learn it",
+        "note": "'识' means to know how to."
+      }
+    }
+  },
+  "guangxiao-bodhi": {
+    "title": "The Bodhi Tree of Guangxiao Temple",
+    "subtitle": "Guangxiao Temple · A Thousand Years of One Tree",
+    "quote": "The tree has not gone anywhere; it is people who come and go.",
+    "intro": "You are a young novice monk at Guangxiao Temple, sweeping bodhi leaves every day. Today a stranger from out of town is sitting under the tree, and he will not leave.",
+    "dialect": "Cantonese · Yuexiu, Guangzhou",
+    "type": "Heritage · Historic Site Story",
+    "duration": "8 min",
+    "kidNote": "Involves a temple and legend; parental guidance suggested.",
+    "scenes": {
+      "guang-1": {
+        "title": "Leaves That Never End",
+        "text": "Before dawn, you sweep bodhi leaves with a bamboo broom. The leaves fall as fast as you sweep them, as if the job can never be finished. A stranger sits under the tree, his clothes soaked through."
+      },
+      "guang-2a": {
+        "title": "The Stranger's Question",
+        "text": "The stranger asks: 'Is this really the tree that was handed down?' You cannot answer. Your teacher said the bodhi tree has withered and grown again, and no one can say for certain what is true."
+      },
+      "guang-2b": {
+        "title": "A Leaf on His Shoulder",
+        "text": "You keep sweeping, and a leaf lands on the stranger's shoulder. He does not brush it off, only closes his eyes. Suddenly you feel that he is not a tourist—he is waiting for something here."
+      },
+      "guang-3": {
+        "title": "The Debate of Wind and Banner",
+        "text": "Your teacher points at the banner before the hall: 'Look—is it the wind that moves, or the banner?' Before you can answer, the stranger says: 'It is the mind of a good man that moves.'"
+      },
+      "guang-4": {
+        "title": "An Old Photograph Under the Tree",
+        "text": "The stranger pulls an old photograph from his bag. In it is his grandfather, standing under this same tree. He says that before his grandfather passed away, he always wanted to come back."
+      },
+      "guang-5a": {
+        "title": "A Gust of Wind",
+        "text": "You sit under the tree, and no one speaks. A breeze blows, and the leaves rustle. The stranger suddenly laughs: 'It sounds like my grandfather coughing here.'"
+      },
+      "guang-5b": {
+        "title": "The Register in the Guest Hall",
+        "text": "The guest hall register is full of names, some already faded. The stranger turns to a page and points at a name: 'This is him.' You see a leaf drawn beneath the name."
+      },
+      "guang-6": {
+        "title": "Before He Leaves",
+        "text": "The stranger has a bus to catch. Under the tree he picks up a leaf and tucks it into a photo album. You ask whether he will come back next year, and he says: 'Depends on the tree.'"
+      },
+      "guang-e1": {
+        "title": "Ending · A Look Back at the Temple Gate",
+        "text": "You walk him to the gate, and the stranger glances back. In that moment you understand: the bodhi tree is not an artifact—it is a thread tying together those who have gone far away.",
+        "endingText": "The tree has not gone anywhere; it is people who come and go."
+      },
+      "guang-e2": {
+        "title": "Ending · New Leaves",
+        "text": "You go back to sweeping and find new leaves sprouting at the top of the tree. Your teacher says: 'Old leaves fall, new leaves come—that is what keeps a temple alive.' You sweep more slowly, and more quietly.",
+        "endingText": "What you sweep away is leaves; what you cannot sweep away is remembrance."
+      }
+    },
+    "choices": {
+      "guang-1": ["Go up and ask if he needs help", "Do not disturb him—keep sweeping"],
+      "guang-2a": ["Take him to read the stone inscription", "Take him to ask your teacher"],
+      "guang-2b": ["Quietly hand him a cup of hot tea", "Go and fetch your teacher"],
+      "guang-3": ["Ask him why he says that", "Lower your head and keep sweeping"],
+      "guang-4": ["Sit with him under the tree for a while", "Take him to the guest hall to register"],
+      "guang-5a": ["Tell him the tree will grow new leaves again", "Quietly sit with him until sunset"],
+      "guang-5b": ["Help him copy this page", "Let him look at it himself"],
+      "guang-6": ["Walk him to the temple gate", "Go back and keep sweeping leaves"],
+      "guang-e1": [],
+      "guang-e2": []
+    },
+    "glossary": {
+      "沙弥": {
+        "meaning": "a young ordained monk",
+        "note": "Guangxiao Temple is a famous ancient temple in Guangzhou."
+      },
+      "菩提叶": {
+        "meaning": "bodhi tree leaves",
+        "note": "Bodhi trees are common in Lingnan temples."
+      },
+      "传落嚟": {
+        "meaning": "handed down",
+        "note": "'落嚟' means down, down to here."
+      },
+      "讲得清": {
+        "meaning": "to be able to say clearly",
+        "note": "A common Cantonese expression."
+      },
+      "合埋眼": {
+        "meaning": "to close one's eyes",
+        "note": "'埋' means to close together."
+      },
+      "乜嘢": {
+        "meaning": "what",
+        "note": "A common Cantonese question word."
+      },
+      "幡旗": {
+        "meaning": "a temple banner",
+        "note": "The debate over wind and banner is a famous Zen story."
+      },
+      "仁者": {
+        "meaning": "a respectful term for a person",
+        "note": "Here it refers to someone with spiritual practice."
+      },
+      "摸出": {
+        "meaning": "to pull out",
+        "note": "Colloquial Cantonese."
+      },
+      "走之前": {
+        "meaning": "before passing away",
+        "note": "A euphemism."
+      },
+      "沙沙响": {
+        "meaning": "to rustle",
+        "note": "Describes the sound of leaves rubbing together."
+      },
+      "褪色": {
+        "meaning": "to fade",
+        "note": "Common in old registers."
+      },
+      "画咗": {
+        "meaning": "drew, has drawn",
+        "note": "'咗' marks completion."
+      },
+      "执起": {
+        "meaning": "to pick up",
+        "note": "In Cantonese, '执' means to pick up."
+      },
+      "睇树啦": {
+        "meaning": "depends on the tree",
+        "note": "Meaning: let it be, go with whatever comes."
+      },
+      "山门": {
+        "meaning": "the main gate of a temple",
+        "note": "Old temples were often on hills, hence 'mountain gate'."
+      },
+      "发咗新叶": {
+        "meaning": "grew new leaves",
+        "note": "'发' means to grow."
+      }
+    }
+  },
+  "dragonboat-meal": {
+    "title": "The Dragon Boat Feast",
+    "subtitle": "Pearl River Delta Water Village · One Meal for One Dragon Boat",
+    "quote": "The dragon boat paddles fast, but the meal is eaten together.",
+    "intro": "You are a young man on the village dragon boat team. The day before the Dragon Boat Festival, Grandma puts you in charge of the dragon boat feast—dozens of tables are waiting for you to begin.",
+    "dialect": "Cantonese · Panyu, Guangzhou",
+    "type": "Heritage · Water Village Story",
+    "duration": "6 min",
+    "scenes": {
+      "dragon-1": {
+        "title": "Dozens of Tables",
+        "text": "Dozens of round tables are set out in front of the ancestral hall. Grandma hands you a list: 'Two hundred catties of pork, a load of choy sum, and enough rice.' You stare at the list, your palms sweating."
+      },
+      "dragon-2a": {
+        "title": "Bargaining at the Market",
+        "text": "Before dawn, you pedal a tricycle to the market. The pork seller quotes a price twenty percent higher, saying that is simply the festival price. You do not know how to bargain and stand frozen at the stall."
+      },
+      "dragon-2b": {
+        "title": "What the Dragon Boat Leader Says",
+        "text": "The dragon boat leader is oiling the boat. After hearing you out, he laughs: 'The food does not need to be expensive—what matters most is that it is hot. Go tell the pork seller: this is for the dragon boat team, make it cheaper.'"
+      },
+      "dragon-3": {
+        "title": "The Feast Begins in the Rain",
+        "text": "Just as the rice is done, a heavy rain starts. Half the people below the stage leave, and Grandma looks at the sky without a word. You and the other young people hurry to pull out the rain tarps."
+      },
+      "dragon-4a": {
+        "title": "The Drum in the Rain",
+        "text": "The rain canopy goes up, and the dragon boat drum sounds in the rain. People drift back and sit down, wet as they are. You ladle out the first bowl of rice, your hands still trembling."
+      },
+      "dragon-4b": {
+        "title": "Waiting Until Daylight",
+        "text": "It rains for two solid hours, and the dishes go cold. People start to leave, and Grandma finally speaks: 'Let us begin—no more waiting.' You hurry to reheat the dishes."
+      },
+      "dragon-e1": {
+        "title": "Ending · The First Bowl of Rice",
+        "text": "Grandma takes the bowl and puts a piece of pork in it for you first: 'Knowing to serve others first—that is what makes this meal a success.' In the sound of the rain, dozens of tables reach for their chopsticks together.",
+        "endingText": "The dragon boat paddles fast, but the meal is eaten together."
+      },
+      "dragon-e2": {
+        "title": "Ending · The Last Table",
+        "text": "After the dragon boat team finishes eating, you notice one table in the corner untouched. It turns out to belong to the old man who helped carry the drum. You bring him his food, and he grins so wide his eyes nearly disappear.",
+        "endingText": "At a meal, what matters most is that no one is left out."
+      }
+    },
+    "choices": {
+      "dragon-1": ["Go shopping with Grandma's list", "First ask the dragon boat leader"],
+      "dragon-2a": ["Pay the price—do not want to hold things up", "Call Grandma to ask"],
+      "dragon-2b": ["Say it just as he taught you", "Find another way yourself"],
+      "dragon-3": ["Put up the rain canopy and start the feast", "Wait for the rain to stop before starting"],
+      "dragon-4a": ["Serve Grandma first", "Serve the dragon boat team first"],
+      "dragon-4b": ["Apologise table by table", "Quietly reheat the dishes"],
+      "dragon-e1": [],
+      "dragon-e2": []
+    },
+    "glossary": {
+      "龙舟饭": {
+        "meaning": "the village feast held after the Dragon Boat Festival races",
+        "note": "Common in Pearl River Delta water villages."
+      },
+      "围": {
+        "meaning": "a table (of a banquet)",
+        "note": "In Cantonese, one banquet table is called one 'wai'."
+      },
+      "墟市": {
+        "meaning": "market, country fair",
+        "note": "In Cantonese, going to market is called '趁墟'."
+      },
+      "发愣": {
+        "meaning": "to be dazed, to freeze up",
+        "note": "Colloquial Cantonese."
+      },
+      "龙船头": {
+        "meaning": "the leader of a dragon boat team",
+        "note": "Responsible for organising and directing."
+      },
+      "平啲": {
+        "meaning": "a bit cheaper",
+        "note": "'平' means cheap."
+      },
+      "雨布": {
+        "meaning": "rain tarp",
+        "note": "Often used at village banquets."
+      },
+      "后生仔": {
+        "meaning": "young people",
+        "note": "A common Cantonese word."
+      },
+      "舀饭": {
+        "meaning": "to serve rice",
+        "note": "In Cantonese, '舀' is pronounced jiu2."
+      },
+      "热菜": {
+        "meaning": "to reheat dishes",
+        "note": "In Cantonese, '热' can be used as a verb."
+      },
+      "起筷": {
+        "meaning": "to pick up chopsticks and start eating",
+        "note": "A common phrase at banquets."
+      },
+      "见牙唔见眼": {
+        "meaning": "grinning from ear to ear",
+        "note": "A Cantonese saying."
+      }
+    }
+  },
+  "qingming-hill": {
+    "title": "Qingming · Tomb Sweeping",
+    "subtitle": "Baiyun Mountain, Guangzhou · A Family's Qingming",
+    "quote": "The mountain is still here; generation after generation, the people come.",
+    "intro": "On the day of Qingming itself, you carry roast pork and sugarcane up the hill. Dad says that this year you will lead the way.",
+    "dialect": "Cantonese · Guangzhou",
+    "type": "Heritage · Family Memory",
+    "duration": "7 min",
+    "kidNote": "Involves ancestor rites and parting; parental guidance suggested.",
+    "scenes": {
+      "qingming-1": {
+        "title": "The Road Up the Hill",
+        "text": "The mountain path is wet and slippery, weeds on both sides. Dad walks ahead without a word. You remember that when you were small, Grandpa carried you up here on his back."
+      },
+      "qingming-2a": {
+        "title": "Dad Tells an Old Story",
+        "text": "Dad suddenly says: 'Grandpa was a carpenter—every door in the village was made by him.' It is the first time you have heard this, and you do not know how to respond."
+      },
+      "qingming-2b": {
+        "title": "Mum's Red Paper",
+        "text": "Mum takes red paper and a brush from her bag and says she wants to repaint the characters. You look at the faded writing on the stone, and suddenly it feels unfamiliar."
+      },
+      "qingming-3": {
+        "title": "Pressing the Paper",
+        "text": "When you reach the grave, Dad tells you to press the paper. One by one you press the paper money onto the mound; when the wind blows, the corners lift, as if someone is answering."
+      },
+      "qingming-4": {
+        "title": "Roast Pork and Sugarcane",
+        "text": "Mum cuts the roast pork and sets the fattest piece before the stone. Dad peels the sugarcane and, as always, lays the first section down. You ask why, and he says: 'The sweet part is for the ancestors.'"
+      },
+      "qingming-5a": {
+        "title": "Sweetness in the Palm",
+        "text": "You peel it crooked and uneven, and Dad does not laugh—he just takes the knife and demonstrates slowly. Sugarcane juice drips onto your hand, sticky and sweet."
+      },
+      "qingming-5b": {
+        "title": "The Writing on the Stone",
+        "text": "You crouch down to set out the roast pork and notice a line of small characters carved at the base of the stone—it is Grandpa's name. You reach out and touch it; the stone is cold, yet the characters seem to hold warmth."
+      },
+      "qingming-e1": {
+        "title": "Ending · Down the Hill",
+        "text": "On the way down, Dad walks slowly. You hold him steady, as Grandpa once held you. The mountain wind rises, paper ash lifts into the air, and slowly settles again.",
+        "endingText": "The mountain is still here; generation after generation, the people come."
+      },
+      "qingming-e2": {
+        "title": "Ending · Leading the Way Next Year",
+        "text": "Dad nods: 'Next year, you lead the way.' You agree, memorising every turn in your heart. So tomb sweeping is not only about sweeping graves—it is about remembering the path.",
+        "endingText": "Only when someone remembers the path can someone find their way back."
+      }
+    },
+    "choices": {
+      "qingming-1": ["Walk faster to keep Dad company", "Walk slowly and keep an eye on Mum"],
+      "qingming-2a": ["Ask more about Grandpa", "Listen quietly, do not interrupt"],
+      "qingming-2b": ["Help Mum hold the red paper", "Ask whose name is on the stone"],
+      "qingming-3": ["Say a few words to the ancestors", "Quietly press down every sheet"],
+      "qingming-4": ["Learn to peel sugarcane from Dad", "Arrange the roast pork properly"],
+      "qingming-5a": ["Ask whether we will come again next year", "Tell Dad you have remembered it"],
+      "qingming-5b": ["Say thank you to Grandpa", "Ask Dad if the paint needs touching up"],
+      "qingming-e1": [],
+      "qingming-e2": []
+    },
+    "glossary": {
+      "拜山": {
+        "meaning": "to go up the hill to sweep graves",
+        "note": "In Cantonese, visiting graves is called '拜山' (bowing to the mountain)."
+      },
+      "孭": {
+        "meaning": "to carry on the back",
+        "note": "A common Cantonese word."
+      },
+      "整": {
+        "meaning": "to make, to fix",
+        "note": "In Cantonese, '整' has a very wide range of uses."
+      },
+      "描红": {
+        "meaning": "to trace characters in red paint",
+        "note": "Common when sweeping graves."
+      },
+      "碑": {
+        "meaning": "gravestone",
+        "note": "Carved with the ancestors' names."
+      },
+      "压纸": {
+        "meaning": "to press paper money onto a grave",
+        "note": "A sign that the family has come to pay respects."
+      },
+      "摆低": {
+        "meaning": "to set down",
+        "note": "In Cantonese, '低' means down."
+      },
+      "示范": {
+        "meaning": "to demonstrate, to show by example",
+        "note": "A written word; in Cantonese one also says '做俾你睇'."
+      },
+      "冻": {
+        "meaning": "cold",
+        "note": "In Cantonese, '冻' means cold."
+      },
+      "纸灰": {
+        "meaning": "ash from burnt paper offerings",
+        "note": "Common when sweeping graves."
+      },
+      "记落嚟": {
+        "meaning": "to memorise, to note down",
+        "note": "'落嚟' means down, down here."
+      }
+    }
+  }
+}

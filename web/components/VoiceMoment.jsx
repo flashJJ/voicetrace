@@ -1,11 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLocale } from "./LocaleProvider";
 
 const LINE = "月光光，照地堂。年卅晚，摘槟榔。";
 const MANDARIN = "月光洒在天井里，除夕夜摘槟榔。";
+const ENGLISH = "Moonlight on the courtyard; on New Year's Eve, we pick betel nuts.";
 
 const CHARS = Array.from(LINE);
+
+const COPY = {
+  zh: {
+    tag: "粤语 · 西关",
+    note: "语音示例",
+    aria: (line) => `粤语童谣：${line}`,
+  },
+  en: {
+    tag: "Cantonese · Xiguan",
+    note: "Sample audio",
+    aria: (line) => `Cantonese rhyme: ${line}`,
+  },
+};
 
 // 固定波形，避免服务端与客户端渲染不一致
 const BARS = Array.from({ length: 56 }, (_, index) => {
@@ -18,6 +33,8 @@ const BARS = Array.from({ length: 56 }, (_, index) => {
 });
 
 export default function VoiceMoment() {
+  const { locale, pick } = useLocale();
+  const c = pick(COPY);
   const [reduceMotion, setReduceMotion] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -59,10 +76,10 @@ export default function VoiceMoment() {
   return (
     <div className="voice-moment">
       <div className="voice-moment-head">
-        <span>粤语 · 西关</span>
-        <span className="voice-moment-note">语音示例</span>
+        <span>{c.tag}</span>
+        <span className="voice-moment-note">{c.note}</span>
       </div>
-      <p className="voice-moment-yue" aria-label={`粤语童谣：${LINE}`}>
+      <p className="voice-moment-yue" aria-label={c.aria(LINE)}>
         {CHARS.map((char, index) => (
           <span
             key={`${char}-${index}`}
@@ -72,7 +89,7 @@ export default function VoiceMoment() {
           </span>
         ))}
       </p>
-      <p className="voice-moment-zh">{MANDARIN}</p>
+      <p className="voice-moment-zh">{locale === "en" ? ENGLISH : MANDARIN}</p>
       <div className="voice-bars" aria-hidden="true">
         {BARS.map((height, index) => (
           <span

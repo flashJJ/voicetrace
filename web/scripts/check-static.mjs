@@ -117,6 +117,26 @@ if (!bundleContains(chunksDir, "voicetrace:kid-progress")) {
   errors.push("客户端产物里找不到本机学习进度逻辑");
 }
 
+const homeHtml = exists("index.html") ? read("index.html") : "";
+if (homeHtml && !homeHtml.includes("locale-switch")) {
+  errors.push("首页缺少语言切换控件");
+}
+if (homeHtml && !(homeHtml.includes("简") && homeHtml.includes("繁") && homeHtml.includes("EN"))) {
+  errors.push("首页语言切换缺少简 / 繁 / EN 三个选项");
+}
+if (!bundleContains(chunksDir, "voicetrace:locale")) {
+  errors.push("客户端产物里找不到语言偏好存储逻辑");
+}
+if (!bundleContains(chunksDir, "Listen slowly. Speak slowly.")) {
+  errors.push("客户端产物里找不到儿童模式英文文案");
+}
+if (!bundleContains(chunksDir, "Round and Round, the Chrysanthemum Garden")) {
+  errors.push("客户端产物里找不到故事英文覆盖数据");
+}
+if (!bundleContains(chunksDir, "Learning summary")) {
+  errors.push("客户端产物里找不到学习小结英文文案");
+}
+
 console.log("声迹静态产物检查");
 console.log("--------------------------------------");
 console.log(`  儿童故事页 ${kidStories().length} 个`);
@@ -124,6 +144,8 @@ console.log(`  基础页面 ${basePages.length} 个`);
 console.log(`  儿童录音链接 ${bundleContains(chunksDir, "/kids/record") ? "已打包" : "缺失"}`);
 console.log(`  家长门 ${parentHtml.includes("这一步请家长完成") ? "已生成" : "缺失"}`);
 console.log(`  学习进度 ${bundleContains(chunksDir, "voicetrace:kid-progress") ? "已打包" : "缺失"}`);
+console.log(`  语言切换 ${homeHtml.includes("locale-switch") ? "已生成" : "缺失"}`);
+console.log(`  英文覆盖 ${bundleContains(chunksDir, "Round and Round, the Chrysanthemum Garden") ? "已打包" : "缺失"}`);
 console.log("--------------------------------------");
 
 if (errors.length) {
