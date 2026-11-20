@@ -1595,6 +1595,18 @@ button {
   margin-bottom: 8px;
 }
 
+.about-card p.about-author {
+  margin: 14px 0 18px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.about-author a {
+  color: var(--jade);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .voice-list {
   list-style: none;
   padding-left: 0 !important;

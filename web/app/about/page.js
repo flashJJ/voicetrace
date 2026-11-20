@@ -54,6 +54,7 @@ const COPY = {
       "夸克、UC 与微信内置浏览器：阅读和录音通常可用；PWA 安装、离线与自动转写可能受限，建议在系统浏览器中打开。",
       "粤语发音取决于设备是否安装粤语语音；没有时会提示，并改用普通话示例。",
     ],
+    authorLabel: "作者：",
     prototypeTitle: "关于这个原型",
     prototype1:
       "当前版本是 TRAE 好应用大赏赛的参赛原型，共 28 个互动故事，长度 3-8 幕：既有《月光光》《老鼠娶亲》这样的公有领域改编，也有广州地方传说、民俗与野史，以及天星小轮、叮叮电车、茶餐厅 3 个香港原创儿童故事。现在已经加入本地录音棚、逐句转写校对、家庭任务包、简体/繁体/英文切换与离线安装；账号与云端同步不在当前版本，赛后按需评估。",
@@ -121,6 +122,7 @@ const COPY = {
       "Quark, UC and in-app browsers such as WeChat: reading and recording usually work; PWA install, offline use and automatic transcription may be limited. Open the site in a system browser instead.",
       "Cantonese playback depends on installed system voices; if none is available, the app says so and falls back to a Mandarin sample.",
     ],
+    authorLabel: "Author: ",
     prototypeTitle: "About this prototype",
     prototype1:
       "This is the prototype submitted to the TRAE App Awards: 28 interactive stories of 3-8 acts, mixing public-domain adaptations such as “Moonlight Bright” and “The Mouse Wedding” with Guangzhou legends, folk customs, and hearsay, plus three original Hong Kong kid stories about the Star Ferry, the ding-ding tram, and a cha chaan teng. It now includes a local recording studio, line-by-line transcript proofreading, family task packs, Simplified Chinese / Traditional Chinese / English switching, and offline installation. Accounts and cloud sync are not part of this version; they will be evaluated after the contest.",
@@ -234,6 +236,12 @@ export default function AboutPage() {
           <h2>{c.prototypeTitle}</h2>
           <p>{c.prototype1}</p>
           <p>{c.prototype2}</p>
+          <p className="about-author">
+            {c.authorLabel}
+            <a href="https://github.com/flashJJ" target="_blank" rel="noreferrer">
+              flashJJ
+            </a>
+          </p>
           <Link className="btn btn-primary" href="/stories/moonlight">
             {c.cta} <span aria-hidden="true">→</span>
           </Link>
