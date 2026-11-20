@@ -4855,6 +4855,10 @@ html {
   margin-top: 14px;
 }
 
+.kid-readalong .speech-rate {
+  margin-bottom: 14px;
+}
+
 .kid-readalong-status {
   margin: 0 0 10px;
   color: var(--ink-muted);
