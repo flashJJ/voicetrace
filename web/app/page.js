@@ -16,6 +16,7 @@ const COPY = {
     heroPost: "。",
     heroLede:
       "很多家庭都有一把这样的声音：会唱童谣，会讲旧事，却只响在饭桌上。声迹把它做成可以点、可以听、可以分享的互动故事书——原声是主角，AI 只负责让你听懂它。",
+    heroPrivacy: "无需注册 · 录音只存本机 · 无广告与第三方统计",
     listenMoonlight: "听《月光光》",
     why: "为什么做声迹",
     heroAlt: "西关骑楼下的阿婆",
@@ -63,6 +64,7 @@ const COPY = {
     heroPost: " away.",
     heroLede:
       "Many families have a voice like this: it can sing nursery rhymes and tell old stories, but it only sounds at the dinner table. VoiceTrace turns it into an interactive storybook you can tap, hear, and share. The real voice leads; AI only helps you understand it.",
+    heroPrivacy: "No sign-up · Recordings stay on this device · No ads or third-party analytics",
     listenMoonlight: "Hear “Moonlight Bright”",
     why: "Why VoiceTrace",
     heroAlt: "A grandmother under the arcades of Xiguan",
@@ -122,6 +124,7 @@ export default function HomePage() {
             {c.heroPost}
           </h1>
           <p className="hero-lede fade-in-delay-2">{c.heroLede}</p>
+          <p className="hero-privacy fade-in-delay-2">{c.heroPrivacy}</p>
           <div className="hero-actions fade-in-delay-2">
             <Link className="btn btn-primary" href="/stories/moonlight">
               {c.listenMoonlight} <span aria-hidden="true">→</span>

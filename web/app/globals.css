@@ -366,7 +366,7 @@ button {
   line-height: 1.9;
   color: var(--ink-soft);
   max-width: 520px;
-  margin: 0 0 34px;
+  margin: 0 0 20px;
 }
 
 .hero-actions {
@@ -374,6 +374,13 @@ button {
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+.hero-privacy {
+  margin: 0 0 22px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
 }
 
 .btn {
