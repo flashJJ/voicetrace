@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import SceneAudio from "./SceneAudio";
 import ShareCard from "./ShareCard";
+import ShareStoryButton from "./ShareStoryButton";
 import KidReadAlong from "./KidReadAlong";
 import KidWordCards from "./KidWordCards";
 import { getRecording, recordingId } from "../lib/recordings";
@@ -140,6 +141,15 @@ export default function StoryReader({ story, kidMode = false }) {
       return next;
     });
   }, []);
+
+  useEffect(() => {
+    if (kidMode) return;
+    try {
+      window.localStorage.setItem("voicetrace:last-story", story.slug);
+    } catch (error) {
+      // 隐私模式可能禁用 localStorage，不影响阅读。
+    }
+  }, [kidMode, story.slug]);
 
   useEffect(() => {
     if (!kidMode) return;
@@ -387,6 +397,7 @@ export default function StoryReader({ story, kidMode = false }) {
               <button type="button" className="btn btn-ghost" onClick={restart}>
                 {c.restart}
               </button>
+              <ShareStoryButton title={localizedStory.title} />
             </div>
 
             {story.type.includes("示例") && <p className="notice">{c.sampleNotice}</p>}

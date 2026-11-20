@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>暂时离线 · 声迹</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 20px;
+        background: #f6efe2;
+        color: #1f1b16;
+        font-family: "Noto Serif SC", "Songti SC", "PingFang SC", serif;
+      }
+      main {
+        width: min(520px, 100%);
+        border: 1px solid rgba(31, 27, 22, 0.2);
+        background: rgba(255, 255, 255, 0.45);
+        padding: 36px 32px;
+      }
+      .mark {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #a63a2b;
+        color: #fff8ec;
+        font-size: 26px;
+      }
+      h1 {
+        margin: 22px 0 10px;
+        font-size: 30px;
+        letter-spacing: 0.02em;
+      }
+      p {
+        margin: 0 0 12px;
+        color: #4f463c;
+        line-height: 1.8;
+        font-size: 15px;
+      }
+      .en {
+        color: #7a6d5e;
+        font-size: 13px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 12px 22px;
+        background: #a63a2b;
+        color: #fff8ec;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="mark" aria-hidden="true">声</div>
+      <h1>现在没有网络</h1>
+      <p>已经打开过的故事和封面还能继续看；新的故事需要联网后再打开。</p>
+      <p class="en">You are offline. Stories and covers you have already opened still work; new stories need a connection.</p>
+      <a href="./">回到声迹</a>
+    </main>
+  </body>
+</html>
