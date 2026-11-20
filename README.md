@@ -192,7 +192,7 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | [04-同类赛事对比与参与决策](docs/contest/04-同类赛事对比与参与决策.md)   | 赛事优缺点、12+ 同类比赛对比、值不值得参与、注意事项          | 决定投入多少时间        |
 | [05-8天执行计划](docs/contest/05-8天执行计划.md)             | 11.15-11.23 逐日计划、范围冻结、提交清单、演示脚本       | 开工后每天看          |
 | [06-粤语资料库与黄金样品](docs/contest/06-粤语资料库与黄金样品.md)     | 164 条素材、按子集拆分的文件结构、8 个黄金样品、授权策略       | 做资料库/Agent 评测时  |
-| [07-三种叙事模式](docs/contest/07-三种叙事模式.md)             | 正经/鬼故事/野史：受众、语气、素材映射、25 个互动故事、风险边界    | 做内容/扩受众时        |
+| [07-三种叙事模式](docs/contest/07-三种叙事模式.md)             | 正经/鬼故事/野史：受众、语气、素材映射、28 个互动故事、风险边界    | 做内容/扩受众时        |
 | [08-10人试玩报告（模拟）](docs/contest/08-10人试玩报告-模拟.md)    | 模拟 10 人试玩、指标、发现、优先修改项                 | 内部排练；提交前必须换真实数据 |
 | [09-报名帖草稿](docs/contest/09-报名帖草稿.md)               | 标题、介绍、差异、TRAE 说明、提交清单                 | 写报名帖时           |
 | [10-3分钟演示脚本](docs/contest/10-3分钟演示脚本.md)           | 早期录屏逐字稿、时间轴、现场应急、评委追问；模拟段落不可当真实证据 | 查看早期录制草稿      |
@@ -254,5 +254,6 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | v0.10 学习体验：朗读速度三档与本机记忆、故事翻译收起/点开、儿童词卡逐词发音 | web/lib/playback.js、web/hooks/usePlaybackRate.js、web/components/SpeechRateControl.jsx、StoryReader、KidReadAlong、KidQuiz、KidWordCards、AudioButton、globals.css、tests/playback.test.mjs | `v0.10.0` 冻结 |
 | 2026-11-20 | v0.11 移动与离线：PWA manifest / Service Worker / 离线页与安装提示、系统分享、故事搜索年龄筛选收藏与继续阅读 | web/public/manifest.webmanifest、sw.js、offline.html、icons、PwaRegister、PwaInstall、ShareStoryButton、StoryFavoriteButton、ContinueReading、stories/page.js、lib/favorites.js、lib/story-search.js、tests/story-search.test.mjs | `v0.11.0` 冻结 |
 | 2026-11-20 | v0.12 香港内容包：天星小轮、叮叮电车、茶餐厅 3 个原创儿童故事与封面，补齐英文覆盖、词卡与小测；故事总数 28、儿童池 17 | web/lib/stories-hk.js、stories.js、public/covers、data/i18n/stories-hk-en.json、data/i18n/learning-en.json、data/kids/learning.json、tests/i18n.test.mjs、README、about | `v0.12.0` 截稿冻结 |
+| 2026-11-20 | 材料数字刷新：报名帖、演示脚本、产品说明、路演稿、截图清单统一为 28 个故事 / 17 个儿童故事，并补三语、慢速、翻译收起、PWA 离线、搜索收藏与香港内容包 | docs/contest/07、09、10、11、12、13、14、README | PDF、PPT、演示视频与截图待重做 |
 | 2026-11-20 | 收尾材料按双入口重做：产品说明、路演 10 页、报名帖、3 分钟脚本、截图清单；统一 25/14/164/8 数字 | docs/contest/06-14、docs/development/01、05、10、README | 真实试用缺口保持显式标注；PDF/PPT/视频仍待制作 |
 | 2026-11-20 | 修复亲子角色走查 P1：儿童词注去重、首屏跟读入口、跟读听示例、小测听题目、跨设备提示 | web/hooks/useSpeechPlayback.js、StoryReader、KidReadAlong、KidQuiz、KidWordCards、kids/parent、globals.css、web/tests、web/scripts | 单测增至 25 项；静态检查覆盖新按钮与提示 |
