@@ -6,8 +6,50 @@ import { useRecorder } from "../hooks/useRecorder";
 import { useSpeechPlayback } from "../hooks/useSpeechPlayback";
 import { formatDuration } from "../lib/recordings";
 import { markSceneRecorded, readKidProgress } from "../lib/kid-progress";
+import { useLocale } from "./LocaleProvider";
+
+const COPY = {
+  zh: {
+    aria: "跟读练习",
+    title: "跟读一次",
+    hint: "先听一次，再录下来自己回放。练习录音不会上传，也不会进声音档案；换一幕会清空。",
+    done: "已跟读过",
+    recording: (time) => `正在录音 · ${time}`,
+    requesting: "正在请求麦克风…",
+    processing: "正在生成…",
+    gotIt: "知道了",
+    stopPlayback: "停止播放",
+    listen: "听示例",
+    stop: "停止",
+    again: "再读一次",
+    againMarked: "再跟读一次",
+    start: "开始跟读",
+    clear: "清空",
+    saveLink: "想保存就录进我家的版本 →",
+  },
+  en: {
+    aria: "Read-along practice",
+    title: "Read along once",
+    hint: "Listen once, then record yourself and play it back. Practice recordings are not uploaded and do not go to the archive; they reset when you change acts.",
+    done: "Read along done",
+    recording: (time) => `Recording · ${time}`,
+    requesting: "Requesting microphone…",
+    processing: "Preparing…",
+    gotIt: "Got it",
+    stopPlayback: "Stop",
+    listen: "Listen",
+    stop: "Stop",
+    again: "Read again",
+    againMarked: "Read along again",
+    start: "Start read-along",
+    clear: "Clear",
+    saveLink: "To keep it, record into our family version →",
+  },
+};
 
 export default function KidReadAlong({ story, scene }) {
+  const { pick } = useLocale();
+  const c = pick(COPY);
   const { status, error, elapsed, clip, start, stop, reset, setError } = useRecorder();
   const {
     speaking,
@@ -37,28 +79,26 @@ export default function KidReadAlong({ story, scene }) {
   const isRecording = status === "recording";
 
   return (
-    <section className="kid-readalong" id="kid-readalong" aria-label="跟读练习">
+    <section className="kid-readalong" id="kid-readalong" aria-label={c.aria}>
       <div className="kid-readalong-head">
         <div>
-          <h3>跟读一次</h3>
-          <p className="kid-learn-hint">
-            先听一次，再录下来自己回放。练习录音不会上传，也不会进声音档案；换一幕会清空。
-          </p>
+          <h3>{c.title}</h3>
+          <p className="kid-learn-hint">{c.hint}</p>
         </div>
-        {marked ? <span className="kid-readalong-done">已跟读过</span> : null}
+        {marked ? <span className="kid-readalong-done">{c.done}</span> : null}
       </div>
 
       <div className="kid-readalong-body">
         {isRecording ? (
           <p className="kid-readalong-status is-recording">
-            正在录音 · {formatDuration(elapsed)}
+            {c.recording(formatDuration(elapsed))}
           </p>
         ) : null}
         {status === "requesting" ? (
-          <p className="kid-readalong-status">正在请求麦克风…</p>
+          <p className="kid-readalong-status">{c.requesting}</p>
         ) : null}
         {status === "processing" ? (
-          <p className="kid-readalong-status">正在生成…</p>
+          <p className="kid-readalong-status">{c.processing}</p>
         ) : null}
 
         {clip ? (
@@ -72,7 +112,7 @@ export default function KidReadAlong({ story, scene }) {
           <p className="kid-readalong-error">
             {error}
             <button type="button" onClick={() => setError("")}>
-              知道了
+              {c.gotIt}
             </button>
           </p>
         ) : null}
@@ -90,11 +130,11 @@ export default function KidReadAlong({ story, scene }) {
             }
             disabled={isRecording || status === "requesting" || status === "processing"}
           >
-            {speaking ? "停止播放" : "听示例"}
+            {speaking ? c.stopPlayback : c.listen}
           </button>
           {isRecording ? (
             <button type="button" className="btn btn-primary" onClick={stop}>
-              停止
+              {c.stop}
             </button>
           ) : (
             <button
@@ -103,19 +143,19 @@ export default function KidReadAlong({ story, scene }) {
               onClick={start}
               disabled={status === "requesting" || status === "processing"}
             >
-              {clip ? "再读一次" : marked ? "再跟读一次" : "开始跟读"}
+              {clip ? c.again : marked ? c.againMarked : c.start}
             </button>
           )}
           {clip && !isRecording ? (
             <button type="button" className="btn btn-ghost" onClick={reset}>
-              清空
+              {c.clear}
             </button>
           ) : null}
           <Link
             className="kid-readalong-link"
             href={`/kids/record?story=${story.slug}&scene=${scene.id}`}
           >
-            想保存就录进我家的版本 →
+            {c.saveLink}
           </Link>
         </div>
       </div>

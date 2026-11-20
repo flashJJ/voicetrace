@@ -1,0 +1,1801 @@
+{
+  "moonlight": {
+    "sceneWords": {
+      "moonlight-1": [
+        {
+          "term": "月光光",
+          "meaning": "Bright moonlight — and the first line of this nursery rhyme",
+          "example": "Moonlight bright, shining on the courtyard."
+        },
+        {
+          "term": "地堂",
+          "meaning": "The open courtyard in front of the house",
+          "example": "Moonlight bright, shining on the courtyard."
+        },
+        {
+          "term": "年卅晚",
+          "meaning": "New Year's Eve",
+          "example": "On New Year's Eve, people pick betel nuts."
+        }
+      ],
+      "moonlight-2a": [
+        {
+          "term": "唔使怕丑",
+          "meaning": "Don't be shy",
+          "example": "Don't be shy, sing along with me."
+        },
+        {
+          "term": "跟住",
+          "meaning": "Following along after",
+          "example": "Sing along after me."
+        },
+        {
+          "term": "笑住",
+          "meaning": "With a smile, smiling",
+          "example": "Grandma pats your hand with a smile."
+        }
+      ],
+      "moonlight-2b": [
+        {
+          "term": "好意头",
+          "meaning": "A good omen, good luck",
+          "example": "Long ago, betel nuts were a good omen at a wedding."
+        },
+        {
+          "term": "嫁女",
+          "meaning": "To marry off a daughter",
+          "example": "Long ago, betel nuts were a good omen at a wedding."
+        },
+        {
+          "term": "心事",
+          "meaning": "The quiet worries in your heart",
+          "example": "The moonlight shines on the worries of every generation."
+        }
+      ],
+      "moonlight-3a": [
+        {
+          "term": "第日",
+          "meaning": "One day in the future",
+          "example": "One day, sing it to your children."
+        },
+        {
+          "term": "细路",
+          "meaning": "Children",
+          "example": "One day, sing it to your children."
+        },
+        {
+          "term": "识唱",
+          "meaning": "To know how to sing it",
+          "example": "If you can sing it, that's good."
+        }
+      ],
+      "moonlight-3b": [
+        {
+          "term": "细个",
+          "meaning": "When you were little",
+          "example": "What was it like when you were little?"
+        },
+        {
+          "term": "嗰阵",
+          "meaning": "Back then, at that time",
+          "example": "What was it like when you were little?"
+        },
+        {
+          "term": "录音键",
+          "meaning": "The record button",
+          "example": "You press the record button to stop."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Where does Grandma sit to sing the nursery rhyme?",
+        "options": [
+          "Under the arcade",
+          "In the middle of the courtyard",
+          "On the front of a boat"
+        ],
+        "hint": "The first scene tells you where Grandma sits."
+      },
+      {
+        "question": "Long ago, what did betel nuts stand for at a wedding?",
+        "options": [
+          "Good luck",
+          "Bad luck",
+          "Wedding money"
+        ],
+        "hint": "Grandma explains what betel nuts mean in the second scene."
+      },
+      {
+        "question": "What does Grandma want you to do one day?",
+        "options": [
+          "Sing it to your own children",
+          "Forget the rhyme",
+          "Only write it in a notebook"
+        ],
+        "hint": "In the last scene Grandma says, \"One day, sing it to your children.\""
+      }
+    ]
+  },
+  "mouse-wedding": {
+    "sceneWords": {
+      "mouse-1": [
+        {
+          "term": "嫁畀",
+          "meaning": "To marry (someone)",
+          "example": "She must marry the strongest one in the whole world."
+        },
+        {
+          "term": "咁靓",
+          "meaning": "So pretty",
+          "example": "My daughter is so pretty."
+        },
+        {
+          "term": "全世界",
+          "meaning": "The whole world",
+          "example": "She must marry the strongest one in the whole world."
+        }
+      ],
+      "mouse-2a": [
+        {
+          "term": "惊",
+          "meaning": "To be afraid of",
+          "example": "I fear the clouds — once a cloud covers me, I have no light."
+        },
+        {
+          "term": "遮",
+          "meaning": "To cover, block out",
+          "example": "Once a cloud covers me, I have no light."
+        },
+        {
+          "term": "穿",
+          "meaning": "To break through, pierce",
+          "example": "Once a mouse digs in, I break open."
+        }
+      ],
+      "mouse-2b": [
+        {
+          "term": "花轿",
+          "meaning": "The bridal sedan chair that carries the bride",
+          "example": "The mouse parade carries the bridal chair."
+        },
+        {
+          "term": "眼定定",
+          "meaning": "Staring hard without blinking",
+          "example": "The big tabby cat stares at them without blinking."
+        },
+        {
+          "term": "滴滴答",
+          "meaning": "The toot-toot sound of wedding music",
+          "example": "Playing toot-toot, they march under the arcade."
+        }
+      ],
+      "mouse-3a": [
+        {
+          "term": "醒起",
+          "meaning": "To realize, to remember",
+          "example": "Mother Mouse suddenly realizes."
+        },
+        {
+          "term": "够胆",
+          "meaning": "To have the courage",
+          "example": "Do you dare?"
+        },
+        {
+          "term": "转个弯",
+          "meaning": "To turn a corner — to change your way of thinking",
+          "example": "Can you turn it around in your head?"
+        }
+      ],
+      "mouse-3b": [
+        {
+          "term": "睇落",
+          "meaning": "To look, to seem",
+          "example": "I look hard."
+        },
+        {
+          "term": "最紧要",
+          "meaning": "The most important thing",
+          "example": "The most important thing is knowing what you are afraid of."
+        },
+        {
+          "term": "仲敢",
+          "meaning": "Still daring to",
+          "example": "Still daring to keep walking."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "At first, who does Mother Mouse think is the strongest?",
+        "options": [
+          "The sun",
+          "The cloud",
+          "The big tabby cat"
+        ],
+        "hint": "She looks up once and makes up her mind."
+      },
+      {
+        "question": "What is the wall most afraid of?",
+        "options": [
+          "Mice",
+          "The wind",
+          "The sun"
+        ],
+        "hint": "The wall says it itself in the second scene."
+      },
+      {
+        "question": "What does the story most want to tell us?",
+        "options": [
+          "Everyone is afraid of something; what matters is still going forward",
+          "Whoever is biggest is strongest",
+          "Cats are always the strongest"
+        ],
+        "hint": "Look at the last line of both endings."
+      }
+    ]
+  },
+  "grandma-congee": {
+    "sceneWords": {
+      "congee-1": [
+        {
+          "term": "拖住",
+          "meaning": "To hold (a hand)",
+          "example": "Grandma holds your hand."
+        },
+        {
+          "term": "湿湿哋",
+          "meaning": "A little wet",
+          "example": "You walk over stone slabs that are a little wet."
+        },
+        {
+          "term": "冇",
+          "meaning": "To have none, there is no more",
+          "example": "If we are late, there will be no fried dough sticks."
+        }
+      ],
+      "congee-2a": [
+        {
+          "term": "逐样",
+          "meaning": "One by one",
+          "example": "The toppings go in one by one."
+        },
+        {
+          "term": "滚",
+          "meaning": "To boil",
+          "example": "The congee base is boiling."
+        },
+        {
+          "term": "唔可以急",
+          "meaning": "You can't rush",
+          "example": "The toppings go in one by one — you can't rush."
+        }
+      ],
+      "congee-2b": [
+        {
+          "term": "水上人家",
+          "meaning": "Boat people — families who used to live on boats",
+          "example": "Long ago, boat congee was cooked by the boat people."
+        },
+        {
+          "term": "一日嘅开始",
+          "meaning": "The start of the day",
+          "example": "A bowl of hot congee is the start of the day."
+        },
+        {
+          "term": "太公",
+          "meaning": "Great-grandfather",
+          "example": "Your great-grandfather used to work on the river too."
+        }
+      ],
+      "congee-3a": [
+        {
+          "term": "撑船",
+          "meaning": "To pole a boat along with a bamboo pole",
+          "example": "Great-grandfather used to pole boats on the river."
+        },
+        {
+          "term": "煲",
+          "meaning": "To cook, to simmer",
+          "example": "Before daylight, they simmer a big pot of congee."
+        },
+        {
+          "term": "船工",
+          "meaning": "Boat worker",
+          "example": "Let the boat workers eat their fill before the boat leaves."
+        }
+      ],
+      "congee-3b": [
+        {
+          "term": "抱实",
+          "meaning": "To hold tight",
+          "example": "Just hold the pot a little tighter."
+        },
+        {
+          "term": "第日",
+          "meaning": "One day in the future",
+          "example": "One day, who will you cook it for?"
+        },
+        {
+          "term": "慢慢行",
+          "meaning": "To walk slowly",
+          "example": "The two of you walk slowly along the river."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Before the sky is light, where does Grandma take you?",
+        "options": [
+          "To the pier to buy boat congee",
+          "To a teahouse for tea",
+          "To the market to buy food"
+        ],
+        "hint": "The story tells you where you are going right at the start."
+      },
+      {
+        "question": "How should the boat congee toppings be added?",
+        "options": [
+          "One at a time",
+          "All tipped in together",
+          "No toppings at all"
+        ],
+        "hint": "Grandma says, \"You can't rush.\""
+      },
+      {
+        "question": "What did Great-grandfather do on the river?",
+        "options": [
+          "He poled boats",
+          "He sold congee",
+          "He caught fish"
+        ],
+        "hint": "Grandma says he poled boats on the river."
+      }
+    ]
+  },
+  "five-goats": {
+    "sceneWords": {
+      "five-goats-1": [
+        {
+          "term": "石羊",
+          "meaning": "Goat made of stone",
+          "example": "There are five stone goats at the foot of the hill."
+        },
+        {
+          "term": "谷穗",
+          "meaning": "An ear of rice",
+          "example": "Each mouth holds an ear of rice."
+        },
+        {
+          "term": "好耐好耐",
+          "meaning": "A very, very long time",
+          "example": "It starts a very, very long time ago."
+        }
+      ],
+      "five-goats-2a": [
+        {
+          "term": "仙人",
+          "meaning": "Immortals with magic power in old stories",
+          "example": "Five immortals came riding five goats."
+        },
+        {
+          "term": "落嚟",
+          "meaning": "To come down",
+          "example": "They came down from the sky."
+        },
+        {
+          "term": "拎住",
+          "meaning": "To hold in the hand",
+          "example": "The immortals hold ears of rice in their hands."
+        }
+      ],
+      "five-goats-2b": [
+        {
+          "term": "留低",
+          "meaning": "To leave behind",
+          "example": "They were left behind by the immortals."
+        },
+        {
+          "term": "滑溜溜",
+          "meaning": "Very smooth",
+          "example": "People have rubbed the stone so smooth."
+        },
+        {
+          "term": "羊角",
+          "meaning": "The goat's horns",
+          "example": "You touch the goat's horns."
+        }
+      ],
+      "five-goats-3a": [
+        {
+          "term": "化成",
+          "meaning": "To turn into",
+          "example": "The five goats turned into stone."
+        },
+        {
+          "term": "饥荒",
+          "meaning": "Famine, days with no food",
+          "example": "Wishing them no more hunger from then on."
+        },
+        {
+          "term": "穗城",
+          "meaning": "Sui City, another name for Guangzhou",
+          "example": "Since then Guangzhou has also been called Goat City and Sui City."
+        }
+      ],
+      "five-goats-3b": [
+        {
+          "term": "睇住",
+          "meaning": "To watch over",
+          "example": "The stone goats have watched over Guangzhou for thousands of years."
+        },
+        {
+          "term": "嗰阵",
+          "meaning": "At that time, when",
+          "example": "When you walk down the hill, you look back."
+        },
+        {
+          "term": "仲喺度",
+          "meaning": "Still there",
+          "example": "As if they are still there waiting for the immortals to come back."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What do the Five Goats hold in their mouths?",
+        "options": [
+          "Ears of rice",
+          "Flowers",
+          "Stones"
+        ],
+        "hint": "The first scene says it very clearly."
+      },
+      {
+        "question": "What do the immortals give the villagers?",
+        "options": [
+          "Ears of rice",
+          "Goats",
+          "Gold"
+        ],
+        "hint": "The immortals wish that the villagers never go hungry again."
+      },
+      {
+        "question": "Because of the Five Goats legend, what other names does Guangzhou have?",
+        "options": [
+          "Goat City and Sui City",
+          "Flower City and Pearl City",
+          "Goose City"
+        ],
+        "hint": "The last scene says Guangzhou is also called Goat City and Sui City."
+      }
+    ]
+  },
+  "chicken-lullaby": {
+    "sceneWords": {
+      "chicken-1": [
+        {
+          "term": "新抱",
+          "meaning": "Daughter-in-law, a new bride",
+          "example": "Being a daughter-in-law is so hard."
+        },
+        {
+          "term": "几艰难",
+          "meaning": "How hard it is",
+          "example": "Being a daughter-in-law is so hard."
+        },
+        {
+          "term": "蒙蒙光",
+          "meaning": "First light, before the sun is up",
+          "example": "At first light, Grandma sits at the foot of the bed."
+        }
+      ],
+      "chicken-2a": [
+        {
+          "term": "晏",
+          "meaning": "Late",
+          "example": "Even getting up early, they still say you are late."
+        },
+        {
+          "term": "下间",
+          "meaning": "Kitchen",
+          "example": "With tears still wet, she goes to the kitchen."
+        },
+        {
+          "term": "眼泪唔干",
+          "meaning": "Tears not yet dry",
+          "example": "With tears still wet, she goes to the kitchen."
+        }
+      ],
+      "chicken-2b": [
+        {
+          "term": "入门",
+          "meaning": "To marry into a family and move in",
+          "example": "Long ago, a new bride moved into the house."
+        },
+        {
+          "term": "吞落肚",
+          "meaning": "To swallow it down — to hide your hurt",
+          "example": "She could only swallow her tears."
+        },
+        {
+          "term": "起身",
+          "meaning": "To get up out of bed",
+          "example": "Before daylight she had to get up and cook."
+        }
+      ],
+      "chicken-3a": [
+        {
+          "term": "闹",
+          "meaning": "To scold",
+          "example": "She was scolded until dawn."
+        },
+        {
+          "term": "而家",
+          "meaning": "Now",
+          "example": "Now things are better."
+        },
+        {
+          "term": "冬瓜",
+          "meaning": "Winter melon",
+          "example": "All because of one winter melon."
+        }
+      ],
+      "chicken-3b": [
+        {
+          "term": "唱返",
+          "meaning": "To sing it again, to sing it back",
+          "example": "One day, sing it again for others."
+        },
+        {
+          "term": "窗外",
+          "meaning": "Outside the window",
+          "example": "Sing until the sky outside turns from grey to white."
+        },
+        {
+          "term": "记住",
+          "meaning": "To remember",
+          "example": "Remember this song."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Before daylight, where does Grandma sit singing the rhyme?",
+        "options": [
+          "At the foot of the bed",
+          "Under the arcade",
+          "In the kitchen"
+        ],
+        "hint": "The first scene says where Grandma sits."
+      },
+      {
+        "question": "What does \"being a daughter-in-law\" mean?",
+        "options": [
+          "Being a wife in her husband's family",
+          "Being a mother",
+          "Being a daughter"
+        ],
+        "hint": "The word card explains \"daughter-in-law.\""
+      },
+      {
+        "question": "What does Grandma ask you to do at the end?",
+        "options": [
+          "Remember the song and sing it to others one day",
+          "Never sing it again",
+          "Write it down and sell it"
+        ],
+        "hint": "In the last scene Grandma says, \"One day, sing it again for others.\""
+      }
+    ]
+  },
+  "dragonboat-meal": {
+    "sceneWords": {
+      "dragon-1": [
+        {
+          "term": "祠堂",
+          "meaning": "Ancestral hall, where the family honours its ancestors",
+          "example": "Dozens of round tables are set out in front of the ancestral hall."
+        },
+        {
+          "term": "圆台",
+          "meaning": "Round table",
+          "example": "Dozens of round tables are set out in front of the ancestral hall."
+        },
+        {
+          "term": "龙舟饭",
+          "meaning": "The village feast after the dragon boat races",
+          "example": "Grandma asks you to take charge of the dragon boat feast."
+        }
+      ],
+      "dragon-2a": [
+        {
+          "term": "墟市",
+          "meaning": "Market",
+          "example": "You ride a tricycle to the market."
+        },
+        {
+          "term": "猪肉佬",
+          "meaning": "The pork seller",
+          "example": "The pork seller asks twenty percent more."
+        },
+        {
+          "term": "讲价",
+          "meaning": "To bargain over the price",
+          "example": "You don't know how to bargain."
+        }
+      ],
+      "dragon-2b": [
+        {
+          "term": "龙船头",
+          "meaning": "The leader of the dragon boat team",
+          "example": "The dragon boat leader is oiling the boat."
+        },
+        {
+          "term": "平啲",
+          "meaning": "A little cheaper",
+          "example": "It's for the dragon boat team — make it a little cheaper."
+        },
+        {
+          "term": "够热",
+          "meaning": "Hot enough",
+          "example": "The rice doesn't need to be fancy — it just has to be hot."
+        }
+      ],
+      "dragon-3": [
+        {
+          "term": "雨布",
+          "meaning": "Rain tarp",
+          "example": "You young ones, quick, pull out the rain tarp."
+        },
+        {
+          "term": "后生仔",
+          "meaning": "Young people",
+          "example": "You few young ones."
+        },
+        {
+          "term": "唔出声",
+          "meaning": "To say nothing",
+          "example": "Grandma looks at the sky and says nothing."
+        }
+      ],
+      "dragon-4a": [
+        {
+          "term": "雨棚",
+          "meaning": "Rain shelter",
+          "example": "The rain shelter goes up."
+        },
+        {
+          "term": "舀饭",
+          "meaning": "To scoop rice into a bowl",
+          "example": "You scoop the first bowl of rice."
+        },
+        {
+          "term": "返来",
+          "meaning": "To come back",
+          "example": "People come back one after another."
+        }
+      ],
+      "dragon-4b": [
+        {
+          "term": "落足",
+          "meaning": "To rain for (a length of time)",
+          "example": "It rained for two whole hours."
+        },
+        {
+          "term": "凉了",
+          "meaning": "Gone cold",
+          "example": "The dishes have all gone cold."
+        },
+        {
+          "term": "热菜",
+          "meaning": "To heat the dishes up again",
+          "example": "You hurry to heat the dishes up."
+        }
+      ],
+      "dragon-e1": [
+        {
+          "term": "起筷",
+          "meaning": "To pick up the chopsticks and start eating",
+          "example": "Dozens of tables pick up their chopsticks together."
+        },
+        {
+          "term": "敬人",
+          "meaning": "To show respect to others",
+          "example": "You know to respect others first."
+        },
+        {
+          "term": "呢餐饭",
+          "meaning": "This meal",
+          "example": "Then this meal is a success."
+        }
+      ],
+      "dragon-e2": [
+        {
+          "term": "见牙唔见眼",
+          "meaning": "Grinning so wide you see the teeth, not the eyes",
+          "example": "He grins from ear to ear."
+        },
+        {
+          "term": "一围",
+          "meaning": "One table of guests",
+          "example": "In the corner there is still one table that hasn't started."
+        },
+        {
+          "term": "抬鼓",
+          "meaning": "To carry the dragon boat drum",
+          "example": "The uncle who helped carry the drum."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "The day before the Dragon Boat Festival, what does Grandma put you in charge of?",
+        "options": [
+          "The dragon boat feast",
+          "Rowing the dragon boat",
+          "Washing the ancestral hall"
+        ],
+        "hint": "At the start of the story, Grandma hands you a list."
+      },
+      {
+        "question": "The dragon boat leader says the rice must be what?",
+        "options": [
+          "Hot enough",
+          "Expensive enough",
+          "Plenty of it"
+        ],
+        "hint": "He says the rice doesn't need to be fancy."
+      },
+      {
+        "question": "What do both endings stress?",
+        "options": [
+          "Respect others first, and don't leave anyone out",
+          "The more it costs, the better",
+          "No feast if it rains"
+        ],
+        "hint": "Look at the last line of both endings."
+      }
+    ]
+  },
+  "qingming-hill": {
+    "sceneWords": {
+      "qingming-1": [
+        {
+          "term": "拜山",
+          "meaning": "To go up the hill and sweep the family graves",
+          "example": "On Qingming day, the whole family goes up the hill."
+        },
+        {
+          "term": "孭",
+          "meaning": "To carry on your back",
+          "example": "Do you remember, when you were little, Grandpa carried you up here on his back?"
+        },
+        {
+          "term": "湿滑",
+          "meaning": "Wet and slippery",
+          "example": "The mountain path is wet and slippery."
+        }
+      ],
+      "qingming-2a": [
+        {
+          "term": "木工",
+          "meaning": "Carpentry",
+          "example": "Grandpa used to do carpentry."
+        },
+        {
+          "term": "成条村",
+          "meaning": "The whole village",
+          "example": "He made the doors for the whole village."
+        },
+        {
+          "term": "整",
+          "meaning": "To make, to fix",
+          "example": "He made the doors for the whole village."
+        }
+      ],
+      "qingming-2b": [
+        {
+          "term": "描红",
+          "meaning": "To paint the carved words in red",
+          "example": "Mum says they need painting red again."
+        },
+        {
+          "term": "褪色",
+          "meaning": "Faded",
+          "example": "The faded words on the gravestone."
+        },
+        {
+          "term": "碑",
+          "meaning": "Gravestone",
+          "example": "You look at the faded words on the gravestone."
+        }
+      ],
+      "qingming-3": [
+        {
+          "term": "压纸",
+          "meaning": "To press paper money onto the grave",
+          "example": "Dad asks you to press the paper."
+        },
+        {
+          "term": "坟头",
+          "meaning": "The top of the grave",
+          "example": "Press the paper money onto the grave, one sheet at a time."
+        },
+        {
+          "term": "纸角",
+          "meaning": "The corner of the paper",
+          "example": "The wind blows and the corners of the paper lift."
+        }
+      ],
+      "qingming-4": [
+        {
+          "term": "烧肉",
+          "meaning": "Roast pork",
+          "example": "Mum cuts the roast pork."
+        },
+        {
+          "term": "甘蔗",
+          "meaning": "Sugarcane",
+          "example": "Dad peels the sugarcane."
+        },
+        {
+          "term": "摆低",
+          "meaning": "To set down",
+          "example": "The first piece is set down, as always."
+        }
+      ],
+      "qingming-5a": [
+        {
+          "term": "歪歪斜斜",
+          "meaning": "Crooked, not straight",
+          "example": "You peel it all crooked."
+        },
+        {
+          "term": "示范",
+          "meaning": "To show how it's done",
+          "example": "Dad takes the knife and slowly shows you."
+        },
+        {
+          "term": "黏黏的",
+          "meaning": "Sticky",
+          "example": "Sugarcane juice drips on your hand, sticky."
+        }
+      ],
+      "qingming-5b": [
+        {
+          "term": "碑脚",
+          "meaning": "The bottom of the gravestone",
+          "example": "You see a line of small words carved at the bottom of the stone."
+        },
+        {
+          "term": "冻",
+          "meaning": "Cold",
+          "example": "The stone is cold."
+        },
+        {
+          "term": "温度",
+          "meaning": "Warmth",
+          "example": "Yet the words seem to hold warmth."
+        }
+      ],
+      "qingming-e1": [
+        {
+          "term": "落山",
+          "meaning": "To go down the hill",
+          "example": "Going down the hill, Dad walks slowly."
+        },
+        {
+          "term": "纸灰",
+          "meaning": "The ash of burnt paper",
+          "example": "Paper ash rises, then slowly settles."
+        },
+        {
+          "term": "扶住",
+          "meaning": "To hold on to, to support",
+          "example": "You hold on to him."
+        }
+      ],
+      "qingming-e2": [
+        {
+          "term": "带路",
+          "meaning": "To lead the way",
+          "example": "Next year, you lead the way."
+        },
+        {
+          "term": "应承",
+          "meaning": "To promise",
+          "example": "You promise."
+        },
+        {
+          "term": "转角",
+          "meaning": "A turn in the path",
+          "example": "You remember every turn in your heart."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "This Qingming, who leads the way?",
+        "options": [
+          "Me",
+          "Dad",
+          "Mum"
+        ],
+        "hint": "It comes up at the start and again at the ending."
+      },
+      {
+        "question": "What does Mum take out the red paper and brush for?",
+        "options": [
+          "To paint the words red again",
+          "To write New Year couplets",
+          "To wrap something"
+        ],
+        "hint": "She says they need painting red again."
+      },
+      {
+        "question": "Why does Dad set the first piece of sugarcane down?",
+        "options": [
+          "The sweet part is for the ancestors",
+          "The sugarcane went bad",
+          "He is afraid someone will steal it"
+        ],
+        "hint": "He says, \"The sweet part is for the ancestors.\""
+      }
+    ]
+  },
+  "chen-clan-frieze": {
+    "sceneWords": {
+      "chen-1": [
+        {
+          "term": "灰塑",
+          "meaning": "Lingnan grey-clay sculpture, shaped on the roof ridges",
+          "example": "Rainwater seeps into the grey sculpture."
+        },
+        {
+          "term": "瓦脊",
+          "meaning": "The tiled ridge on the roof",
+          "example": "A crack has opened in the roof ridge of the Chen Clan Hall."
+        },
+        {
+          "term": "孭住",
+          "meaning": "To carry on your back",
+          "example": "You carry the clay bucket on your back."
+        }
+      ],
+      "chen-2a": [
+        {
+          "term": "灰匙",
+          "meaning": "A small plastering trowel",
+          "example": "The trowel goes in, and the old clay crumbles."
+        },
+        {
+          "term": "企唔稳",
+          "meaning": "Can't stand steady",
+          "example": "The wind is so strong you can't stand steady."
+        },
+        {
+          "term": "铜丝",
+          "meaning": "Copper wire used as the inner frame",
+          "example": "A strip of copper wire shows through."
+        }
+      ],
+      "chen-2b": [
+        {
+          "term": "揸住",
+          "meaning": "To hold",
+          "example": "You hold the brush."
+        },
+        {
+          "term": "功劳",
+          "meaning": "The credit, the achievement",
+          "example": "Once it's fixed, the credit goes to him."
+        },
+        {
+          "term": "半空",
+          "meaning": "In mid-air",
+          "example": "Your hand stops in mid-air."
+        }
+      ],
+      "chen-3": [
+        {
+          "term": "收唔切",
+          "meaning": "Couldn't get under cover in time",
+          "example": "The visitors downstairs who couldn't get in out of the rain."
+        },
+        {
+          "term": "一冲就散",
+          "meaning": "Washes away the moment water hits it",
+          "example": "Fresh clay hates water — one splash and it washes away."
+        },
+        {
+          "term": "游客",
+          "meaning": "Visitors",
+          "example": "The visitors downstairs who couldn't get in out of the rain."
+        }
+      ],
+      "chen-4a": [
+        {
+          "term": "白霜",
+          "meaning": "A film of white frost",
+          "example": "A film of white frost has formed on the clay."
+        },
+        {
+          "term": "批灰",
+          "meaning": "To skim on a layer of clay",
+          "example": "Now you need to skim on a thin layer."
+        },
+        {
+          "term": "手一抖",
+          "meaning": "Your hand shakes a little",
+          "example": "Your hand shakes and you lay it on too thick."
+        }
+      ],
+      "chen-4b": [
+        {
+          "term": "冒雨",
+          "meaning": "To work in the rain",
+          "example": "You keep working in the rain."
+        },
+        {
+          "term": "鱼鳞",
+          "meaning": "Fish scales",
+          "example": "It looks like fish scales."
+        },
+        {
+          "term": "由得佢",
+          "meaning": "To leave it be",
+          "example": "Leave it — from far away nobody notices."
+        }
+      ],
+      "chen-5": [
+        {
+          "term": "闹",
+          "meaning": "To scold",
+          "example": "He doesn't scold you."
+        },
+        {
+          "term": "边度",
+          "meaning": "Where",
+          "example": "Where do you think it's still not good enough?"
+        },
+        {
+          "term": "扫过",
+          "meaning": "To brush lightly over",
+          "example": "His fingers brush lightly over the clay."
+        }
+      ],
+      "chen-e1": [
+        {
+          "term": "落款",
+          "meaning": "To sign your name",
+          "example": "When you sign, you write down the master's name."
+        },
+        {
+          "term": "骨架",
+          "meaning": "The inner frame that holds it up",
+          "example": "With the frame in place, the clay can stand firm."
+        },
+        {
+          "term": "独立",
+          "meaning": "On your own",
+          "example": "You repair another roof ridge on your own."
+        }
+      ],
+      "chen-e2": [
+        {
+          "term": "学得识",
+          "meaning": "To really learn it",
+          "example": "Only when you admit it's not enough can you really learn."
+        },
+        {
+          "term": "承认",
+          "meaning": "To admit",
+          "example": "Willing to admit it's not enough."
+        },
+        {
+          "term": "旧玉",
+          "meaning": "Old jade",
+          "example": "Like a piece of old jade."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "The master is ill — what must you repair alone?",
+        "options": [
+          "The roof ridge of the Chen Clan Hall",
+          "A wooden door",
+          "A wall"
+        ],
+        "hint": "The story starts with a crack in the roof ridge."
+      },
+      {
+        "question": "What does the copper wire inside the sculpture do?",
+        "options": [
+          "It is the frame",
+          "It is decoration",
+          "It drains water"
+        ],
+        "hint": "The master says the wire must never be pulled out."
+      },
+      {
+        "question": "What does the master value most in you?",
+        "options": [
+          "Being honest that it's not enough, and willing to fix it",
+          "Working fast",
+          "Being good at bargaining"
+        ],
+        "hint": "Look at what the master says in both endings."
+      }
+    ]
+  },
+  "guangxiao-bodhi": {
+    "sceneWords": {
+      "guang-1": [
+        {
+          "term": "沙弥",
+          "meaning": "A young monk",
+          "example": "You are the young monk at Guangxiao Temple."
+        },
+        {
+          "term": "菩提叶",
+          "meaning": "Leaves of the bodhi tree",
+          "example": "You carry a bamboo broom and sweep the bodhi leaves."
+        },
+        {
+          "term": "扫帚",
+          "meaning": "Broom",
+          "example": "You carry a bamboo broom."
+        }
+      ],
+      "guang-2a": [
+        {
+          "term": "传落嚟",
+          "meaning": "Handed down",
+          "example": "Is it really the same tree that was handed down?"
+        },
+        {
+          "term": "讲得清",
+          "meaning": "Can say for sure",
+          "example": "No one can say for sure if it's true."
+        },
+        {
+          "term": "枯过",
+          "meaning": "Has withered before",
+          "example": "The bodhi tree has withered and grown again."
+        }
+      ],
+      "guang-2b": [
+        {
+          "term": "合埋眼",
+          "meaning": "To close your eyes",
+          "example": "He doesn't brush it away; he just closes his eyes."
+        },
+        {
+          "term": "乜嘢",
+          "meaning": "What",
+          "example": "What he is waiting for."
+        },
+        {
+          "term": "肩上",
+          "meaning": "On his shoulder",
+          "example": "A leaf lands on the visitor's shoulder."
+        }
+      ],
+      "guang-3": [
+        {
+          "term": "幡旗",
+          "meaning": "The banners at the temple",
+          "example": "The master points to the banners in front of the hall."
+        },
+        {
+          "term": "仁者",
+          "meaning": "A respectful way of saying \"you\"",
+          "example": "It is your mind that moves."
+        },
+        {
+          "term": "心动",
+          "meaning": "The mind moving",
+          "example": "It is your mind that moves."
+        }
+      ],
+      "guang-4": [
+        {
+          "term": "旧相",
+          "meaning": "An old photo",
+          "example": "The visitor takes an old photo from his bag."
+        },
+        {
+          "term": "摸出",
+          "meaning": "To take out",
+          "example": "He takes an old photo from his bag."
+        },
+        {
+          "term": "返来",
+          "meaning": "To come back",
+          "example": "Before Grandpa passed away, he always wanted to come back."
+        }
+      ],
+      "guang-5a": [
+        {
+          "term": "沙沙响",
+          "meaning": "To rustle",
+          "example": "When the wind blows, the leaves rustle."
+        },
+        {
+          "term": "无人讲嘢",
+          "meaning": "No one says a word",
+          "example": "You sit under the tree and no one says a word."
+        },
+        {
+          "term": "咳",
+          "meaning": "To cough",
+          "example": "It sounds as if Grandpa is coughing."
+        }
+      ],
+      "guang-5b": [
+        {
+          "term": "册子",
+          "meaning": "A booklet",
+          "example": "The booklet in the guest hall is full of names."
+        },
+        {
+          "term": "褪色",
+          "meaning": "Faded",
+          "example": "Some have already faded."
+        },
+        {
+          "term": "画咗",
+          "meaning": "Has drawn",
+          "example": "Under the name, someone has drawn a leaf."
+        }
+      ],
+      "guang-6": [
+        {
+          "term": "执起",
+          "meaning": "To pick up",
+          "example": "He picks up a leaf under the tree."
+        },
+        {
+          "term": "相簿",
+          "meaning": "Photo album",
+          "example": "He tucks it into a photo album."
+        },
+        {
+          "term": "睇树啦",
+          "meaning": "\"Let's see how the tree is\" — meaning, leave it to fate",
+          "example": "You ask if he will come back next year, and he says, \"We'll see how the tree is.\""
+        }
+      ],
+      "guang-e1": [
+        {
+          "term": "山门",
+          "meaning": "The main gate of the temple",
+          "example": "You walk him to the temple gate."
+        },
+        {
+          "term": "文物",
+          "meaning": "A relic, a museum piece",
+          "example": "The bodhi tree is not a museum piece."
+        },
+        {
+          "term": "牵住",
+          "meaning": "To hold on to, to link",
+          "example": "It is a thread that holds on to people who have gone far away."
+        }
+      ],
+      "guang-e2": [
+        {
+          "term": "新叶",
+          "meaning": "New leaves",
+          "example": "You find new leaves at the top of the tree."
+        },
+        {
+          "term": "生气",
+          "meaning": "Liveliness, life",
+          "example": "Only then does the temple feel alive."
+        },
+        {
+          "term": "静",
+          "meaning": "Quiet",
+          "example": "You sweep more slowly, and more quietly."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What do you do at the temple every day?",
+        "options": [
+          "Sweep bodhi leaves",
+          "Sell incense",
+          "Ring the bell"
+        ],
+        "hint": "The first scene tells you your daily job."
+      },
+      {
+        "question": "Why does the visitor sit under the tree and refuse to leave?",
+        "options": [
+          "His grandfather was here, and he wanted to see it again",
+          "He is lost",
+          "He is waiting for someone to bring him food"
+        ],
+        "hint": "In the fourth scene he takes out an old photo."
+      },
+      {
+        "question": "The master asks, \"Is it the wind or the banner that moves?\" How does the visitor answer?",
+        "options": [
+          "It is your mind that moves",
+          "The wind",
+          "The banner"
+        ],
+        "hint": "In the third scene he picks up the master's words."
+      }
+    ]
+  },
+  "ding-ding-zyun": {
+    "sceneWords": {
+      "ding-1": [
+        {
+          "term": "氹氹转",
+          "meaning": "To spin round and round",
+          "example": "The older kids make a circle, singing \"Spin Round and Round.\""
+        },
+        {
+          "term": "围圈",
+          "meaning": "To make a circle",
+          "example": "Everyone makes a circle, holding hands."
+        }
+      ],
+      "ding-2a": [
+        {
+          "term": "炒米饼",
+          "meaning": "A traditional puffed-rice cake",
+          "example": "Spin round and round, chrysanthemum garden, rice cakes, sticky-rice balls."
+        },
+        {
+          "term": "糯米圆",
+          "meaning": "Little balls made of sticky rice",
+          "example": "Puffed-rice cakes, sticky-rice balls."
+        }
+      ],
+      "ding-2b": [
+        {
+          "term": "细过",
+          "meaning": "Younger than",
+          "example": "There is a child younger than you."
+        },
+        {
+          "term": "唔敢",
+          "meaning": "Not daring to",
+          "example": "He wants to join in but doesn't dare."
+        }
+      ],
+      "ding-3a": [
+        {
+          "term": "漏低",
+          "meaning": "To leave out",
+          "example": "Make a circle, and nobody is left out."
+        },
+        {
+          "term": "拍手",
+          "meaning": "To clap",
+          "example": "Grandma claps along beside you."
+        }
+      ],
+      "ding-3b": [
+        {
+          "term": "树荫",
+          "meaning": "The cool shade under a tree",
+          "example": "You and Grandma sit in the shade of the tree."
+        },
+        {
+          "term": "几时",
+          "meaning": "Any time, when",
+          "example": "You can join in any time."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What are the children doing in a circle on the grass?",
+        "options": [
+          "Spinning and singing",
+          "Playing hide-and-seek",
+          "Playing football"
+        ],
+        "hint": "The story begins with them singing \"Spin Round and Round.\""
+      },
+      {
+        "question": "What does Grandma say a circle is like?",
+        "options": [
+          "It has no head and no tail",
+          "Only two people can stand in it",
+          "You must run very fast"
+        ],
+        "hint": "Look at what Grandma says in the second ending."
+      },
+      {
+        "question": "How can nobody be left out?",
+        "options": [
+          "Make a circle and hold out your hands",
+          "Play all alone",
+          "Only play with people you know"
+        ],
+        "hint": "What does Grandma praise you for in the ending?"
+      }
+    ]
+  },
+  "dim-cung-cung": {
+    "sceneWords": {
+      "dim-1": [
+        {
+          "term": "点虫虫",
+          "meaning": "A tapping game grown-ups play with little ones' fingers",
+          "example": "Mum taps your palm gently with her finger."
+        },
+        {
+          "term": "荔枝基",
+          "meaning": "The lychee grove",
+          "example": "Tap, tap, buggy, fly away to the lychee grove."
+        }
+      ],
+      "dim-2a": [
+        {
+          "term": "跷高脚",
+          "meaning": "To tiptoe",
+          "example": "You tiptoe over slowly."
+        },
+        {
+          "term": "薄薄哋",
+          "meaning": "Thin and light",
+          "example": "The little bug's wings are thin and light."
+        }
+      ],
+      "dim-2b": [
+        {
+          "term": "郁",
+          "meaning": "To move",
+          "example": "Your finger moves more and more smoothly."
+        },
+        {
+          "term": "手指公",
+          "meaning": "Thumb",
+          "example": "The thumb is the biggest."
+        }
+      ],
+      "dim-3a": [
+        {
+          "term": "振翅",
+          "meaning": "To flap its wings",
+          "example": "The bug flaps its wings and flies over the wall."
+        },
+        {
+          "term": "第日",
+          "meaning": "Another day, some other time",
+          "example": "Come and play again another day."
+        }
+      ],
+      "dim-3b": [
+        {
+          "term": "扑",
+          "meaning": "To reach out and grab",
+          "example": "You reach out and grab."
+        },
+        {
+          "term": "翼",
+          "meaning": "Wings",
+          "example": "The little bug has wings."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Where does Mum tap when she sings \"Tap, Tap, Buggy\"?",
+        "options": [
+          "Your palm",
+          "Your forehead",
+          "Your foot"
+        ],
+        "hint": "The first scene shows what Mum does."
+      },
+      {
+        "question": "Where does the little bug land?",
+        "options": [
+          "On a lychee leaf",
+          "On the dinner table",
+          "On the windowsill"
+        ],
+        "hint": "In the second scene the bug flies down and lands on a leaf."
+      },
+      {
+        "question": "After the bug flies away, what does Mum suggest?",
+        "options": [
+          "Play the finger game again",
+          "Go and chase the bug",
+          "Go to sleep"
+        ],
+        "hint": "Look at the second ending."
+      }
+    ]
+  },
+  "pai-pai-sit-fan-gwo": {
+    "sceneWords": {
+      "pai-1": [
+        {
+          "term": "粉果",
+          "meaning": "Fun guo, a steamed Cantonese dumpling with see-through skin and filling",
+          "example": "A steamer basket of fun guo, shiny and see-through."
+        },
+        {
+          "term": "蒸笼",
+          "meaning": "The bamboo steamer used for dim sum",
+          "example": "Grandma lifts the steamer lid."
+        }
+      ],
+      "pai-2a": [
+        {
+          "term": "队尾",
+          "meaning": "The end of the line",
+          "example": "You stand at the end of the line."
+        },
+        {
+          "term": "嘈",
+          "meaning": "Noisy",
+          "example": "The people behind start getting noisy."
+        }
+      ],
+      "pai-2b": [
+        {
+          "term": "分",
+          "meaning": "To hand out, to share",
+          "example": "You help Grandma hand them out one by one."
+        },
+        {
+          "term": "仲有",
+          "meaning": "There are still",
+          "example": "There are still two people who haven't got theirs."
+        }
+      ],
+      "pai-3a": [
+        {
+          "term": "啱啱好",
+          "meaning": "Just right",
+          "example": "Two each — just right."
+        },
+        {
+          "term": "热辣辣",
+          "meaning": "Piping hot",
+          "example": "The fun guo are piping hot."
+        }
+      ],
+      "pai-3b": [
+        {
+          "term": "急唔嚟",
+          "meaning": "You can't hurry it",
+          "example": "Fun guo have to steam all the way through — you can't hurry it."
+        },
+        {
+          "term": "一阵",
+          "meaning": "A little while",
+          "example": "Wait a little while longer."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "How many fun guo are in one steamer basket?",
+        "options": [
+          "Twelve",
+          "Five",
+          "Twenty"
+        ],
+        "hint": "You counted them in the first scene."
+      },
+      {
+        "question": "How many did the child in front of you take?",
+        "options": [
+          "Three",
+          "Two",
+          "One"
+        ],
+        "hint": "He reached out and took three at once."
+      },
+      {
+        "question": "When there aren't enough fun guo, what does Grandma do?",
+        "options": [
+          "Steams another basket",
+          "Tells everyone not to eat",
+          "Doesn't eat any herself"
+        ],
+        "hint": "Look at the second ending."
+      }
+    ]
+  },
+  "lok-jyu-daai": {
+    "sceneWords": {
+      "rain-1": [
+        {
+          "term": "落雨大",
+          "meaning": "It's raining hard",
+          "example": "Heavy rain, and the street is flooded."
+        },
+        {
+          "term": "骑楼",
+          "meaning": "Arcade — a covered walkway under the buildings",
+          "example": "There's an arcade ahead, so we can shelter from the rain."
+        }
+      ],
+      "rain-2a": [
+        {
+          "term": "水氹",
+          "meaning": "Puddle",
+          "example": "You jump over puddle after puddle."
+        },
+        {
+          "term": "担",
+          "meaning": "To carry on a shoulder pole",
+          "example": "Grandma carries two baskets of vegetables on a pole."
+        }
+      ],
+      "rain-2b": [
+        {
+          "term": "瓦檐",
+          "meaning": "The edge of the tiled roof",
+          "example": "Rainwater runs down from the edge of the roof."
+        },
+        {
+          "term": "水帘",
+          "meaning": "A curtain of water",
+          "example": "The rain looks like a curtain of water."
+        }
+      ],
+      "rain-3a": [
+        {
+          "term": "天虹",
+          "meaning": "Rainbow",
+          "example": "A rainbow appears at the edge of the sky."
+        },
+        {
+          "term": "细",
+          "meaning": "Small, to get lighter",
+          "example": "The rain slowly gets lighter."
+        }
+      ],
+      "rain-3b": [
+        {
+          "term": "雨点",
+          "meaning": "Raindrops",
+          "example": "You sit under the arcade and count the raindrops."
+        },
+        {
+          "term": "真系",
+          "meaning": "Really",
+          "example": "The sound of the rain really has got softer."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "When it rains, where does Mum take you to shelter?",
+        "options": [
+          "Under the arcade",
+          "Under a tree",
+          "The shopping mall"
+        ],
+        "hint": "Mum says, \"There's an arcade ahead.\""
+      },
+      {
+        "question": "Where does the water under the arcade come down from?",
+        "options": [
+          "The edge of the roof",
+          "A tap",
+          "A water pipe"
+        ],
+        "hint": "The rainwater runs down along the edge of the roof."
+      },
+      {
+        "question": "After the rain got lighter, what appeared at the edge of the sky?",
+        "options": [
+          "A rainbow",
+          "The moon",
+          "A sun shower"
+        ],
+        "hint": "Look at the first ending."
+      }
+    ]
+  },
+  "nin-jaa-baat-sai-laat-taai": {
+    "sceneWords": {
+      "nin-1": [
+        {
+          "term": "年廿八",
+          "meaning": "The 28th day of the 12th lunar month",
+          "example": "On the 28th, the whole house is in a mess."
+        },
+        {
+          "term": "洗邋遢",
+          "meaning": "The big New Year clean-up",
+          "example": "On the 28th, we do the big clean-up."
+        }
+      ],
+      "nin-2a": [
+        {
+          "term": "窗花",
+          "meaning": "Paper-cut decoration stuck on the window",
+          "example": "Last year's window paper-cut has already faded."
+        },
+        {
+          "term": "挥春",
+          "meaning": "Red paper with lucky New Year words",
+          "example": "Put up new spring couplets."
+        }
+      ],
+      "nin-2b": [
+        {
+          "term": "利是封",
+          "meaning": "Red envelope",
+          "example": "There is a pile of red envelopes under the table."
+        },
+        {
+          "term": "唔舍得",
+          "meaning": "Can't bear to part with it",
+          "example": "You look at the little wooden horse and can't bear to throw it away."
+        }
+      ],
+      "nin-3a": [
+        {
+          "term": "正正",
+          "meaning": "Straight and neat",
+          "example": "The new couplets are pasted up straight and neat."
+        },
+        {
+          "term": "精神啲",
+          "meaning": "A bit brighter, more full of energy",
+          "example": "With a clean home, people feel brighter too."
+        }
+      ],
+      "nin-3b": [
+        {
+          "term": "铁盒",
+          "meaning": "A tin box",
+          "example": "You find a tin box and put the old things in it."
+        },
+        {
+          "term": "阻地方",
+          "meaning": "To take up space",
+          "example": "Old things don't have to take up space."
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "On the 28th, what are you in charge of?",
+        "options": [
+          "Wiping the windows",
+          "Cooking the meals",
+          "Buying flowers"
+        ],
+        "hint": "Grandma hands you a cloth."
+      },
+      {
+        "question": "What has happened to the old paper-cuts on the window?",
+        "options": [
+          "They have faded and the corners curl up",
+          "They are still new",
+          "Someone stole them"
+        ],
+        "hint": "You see it in the second scene while wiping the windows."
+      },
+      {
+        "question": "What does Grandma say you can do with old things?",
+        "options": [
+          "Keep the stories in them",
+          "Burn them all",
+          "You must throw them away"
+        ],
+        "hint": "Look at the second ending."
+      }
+    ]
+  }
+}

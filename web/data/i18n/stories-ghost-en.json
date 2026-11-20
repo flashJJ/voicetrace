@@ -1,0 +1,463 @@
+{
+  "eagle-orchid": {
+    "title": "The Eagle-Claw Orchid by the Well",
+    "subtitle": "Hoi Tong Monastery · A story of a wrong and a flower",
+    "quote": "Some wrongs, left unspoken, bloom into a flower.",
+    "intro": "There is a saying at Hoi Tong Monastery: before there was the monastery, there was the eagle-claw orchid. Tonight you are alone in the temple, copying sutras.",
+    "dialect": "Cantonese · Haizhu, Guangzhou",
+    "type": "Ghost story · Adapted from folk legend",
+    "duration": "4 min",
+    "scenes": {
+      "eagle-1": {
+        "title": "Weeping by the Well",
+        "text": "In the middle of the night, you are the only one left in the monastery. You hear a woman weeping softly by the well in the back courtyard. Moonlight falls across the well mouth; the water is so deep you cannot see the bottom."
+      },
+      "eagle-2a": {
+        "title": "Lanxiang",
+        "text": "You walk to the well and see a woman in a blue cotton gown. She says her name is Lanxiang; she was falsely accused of stealing a jade clasp and threw herself into the well. She only wants someone to believe her."
+      },
+      "eagle-2b": {
+        "title": "The Night-Watch Monk's Story",
+        "text": "The night-watch monk sighs and says that decades ago a maidservant named Lanxiang was falsely accused by her master of stealing a jade clasp, and drowned herself in the well. Afterwards an eagle-claw orchid grew above the well."
+      },
+      "eagle-3a": {
+        "title": "The Orchid Blooms",
+        "text": "The next day, an eagle-claw orchid really does bloom by the well. You tell Lanxiang's story to the people of the monastery, and they raise a small stone tablet for her.",
+        "endingText": "Some wrongs, left unspoken, bloom into a flower."
+      },
+      "eagle-3b": {
+        "title": "The Well Falls Silent",
+        "text": "You urge Lanxiang to let go. The weeping stops and the well water settles back into stillness. The next day, all that is new by the well is an eagle-claw orchid, its petals beaded with dew that looks like tears.",
+        "endingText": "Some stories have no answer, but they still deserve to be remembered."
+      }
+    },
+    "choices": {
+      "eagle-1": ["Walk closer to the well", "Go find the night-watch monk"],
+      "eagle-2a": ["Promise to find out the truth", "Urge her to let go and stop lingering by the well"],
+      "eagle-2b": ["Go take a look at the well", "Leave it until tomorrow"]
+    },
+    "glossary": {
+      "海幢寺": {
+        "meaning": "A thousand-year-old temple in Haizhu, Guangzhou",
+        "note": "'Before there was Hoi Tong Monastery, there was the eagle-claw orchid' is a Guangzhou saying."
+      },
+      "井口": {
+        "meaning": "The opening of a well",
+        "note": "In the old days, temples and homes alike drew their water from wells."
+      },
+      "青布衫": {
+        "meaning": "A blue cotton gown",
+        "note": "Common dress for a maidservant in the old days."
+      },
+      "玉扣": {
+        "meaning": "A jade button or ornament",
+        "note": "The key object in this story."
+      },
+      "守夜": {
+        "meaning": "Keeping watch through the night",
+        "note": "Someone at the temple took turns keeping watch."
+      },
+      "鹰爪兰": {
+        "meaning": "A celebrated plant of the temple",
+        "note": "Legend says it grew from Lanxiang."
+      },
+      "立碑": {
+        "meaning": "To raise a stone tablet",
+        "note": "In the old days, tablets were set up to record people and events."
+      },
+      "露水": {
+        "meaning": "Dew",
+        "note": "Cantonese also says 'mou seoi', mist water, for dew."
+      }
+    }
+  },
+  "golden-flower-lake": {
+    "title": "The Golden Flower in the Fairy Lake",
+    "subtitle": "Lady Golden Flower · A birth at midnight",
+    "quote": "When a lamp burns on the lake, do not answer lightly.",
+    "intro": "You are a midwife. Tonight someone knocks at your door, asking you to attend a lady in difficult labour.",
+    "dialect": "Cantonese · Huangpu, Guangzhou",
+    "type": "Ghost story · Adapted from folk legend",
+    "duration": "4 min",
+    "scenes": {
+      "jinhua-1": {
+        "title": "A Knock at Midnight",
+        "text": "In the middle of the night someone pounds on your door: the governor's wife is in difficult labour, and you are asked to attend. You take up your lantern and step out; there is not a soul on the street."
+      },
+      "jinhua-2a": {
+        "title": "A White Shape by the Lake",
+        "text": "At the lake you see a woman in white standing on the surface of the water, holding a lamp of agarwood. She says: 'Follow me. Mother and child will be safe.'"
+      },
+      "jinhua-2b": {
+        "title": "The Name Jinhua",
+        "text": "The messenger says the lady dreamed of an old man who told her to send for 'Miss Jinhua'. A dozen women in the city are named Jinhua, but you are the only one who knows midwifery."
+      },
+      "jinhua-3a": {
+        "title": "The Agarwood Image",
+        "text": "You enter the residence, and the lady safely gives birth to a boy. By the bed there now stands a small agarwood figure whose face is much like the woman by the lake. People call her Lady Golden Flower, Protector of Children and Bringer of Fortune.",
+        "endingText": "Some gods are called forth by people in their hardest hour."
+      },
+      "jinhua-3b": {
+        "title": "The Lake Lamp Goes Out",
+        "text": "You stop and recite sutras, and the white shape slowly fades. The next day the lady gives birth to a girl, and mother and child are safe. By the lake there is a lamp that no one lit.",
+        "endingText": "Believe it or not, mother and child are both safe."
+      }
+    },
+    "choices": {
+      "jinhua-1": ["Follow him", "Ask which household it is"],
+      "jinhua-2a": ["Follow the white shape", "Stop and recite sutras"],
+      "jinhua-2b": ["Get into the sedan chair", "Bring incense and candles along"]
+    },
+    "glossary": {
+      "接生": {
+        "meaning": "To help a woman give birth",
+        "note": "Old villages usually had a midwife among them."
+      },
+      "巡抚": {
+        "meaning": "A senior provincial official",
+        "note": "An office of the Ming and Qing dynasties."
+      },
+      "沉香": {
+        "meaning": "Precious agarwood",
+        "note": "Legend says the statue of Lady Golden Flower is carved from agarwood."
+      },
+      "企": {
+        "meaning": "To stand",
+        "note": "A common Cantonese word."
+      },
+      "老者": {
+        "meaning": "An old man",
+        "note": "A literary word."
+      },
+      "识得": {
+        "meaning": "To know how to, to be able",
+        "note": "A common Cantonese word."
+      },
+      "保子惠福夫人": {
+        "meaning": "The title of Lady Golden Flower",
+        "note": "Folk belief regards her as a guardian of childbirth."
+      },
+      "念经": {
+        "meaning": "To recite scriptures",
+        "note": "In the old days people recited sutras to steady themselves when strange things happened."
+      }
+    }
+  },
+  "dragon-spring": {
+    "title": "The Dragon Palace Spring",
+    "subtitle": "Conghua Hot Springs · The silver pot behind the hill",
+    "quote": "Hot spring water is not always the work of the earth.",
+    "intro": "Grandfather is ill, and the villagers say the hot spring behind the hill can cure him. You climb the hill at midnight and find a silver pot.",
+    "dialect": "Cantonese · Conghua, Guangzhou",
+    "type": "Ghost story · Adapted from folk legend",
+    "duration": "4 min",
+    "scenes": {
+      "dragon-1": {
+        "title": "White Vapour Behind the Hill",
+        "text": "At midnight the white vapour behind the hill lies thick. Parting the grass, you see a silver pot, its water boiling over and over, and beside it sits an old herb gatherer."
+      },
+      "dragon-2a": {
+        "title": "Uncle Xu",
+        "text": "The old man says his surname is Xu and that he gathers herbs. When plague swept the land, a fairy gave him a silver pot, and he boiled spring water to relieve the people. Later a local bully came to seize it, and the azure dragon kept him in the dragon palace."
+      },
+      "dragon-2b": {
+        "title": "The Silver Pot Vanishes",
+        "text": "You reach out to fill your flask, and the silver pot suddenly sinks into the ground. The white vapour clears, and the shadow of an azure dragon watches you from the water."
+      },
+      "dragon-3a": {
+        "title": "The Springs Break Through",
+        "text": "You help Uncle Xu guard the silver pot. The next day springs gush out at the foot of the hill. The villagers use the water to treat their illnesses, and Grandfather recovers as well.",
+        "endingText": "Some warmth is boiled for you by someone underground."
+      },
+      "dragon-3b": {
+        "title": "A Flask of Spring Water",
+        "text": "Uncle Xu ladles out a flask of spring water for you. 'Healing takes time,' he says. You carry it home; Grandfather drinks, and his cough eases.",
+        "endingText": "The spring does not speak, but it remembers everyone who comes to draw water."
+      }
+    },
+    "choices": {
+      "dragon-1": ["Ask the old man for spring water", "Secretly fill a flask"],
+      "dragon-2a": ["Help Uncle Xu guard the silver pot", "Ask how to save Grandfather"],
+      "dragon-2b": ["Apologise", "Run"]
+    },
+    "glossary": {
+      "白气": {
+        "meaning": "White steam or vapour",
+        "note": "Common near hot springs."
+      },
+      "采药": {
+        "meaning": "To gather medicinal herbs in the hills",
+        "note": "A common trade in old villages."
+      },
+      "瘟疫": {
+        "meaning": "Plague, epidemic",
+        "note": "The old term for a sweeping infectious disease."
+      },
+      "济世": {
+        "meaning": "To relieve the world",
+        "note": "Often used of healers."
+      },
+      "沉": {
+        "meaning": "To sink",
+        "note": "Pronounced cam4 in Cantonese."
+      },
+      "望住": {
+        "meaning": "To look at, to watch",
+        "note": "A common Cantonese phrase."
+      },
+      "股股": {
+        "meaning": "In gushing streams",
+        "note": "Describes water flowing without pause."
+      },
+      "舀": {
+        "meaning": "To ladle out",
+        "note": "Pronounced jiu2 in Cantonese."
+      }
+    }
+  },
+  "herbal-tea-night": {
+    "title": "The Night Shift at the Herbal Tea Shop",
+    "subtitle": "Xiguan · An old shop's last customer",
+    "quote": "Bitter tea clears the mind; it does not clear a debt.",
+    "intro": "You have taken over Grandfather's herbal tea shop. On your first night shift, at three in the morning, someone knocks.",
+    "dialect": "Cantonese · Liwan, Guangzhou",
+    "type": "Ghost story · Urban legend",
+    "duration": "7 min",
+    "scenes": {
+      "tea-1": {
+        "title": "Three in the Morning",
+        "text": "An old shop in Xiguan; half the bulbs in the sign have gone dead. You doze over the counter, and then, knock, knock, knock, someone taps on the wooden door, very slowly."
+      },
+      "tea-2a": {
+        "title": "The Customer in White",
+        "text": "A woman stands outside the door, white dress, white shoes, her hair wet enough to drip. 'One bowl of twenty-four-flavour tea, please,' she says. Her voice is very soft."
+      },
+      "tea-2b": {
+        "title": "Water Under the Door",
+        "text": "You say the shop is closed, and outside there is a moment of silence. Then water seeps in beneath the door, spreading slowly to the foot of the counter. You catch the faint smell of river water."
+      },
+      "tea-3": {
+        "title": "The Old Photograph on the Wall",
+        "text": "You turn to fetch a bowl and see the old photograph on the wall: Grandfather as a young man standing in the shop, and beside him a woman in white, exactly as she looks now."
+      },
+      "tea-4a": {
+        "title": "The Hand in the Photograph",
+        "text": "You set the photograph down. The woman reaches out and touches the frame, her fingertip resting on Grandfather's face. 'He owes me a bowl of tea,' she says softly. 'He has owed it for sixty years.'"
+      },
+      "tea-4b": {
+        "title": "The Shadow in the Bowl",
+        "text": "You set the tea on the table. The woman does not drink; she only stares into the bowl. In the bottom of it another scene is reflected: river water, a wooden bridge, a hand reaching up for help."
+      },
+      "tea-5": {
+        "title": "Grandfather's Ledger",
+        "text": "You open the old ledger kept under the counter. On the last page it says: 'Some year, some month, a fall from the bridge. Too late to save.' Below it is a drawing of a bowl of tea."
+      },
+      "tea-e1": {
+        "title": "Ending · One Bowl Repaid",
+        "text": "You boil water again, fill a bowl to the brim and set it by the door. The next day the bowl is empty, and in the photograph on the wall the woman seems to be smiling.",
+        "endingText": "Bitter tea clears the mind; it does not clear a debt."
+      },
+      "tea-e2": {
+        "title": "Ending · No More Night Shifts",
+        "text": "You close the ledger, and the next day you have the old sign taken down. After the shop is sublet, the neighbours say that at midnight a bowl of tea is still set out by the door.",
+        "endingText": "Some debts are not yours, yet someone will wait for you to pay them."
+      }
+    },
+    "choices": {
+      "tea-1": ["Open the door and serve", "Say the shop is closed"],
+      "tea-2a": ["Ladle a bowl and carry it over", "Ask whether she lives nearby"],
+      "tea-2b": ["Open the door and look", "Fetch the mop and wipe it up"],
+      "tea-3": ["Take down the photo and ask her", "Pretend you saw nothing and serve the tea"],
+      "tea-4a": ["Ask what happened all those years ago", "Pour her a bowl at once"],
+      "tea-4b": ["Ask what that scene was", "Move the bowl away"],
+      "tea-5": ["Follow the ledger and repay that bowl of tea", "Close the ledger and stop looking"]
+    },
+    "glossary": {
+      "凉茶铺": {
+        "meaning": "A shop selling herbal tea",
+        "note": "Common on the streets of Lingnan."
+      },
+      "打瞌睡": {
+        "meaning": "To doze off",
+        "note": "Cantonese colloquial."
+      },
+      "廿四味": {
+        "meaning": "A bitter twenty-four-flavour herbal tea",
+        "note": "'Twenty' is pronounced jaa6 in Cantonese."
+      },
+      "唔该": {
+        "meaning": "Thank you, excuse me",
+        "note": "A common Cantonese courtesy."
+      },
+      "渗入": {
+        "meaning": "To seep in",
+        "note": "A literary word."
+      },
+      "一滩水": {
+        "meaning": "A puddle of water",
+        "note": "Cantonese commonly says 'jat taan seoi'."
+      },
+      "后生": {
+        "meaning": "Young",
+        "note": "A common Cantonese word."
+      },
+      "欠": {
+        "meaning": "To owe",
+        "note": "In Cantonese it also carries the sense of a debt unpaid."
+      },
+      "映出": {
+        "meaning": "To be reflected",
+        "note": "In Cantonese 'jing' means to mirror."
+      },
+      "救唔切": {
+        "meaning": "Too late to save",
+        "note": "'Tsit' means in time."
+      },
+      "账本": {
+        "meaning": "An account ledger",
+        "note": "Common in old shops."
+      },
+      "煲水": {
+        "meaning": "To boil water",
+        "note": "In Cantonese 'bou' means to simmer or cook."
+      },
+      "转租": {
+        "meaning": "To sublet",
+        "note": "Common for shops."
+      }
+    }
+  },
+  "litchi-bay-ghost": {
+    "title": "The Drowned Woman of Lychee Bay",
+    "subtitle": "Lychee Bay · The boatman's last run",
+    "quote": "If a voice calls you from under the water, do not answer.",
+    "intro": "You pole a small boat in Lychee Bay. On the last run before you tie up, fog rises on the river, and a woman in red waves to you from the bank.",
+    "dialect": "Cantonese · Liwan, Guangzhou",
+    "type": "Ghost story · Adapted from folk legend",
+    "duration": "8 min",
+    "scenes": {
+      "litchi-1": {
+        "title": "The Last Run",
+        "text": "The night watch has already passed. You pole back toward the mouth of the creek. Fog clings to the water and the lychee trees on both banks stand black. On the shore a woman in red raises her hand, once, and again."
+      },
+      "litchi-2a": {
+        "title": "Red at the Bow",
+        "text": "The woman boards and names no destination, only 'forward'. You pole on a while and realise the bow is impossibly light, as though no one were aboard at all."
+      },
+      "litchi-2b": {
+        "title": "Water Behind You",
+        "text": "You pole out a dozen yards when a splash sounds behind you, as if someone has fallen in. You turn: the woman in red is already standing at the stern, her hair dripping."
+      },
+      "litchi-3": {
+        "title": "A Lamp Beneath the Water",
+        "text": "In the middle of the river a small light glimmers through, as though a lamp were burning under the water. The woman speaks: 'My son is down there, waiting for me.' The hand on your oar grows damp with sweat."
+      },
+      "litchi-4a": {
+        "title": "The Hand in the Light",
+        "text": "You pole closer, and a child's hand reaches out of the light. The woman cries, 'Don't pull him! That is not my son!' You freeze, the oar resting on the surface of the water."
+      },
+      "litchi-4b": {
+        "title": "The Oar Snaps",
+        "text": "The moment you turn around, the oar snaps in two with a crack. The boat swings broadside and drifts with the current toward that point of light. The woman sits at the bow and says nothing more."
+      },
+      "litchi-5": {
+        "title": "The Second Boat in the Fog",
+        "text": "Another boat poles out of the fog, an old man aboard. He does not look at the woman at all; he speaks only to you: 'This creek must be crossed once a year, on this very day.'"
+      },
+      "litchi-6": {
+        "title": "Names on the Shore",
+        "text": "The two boats reach the bank. The woman steps ashore, walks to a lychee tree and vanishes. Beneath the tree stands an old wooden board bearing a few faded names, and one of them is your grandfather's."
+      },
+      "litchi-e1": {
+        "title": "Ending · The Last of the Year",
+        "text": "Your fingers find a line carved on the back of the board: 'The boatman ferries others, and ferries himself.' The next day you wash the boat clean and go on working the river.",
+        "endingText": "If a voice calls you from under the water, do not answer, unless you know what you are carrying."
+      },
+      "litchi-e2": {
+        "title": "Ending · No More Night Boats",
+        "text": "From then on you never take the boat out at night. Some people laugh at your superstition; you only smile. Every year on this day you light a stick of incense on the bank, for nothing else but to remember.",
+        "endingText": "Some sounds on the water are not meant to turn you back; they are meant to make you remember."
+      }
+    },
+    "choices": {
+      "litchi-1": ["Pole over and take her aboard", "Pretend not to see and keep going"],
+      "litchi-2a": ["Look down at the water", "Keep your eyes away and pole on"],
+      "litchi-2b": ["Ask who she is", "Pole quickly back to shore"],
+      "litchi-3": ["Do as she says and pole toward the light", "Turn around and ignore her"],
+      "litchi-4a": ["Draw back your hand and retreat", "Ask her: then whose child is it?"],
+      "litchi-4b": ["Paddle with your hands", "Shout for help"],
+      "litchi-5": ["Ask the old man where you are headed", "Follow the old man's boat"],
+      "litchi-6": ["Touch the wooden board", "Pole home and never speak of it"]
+    },
+    "glossary": {
+      "撑艇": {
+        "meaning": "To pole a boat",
+        "note": "Old Lychee Bay was a web of waterways, and boats were how people got around."
+      },
+      "涌口": {
+        "meaning": "The mouth of a creek",
+        "note": "'Chung' is how Cantonese reads the character for a creek."
+      },
+      "去处": {
+        "meaning": "A destination",
+        "note": "A literary word; spoken Cantonese usually says 'heoi bin'."
+      },
+      "离谱": {
+        "meaning": "Absurd, beyond reason",
+        "note": "A common Cantonese phrase."
+      },
+      "丈": {
+        "meaning": "A traditional unit of length",
+        "note": "Often used for measuring waterways in the old days."
+      },
+      "滴紧水": {
+        "meaning": "Dripping water",
+        "note": "'Kan' marks an action in progress."
+      },
+      "揸桨": {
+        "meaning": "To grip the oar",
+        "note": "'Zaa' means to hold."
+      },
+      "喺下面": {
+        "meaning": "Down below",
+        "note": "Here it means beneath the water."
+      },
+      "细路仔": {
+        "meaning": "A small child",
+        "note": "A common Cantonese word."
+      },
+      "愣住": {
+        "meaning": "To be stunned, to freeze",
+        "note": "Cantonese colloquial."
+      },
+      "打横": {
+        "meaning": "To turn broadside",
+        "note": "Describes a boat lying across the channel."
+      },
+      "老伯": {
+        "meaning": "An old man, uncle",
+        "note": "A Cantonese form of address."
+      },
+      "每年今日": {
+        "meaning": "This day every year",
+        "note": "It hints at something long past."
+      },
+      "落艇": {
+        "meaning": "To step off the boat",
+        "note": "'Lok' means down."
+      },
+      "阿爷": {
+        "meaning": "Grandfather",
+        "note": "A Cantonese form of address."
+      },
+      "渡": {
+        "meaning": "To ferry, to cross over",
+        "note": "The character carries both meanings at once."
+      },
+      "点香": {
+        "meaning": "To light incense",
+        "note": "A folk way of remembering."
+      }
+    }
+  }
+}

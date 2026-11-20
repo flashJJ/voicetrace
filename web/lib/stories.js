@@ -744,20 +744,29 @@ export const storyModes = [
   {
     key: 'heritage',
     label: '正经模式',
+    enLabel: 'Heritage',
     title: '留住把声',
+    enTitle: 'Keep the voice',
     description: '温暖、克制，适合一家人一起听。',
+    enDescription: 'Warm and restrained, made for listening together.',
   },
   {
     key: 'ghost',
     label: '鬼故事模式',
+    enLabel: 'Ghost story',
     title: '半夜唔好乱咁望',
+    enTitle: "Don't look too closely at night",
     description: '夜色、悬疑、民俗解释；不血腥，但会让人背后一凉。',
+    enDescription: 'Night, suspense, and a folk explanation. No gore, but a chill down the back.',
   },
   {
     key: 'wild_history',
     label: '野史模式',
+    enLabel: 'Hearsay',
     title: '听讲当年……',
+    enTitle: 'They say, back in the day…',
     description: '说书人口吻，八卦、俏皮；真假难考，但民间的气是真的。',
+    enDescription: 'A storyteller’s voice: gossipy and playful. Hard to verify, but the folk feeling is real.',
   },
 ];
 

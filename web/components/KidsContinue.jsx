@@ -2,10 +2,24 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useLocale } from "./LocaleProvider";
 
 const LAST_KID_STORY_KEY = "voicetrace:last-kid-story";
 
+const COPY = {
+  zh: {
+    last: "上次读到",
+    age: (ageBand) => `${ageBand} 岁`,
+  },
+  en: {
+    last: "Last read",
+    age: (ageBand) => `ages ${ageBand}`,
+  },
+};
+
 export default function KidsContinue({ stories }) {
+  const { locale, localize, pick } = useLocale();
+  const c = pick(COPY);
   const [last, setLast] = useState(null);
 
   useEffect(() => {
@@ -21,11 +35,11 @@ export default function KidsContinue({ stories }) {
 
   return (
     <div className="kids-continue">
-      <span>上次读到</span>
+      <span>{c.last}</span>
       <Link href={`/kids/${last.slug}`}>
-        {last.title} <span aria-hidden="true">→</span>
+        {localize(last.title)} <span aria-hidden="true">→</span>
       </Link>
-      <em>{last.ageBand} 岁</em>
+      <em>{c.age(last.ageBand)}</em>
     </div>
   );
 }

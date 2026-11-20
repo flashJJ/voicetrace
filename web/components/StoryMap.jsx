@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { stories } from "../lib/stories";
+import { localizeStory } from "../lib/i18n-content";
+import { useLocale } from "./LocaleProvider";
 
 const pins = {
   moonlight: { x: 330, y: 300, label: "西关" },
@@ -33,13 +35,58 @@ const pinGroups = Object.values(
   }, {})
 );
 
+const COPY = {
+  zh: {
+    mapAria: "声迹声音地图示意",
+    riverLabel: "珠 江 口",
+    seaLabel: "南 海",
+    mapCaption: "示意地图 · 非精确地理数据",
+    pinCount: (count) => `${count} 个故事`,
+    pinAriaMulti: (label, count) => `${label}，${count} 个故事，点击展开选择`,
+    pinAriaSingle: (title, dialect) => `${title}，${dialect}`,
+    expandHint: "点击展开选择",
+    collapseHint: "收起故事列表",
+    groupAria: (label) => `${label}的故事`,
+    chooseStory: "选择故事",
+    eyebrow: "声音地图",
+    read: "读这个故事",
+    coverAlt: (title) => `${title}封面`,
+  },
+  en: {
+    mapAria: "Illustrative sound map of VoiceTrace",
+    riverLabel: "PEARL RIVER",
+    seaLabel: "SOUTH CHINA SEA",
+    mapCaption: "Illustrative map · not accurate geographic data",
+    pinCount: (count) => `${count} stories`,
+    pinAriaMulti: (label, count) => `${label}, ${count} stories, activate to choose one`,
+    pinAriaSingle: (title, dialect) => `${title}, ${dialect}`,
+    expandHint: "Choose a story",
+    collapseHint: "Hide story list",
+    groupAria: (label) => `Stories in ${label}`,
+    chooseStory: "Choose a story",
+    eyebrow: "SOUND MAP",
+    read: "Read this story",
+    coverAlt: (title) => `${title} cover`,
+  },
+};
+
 export default function StoryMap() {
+  const { locale, localize, pick } = useLocale();
+  const c = pick(COPY);
   const [activeSlug, setActiveSlug] = useState(stories[0].slug);
   const [openGroupKey, setOpenGroupKey] = useState(null);
   const mapCanvasRef = useRef(null);
   const groupRefs = useRef({});
-  const active = stories.find((story) => story.slug === activeSlug) || stories[0];
-  const openGroup = pinGroups.find((group) => group.key === openGroupKey);
+  const localizedBySlug = new Map(
+    stories.map((story) => [story.slug, localizeStory(story, locale, localize)])
+  );
+  const groups = pinGroups.map((group) => ({
+    ...group,
+    label: localize(group.label),
+    stories: group.stories.map((story) => localizedBySlug.get(story.slug)),
+  }));
+  const active = localizedBySlug.get(activeSlug) || localizedBySlug.get(stories[0].slug);
+  const openGroup = groups.find((group) => group.key === openGroupKey);
 
   useEffect(() => {
     if (!openGroupKey) return undefined;
@@ -91,7 +138,7 @@ export default function StoryMap() {
     <div className="map-layout">
       <div className="map-frame">
         <div className="map-canvas" ref={mapCanvasRef}>
-          <svg viewBox="0 0 800 620" role="img" aria-label="声迹声音地图示意">
+          <svg viewBox="0 0 800 620" role="img" aria-label={c.mapAria}>
           <rect x="0" y="0" width="800" height="620" fill="#f2e7d4" />
           <path
             d="M70 180 C160 120, 260 130, 340 170 C430 215, 520 190, 610 150 C690 115, 745 140, 750 210 C755 290, 690 330, 720 410 C745 480, 690 540, 600 545 C510 550, 470 505, 390 520 C300 537, 210 520, 150 465 C90 410, 80 330, 70 260 Z"
@@ -116,21 +163,21 @@ export default function StoryMap() {
             opacity="0.55"
           />
           <text x="120" y="120" fill="#7a6d5e" fontSize="14" letterSpacing="4">
-            珠 江 口
+            {c.riverLabel}
           </text>
           <text x="590" y="500" fill="#7a6d5e" fontSize="14" letterSpacing="4">
-            南 海
+            {c.seaLabel}
           </text>
           <text x="340" y="545" fill="#7a6d5e" fontSize="12" letterSpacing="2">
-            示意地图 · 非精确地理数据
+            {c.mapCaption}
           </text>
 
-          {pinGroups.map((group) => {
+          {groups.map((group) => {
             const isMulti = group.stories.length > 1;
             const isActive = group.stories.some((story) => story.slug === activeSlug);
             const isOpen = openGroupKey === group.key;
             const title = isMulti
-              ? `${group.label} · ${group.stories.length} 个故事`
+              ? `${group.label} · ${c.pinCount(group.stories.length)}`
               : group.stories[0].title;
 
             return (
@@ -146,8 +193,8 @@ export default function StoryMap() {
                 tabIndex={0}
                 aria-label={
                   isMulti
-                    ? `${group.label}，${group.stories.length} 个故事，点击展开选择`
-                    : `${group.stories[0].title}，${group.stories[0].dialect}`
+                    ? c.pinAriaMulti(group.label, group.stories.length)
+                    : c.pinAriaSingle(group.stories[0].title, group.stories[0].dialect)
                 }
                 aria-expanded={isMulti ? isOpen : undefined}
                 aria-controls={isMulti ? `map-group-${group.key}` : undefined}
@@ -204,7 +251,7 @@ export default function StoryMap() {
                   fill="#7a6d5e"
                   fontSize="11"
                 >
-                  {isMulti ? (isOpen ? "收起故事列表" : "点击展开选择") : group.label}
+                  {isMulti ? (isOpen ? c.collapseHint : c.expandHint) : group.label}
                 </text>
               </g>
             );
@@ -215,14 +262,14 @@ export default function StoryMap() {
               className="map-pin-menu"
               id={`map-group-${openGroup.key}`}
               role="group"
-              aria-label={`${openGroup.label}的故事`}
+              aria-label={c.groupAria(openGroup.label)}
               style={{
                 left: `${(openGroup.x / 800) * 100}%`,
                 top: `${((openGroup.y + 34) / 620) * 100}%`,
               }}
             >
               <span className="map-pin-menu-title">
-                {openGroup.label} · 选择故事
+                {openGroup.label} · {c.chooseStory}
               </span>
               {openGroup.stories.map((story, index) => (
                 <button
@@ -237,7 +284,8 @@ export default function StoryMap() {
                 >
                   <span>{story.title}</span>
                   <small>
-                    {story.modeLabel} · {story.dialect.replace("粤语 · ", "")}
+                    {story.modeLabel} ·{" "}
+                    {story.dialect.replace(/^(粤语|粵語|Cantonese) · /, "")}
                   </small>
                 </button>
               ))}
@@ -247,14 +295,14 @@ export default function StoryMap() {
       </div>
 
       <aside className="map-panel">
-        <span className="eyebrow">声音地图</span>
+        <span className="eyebrow">{c.eyebrow}</span>
         <h2>{active.title}</h2>
         <p>
           {active.dialect} · {active.subtitle}
         </p>
         <img
           src={active.cover}
-          alt={`${active.title}封面`}
+          alt={c.coverAlt(active.title)}
           width="900"
           height="675"
           loading="eager"
@@ -263,35 +311,38 @@ export default function StoryMap() {
         />
         <p style={{ marginTop: 16 }}>{active.intro}</p>
         <Link className="btn btn-primary" href={`/stories/${active.slug}`}>
-          读这个故事 <span aria-hidden="true">→</span>
+          {c.read} <span aria-hidden="true">→</span>
         </Link>
 
         <div className="map-story-list">
-          {stories.map((story) => (
-            <button
-              type="button"
-              key={story.slug}
-              className="map-story"
-              onClick={() => selectStory(story.slug)}
-            >
-              <img
-                src={story.cover}
-                alt=""
-                width="900"
-                height="675"
-                loading="lazy"
-                decoding="async"
-              />
-              <span>
-                <span className="map-story-title" style={{ display: "block" }}>
-                  {story.title}
+          {stories.map((story) => {
+            const localized = localizedBySlug.get(story.slug);
+            return (
+              <button
+                type="button"
+                key={story.slug}
+                className="map-story"
+                onClick={() => selectStory(story.slug)}
+              >
+                <img
+                  src={story.cover}
+                  alt=""
+                  width="900"
+                  height="675"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>
+                  <span className="map-story-title" style={{ display: "block" }}>
+                    {localized.title}
+                  </span>
+                  <span className="map-story-meta">
+                    {localized.dialect} · {localized.duration}
+                  </span>
                 </span>
-                <span className="map-story-meta">
-                  {story.dialect} · {story.duration}
-                </span>
-              </span>
-            </button>
-          ))}
+              </button>
+            );
+          })}
         </div>
       </aside>
     </div>

@@ -1,15 +1,47 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import {
-  MAX_RECORD_MS,
-  MIN_RECORD_MS,
-  describeRecorderError,
-  pickMimeType,
-  recorderSupport,
-} from "../lib/recorder";
+import { MAX_RECORD_MS, MIN_RECORD_MS, pickMimeType, recorderSupport } from "../lib/recorder";
+import { useLocale } from "../components/LocaleProvider";
+
+const COPY = {
+  zh: {
+    unsupported: "当前浏览器不支持录音，建议用 Chrome、Edge 或较新的 Safari。",
+    createFail: "当前浏览器无法创建录音，请换一个浏览器试试。",
+    interrupted: "录音中断了，请重试。",
+    tooShort: "这段太短了，至少录 1 秒。",
+    denied: "麦克风权限被拒绝。请在浏览器地址栏的权限设置里允许麦克风，然后重试。",
+    notFound: "没有找到可用的麦克风，请检查设备连接。",
+    busy: "麦克风被其他程序占用了，关掉会议或录音软件后再试。",
+    overconstrained: "当前麦克风不支持所需参数，换一个输入设备试试。",
+    generic: "录音没有启动成功，请重试或更换浏览器。",
+  },
+  en: {
+    unsupported: "This browser cannot record audio. Try Chrome, Edge, or a recent Safari.",
+    createFail: "This browser could not start recording. Please try another browser.",
+    interrupted: "Recording was interrupted. Please try again.",
+    tooShort: "That was too short. Record at least one second.",
+    denied: "Microphone permission was denied. Allow the microphone in the browser's site settings, then try again.",
+    notFound: "No microphone was found. Please check the device connection.",
+    busy: "The microphone is being used by another app. Close meeting or recording apps and try again.",
+    overconstrained: "This microphone does not support the required settings. Try another input device.",
+    generic: "Recording did not start. Please try again or switch browsers.",
+  },
+};
+
+function recorderErrorMessage(error, c) {
+  const name = error?.name || "";
+  if (name === "NotAllowedError" || name === "SecurityError") return c.denied;
+  if (name === "NotFoundError" || name === "DevicesNotFoundError") return c.notFound;
+  if (name === "NotReadableError" || name === "TrackStartError") return c.busy;
+  if (name === "OverconstrainedError") return c.overconstrained;
+  return c.generic;
+}
 
 export function useRecorder() {
+  const { pick } = useLocale();
+  const copyRef = useRef(COPY.zh);
+  copyRef.current = pick(COPY);
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState("");
   const [elapsed, setElapsed] = useState(0);
@@ -58,9 +90,10 @@ export function useRecorder() {
   }, [clearTimer, setClipSafe, stopStream]);
 
   const start = useCallback(async () => {
+    const c = copyRef.current;
     if (recorderSupport() !== "ok") {
       setStatus("unsupported");
-      setError("当前浏览器不支持录音，建议用 Chrome、Edge 或较新的 Safari。");
+      setError(c.unsupported);
       return;
     }
     setError("");
@@ -80,7 +113,7 @@ export function useRecorder() {
       });
     } catch (microphoneError) {
       setStatus("error");
-      setError(describeRecorderError(microphoneError));
+      setError(recorderErrorMessage(microphoneError, c));
       return;
     }
 
@@ -91,7 +124,7 @@ export function useRecorder() {
     } catch (recordError) {
       stream.getTracks().forEach((track) => track.stop());
       setStatus("error");
-      setError("当前浏览器无法创建录音，请换一个浏览器试试。");
+      setError(c.createFail);
       return;
     }
 
@@ -107,7 +140,7 @@ export function useRecorder() {
       clearTimer();
       stopStream();
       setStatus("error");
-      setError("录音中断了，请重试。");
+      setError(c.interrupted);
     };
 
     recorder.onstop = () => {
@@ -121,7 +154,7 @@ export function useRecorder() {
       }
       if (duration * 1000 < MIN_RECORD_MS) {
         setStatus("error");
-        setError("这段太短了，至少录 1 秒。");
+        setError(c.tooShort);
         return;
       }
       const blob = new Blob(chunksRef.current, {

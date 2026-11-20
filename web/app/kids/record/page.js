@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { kidStories } from "../../../lib/kids";
+import { localizeStory } from "../../../lib/i18n-content";
+import { useLocale } from "../../../components/LocaleProvider";
 import {
   formatDuration,
   getRecording,
@@ -15,7 +17,102 @@ import { useSpeechRecognition } from "../../../hooks/useSpeech";
 
 const pool = kidStories();
 
+const COPY = {
+  zh: {
+    eyebrow: "儿童模式 · 录音",
+    title: "录一段我家的粤语。",
+    lede: "大人可以陪着一起读。读错没关系，重录整段就好。录音只保存在这台设备。",
+    storyLabel: "故事",
+    sceneLabel: "片段",
+    storyOption: (title, ageBand) => `${title} · ${ageBand} 岁`,
+    sceneOption: (act, title) => `第 ${act} 幕 · ${title}`,
+    sceneHeading: (act, title) => `第 ${act} 幕 / ${title}`,
+    existing: "已有录音，可重录",
+    showMandarin: "看普通话",
+    status: {
+      requesting: "正在请求麦克风…",
+      recording: "正在录音",
+      processing: "正在生成…",
+      ready: "录好了，听一遍",
+      idle: "准备好就开始",
+      error: "录音遇到问题",
+      unsupported: "浏览器不支持录音",
+    },
+    limit: (duration) => `最长 ${duration}`,
+    stop: "停止",
+    restart: "重录",
+    start: "开始录音",
+    clear: "清空",
+    dismiss: "知道了",
+    autoAsr: "录音时自动转写（浏览器语音服务）",
+    asrUnsupported: "当前浏览器不支持自动转写，可以请家长手动输入。",
+    asrListening: "正在自动转写…",
+    asrIdle: "录完会自动填字，不准可以改。",
+    transcriptLabel: "转写文字（可以改）",
+    transcriptPlaceholder: "自动转写会出现在这里，也可以手动输入",
+    speakerLabel: "谁在读（选填）",
+    speakerPlaceholder: "例如：阿珍、公公",
+    consent: "同意把录音保存在本机，不上传。",
+    consentMissing: "请先勾选「同意保存在本机」。",
+    saveFailed: "保存失败，请重试。",
+    saved: "录好了，已经存在这台设备。可以回故事里听我家的版本。",
+    saving: "保存中…",
+    overwrite: "覆盖保存",
+    save: "保存录音",
+    backToStory: "回故事",
+    goListen: "去听我家的版本 →",
+    note: "自动转写由浏览器语音服务完成，音频可能发送给浏览器厂商；可以在上面关掉。声迹服务器不接收录音。",
+  },
+  en: {
+    eyebrow: "KIDS MODE · RECORDING",
+    title: "Record a bit of Cantonese for your family.",
+    lede: "A grown-up can read along. Mistakes are fine — just record the whole scene again. Recordings stay on this device.",
+    storyLabel: "Story",
+    sceneLabel: "Scene",
+    storyOption: (title, ageBand) => `${title} · Ages ${ageBand}`,
+    sceneOption: (act, title) => `Act ${act} · ${title}`,
+    sceneHeading: (act, title) => `Act ${act} / ${title}`,
+    existing: "Recording saved — you can record again",
+    showMandarin: "Show Mandarin text",
+    status: {
+      requesting: "Requesting microphone…",
+      recording: "Recording",
+      processing: "Creating…",
+      ready: "Done — give it a listen",
+      idle: "Ready when you are",
+      error: "Recording problem",
+      unsupported: "Recording is not supported in this browser",
+    },
+    limit: (duration) => `Up to ${duration}`,
+    stop: "Stop",
+    restart: "Record again",
+    start: "Start recording",
+    clear: "Clear",
+    dismiss: "Got it",
+    autoAsr: "Transcribe while recording (browser speech service)",
+    asrUnsupported: "This browser can't transcribe automatically. A grown-up can type it in.",
+    asrListening: "Transcribing as you record…",
+    asrIdle: "The text fills in after you record. Grown-ups can fix it.",
+    transcriptLabel: "Transcript (editable)",
+    transcriptPlaceholder: "The automatic transcript appears here. You can also type it in.",
+    speakerLabel: "Who's reading (optional)",
+    speakerPlaceholder: "e.g. Ah Zhen, Grandpa",
+    consent: "I agree to save the recording on this device. Nothing is uploaded.",
+    consentMissing: "Please tick “agree to save on this device” first.",
+    saveFailed: "Saving failed. Please try again.",
+    saved: "Saved on this device. Head back to the story to hear your family's version.",
+    saving: "Saving…",
+    overwrite: "Replace saved recording",
+    save: "Save recording",
+    backToStory: "Back to story",
+    goListen: "Hear your family's version →",
+    note: "Auto-transcription uses the browser's speech service, so audio may be sent to the browser vendor; you can turn it off above. VoiceTrace servers never receive recordings.",
+  },
+};
+
 export default function KidRecordPage() {
+  const { locale, localize, pick } = useLocale();
+  const c = pick(COPY);
   const [storySlug, setStorySlug] = useState(pool[0].slug);
   const [sceneId, setSceneId] = useState(pool[0].scenes[0].id);
   const [speaker, setSpeaker] = useState("");
@@ -38,6 +135,18 @@ export default function KidRecordPage() {
   const scene = useMemo(
     () => story.scenes.find((item) => item.id === sceneId) || story.scenes[0],
     [story, sceneId]
+  );
+  const storyView = useMemo(
+    () => localizeStory(story, locale, localize),
+    [story, locale, localize]
+  );
+  const storyOptions = useMemo(
+    () =>
+      pool.map((item) => {
+        const view = localizeStory(item, locale, localize);
+        return { slug: item.slug, title: view.title, ageBand: item.ageBand };
+      }),
+    [locale, localize]
   );
 
   useEffect(() => {
@@ -105,7 +214,7 @@ export default function KidRecordPage() {
   const handleSave = async () => {
     if (!clip) return;
     if (!consent) {
-      setSaveError("请先勾选「同意保存在本机」。");
+      setSaveError(c.consentMissing);
       return;
     }
     setSaving(true);
@@ -127,9 +236,9 @@ export default function KidRecordPage() {
         consent: true,
       });
       setExisting(await getRecording(recordingId(story.slug, scene.id)));
-      setMessage("录好了，已经存在这台设备。可以回故事里听我家的版本。");
+      setMessage(c.saved);
     } catch (saveFailure) {
-      setSaveError(saveFailure.message || "保存失败，请重试。");
+      setSaveError(saveFailure.message || c.saveFailed);
     } finally {
       setSaving(false);
     }
@@ -140,29 +249,29 @@ export default function KidRecordPage() {
   return (
     <main className="container kids-page kids-record-page">
       <section className="kids-hero">
-        <span className="eyebrow">儿童模式 · 录音</span>
-        <h1>录一段我家的粤语。</h1>
-        <p>大人可以陪着一起读。读错没关系，重录整段就好。录音只保存在这台设备。</p>
+        <span className="eyebrow">{c.eyebrow}</span>
+        <h1>{c.title}</h1>
+        <p>{c.lede}</p>
       </section>
 
       <div className="kids-record-card">
         <div className="kids-record-selects">
           <label>
-            <span>故事</span>
+            <span>{c.storyLabel}</span>
             <select value={story.slug} onChange={handleStoryChange}>
-              {pool.map((item) => (
+              {storyOptions.map((item) => (
                 <option key={item.slug} value={item.slug}>
-                  {item.title} · {item.ageBand} 岁
+                  {localize(c.storyOption(item.title, item.ageBand))}
                 </option>
               ))}
             </select>
           </label>
           <label>
-            <span>片段</span>
+            <span>{c.sceneLabel}</span>
             <select value={scene.id} onChange={(event) => setSceneId(event.target.value)}>
               {story.scenes.map((item) => (
                 <option key={item.id} value={item.id}>
-                  第 {item.act} 幕 · {item.title}
+                  {localize(c.sceneOption(item.act, item.title))}
                 </option>
               ))}
             </select>
@@ -171,14 +280,12 @@ export default function KidRecordPage() {
 
         <article className="kids-record-prompt">
           <div className="kids-record-prompt-head">
-            <span>
-              第 {scene.act} 幕 / {story.title}
-            </span>
-            {existing ? <span>已有录音，可重录</span> : null}
+            <span>{localize(c.sceneHeading(scene.act, storyView.title))}</span>
+            {existing ? <span>{c.existing}</span> : null}
           </div>
           <p>{scene.textYue}</p>
           <details>
-            <summary>看普通话</summary>
+            <summary>{c.showMandarin}</summary>
             <p>{scene.textZh}</p>
           </details>
         </article>
@@ -186,22 +293,16 @@ export default function KidRecordPage() {
         <div className={`kids-recorder ${isRecording ? "is-recording" : ""}`}>
           <div className="kids-recorder-top">
             <div>
-              <p className="kids-recorder-label">
-                {status === "requesting" && "正在请求麦克风…"}
-                {status === "recording" && "正在录音"}
-                {status === "processing" && "正在生成…"}
-                {status === "ready" && "录好了，听一遍"}
-                {status === "idle" && "准备好就开始"}
-                {status === "error" && "录音遇到问题"}
-                {status === "unsupported" && "浏览器不支持录音"}
-              </p>
+              <p className="kids-recorder-label">{c.status[status]}</p>
               <p className="kids-recorder-time">{formatDuration(elapsed)}</p>
-              <p className="kids-recorder-limit">最长 {formatDuration(MAX_RECORD_MS / 1000)}</p>
+              <p className="kids-recorder-limit">
+                {localize(c.limit(formatDuration(MAX_RECORD_MS / 1000)))}
+              </p>
             </div>
             <div className="kids-recorder-actions">
               {isRecording ? (
                 <button type="button" className="btn btn-primary" onClick={stop}>
-                  停止
+                  {c.stop}
                 </button>
               ) : (
                 <button
@@ -210,12 +311,12 @@ export default function KidRecordPage() {
                   onClick={handleStart}
                   disabled={status === "requesting" || status === "processing"}
                 >
-                  {clip ? "重录" : "开始录音"}
+                  {clip ? c.restart : c.start}
                 </button>
               )}
               {clip ? (
                 <button type="button" className="btn btn-ghost" onClick={reset}>
-                  清空
+                  {c.clear}
                 </button>
               ) : null}
             </div>
@@ -230,7 +331,7 @@ export default function KidRecordPage() {
             <p className="kids-recorder-error">
               {error}
               <button type="button" onClick={() => setError("")}>
-                知道了
+                {c.dismiss}
               </button>
             </p>
           ) : null}
@@ -245,26 +346,26 @@ export default function KidRecordPage() {
               if (!event.target.checked) speech.stop();
             }}
           />
-          <span>录音时自动转写（浏览器语音服务）</span>
+          <span>{c.autoAsr}</span>
         </label>
         {autoTranscribe ? (
           <p className={`kids-asr-status ${speech.error ? "is-error" : ""}`}>
             {!speech.supported
-              ? "当前浏览器不支持自动转写，可以请家长手动输入。"
+              ? c.asrUnsupported
               : speech.error
                 ? speech.error
                 : speech.listening
-                  ? "正在自动转写…"
-                  : "录完会自动填字，不准可以改。"}
+                  ? c.asrListening
+                  : c.asrIdle}
           </p>
         ) : null}
 
         <label className="kids-record-field">
-          <span>转写文字（可以改）</span>
+          <span>{c.transcriptLabel}</span>
           <textarea
             rows={4}
             value={transcript}
-            placeholder="自动转写会出现在这里，也可以手动输入"
+            placeholder={c.transcriptPlaceholder}
             onChange={(event) => {
               setManualEdit(true);
               setTranscript(event.target.value);
@@ -274,11 +375,11 @@ export default function KidRecordPage() {
 
         <div className="kids-record-bottom">
           <label className="kids-record-field kids-record-speaker">
-            <span>谁在读（选填）</span>
+            <span>{c.speakerLabel}</span>
             <input
               value={speaker}
               maxLength={20}
-              placeholder="例如：阿珍、公公"
+              placeholder={c.speakerPlaceholder}
               onChange={(event) => setSpeaker(event.target.value)}
             />
           </label>
@@ -288,7 +389,7 @@ export default function KidRecordPage() {
               checked={consent}
               onChange={(event) => setConsent(event.target.checked)}
             />
-            <span>同意把录音保存在本机，不上传。</span>
+            <span>{c.consent}</span>
           </label>
         </div>
 
@@ -299,25 +400,22 @@ export default function KidRecordPage() {
             onClick={handleSave}
             disabled={!clip || !consent || saving}
           >
-            {saving ? "保存中…" : existing ? "覆盖保存" : "保存录音"}
+            {saving ? c.saving : existing ? c.overwrite : c.save}
           </button>
           <Link className="btn btn-ghost" href={`/kids/${story.slug}`}>
-            回故事
+            {c.backToStory}
           </Link>
         </div>
         {saveError ? <p className="kids-record-error">{saveError}</p> : null}
         {message ? (
           <p className="kids-record-success">
             {message}{" "}
-            <Link href={`/kids/${story.slug}`}>去听我家的版本 →</Link>
+            <Link href={`/kids/${story.slug}`}>{c.goListen}</Link>
           </p>
         ) : null}
       </div>
 
-      <p className="kids-note">
-        自动转写由浏览器语音服务完成，音频可能发送给浏览器厂商；可以在上面关掉。
-        声迹服务器不接收录音。
-      </p>
+      <p className="kids-note">{c.note}</p>
     </main>
   );
 }

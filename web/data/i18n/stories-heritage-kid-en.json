@@ -1,0 +1,366 @@
+{
+  "moonlight": {
+    "title": "Moonlight Bright",
+    "subtitle": "A Cantonese nursery rhyme sung for a hundred years",
+    "quote": "Moonlight bright, shining on the courtyard.",
+    "intro": "Grandma says that when she was little, this song was heard all along the lane. Tonight the moonlight is just right. Sit down and listen as she sings it slowly.",
+    "dialect": "Cantonese · Xiguan, Guangzhou",
+    "type": "Public-domain adaptation",
+    "duration": "3 min",
+    "scenes": {
+      "moonlight-1": {
+        "title": "Moonlight Under the Arcade",
+        "text": "Moonlight spills into the courtyard. On New Year's Eve, people pick betel nuts. Grandma sits under the arcade, waving a palm-leaf fan, singing line by line."
+      },
+      "moonlight-2a": {
+        "title": "Line by Line, Singing It Back",
+        "text": "Grandma smiles and pats your hand. \"Don't be shy, sing along with me.\" You sing a line, she sings a line, and the moonlight stretches both your shadows long."
+      },
+      "moonlight-2b": {
+        "title": "Betel Nuts, Weddings, and Moonlight Long Ago",
+        "text": "Grandma says that long ago, when a daughter was married off, betel nuts stood for good fortune. The moonlight shines not only on the courtyard, but on the quiet worries of generations."
+      },
+      "moonlight-3a": {
+        "title": "Singing Till the Moon Crosses the Arcade Roof",
+        "text": "You and Grandma sing back and forth until the moon has moved past the arcade roof. On the last note, Grandma smiles and says, \"Good, you can sing it. One day, sing it to your children.\"",
+        "endingText": "A nursery rhyme doesn't mind being old. What it fears is that no one sings it again."
+      },
+      "moonlight-3b": {
+        "title": "One Voice, Three Generations",
+        "text": "You stop the recording and ask Grandma, \"What was it like when you were little?\" Grandma looks at the moonlight and says her mother also taught her to sing, line by line, under the arcade. So this song has been sung for three generations already.",
+        "endingText": "One voice strings together the moonlight of three generations."
+      }
+    },
+    "choices": {
+      "moonlight-1": ["Sing along with Grandma", "Ask Grandma: why pick betel nuts?"],
+      "moonlight-2a": ["Ask Grandma: what comes after the moonlight part?", "Stay quiet and record this voice"],
+      "moonlight-2b": ["Learn the rest of the song with Grandma", "Ask Grandma: what was it like when you were little?"]
+    },
+    "glossary": {
+      "地堂": {
+        "meaning": "the courtyard; the open ground in front of a house",
+        "note": "A common courtyard in old Xiguan houses, used for cooling off in summer."
+      },
+      "年卅晚": {
+        "meaning": "New Year's Eve",
+        "note": "In Cantonese, 卅 (saap) means thirty."
+      },
+      "唔使怕丑": {
+        "meaning": "no need to be shy",
+        "note": "In Cantonese, 怕丑 means to feel shy or embarrassed."
+      },
+      "好意头": {
+        "meaning": "a good omen; lucky",
+        "note": "Cantonese often uses 意头 to talk about whether something is lucky."
+      },
+      "第日": {
+        "meaning": "later; in the future",
+        "note": "Cantonese often uses 第日 for the days still to come."
+      },
+      "细路": {
+        "meaning": "child",
+        "note": "In Cantonese, both 细路 and 细路仔 mean a child."
+      },
+      "细个": {
+        "meaning": "when young; as a child",
+        "note": "Cantonese 细个 is often used to ask or talk about childhood."
+      }
+    }
+  },
+  "mouse-wedding": {
+    "title": "The Mouse Wedding",
+    "subtitle": "A Cantonese folk tale about who is the strongest",
+    "quote": "When a mouse marries off her daughter, courage matters most.",
+    "intro": "Mother Mouse is marrying off her daughter and wants the strongest son-in-law in the world. The sun, the clouds, the wind, the wall... so who is the strongest?",
+    "dialect": "Cantonese · Pearl River Delta",
+    "type": "Public-domain adaptation",
+    "duration": "4 min",
+    "scenes": {
+      "mouse-1": {
+        "title": "Mother Mouse Has a Daughter to Marry",
+        "text": "Mother Mouse says, \"My daughter is so pretty, she must marry the strongest one in the whole world.\" She looks up, sees the sun, and says, \"The sun is the strongest!\""
+      },
+      "mouse-2a": {
+        "title": "Sun, Cloud, Wind, Wall",
+        "text": "The sun says, \"I fear the clouds. When they cover me, I have no light.\" The clouds say, \"We fear the wind. One gust and we scatter.\" The wind says, \"I fear the wall. It blocks me and I cannot get through.\" The wall says, \"I fear mice. One burrow and I am pierced.\""
+      },
+      "mouse-2b": {
+        "title": "The Wedding Procession Under the Arcade",
+        "text": "The mouse procession carries the bridal sedan chair and marches through the arcade with pipes and drums. Suddenly, a big tabby cat crouches at the mouth of the lane, eyes fixed on them."
+      },
+      "mouse-3a": {
+        "title": "The Strongest Thing Is Courage",
+        "text": "Mother Mouse realizes: the sun fears the clouds, the clouds fear the wind, the wind fears the wall, and the wall fears mice. So the strongest is not whoever is biggest. It is whoever has the courage, and knows how to turn a corner.",
+        "endingText": "When a mouse marries off her daughter, she does not marry her to the strongest, but to the one with the most courage."
+      },
+      "mouse-3b": {
+        "title": "Even a Wall Has Its Fears",
+        "text": "The wall says, \"I may look hard, but what I fear most is a mouse.\" Mother Mouse laughs. \"So everyone is afraid of something. What matters is knowing what you fear, and still walking on.\"",
+        "endingText": "Even the hardest wall has a little mouse it fears."
+      }
+    },
+    "choices": {
+      "mouse-1": ["Ask the sun: what are you afraid of?", "Follow the mouse procession to watch the fun"],
+      "mouse-2a": ["So the strongest one is a mouse!", "No, the wall is the hardest!"],
+      "mouse-2b": ["Shout: run!", "Sneak quietly around another way"]
+    },
+    "glossary": {
+      "嫁畀": {
+        "meaning": "to marry (a man); to be given in marriage to",
+        "note": "In Cantonese, 畀 means to give or to let."
+      },
+      "惊": {
+        "meaning": "to fear; to be afraid",
+        "note": "In Cantonese, 惊 is used more often than 怕."
+      },
+      "穿": {
+        "meaning": "pierced; broken through",
+        "note": "Here it means the wall has been burrowed through by mice."
+      },
+      "眼定定": {
+        "meaning": "staring without blinking",
+        "note": "Describes the way a cat stares at its prey."
+      },
+      "醒起": {
+        "meaning": "to remember; to realize",
+        "note": "Cantonese often uses 醒起 for suddenly remembering something."
+      },
+      "睇落": {
+        "meaning": "to look like; by the look of it",
+        "note": "In Cantonese, 睇 means to look, and 睇落 means however it looks."
+      }
+    }
+  },
+  "grandma-congee": {
+    "title": "Grandma's Sampan Congee",
+    "subtitle": "A story about early mornings, the pier, and a slow fire",
+    "quote": "Congee needs a slow fire, and a story needs time.",
+    "intro": "Before dawn, Grandma picks up the thermos and takes you to the pier to buy sampan congee. She says half a river's stories are hidden in one bowl of congee.",
+    "dialect": "Cantonese · Henan District, Guangzhou",
+    "type": "Sample story (to be replaced with a real family story)",
+    "duration": "4 min",
+    "scenes": {
+      "congee-1": {
+        "title": "Before Dawn, the Pier Is Already Awake",
+        "text": "At half past five in the morning, mist still hangs over the Pearl River. Grandma holds your hand as you walk along the damp flagstones. \"Hurry, if we are late there will be no fried dough sticks left.\""
+      },
+      "congee-2a": {
+        "title": "The Toppings for a Bowl of Congee",
+        "text": "Grandma says, \"Sampan congee needs fish slices, peanuts, fried dough sticks and chopped spring onion, and it needs patience too. Once the congee base is boiling, add the toppings one by one. You cannot rush it.\""
+      },
+      "congee-2b": {
+        "title": "Morning of the Boat People",
+        "text": "Grandma says sampan congee was once cooked by the boat people. They set out before dawn, and a bowl of hot congee was the start of the day. \"Your great-grandfather used to work on the river too.\""
+      },
+      "congee-3a": {
+        "title": "Great-grandpa's Boat",
+        "text": "Grandma says Great-grandpa used to pole a boat on the river. Before dawn he would cook a big pot of congee so the boatmen could eat their fill before setting off. She says congee is not only food. It is waiting for people, waiting for the tide, waiting for the day to begin.",
+        "endingText": "A bowl of congee waits not for the right heat, but for the right people."
+      },
+      "congee-3b": {
+        "title": "The Road Home",
+        "text": "You help Grandma carry the thermos, and the two of you walk slowly along the river. Grandma asks, \"One day, who will you cook for?\" You do not answer. You just hold the thermos a little tighter.",
+        "endingText": "Only congee cooked over a slow fire can hold people close."
+      }
+    },
+    "choices": {
+      "congee-1": ["Add peanuts and fried dough sticks", "Ask Grandma: why so early?"],
+      "congee-2a": ["Ask Grandma: what story is in this congee?", "Help Grandma carry the thermos"],
+      "congee-2b": ["Ask Grandma: what kind of person was Great-grandpa?", "Listen quietly to the sound of the river"]
+    },
+    "glossary": {
+      "湿湿哋": {
+        "meaning": "a little wet; damp",
+        "note": "In Cantonese, 哋 marks a degree or state."
+      },
+      "冇": {
+        "meaning": "to not have; none left",
+        "note": "Cantonese commonly uses 冇 for not having something."
+      },
+      "逐样": {
+        "meaning": "one by one",
+        "note": "Cantonese 逐 means in order, one at a time."
+      },
+      "水上人家": {
+        "meaning": "the boat people; families who lived on boats",
+        "note": "The Tanka people of the Pearl River made their homes on boats."
+      },
+      "撑船": {
+        "meaning": "to pole a boat along",
+        "note": "In the old days, many boat families on the Pearl River made their living by poling boats."
+      },
+      "煲": {
+        "meaning": "to cook; to simmer",
+        "note": "Cantonese uses this word in 煲粥 (cook congee) and 煲汤 (make soup)."
+      },
+      "第日": {
+        "meaning": "later; in the future",
+        "note": "Cantonese often uses 第日 for the days still to come."
+      },
+      "抱实": {
+        "meaning": "to hold tight",
+        "note": "In Cantonese, 实 means firm or tight."
+      }
+    }
+  },
+  "five-goats": {
+    "title": "The Legend of the Five Goats",
+    "subtitle": "Five goats, one city",
+    "quote": "Five goats bearing grain, and from then on no famine.",
+    "intro": "Grandpa leads you up Yuexiu Hill and points to five stone goats at its foot. He says this story starts a very, very long time ago.",
+    "dialect": "Cantonese · Yuexiu, Guangzhou",
+    "type": "Public-domain legend adaptation",
+    "duration": "4 min",
+    "scenes": {
+      "five-goats-1": {
+        "title": "Five Goats at the Foot of the Hill",
+        "text": "Grandpa leads you up Yuexiu Hill. At the foot there are five stone goats, each with its head raised and a sheaf of grain in its mouth. Grandpa says this story starts a very, very long time ago."
+      },
+      "five-goats-2a": {
+        "title": "Immortals Riding Goats",
+        "text": "Grandpa says that, according to legend, in the Western Zhou dynasty five immortals came down from the sky riding five goats. Holding sheaves of grain, they came to a small village by the sea and saw that the people there were close to starving."
+      },
+      "five-goats-2b": {
+        "title": "The Stone Statues on the Hill",
+        "text": "You walk along, counting the stone goats as you go. Grandpa says these five goats are no ordinary stones. They were left behind by the immortals. You touch a horn, and the stone is worn smooth by all the hands before yours."
+      },
+      "five-goats-3a": {
+        "title": "Where the Grain Fell, a City Rose",
+        "text": "The immortals gave the sheaves of grain to the villagers and wished that they would never go hungry again. After the immortals left, the five goats turned to stone and stayed on the hill. Ever since, Guangzhou has also been called Goat City and Grain City.",
+        "endingText": "What the five goats left behind is not just stone, but the name of a city."
+      },
+      "five-goats-3b": {
+        "title": "The City the Stone Goats Watch Over",
+        "text": "Grandpa says the stone goats have watched over Guangzhou for thousands of years. Once there was sea here; now there are tall buildings. As you go down the hill you look back, and the goats still hold their heads high, as if they are still waiting for the immortals to return.",
+        "endingText": "The city keeps changing. The stone goats stay."
+      }
+    },
+    "choices": {
+      "five-goats-1": ["Ask Grandpa: why five goats?", "Follow Grandpa up the hill"],
+      "five-goats-2a": ["Ask what the immortals gave them", "Ask where the goats went"],
+      "five-goats-2b": ["Ask why the goats turned to stone", "Look out at the city of Guangzhou below"]
+    },
+    "glossary": {
+      "行": {
+        "meaning": "to walk",
+        "note": "Cantonese 行 is the everyday word for walking."
+      },
+      "衔": {
+        "meaning": "to hold in the mouth",
+        "note": "The stone goats hold grain in their mouths, the mark of the Five Goats statue."
+      },
+      "落嚟": {
+        "meaning": "to come down",
+        "note": "嚟 is the Cantonese word for come."
+      },
+      "拎住": {
+        "meaning": "to carry; to hold",
+        "note": "拎 is pronounced ling1."
+      },
+      "留低": {
+        "meaning": "to leave behind",
+        "note": "Here 低 marks that the action is finished and the thing stays behind."
+      },
+      "滑溜溜": {
+        "meaning": "very smooth and slippery",
+        "note": "Describes stone worn shiny by so many hands."
+      },
+      "化成": {
+        "meaning": "to turn into",
+        "note": "Folk legends often say 化为石, turned to stone."
+      },
+      "穗": {
+        "meaning": "an ear of grain",
+        "note": "This is where Guangzhou's other name, Suicheng (Grain City), comes from."
+      },
+      "嗰阵": {
+        "meaning": "at that time",
+        "note": "嗰 is the Cantonese word for that."
+      },
+      "仲喺度": {
+        "meaning": "still here; still there",
+        "note": "仲 means still."
+      }
+    }
+  },
+  "chicken-lullaby": {
+    "title": "Little Rooster",
+    "subtitle": "A Cantonese nursery rhyme sung until daylight",
+    "quote": "Little rooster, tail curved high.",
+    "intro": "Before dawn, Grandma is already sitting at the foot of the bed, softly singing: \"Little rooster, tail curved high, how hard it is to be a young bride...\"",
+    "dialect": "Cantonese · Xiguan, Guangzhou",
+    "type": "Public-domain nursery rhyme adaptation",
+    "duration": "3 min",
+    "scenes": {
+      "chicken-1": {
+        "title": "A Song Before Dawn",
+        "text": "At first light, Grandma sits at the foot of the bed and sings softly: \"Little rooster, tail curved high, how hard it is to be a young bride.\" You are not fully awake, and only feel that the tune is very familiar."
+      },
+      "chicken-2a": {
+        "title": "Up Early, and Still Called Late",
+        "text": "You sing along: \"Up early and still called late, tears not yet dry as I go to the kitchen.\" Grandma smiles a little and says you sing it correctly, though you do not yet know who the line is about."
+      },
+      "chicken-2b": {
+        "title": "Being a Young Bride",
+        "text": "Grandma says that long ago, when a bride first entered the family, she had to rise before dawn to cook. Cook late and they called it late; cook early and they called it early. Her tears could only be swallowed down."
+      },
+      "chicken-3a": {
+        "title": "One Winter Melon",
+        "text": "Grandma says that when she was a young bride, she was once scolded until dawn over a single winter melon. Then she laughs again: \"It is better now. Your mother does not have to go through that.\"",
+        "endingText": "The rhyme sings of the old days. The days are different now."
+      },
+      "chicken-3b": {
+        "title": "Singing Till Daylight",
+        "text": "You and Grandma sing line by line, until the sky outside the window turns from grey to white. When the last line ends, Grandma says, \"Remember this song, and one day sing it for others.\"",
+        "endingText": "Daylight has come, and the song has stayed."
+      }
+    },
+    "choices": {
+      "chicken-1": ["Sing along with Grandma", "Ask Grandma what a young bride is"],
+      "chicken-2a": ["Ask whether it is about Grandma herself", "Keep singing"],
+      "chicken-2b": ["Ask Grandma if she went through it too", "Ask why she never spoke up"]
+    },
+    "glossary": {
+      "新抱": {
+        "meaning": "daughter-in-law; young bride",
+        "note": "Cantonese calls a son's wife 新抱."
+      },
+      "几艰难": {
+        "meaning": "how hard; how difficult",
+        "note": "Here 几 marks degree, like how."
+      },
+      "晏": {
+        "meaning": "late; a late hour",
+        "note": "Cantonese 晏 means a late hour, and also midday."
+      },
+      "下间": {
+        "meaning": "kitchen",
+        "note": "In old big houses the kitchen was usually in the back room."
+      },
+      "入门": {
+        "meaning": "to marry into a household",
+        "note": "Long ago, a bride entered her husband's family home after the wedding."
+      },
+      "吞落肚": {
+        "meaning": "to swallow down",
+        "note": "A figure of speech for hiding your hurt."
+      },
+      "闹": {
+        "meaning": "to scold",
+        "note": "Cantonese 闹 is often used for scolding someone."
+      },
+      "而家": {
+        "meaning": "now",
+        "note": "A very common everyday Cantonese word."
+      },
+      "第日": {
+        "meaning": "later; some other day",
+        "note": "Cantonese 第日 means the future, not tomorrow."
+      },
+      "唱返": {
+        "meaning": "to sing back; to sing again",
+        "note": "返 means the action comes back or carries on."
+      }
+    }
+  }
+}

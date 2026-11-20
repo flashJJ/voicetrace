@@ -1,0 +1,353 @@
+{
+  "lun-wenxu-congee": {
+    "title": "The Number One Scholar's Congee",
+    "subtitle": "Lun Wenxu · A Bowl of Congee, as the Legend Goes",
+    "quote": "Even a bowl of congee can have its day in the sun.",
+    "intro": "You run a congee shop. Every day before dawn, a skinny young lad stands at your door, breathing in the smell of congee.",
+    "dialect": "Cantonese · Nanhai, Foshan",
+    "type": "Legend / Hearsay · Folk Figure Tale",
+    "duration": "4 min",
+    "scenes": {
+      "lun-1": {
+        "title": "The Lad at the Door",
+        "text": "The young man is Lun Wenxu. His family is poor and he can't afford a bowl. You watch his eyes fix on the pork liver and pork sausage simmering in the pot."
+      },
+      "lun-2a": {
+        "title": "A Bowl of Congee",
+        "text": "Lun Wenxu finishes the congee and writes you a shop sign: \"Number One Scholar Congee.\" You laugh at him: \"Think you're guaranteed to top the imperial exam?\""
+      },
+      "lun-2b": {
+        "title": "Congee for Dishwashing",
+        "text": "Lun Wenxu washes the dishes and recites his books at the same time. Hearing him reel it off without a stumble, you think: this lad is something else."
+      },
+      "lun-3a": {
+        "title": "The Results Are Posted",
+        "text": "Years later, Lun Wenxu takes first place in the imperial exam. He comes back to the congee shop and writes out \"Number One Scholar Congee\" in his own hand.",
+        "endingText": "Even a bowl of congee can have its day in the sun."
+      },
+      "lun-3b": {
+        "title": "No Sign Left",
+        "text": "After he rises high, Lun Wenxu returns to thank you. You tell him the sign rotted away long ago; laughing, he writes a fresh one.",
+        "endingText": "Good congee fears no deep alley, and a good man fears no humble origins."
+      }
+    },
+    "choices": {
+      "lun-1": ["Give him a bowl for free", "Ask him to wash dishes in exchange for congee"],
+      "lun-2a": ["Keep the sign", "Tell him to study hard"],
+      "lun-2b": ["Set aside a bowl for him every day", "Introduce him to a private school"]
+    },
+    "glossary": {
+      "眼定定": { "meaning": "staring fixedly", "note": "A common Cantonese phrase." },
+      "猪肝粉肠": { "meaning": "pork liver and pork intestine", "note": "Classic toppings for jidi congee." },
+      "及第": { "meaning": "passing the imperial examination", "note": "\"Jidi\" marks the highest honour in the old exams." },
+      "估": { "meaning": "to think, to guess", "note": "A common Cantonese word." },
+      "滚瓜烂熟": { "meaning": "word-perfect, known by heart", "note": "Said of lessons learned thoroughly." },
+      "心谂": { "meaning": "to think to oneself", "note": "\"Nam\" means to think or ponder." },
+      "放榜": { "meaning": "to post the list of successful candidates", "note": "In imperial times, rankings were posted publicly." },
+      "烂咗": { "meaning": "broken, rotted", "note": "\"Zo\" is the Cantonese completion marker." }
+    }
+  },
+  "chen-mengji-trick": {
+    "title": "The Trickery of Chen Mengji",
+    "subtitle": "Chen Mengji · The Legend of Xinhui's Scheming Advisor",
+    "quote": "Scheming isn't about hurting people — it's about helping the little guy get a fair shake.",
+    "intro": "You're a farmer in a village in Xinhui. The landlord has raised the rent and you can't pay. Word is there's a man in town, Chen Mengji, famous for cooking up schemes.",
+    "dialect": "Cantonese · Xinhui, Jiangmen",
+    "type": "Legend / Hearsay · Clever Rogue Tale",
+    "duration": "4 min",
+    "scenes": {
+      "chen-1": {
+        "title": "Finding Chen Mengji at the Teahouse",
+        "text": "Chen Mengji sits in the teahouse, fanning himself. He hears you out, then smiles: \"This scheme needs you to play your part.\""
+      },
+      "chen-2a": {
+        "title": "Playing Ghost",
+        "text": "Chen Mengji tells you to wear white and wander before the landlord's ancestral graves at midnight. The next day the landlord turns green with fright."
+      },
+      "chen-2b": {
+        "title": "The Fake Official",
+        "text": "Chen Mengji tells you to pose as a government runner, claiming the landlord has overcharged rent and must be audited. The landlord's guilty conscience does the rest — the rent drops on the spot."
+      },
+      "chen-3a": {
+        "title": "The Landlord Concedes",
+        "text": "The landlord cuts the rent and even compensates in rice. Chen Mengji says: \"Hearsay isn't always true — but the people's anger is.\"",
+        "endingText": "Hearsay isn't always true, but the people's anger is."
+      },
+      "chen-3b": {
+        "title": "Quit While You're Ahead",
+        "text": "You back off, and Chen Mengji doesn't blame you. Later the landlord cuts the rent himself, calling it \"storing up good karma.\"",
+        "endingText": "Sometimes you don't need a scheme — time will do the work for you."
+      }
+    },
+    "choices": {
+      "chen-1": ["Do as he says", "Ask whether it's illegal"],
+      "chen-2a": ["Keep it up", "Lose your nerve and stop"],
+      "chen-2b": ["Hold on to the fake token", "Worry you'll be seen through"]
+    },
+    "glossary": {
+      "扭计": { "meaning": "to scheme, to plot a way out", "note": "In Cantonese, often a clever plan that turns the tables." },
+      "摇住把扇": { "meaning": "fanning oneself", "note": "The classic look of an old-time legal advisor." },
+      "面青": { "meaning": "to go pale with fright", "note": "A sign of fear." },
+      "祖坟": { "meaning": "family ancestral graves", "note": "Held in deep respect in the old days." },
+      "官差": { "meaning": "government runner, bailiff", "note": "In the old days they collected grain taxes and handled cases." },
+      "心虚": { "meaning": "to have a guilty conscience", "note": "Said of someone who has done wrong." },
+      "赔米": { "meaning": "to compensate in rice", "note": "Grain was a common form of payment back then." },
+      "积阴德": { "meaning": "to quietly accumulate good karma", "note": "An old saying urging people to do good." }
+    }
+  },
+  "zhuji-xiang-south": {
+    "title": "Night at Zhuji Lane",
+    "subtitle": "Zhuji Lane · A Great Migration, as the Legend Goes",
+    "quote": "Leaving wasn't out of fear — it was so we could keep on living.",
+    "intro": "In the last years of the Southern Song, word spreads through Zhuji Lane: soldiers are coming to put everyone to the sword. You're a young man in the lane, and tonight you must decide whether to go.",
+    "dialect": "Cantonese · Nanxiong, Shaoguan",
+    "type": "Legend / Hearsay · Roots of the Cantonese",
+    "duration": "5 min",
+    "scenes": {
+      "zhuji-1": {
+        "title": "Torches at the Lane's Mouth",
+        "text": "In the middle of the night, torches flare at the mouth of the lane. Luo Gui, a tribute student, gathers everyone and says they must cut bamboo and lash rafts overnight, then sail south down the Zhen River."
+      },
+      "zhuji-2a": {
+        "title": "Rafts on the Water",
+        "text": "Along with 33 clans and 97 households, you shove the rafts into the river. Consort Hu is among the crowd too, and no one knows what lies ahead."
+      },
+      "zhuji-2b": {
+        "title": "The Empty Lane",
+        "text": "You stay. The next day the lane is so quiet it's frightening. Your neighbours all left overnight — only a few chickens remain."
+      },
+      "zhuji-3a": {
+        "title": "The Pearl River Delta",
+        "text": "The rafts drift downstream, and you reach the Pearl River Delta. Later generations would call Zhuji Lane \"the hometown of seven hundred years ago.\"",
+        "endingText": "Leaving wasn't out of fear — it was so we could keep on living."
+      },
+      "zhuji-3b": {
+        "title": "The Names Left Behind",
+        "text": "You stay and write down everything that happened in the lane in a ledger. Years later, the migrants' descendants come back to trace their roots, and the ledger becomes proof.",
+        "endingText": "Some leave, some stay — either way, so the story has someone to remember it."
+      }
+    },
+    "choices": {
+      "zhuji-1": ["Follow Luo Gui", "Stay and see how it plays out"],
+      "zhuji-2a": ["Help people carry their luggage", "Look back one last time"],
+      "zhuji-2b": ["Chase after them", "Hide in the ancestral hall"]
+    },
+    "glossary": {
+      "贡生": { "meaning": "tribute student, a scholar selected for the imperial academy", "note": "Luo Gui is the legendary leader of the Zhuji Lane migration." },
+      "结筏": { "meaning": "to lash bamboo into rafts", "note": "A means of travel by water." },
+      "胡妃": { "meaning": "Consort Hu", "note": "A figure tied to the Zhuji Lane migration legend; versions differ." },
+      "前路": { "meaning": "the road ahead", "note": "Here, the future of the migration." },
+      "得人惊": { "meaning": "frightening", "note": "A common Cantonese expression." },
+      "走晒": { "meaning": "all gone", "note": "\"Saai\" means \"all.\"" },
+      "桑梓": { "meaning": "native place, homeland", "note": "The ancients planted mulberry and catalpa by their homes; the trees came to mean \"hometown.\"" },
+      "寻根": { "meaning": "to trace one's roots", "note": "Zhuji Lane is the root of many Cantonese clans." }
+    }
+  },
+  "boluo-festival": {
+    "title": "The Boluo Chicken",
+    "subtitle": "Miaotou Village · The Legend of a Paper Chicken",
+    "quote": "The Boluo chicken — it all hangs on the glue.",
+    "intro": "In the second lunar month, Miaotou Village in Huangpu is packed shoulder to shoulder. You squeeze into the Temple of the South China Sea and see stall after stall of Boluo chickens — paper birds in red and green.",
+    "dialect": "Cantonese · Huangpu, Guangzhou",
+    "type": "Legend / Hearsay · Folk Custom",
+    "duration": "4 min",
+    "scenes": {
+      "boluo-1": {
+        "title": "Market Day at Miaotou",
+        "text": "On the main day of the Boluo Festival, Miaotou Village is so crowded you can't move. You see an old man at a stall with rows of paper Boluo chickens, their combs red enough to shine. He says: \"Young fella, buy one — it's good luck.\""
+      },
+      "boluo-2a": {
+        "title": "Where the Paper Chicken Comes From",
+        "text": "Gluing on feathers as he talks, the old man says: \"They say a merchant from the land of Boluo once came to the temple, bringing two chickens. In the end he never left — he stayed at the temple.\""
+      },
+      "boluo-2b": {
+        "title": "Daxi Sikong",
+        "text": "The old man lowers his voice: \"The merchant was called Daxi Sikong. He stared toward his homeland until he turned to stone. The villagers took pity on him and made paper chickens to honour him.\""
+      },
+      "boluo-3a": {
+        "title": "The Stone Statue in the Temple",
+        "text": "You step into the temple and see a stone statue with its face turned toward the sea. Incense smoke is thick, and Boluo chickens are piled before it. Some press their palms together; others just stand quietly a while.",
+        "endingText": "A paper chicken, offered to a man who never made it home."
+      },
+      "boluo-3b": {
+        "title": "Taking a Chicken Home",
+        "text": "You buy a Boluo chicken and the old man ties it up with red string. Back home, your mother laughs: \"A Boluo chicken — it's all held together by glue.\" You laugh too, but you don't call her out.",
+        "endingText": "Some stories only stay alive because they stick."
+      }
+    },
+    "choices": {
+      "boluo-1": ["Buy a Boluo chicken", "Ask the old man why it's called that"],
+      "boluo-2a": ["Ask the merchant's name", "Ask what became of the two chickens"],
+      "boluo-2b": ["Go see the stone statue in the temple", "Buy a chicken and take it home"]
+    },
+    "glossary": {
+      "逼": { "meaning": "to be crowded, jostled", "note": "In Cantonese, \"bik\" means to squeeze." },
+      "好意头": { "meaning": "good omen", "note": "Cantonese speakers care a great deal about \"yih tau\" (auspiciousness)." },
+      "黐": { "meaning": "to stick, to glue", "note": "Pronounced \"chi1\"; it also means to latch onto someone and not leave." },
+      "听讲": { "meaning": "they say, I've heard", "note": "Storytellers use it to introduce hearsay." },
+      "望住": { "meaning": "to gaze at", "note": "\"Jyu\" marks an ongoing action." },
+      "化成": { "meaning": "to turn into", "note": "Folktales often say \"turned to stone.\"" },
+      "香火": { "meaning": "incense and offerings", "note": "Thick incense smoke means many worshippers." },
+      "企": { "meaning": "to stand", "note": "Cantonese \"kei\" equals Mandarin \"zhan\" (stand)." },
+      "靠黐": { "meaning": "to rely on glue; also to sponge off others", "note": "The double meaning in the saying \"Boluo chicken — held by glue.\"" },
+      "拆穿": { "meaning": "to see through, to call out", "note": "Cantonese says \"tear off the foreign mirror\" for exposing a trick." }
+    }
+  },
+  "thirteen-factories-silver": {
+    "title": "The Silver Chest of the Thirteen Factories",
+    "subtitle": "The Thirteen Factories · The Legend of a Silver Chest",
+    "quote": "Silver can be lost; a good name can't.",
+    "intro": "You're a clerk at the Thirteen Factories trading houses. Tonight you must escort a silver chest down to the boat, and the manager says: don't ask what's inside.",
+    "dialect": "Cantonese · Liwan, Guangzhou",
+    "type": "Legend / Hearsay · Trading Port Tale",
+    "duration": "7 min",
+    "scenes": {
+      "silver-1": {
+        "title": "The Manager's Chest",
+        "text": "After closing, the manager calls you into the counting room. On the desk sits a wooden chest bound in iron, its lock brand new. He says: \"Tonight you escort it alone.\""
+      },
+      "silver-2a": {
+        "title": "Eyes on the Wharf",
+        "text": "You shoulder the chest and walk the long corridor of the trading house. Behind the pillars, someone keeps following you. You quicken your step; so do the footsteps behind."
+      },
+      "silver-2b": {
+        "title": "What You Shouldn't Know",
+        "text": "The manager stares at you a moment, then lowers his voice: \"It isn't silver inside. It's a stack of ledgers.\" Your heart sinks — you know this chest is heavier than silver."
+      },
+      "silver-3": {
+        "title": "Night Fog on the Pearl River",
+        "text": "Fog rises over the wharf, and the river slaps the stone steps. The pickup boat hasn't come. Suddenly a drop seeps from the corner of the chest — not like water, sticky to the touch. You sniff it: salty."
+      },
+      "silver-4": {
+        "title": "The Names in the Ledger",
+        "text": "You pry open a crack and see a stack of ledger pages. At the top are a dozen names — and one of them is your father's. Your hand jerks, and the lid snaps shut with a clap."
+      },
+      "silver-5a": {
+        "title": "One Page Missing",
+        "text": "You pull out a single page and stuff it in your pocket. The boat arrives, and you hand over the chest. You glance back: the manager stands under the arcade, as if he saw everything."
+      },
+      "silver-5b": {
+        "title": "The Sealed Chest",
+        "text": "You hand the chest over exactly as it was, without a word extra. The manager pats your shoulder: \"Young man, you know how to play it.\" But inside, you'll remember that name."
+      },
+      "silver-e1": {
+        "title": "Ending · Staying at the Trading House",
+        "text": "You stay, rising from clerk to comprador. Years later, you donate that page to the merchants' guild with one sentence: \"Black on white — don't burn it.\"",
+        "endingText": "Silver can be lost; a good name can't."
+      },
+      "silver-e2": {
+        "title": "Ending · The One Who Left",
+        "text": "You take a boat out that night; no one knows where you go. Years later, a great fire sweeps the Thirteen Factories and many ledgers burn to ash. When you hear the news, you only touch the page in your pocket.",
+        "endingText": "Some ledgers can be burned away; some names cannot."
+      }
+    },
+    "choices": {
+      "silver-1": ["Follow orders, ask nothing", "Ask what's inside"],
+      "silver-2a": ["Duck into an alley and shake him off", "Stop and turn to confront him"],
+      "silver-2b": ["Agree and escort it", "Refuse and tell him to find someone else"],
+      "silver-3": ["Open the chest for a look", "Act as if nothing happened and wait for the boat"],
+      "silver-4": ["Copy down the names", "Leave it untouched and escort it"],
+      "silver-5a": ["Pretend you know nothing and report back", "Leave the Thirteen Factories that very night"],
+      "silver-5b": ["Stay and quietly investigate", "Quit and never touch it again"]
+    },
+    "glossary": {
+      "十三行": { "meaning": "the Thirteen Factories, Qing-era Guangzhou's foreign trade houses", "note": "The old site is in today's Liwan, Guangzhou." },
+      "新净": { "meaning": "brand new and clean", "note": "A common Cantonese phrase." },
+      "商馆": { "meaning": "foreign trading house", "note": "In the Thirteen Factories era, these clustered along the Pearl River." },
+      "跟住": { "meaning": "to follow", "note": "A common Cantonese word." },
+      "账": { "meaning": "ledgers, accounts", "note": "The most sensitive thing in any trading house." },
+      "心一沉": { "meaning": "one's heart sinks", "note": "A feeling of dread." },
+      "接应": { "meaning": "pickup contact or boat", "note": "Common in old smuggling and escort work." },
+      "黏手": { "meaning": "sticky to the touch", "note": "A common Cantonese word." },
+      "撬开": { "meaning": "to pry open", "note": "To force open with a tool." },
+      "合埋": { "meaning": "to close up", "note": "\"Maai\" means to bring together." },
+      "骑楼": { "meaning": "arcaded shophouse, qilou", "note": "Common in old Guangzhou." },
+      "乜都睇见": { "meaning": "to see everything", "note": "Colloquial Cantonese." },
+      "膊头": { "meaning": "shoulder", "note": "A common Cantonese word." },
+      "识做": { "meaning": "to know how to behave, to be sensible", "note": "Colloquial Cantonese." },
+      "买办": { "meaning": "comprador, a middleman for foreign trade", "note": "A key role in the Thirteen Factories era." },
+      "捐畀": { "meaning": "to donate to", "note": "\"Bei\" means \"to give.\"" },
+      "去边": { "meaning": "where to", "note": "Colloquial Cantonese." },
+      "烧成灰": { "meaning": "burned to ashes", "note": "Said of records destroyed." }
+    }
+  },
+  "whampoa-foreigner": {
+    "title": "The Foreigner of Whampoa Old Port",
+    "subtitle": "Whampoa Old Port · The Legend of a Pocket Watch",
+    "quote": "Not everyone who comes from the sea is a thief, and not everyone waiting on shore is a good man.",
+    "intro": "You're a boatman at Whampoa Old Port. Late at night, a foreign merchant asks you to take him out to his ship and gives you a pocket watch as a deposit.",
+    "dialect": "Cantonese · Haizhu, Guangzhou",
+    "type": "Legend / Hearsay · Port Tale",
+    "duration": "8 min",
+    "scenes": {
+      "whampoa-1": {
+        "title": "The Late-Night Customer",
+        "text": "The old port has closed for the day, only a few lamps left on the wharf. A tall, blond foreigner stands on the jetty, a silver pocket watch in his hand, gazing at the river."
+      },
+      "whampoa-2a": {
+        "title": "A Watch as Deposit",
+        "text": "The foreigner tosses you the watch. The lid springs open — inside isn't a clock face, but a tiny photograph: a Chinese woman and a shopfront."
+      },
+      "whampoa-2b": {
+        "title": "Where To",
+        "text": "In broken Cantonese the foreigner says: \"To the big ship, before daybreak.\" You look at the river — the ship is far out, and the fog is thick."
+      },
+      "whampoa-3": {
+        "title": "The Patrol Boat Mid-River",
+        "text": "Mid-river, a light flares ahead — a government patrol boat. The foreigner instantly ducks low and stuffs the watch into your pocket."
+      },
+      "whampoa-4a": {
+        "title": "The Runner's Question",
+        "text": "The runner asks: \"How many aboard?\" You say two. He lifts his lamp into the cabin; the foreigner has covered himself with a straw mat, only the tips of his shoes showing."
+      },
+      "whampoa-4b": {
+        "title": "Dead End in the Side Channel",
+        "text": "The channel narrows the further you row, until a sluice gate blocks the way. You realise you've been led into a trap; behind you, the patrol boat has already followed in."
+      },
+      "whampoa-5": {
+        "title": "The Foreigner's Story",
+        "text": "Once you're clear, the foreigner tells the truth: the woman in the photo is his wife, and his partner swallowed up the shop. He's come back only to retrieve a deed."
+      },
+      "whampoa-6": {
+        "title": "Lights of the Thirteen Factories",
+        "text": "Before dawn, you feel your way into the back alley of the Thirteen Factories. The shop's sign has changed, but the stone steps are as they were. The foreigner stands in the shadows, hands shaking too much to open the lock."
+      },
+      "whampoa-e1": {
+        "title": "Ending · An Old Deed",
+        "text": "When the door opens, the foreigner takes only one yellowed deed and doesn't touch a single coin of the rest. At daybreak he boards his ship and leaves, leaving the pocket watch with you.",
+        "endingText": "Not everyone who comes from the sea is a thief, and not everyone waiting on shore is a good man."
+      },
+      "whampoa-e2": {
+        "title": "Ending · After Daybreak",
+        "text": "You tell him to come back at daylight. The next day the shop is emptied out, and the foreigner never appears again. Years later, you still keep that pocket watch; the photo inside the lid smiles very quietly.",
+        "endingText": "Some people leave, and only then does anyone remember they were ever here."
+      }
+    },
+    "choices": {
+      "whampoa-1": ["Take the job", "Ask exactly where he's going"],
+      "whampoa-2a": ["Snap it shut and mind your own business", "Ask who's in the photo"],
+      "whampoa-2b": ["Set off before the fog lifts", "Bring along a second pair of hands"],
+      "whampoa-3": ["Row straight through", "Turn into a side channel"],
+      "whampoa-4a": ["Help hide his shoe tips", "Don't dare make a sound"],
+      "whampoa-4b": ["Abandon the boat and go ashore", "Ram the sluice gate"],
+      "whampoa-5": ["Trust him and see it through", "Take the money, don't ask questions"],
+      "whampoa-6": ["Help him open the lock", "Tell him to come back at daylight"]
+    },
+    "glossary": {
+      "番鬼": { "meaning": "old slang for a foreigner, \"fan kwai\"", "note": "A period term; not something to say to someone's face today." },
+      "黄埔古港": { "meaning": "Whampoa Old Port, Guangzhou's old foreign-trade harbour", "note": "A key customs port in the Qing dynasty." },
+      "表盖": { "meaning": "the lid of a pocket watch", "note": "Common on old pocket watches." },
+      "半咸淡": { "meaning": "halting, heavily accented", "note": "Said of Cantonese spoken with a strong accent." },
+      "检查船": { "meaning": "patrol boat", "note": "Old customs checkpoints." },
+      "艇舱": { "meaning": "boat cabin", "note": "Small boats had space in the middle to hide things." },
+      "草席": { "meaning": "straw mat", "note": "Common on boats." },
+      "横涌": { "meaning": "side channel, tributary creek", "note": "Common in the Pearl River Delta's waterways." },
+      "水闸": { "meaning": "sluice gate", "note": "Common on creeks." },
+      "契": { "meaning": "deed, contract", "note": "An old property document." },
+      "吞咗": { "meaning": "swallowed up", "note": "Said of property being embezzled." },
+      "后巷": { "meaning": "back alley", "note": "Common behind old-town shops." },
+      "发黄": { "meaning": "yellowed", "note": "Said of old paper." },
+      "搬空": { "meaning": "emptied out", "note": "A common Cantonese phrase." }
+    }
+  }
+}

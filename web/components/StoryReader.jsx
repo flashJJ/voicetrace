@@ -9,22 +9,89 @@ import KidWordCards from "./KidWordCards";
 import { getRecording, recordingId } from "../lib/recordings";
 import { getKidLearning } from "../lib/kid-learning";
 import { markSceneVisited } from "../lib/kid-progress";
+import { localizeLearning, localizeStory } from "../lib/i18n-content";
+import { useLocale } from "./LocaleProvider";
+
+const COPY = {
+  zh: {
+    backKids: "返回儿童故事",
+    backStories: "返回故事馆",
+    kidsMeta: (ageBand) => `${ageBand} 岁 · 儿童模式`,
+    actLabel: (act, total) => `第 ${act} 幕 / 共 ${total} 幕`,
+    cantonese: "粤语原文",
+    mandarin: "普通话",
+    english: "English",
+    quickReadAlong: "跟读这一句",
+    quickWords: "看本幕词语",
+    previous: "上一幕",
+    restart: "从头开始",
+    quiz: (count) => `做 ${count} 道小测`,
+    reread: "再读一次",
+    summary: "看学习小结",
+    recordFamily: "录下我家的版本",
+    map: "去声音地图",
+    kidsHome: "回儿童故事",
+    sampleNotice:
+      "这是示例故事，用于演示产品体验。正式版会替换为经本人授权的真实家庭故事；录音可随时删除，AI 合成音会明确标注。",
+    shareEyebrowFamily: "带走一张我家的声音卡",
+    shareEyebrow: "带走一张声音卡",
+    shareTitle: "把这段乡音，发给你想念的人",
+    shareText: "故事卡会带上故事名、方言、地点和一句金句。下载后可以发微信、发朋友圈，也可以打印出来夹在书里。",
+    shareNotice: "当前为原型示例卡；正式版会加入真实录音二维码和家族故事页。",
+    glossary: "方言词注释",
+    endingTitle: "故事读完了",
+  },
+  en: {
+    backKids: "Back to kids",
+    backStories: "Back to stories",
+    kidsMeta: (ageBand) => `${ageBand} · Kids mode`,
+    actLabel: (act, total) => `Act ${act} of ${total}`,
+    cantonese: "Cantonese",
+    mandarin: "Mandarin",
+    english: "English",
+    quickReadAlong: "Read along",
+    quickWords: "Word cards",
+    previous: "Previous act",
+    restart: "Start over",
+    quiz: (count) => `Take ${count} quiz questions`,
+    reread: "Read again",
+    summary: "Learning summary",
+    recordFamily: "Record our version",
+    map: "Sound map",
+    kidsHome: "Back to kids",
+    sampleNotice:
+      "This is a sample story used to demonstrate the product. A future release will use authorized family stories; recordings can be deleted at any time, and synthetic audio is clearly labeled.",
+    shareEyebrowFamily: "Take home a family voice card",
+    shareEyebrow: "Take home a voice card",
+    shareTitle: "Send a piece of home to someone you miss",
+    shareText: "The card carries the story title, dialect, place, and one line. Download it, share it, or print it and keep it in a book.",
+    shareNotice: "This is a prototype card; a future release will add a real recording QR code and a family story page.",
+    glossary: "Glossary",
+    endingTitle: "The story is finished",
+  },
+};
 
 export default function StoryReader({ story, kidMode = false }) {
+  const { locale, localize, pick } = useLocale();
+  const c = pick(COPY);
+  const localizedStory = useMemo(
+    () => localizeStory(story, locale, localize),
+    [story, locale, localize]
+  );
   const scenes = useMemo(
     () =>
-      story.scenes.reduce((acc, scene) => {
+      localizedStory.scenes.reduce((acc, scene) => {
         acc[scene.id] = scene;
         return acc;
       }, {}),
-    [story]
+    [localizedStory]
   );
   const actCount = useMemo(() => {
-    const explicit = Number(story.actCount);
+    const explicit = Number(localizedStory.actCount);
     if (explicit > 0) return explicit;
-    return Math.max(...story.scenes.map((item) => Number(item.act) || 1));
-  }, [story]);
-  const firstScene = story.scenes[0].id;
+    return Math.max(...localizedStory.scenes.map((item) => Number(item.act) || 1));
+  }, [localizedStory]);
+  const firstScene = localizedStory.scenes[0].id;
   const recordBase = kidMode ? "/kids/record" : "/record";
   const [sceneId, setSceneId] = useState(firstScene);
   const [history, setHistory] = useState([]);
@@ -34,8 +101,11 @@ export default function StoryReader({ story, kidMode = false }) {
 
   const scene = scenes[sceneId];
   const learning = useMemo(
-    () => (kidMode ? getKidLearning(story.slug) : null),
-    [kidMode, story.slug]
+    () =>
+      kidMode
+        ? localizeLearning(story.slug, getKidLearning(story.slug), locale, localize)
+        : null,
+    [kidMode, story.slug, locale, localize]
   );
   const sceneKidWords = learning?.sceneWords?.[scene.id] || [];
   const showGlossary = scene.glossary?.length > 0 && (!kidMode || sceneKidWords.length === 0);
@@ -107,24 +177,26 @@ export default function StoryReader({ story, kidMode = false }) {
       <div className="container">
         <div className="reader-top">
           <Link href={kidMode ? "/kids" : "/stories"} className="reader-back">
-            <span aria-hidden="true">←</span> {kidMode ? "返回儿童故事" : "返回故事馆"}
+            <span aria-hidden="true">←</span> {kidMode ? c.backKids : c.backStories}
           </Link>
           <span>
-            {kidMode ? `${story.ageBand} 岁 · 儿童模式` : `${story.dialect} · ${story.type}`}
+            {kidMode
+              ? c.kidsMeta(localizedStory.ageBand)
+              : `${localizedStory.dialect} · ${localizedStory.type}`}
           </span>
         </div>
 
         <div className="reader-shell">
           <div className="reader-visual">
             <img
-              src={scene.image || story.cover}
-              alt={`${story.title} · ${scene.title}`}
+              src={scene.image || localizedStory.cover}
+              alt={`${localizedStory.title} · ${scene.title}`}
               width="900"
               height="675"
               loading="eager"
               decoding="async"
             />
-            <SceneAudio story={story} scene={scene} recordBase={recordBase} />
+            <SceneAudio story={localizedStory} scene={scene} recordBase={recordBase} />
           </div>
 
           <div className="reader-body" ref={bodyRef}>
@@ -140,28 +212,30 @@ export default function StoryReader({ story, kidMode = false }) {
                 </div>
               ))}
             </div>
-            <div className="act-label">
-              第 {scene.act} 幕 / 共 {actCount} 幕
-            </div>
+            <div className="act-label">{c.actLabel(scene.act, actCount)}</div>
             {kidMode && learning ? (
-              <div className="kid-quick-links" aria-label="本幕快捷入口">
+              <div className="kid-quick-links" aria-label="Shortcuts">
                 <a className="kid-quick-link" href="#kid-readalong">
-                  跟读这一句
+                  {c.quickReadAlong}
                 </a>
                 {sceneKidWords.length ? (
                   <a className="kid-quick-link" href="#kid-wordcards">
-                    看本幕词语
+                    {c.quickWords}
                   </a>
                 ) : null}
               </div>
             ) : null}
             <h1 className="scene-title">{scene.title}</h1>
+            <span className="scene-text-label">{c.cantonese}</span>
             <p className="scene-text">{scene.textYue}</p>
-            <p className="scene-text-zh">{scene.textZh}</p>
+            <span className="scene-text-label">{locale === "en" ? c.english : c.mandarin}</span>
+            <p className="scene-text-zh">
+              {locale === "en" ? scene.textEn || scene.textZh : scene.textZh}
+            </p>
 
             {showGlossary && (
               <>
-                <div className="glossary" aria-label="方言词注释">
+                <div className="glossary" aria-label={c.glossary}>
                   {scene.glossary.map((item) => (
                     <button
                       type="button"
@@ -188,14 +262,14 @@ export default function StoryReader({ story, kidMode = false }) {
 
             {learning ? (
               <div className="kid-learn">
-                <KidReadAlong story={story} scene={scene} />
+                <KidReadAlong story={localizedStory} scene={scene} />
                 <KidWordCards slug={story.slug} words={sceneKidWords} />
               </div>
             ) : null}
 
             {scene.ending ? (
               <div className="ending-card">
-                <h3>故事读完了</h3>
+                <h3>{c.endingTitle}</h3>
                 <p>{scene.endingText}</p>
                 <div className="share-actions">
                   {learning?.quiz?.length ? (
@@ -203,7 +277,7 @@ export default function StoryReader({ story, kidMode = false }) {
                       className="btn btn-primary"
                       href={`/kids/${story.slug}/quiz`}
                     >
-                      做 {learning.quiz.length} 道小测
+                      {c.quiz(learning.quiz.length)}
                     </Link>
                   ) : null}
                   <button
@@ -213,21 +287,21 @@ export default function StoryReader({ story, kidMode = false }) {
                     }`}
                     onClick={restart}
                   >
-                    再读一次
+                    {c.reread}
                   </button>
                   {learning ? (
                     <Link className="btn btn-ghost" href={`/kids/${story.slug}/summary`}>
-                      看学习小结
+                      {c.summary}
                     </Link>
                   ) : null}
                   <Link
                     className="btn btn-ghost"
                     href={`${recordBase}?story=${story.slug}&scene=${firstScene}`}
                   >
-                    录下我家的版本
+                    {c.recordFamily}
                   </Link>
                   <Link className="btn btn-ghost" href={kidMode ? "/kids" : "/map"}>
-                    {kidMode ? "回儿童故事" : "去声音地图"}
+                    {kidMode ? c.kidsHome : c.map}
                   </Link>
                 </div>
               </div>
@@ -254,19 +328,14 @@ export default function StoryReader({ story, kidMode = false }) {
                 onClick={back}
                 disabled={history.length === 0}
               >
-                上一幕
+                {c.previous}
               </button>
               <button type="button" className="btn btn-ghost" onClick={restart}>
-                从头开始
+                {c.restart}
               </button>
             </div>
 
-            {story.type.includes("示例") && (
-              <p className="notice">
-                这是示例故事，用于演示产品体验。正式版会替换为经本人授权的真实家庭故事；
-                录音可随时删除，AI 合成音会明确标注。
-              </p>
-            )}
+            {story.type.includes("示例") && <p className="notice">{c.sampleNotice}</p>}
           </div>
         </div>
 
@@ -274,20 +343,17 @@ export default function StoryReader({ story, kidMode = false }) {
           <section className="share-panel">
             <div>
               <span className="eyebrow">
-                {familyQuote ? "带走一张我家的声音卡" : "带走一张声音卡"}
+                {familyQuote ? c.shareEyebrowFamily : c.shareEyebrow}
               </span>
-              <h2>把这段乡音，发给你想念的人</h2>
-              <p>
-                故事卡会带上故事名、方言、地点和一句金句。下载后可以发微信、发朋友圈，
-                也可以打印出来夹在书里。
-              </p>
+              <h2>{c.shareTitle}</h2>
+              <p>{c.shareText}</p>
               <p className="notice" style={{ marginTop: 0 }}>
-                当前为原型示例卡；正式版会加入真实录音二维码和家族故事页。
+                {c.shareNotice}
               </p>
             </div>
             <ShareCard
-              story={story}
-              quote={familyQuote || scene.endingText || story.quote}
+              story={localizedStory}
+              quote={familyQuote || scene.endingText || localizedStory.quote}
               source={familyQuote ? "family" : "sample"}
             />
           </section>

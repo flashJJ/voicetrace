@@ -1,0 +1,447 @@
+{
+  "ding-ding-zyun": {
+    "title": "Round and Round, the Chrysanthemum Garden",
+    "subtitle": "A nursery rhyme you sing in a circle",
+    "quote": "Round and round, the chrysanthemum garden.",
+    "intro": "On the park grass, the children stand in a circle. They sing as they turn. Grandma waves to you: do you want to join the circle?",
+    "dialect": "Cantonese · Guangzhou",
+    "type": "A public-domain nursery rhyme, retold",
+    "duration": "3 min",
+    "scenes": {
+      "ding-1": {
+        "title": "A Circle on the Grass",
+        "text": "School is out, and the park grass is busy. Grandma holds your hand and points ahead: “Look, the big kids are in a circle. They are singing the round-and-round rhyme. Do you want to go in?”"
+      },
+      "ding-2a": {
+        "title": "Round and Round, Chrysanthemum Garden",
+        "text": "You step into the circle and hold the hand next to you. Everyone sings as they turn: “Round and round, chrysanthemum garden, puffed-rice cakes, sticky rice balls.” By the third turn, your head feels a little dizzy."
+      },
+      "ding-2b": {
+        "title": "The Little One Outside the Circle",
+        "text": "You sit on a bench and watch. A child smaller than you stands outside the circle. One finger is in their mouth. They want to go in, but they are afraid."
+      },
+      "ding-3a": {
+        "title": "Ending · No One Left Out",
+        "text": "You slow your steps and hold the hand beside you tight. The circle turns more and more smoothly. Laughter spreads, ring after ring. Grandma claps beside you: “That's right. When we make a circle, no one is left behind.”",
+        "endingText": "In a circle, no one is left out."
+      },
+      "ding-3b": {
+        "title": "Ending · A Circle Has No Ends",
+        "text": "You sit with Grandma in the shade of a tree and watch the circle on the grass. Grandma says: “A circle has no start and no end. You can step in any time. Next time, you can be the first one to reach out a hand.”",
+        "endingText": "A circle has no ends. You can join any time."
+      }
+    },
+    "choices": {
+      "ding-1": [
+        "Walk into the circle and join in",
+        "Stand beside it and watch for a while"
+      ],
+      "ding-2a": [
+        "Keep the beat and turn slowly",
+        "Stop and take a breath"
+      ],
+      "ding-2b": [
+        "Take their hand and bring them into the circle",
+        "Ask Grandma why people make a circle"
+      ]
+    },
+    "glossary": {
+      "氹氹转": {
+        "meaning": "going round and round",
+        "note": "In Cantonese rhymes it describes children turning in a circle."
+      },
+      "围圈": {
+        "meaning": "to stand in a circle",
+        "note": "Everyone holds hands and makes a circle."
+      },
+      "炒米饼": {
+        "meaning": "a small cake made of puffed rice",
+        "note": "A Cantonese treat often made for the New Year."
+      },
+      "糯米圆": {
+        "meaning": "little balls made of sticky rice",
+        "note": "Soft, chewy and sweet."
+      },
+      "细过": {
+        "meaning": "smaller than",
+        "note": "In Cantonese, “sai” means young or small."
+      },
+      "唔敢": {
+        "meaning": "not dare to",
+        "note": "Wanting to try, but a little scared."
+      },
+      "漏低": {
+        "meaning": "to leave behind",
+        "note": "In Cantonese it means leaving a person or thing behind."
+      },
+      "拍手": {
+        "meaning": "to clap hands",
+        "note": "People clap when they are happy."
+      },
+      "树荫": {
+        "meaning": "the cool shade under a tree",
+        "note": "A favourite spot to rest on a hot summer day."
+      },
+      "几时": {
+        "meaning": "when",
+        "note": "Cantonese often uses “gei si” to ask about time."
+      }
+    }
+  },
+  "dim-cung-cung": {
+    "title": "Tap, Tap, Little Bug",
+    "subtitle": "A little bug on your fingertip",
+    "quote": "Tap, tap, little bug. Little bug, fly.",
+    "intro": "Mum taps your palm softly with her finger and sings “Tap, tap, little bug. Little bug, fly.” Then a real little bug flies over.",
+    "dialect": "Cantonese · Pearl River Delta",
+    "type": "A public-domain nursery rhyme, retold",
+    "duration": "3 min",
+    "scenes": {
+      "dim-1": {
+        "title": "A Little Bug on Your Palm",
+        "text": "The courtyard is quiet. Mum sits beside you and taps your palm with her finger: “Tap, tap, little bug. Little bug, fly, fly to the lychee garden.” Just then, a small red-and-black bug flies past."
+      },
+      "dim-2a": {
+        "title": "The Bug Lands on a Lychee Leaf",
+        "text": "The little bug flies on and on, then lands on a lychee leaf. You stand on tiptoe and walk over slowly. Its wings are thin and thin, and they shine a little in the sun."
+      },
+      "dim-2b": {
+        "title": "Two Fingers Make a Little Bug",
+        "text": "Mum shows you how to hold up two fingers and open and close them: “Tap, tap, little bug. Little bug, fly.” You try a few times, and your fingers move more and more smoothly."
+      },
+      "dim-3a": {
+        "title": "Ending · Wave Goodbye",
+        "text": "The little bug flaps its wings and flies over the wall. You wave: “Come and play another day.” Mum smiles: “The little bug has to go home for dinner. Let's go and wash our hands too.”",
+        "endingText": "Watching is enough. You don't have to catch it."
+      },
+      "dim-3b": {
+        "title": "Ending · Bugs Have Wings, You Have Fingers",
+        "text": "You reach out to catch it, but the little bug has already flown high. Mum laughs: “The bug has wings. You have two fingers. Come on, let's play the tapping game again.”",
+        "endingText": "The little bug has wings. You have two fingers."
+      }
+    },
+    "choices": {
+      "dim-1": [
+        "Follow the little bug",
+        "Stay and learn the finger game"
+      ],
+      "dim-2a": [
+        "Watch it quietly",
+        "Reach out to catch it"
+      ],
+      "dim-2b": [
+        "Sing along with Mum",
+        "Ask where the little bug is going"
+      ]
+    },
+    "glossary": {
+      "点虫虫": {
+        "meaning": "to tap with a finger, a game played with small children",
+        "note": "You tap the palm and sing the rhyme."
+      },
+      "荔枝基": {
+        "meaning": "a lychee orchard, or the ground under lychee trees",
+        "note": "Lychee orchards are common in the Pearl River Delta."
+      },
+      "跷高脚": {
+        "meaning": "to stand on tiptoe",
+        "note": "You walk lightly so you do not scare the bug."
+      },
+      "薄薄哋": {
+        "meaning": "thin, rather thin",
+        "note": "The ending “dei” means a little, or a bit."
+      },
+      "郁": {
+        "meaning": "to move",
+        "note": "In Cantonese, “juk” means to move or wiggle."
+      },
+      "手指公": {
+        "meaning": "thumb",
+        "note": "Each of the five fingers has its own name."
+      },
+      "振翅": {
+        "meaning": "to flap the wings",
+        "note": "Birds and bugs flap their wings before they fly."
+      },
+      "第日": {
+        "meaning": "another day, some day later",
+        "note": "In Cantonese it means a day in the future."
+      },
+      "扑": {
+        "meaning": "to reach out and grab",
+        "note": "You can “pok” at a butterfly or a bug."
+      },
+      "翼": {
+        "meaning": "wing",
+        "note": "Cantonese speakers often say “jik” in everyday talk."
+      }
+    }
+  },
+  "pai-pai-sit-fan-gwo": {
+    "title": "Sit in a Row and Eat Fan Guo",
+    "subtitle": "One basket of fan guo, a share for everyone",
+    "quote": "Sit in a row, eat fan guo.",
+    "intro": "Grandma has just steamed a basket of fan guo. Steam curls up into the air. Five children gather round. How can everyone get some?",
+    "dialect": "Cantonese · Guangzhou",
+    "type": "A public-domain nursery rhyme, retold",
+    "duration": "3 min",
+    "scenes": {
+      "pai-1": {
+        "title": "One Hot Basket of Fan Guo",
+        "text": "Grandma lifts the steamer lid. White steam rises. The fan guo in the basket look clear and shiny. Five children stand around the table. You count: one, two, three… twelve in all."
+      },
+      "pai-2a": {
+        "title": "While We Queue",
+        "text": "You stand at the end of the line. The child in front of you takes three fan guo at once. The children behind start to shout: “Then what about us?”"
+      },
+      "pai-2b": {
+        "title": "Sharing to the Last One",
+        "text": "You help Grandma share them out, one by one. When you reach the last child, only one fan guo is left in the basket. But two people still have none. You look at the one in your own hand."
+      },
+      "pai-3a": {
+        "title": "Ending · A Share for Everyone",
+        "text": "Everyone sits down. Two each, just right. Grandma gives you one more: “You know how to sit in a row, so everyone gets a share.” The fan guo are piping hot. You take a bite, and the filling runs out.",
+        "endingText": "Sit in a row, eat fan guo, and everyone gets a share."
+      },
+      "pai-3b": {
+        "title": "Ending · Steam One More Basket",
+        "text": "Grandma says: “If that's not enough, we'll steam one more basket.” You all sit in a row and wait for the steam to rise again. Grandma says: “Fan guo must be steamed through. You can't rush it. Wait a little, and everyone will get some.”",
+        "endingText": "Wait a little. Hot and fresh tastes best."
+      }
+    },
+    "choices": {
+      "pai-1": [
+        "Line up and take one at a time",
+        "Help Grandma share them out"
+      ],
+      "pai-2a": [
+        "Remind them: two each",
+        "Let it go and take fewer yourself"
+      ],
+      "pai-2b": [
+        "Give yours to the smallest child",
+        "Ask Grandma what to do"
+      ]
+    },
+    "glossary": {
+      "粉果": {
+        "meaning": "a Cantonese steamed dumpling with a see-through wrapper and filling inside",
+        "note": "A common dim sum in old tea houses."
+      },
+      "蒸笼": {
+        "meaning": "a bamboo steamer basket",
+        "note": "Baskets are stacked up to steam the food."
+      },
+      "队尾": {
+        "meaning": "the end of the line",
+        "note": "In a line, one person follows another."
+      },
+      "嘈": {
+        "meaning": "noisy, to make a racket",
+        "note": "In Cantonese, “cou” means a loud, busy noise."
+      },
+      "分": {
+        "meaning": "to share out, to divide",
+        "note": "You give things out piece by piece."
+      },
+      "仲有": {
+        "meaning": "still have, there is more",
+        "note": "In Cantonese, “zung” means still or more."
+      },
+      "啱啱好": {
+        "meaning": "just right",
+        "note": "Not too much, not too little."
+      },
+      "热辣辣": {
+        "meaning": "piping hot",
+        "note": "It describes food straight from the pot or steamer."
+      },
+      "急唔嚟": {
+        "meaning": "you can't rush it",
+        "note": "Some things just take time."
+      },
+      "一阵": {
+        "meaning": "a little while",
+        "note": "In Cantonese it means a very short time."
+      }
+    }
+  },
+  "lok-jyu-daai": {
+    "title": "Heavy Rain, Flooded Street",
+    "subtitle": "A big rainstorm under the arcade",
+    "quote": "Heavy rain, flooded street.",
+    "intro": "You are halfway out on an errand when the sky suddenly turns dark. The rain comes down hard. The arcade is full of people. How will you get home?",
+    "dialect": "Cantonese · Xiguan, Guangzhou",
+    "type": "A public-domain nursery rhyme, retold",
+    "duration": "3 min",
+    "scenes": {
+      "rain-1": {
+        "title": "The Rain Comes Down Hard",
+        "text": "You and Mum go out to buy food. Halfway there, the sky turns dark all at once. Raindrops as big as beans come down, and the water soon covers your feet. Mum holds you back: “Don't panic. There is an arcade up ahead.”"
+      },
+      "rain-2a": {
+        "title": "Puddles and Baskets of Greens",
+        "text": "You run out into the rain and hop over puddles one by one. At the corner, an old lady carries two baskets of greens on a pole. She walks very slowly, and her umbrella is tilting."
+      },
+      "rain-2b": {
+        "title": "A Wait Under the Arcade",
+        "text": "You stand under the arcade. Rain runs down from the tiles along the eaves, like a curtain of water. Nearby, a child wants to step into a deep puddle. Even their shoes are wet."
+      },
+      "rain-3a": {
+        "title": "Ending · A Rainbow After the Rain",
+        "text": "You carry one basket of greens for the old lady, and she walks you to your building. The rain slowly grows lighter, and a rainbow appears in the sky. She says: “Heavy rain is nothing to fear. Just walk slowly.”",
+        "endingText": "Heavy rain, flooded street — walk slowly and you'll be fine."
+      },
+      "rain-3b": {
+        "title": "Ending · Wait, and the Rain Will Stop",
+        "text": "You sit under the arcade and count the raindrops: one, two, three… By the time you reach a hundred, the rain really is softer. Mum comes to meet you: “The puddles are deep. Don't step in them. Wait a little, and the rain will stop.”",
+        "endingText": "Wait a little. The rain will stop, and the sky will clear."
+      }
+    },
+    "choices": {
+      "rain-1": [
+        "Run home",
+        "Wait under the arcade until the rain stops"
+      ],
+      "rain-2a": [
+        "Carry one basket for her",
+        "Keep running home"
+      ],
+      "rain-2b": [
+        "Tell them not to step into the deep water",
+        "Count raindrops with them"
+      ]
+    },
+    "glossary": {
+      "落雨大": {
+        "meaning": "the rain is heavy",
+        "note": "In Cantonese, “lok jyu” means rain falls."
+      },
+      "骑楼": {
+        "meaning": "a covered walkway on the ground floor of a building",
+        "note": "A common Xiguan building style, handy for sheltering from rain."
+      },
+      "水氹": {
+        "meaning": "puddle",
+        "note": "The water that gathers on the ground after rain."
+      },
+      "担": {
+        "meaning": "to carry on a shoulder pole",
+        "note": "You use your shoulder to carry the load."
+      },
+      "瓦檐": {
+        "meaning": "the edge of a tiled roof",
+        "note": "Rain drips down from the eaves."
+      },
+      "水帘": {
+        "meaning": "a curtain of water",
+        "note": "It describes rain pouring down from the eaves."
+      },
+      "天虹": {
+        "meaning": "rainbow",
+        "note": "Cantonese also calls it “hung”. You often see one after rain."
+      },
+      "细": {
+        "meaning": "small",
+        "note": "“Jyu sai zo” means the rain has grown lighter."
+      },
+      "雨点": {
+        "meaning": "raindrop",
+        "note": "Rain falling one drop at a time."
+      },
+      "真系": {
+        "meaning": "really",
+        "note": "Cantonese often uses “zan hai” to mean truly."
+      }
+    }
+  },
+  "nin-jaa-baat-sai-laat-taai": {
+    "title": "The Twenty-Eighth: Scrub the Old Year Clean",
+    "subtitle": "Washing the old year away to welcome the new one",
+    "quote": "On the twenty-eighth, wash the dirt away.",
+    "intro": "On the twenty-eighth day of the last lunar month, the whole family cleans the house. Mum gives you the windows. Grandma asks you to sort out old things. Do old things always have to be thrown away?",
+    "dialect": "Cantonese · Guangzhou",
+    "type": "A Cantonese folk custom, retold",
+    "duration": "4 min",
+    "scenes": {
+      "nin-1": {
+        "title": "The Twenty-Eighth: Big Clean-Up",
+        "text": "It is the twenty-eighth day of the last lunar month, and the house is a mess. Mum washes the bedding. Dad wipes the fan. Grandma hands you a cloth: “You do the windows. When you finish, tidy your own desk.” You look at everything in the flat and don't know where to start."
+      },
+      "nin-2a": {
+        "title": "Window Paper-Cuts and Old Couplets",
+        "text": "You wipe along the window. Last year's paper-cuts have faded, and their corners have curled up. Grandma says: “Tear the old ones off and put up new ones. A new year, a fresh start.” You are still holding a paper-cut you made when you were little."
+      },
+      "nin-2b": {
+        "title": "Old Things Under the Desk",
+        "text": "You tidy under the desk and find a wooden horse you played with as a toddler, a stack of red envelope packets, and a photo of you with Grandpa. Mum says: “If it's no use, throw it out. Don't stuff it all back.” You look at the wooden horse. You can't bear to part with it."
+      },
+      "nin-3a": {
+        "title": "Ending · A New Year, a Fresh Start",
+        "text": "The windows shine. The new couplets are pasted up straight and neat. Grandma ties up all the rubbish in the house: “Wash away the old year and welcome the new one. When the house is clean, people feel brighter too.” You look at the shining window and smile.",
+        "endingText": "Wash the dirt away. Wash off the old year. Welcome the new one."
+      },
+      "nin-3b": {
+        "title": "Ending · Keep the Old Story",
+        "text": "You find a tin box and put the wooden horse, the red envelopes and the photo inside. You stick on a label: “My Old Year.” Grandma watches you and smiles: “Old things don't take up much room. Keeping the story is enough.”",
+        "endingText": "Old things can stay. So can their stories."
+      }
+    },
+    "choices": {
+      "nin-1": [
+        "Start with the window",
+        "Tidy your desk first"
+      ],
+      "nin-2a": [
+        "Put up the new spring couplets",
+        "Keep the paper-cut you made"
+      ],
+      "nin-2b": [
+        "Give the wooden horse to your cousin",
+        "Make a memory box and keep it"
+      ]
+    },
+    "glossary": {
+      "年廿八": {
+        "meaning": "the twenty-eighth day of the twelfth lunar month",
+        "note": "In Cantonese custom, this is the day for the big clean."
+      },
+      "洗邋遢": {
+        "meaning": "to clean the house from top to bottom",
+        "note": "It means washing away the old year's bad luck."
+      },
+      "窗花": {
+        "meaning": "paper-cut decorations stuck on windows",
+        "note": "People put them up for New Year, in lucky red."
+      },
+      "挥春": {
+        "meaning": "red paper couplets or lucky words pasted up at Spring Festival",
+        "note": "Cantonese calls them “fai ceon”."
+      },
+      "利是封": {
+        "meaning": "red envelope packet",
+        "note": "Used for lucky money at New Year."
+      },
+      "唔舍得": {
+        "meaning": "can't bear to part with it",
+        "note": "You have feelings for old things."
+      },
+      "正正": {
+        "meaning": "straight and neat",
+        "note": "Couplets should be pasted up straight."
+      },
+      "精神啲": {
+        "meaning": "a bit more lively",
+        "note": "The ending “di” shows a degree."
+      },
+      "铁盒": {
+        "meaning": "a tin box",
+        "note": "In the old days, people kept biscuits and photos in tin boxes."
+      },
+      "阻地方": {
+        "meaning": "to take up space",
+        "note": "In Cantonese, “zo” means to block or take up room."
+      }
+    }
+  }
+}

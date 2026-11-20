@@ -4,6 +4,30 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import AudioButton from "./AudioButton";
 import { formatDuration, getRecording, recordingId } from "../lib/recordings";
+import { useLocale } from "./LocaleProvider";
+
+const COPY = {
+  zh: {
+    family: "家人",
+    ourVersion: "我家的版本",
+    reRecord: "重录",
+    archive: "声音档案 · 改转写",
+    playFamily: "播放我家的版本",
+    stop: "停止播放",
+    playSample: "播放本幕粤语示例语音",
+    recordScene: "录下这一段的粤语 →",
+  },
+  en: {
+    family: "Family",
+    ourVersion: "Our family version",
+    reRecord: "Re-record",
+    archive: "Voice archive · edit transcript",
+    playFamily: "Play our family version",
+    stop: "Stop",
+    playSample: "Play sample Cantonese audio for this act",
+    recordScene: "Record this act in Cantonese →",
+  },
+};
 
 function PlayIcon({ playing }) {
   return playing ? (
@@ -19,6 +43,8 @@ function PlayIcon({ playing }) {
 }
 
 export default function SceneAudio({ story, scene, recordBase = "/record" }) {
+  const { pick } = useLocale();
+  const c = pick(COPY);
   const [status, setStatus] = useState("loading");
   const [record, setRecord] = useState(null);
   const [url, setUrl] = useState("");
@@ -73,7 +99,7 @@ export default function SceneAudio({ story, scene, recordBase = "/record" }) {
   if (status === "loading") return null;
 
   if (status === "ready" && record) {
-    const who = record.speaker || record.relation || "家人";
+    const who = record.speaker || record.relation || c.family;
     return (
       <div className="reader-audio scene-audio">
         <div className="audio-row">
@@ -81,12 +107,12 @@ export default function SceneAudio({ story, scene, recordBase = "/record" }) {
             type="button"
             className="audio-play"
             onClick={toggle}
-            aria-label={playing ? "停止播放" : "播放我家的版本"}
+            aria-label={playing ? c.stop : c.playFamily}
           >
             <PlayIcon playing={playing} />
           </button>
           <div className="audio-meta">
-            <div className="audio-label">我家的版本</div>
+            <div className="audio-label">{c.ourVersion}</div>
             <div className="audio-note">
               {who} · {formatDuration(record.duration)}
             </div>
@@ -95,14 +121,14 @@ export default function SceneAudio({ story, scene, recordBase = "/record" }) {
             className="scene-audio-edit"
             href={`${recordBase}?story=${record.storySlug}&scene=${record.sceneId}`}
           >
-            重录
+            {c.reRecord}
           </Link>
         </div>
         <p className="scene-audio-transcript" title={record.transcript || scene.textYue}>
           {record.transcript || scene.textYue}
         </p>
         <div className="scene-audio-links">
-          <Link href="/archive">声音档案 · 改转写</Link>
+          <Link href="/archive">{c.archive}</Link>
         </div>
         <audio ref={audioRef} src={url} preload="metadata" onEnded={() => setPlaying(false)} />
       </div>
@@ -111,15 +137,12 @@ export default function SceneAudio({ story, scene, recordBase = "/record" }) {
 
   return (
     <div className="reader-audio">
-      <AudioButton
-        text={scene.audioText || scene.textYue}
-        label="播放本幕粤语示例语音"
-      />
+      <AudioButton text={scene.audioText || scene.textYue} label={c.playSample} />
       <Link
         className="scene-record-link"
         href={`${recordBase}?story=${story.slug}&scene=${scene.id}`}
       >
-        录下这一段的粤语 →
+        {c.recordScene}
       </Link>
     </div>
   );
