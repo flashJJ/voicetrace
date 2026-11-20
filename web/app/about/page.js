@@ -47,6 +47,13 @@ const COPY = {
       "录音与故事可随时删除；删除会同时移除本机音频与转写，无法恢复。",
       "AI 合成音会明确标注；不会用 AI 冒充真实人物。",
     ],
+    compatTitle: "浏览器兼容",
+    compatItems: [
+      "推荐最新版 Chrome / Edge：语音播放、自动转写、录音与 PWA 安装均可使用。",
+      "Safari：可以读故事、录音和离线；安装请用「添加到主屏幕」；自动转写不可用，可在录音棚手动输入。",
+      "夸克、UC 与微信内置浏览器：阅读和录音通常可用；PWA 安装、离线与自动转写可能受限，建议在系统浏览器中打开。",
+      "粤语发音取决于设备是否安装粤语语音；没有时会提示，并改用普通话示例。",
+    ],
     prototypeTitle: "关于这个原型",
     prototype1:
       "当前版本是 TRAE 好应用大赏赛的参赛原型，共 28 个互动故事，长度 3-8 幕：既有《月光光》《老鼠娶亲》这样的公有领域改编，也有广州地方传说、民俗与野史，以及天星小轮、叮叮电车、茶餐厅 3 个香港原创儿童故事。现在已经加入本地录音棚、逐句转写校对、家庭任务包、简体/繁体/英文切换与离线安装；账号与云端同步不在当前版本，赛后按需评估。",
@@ -106,6 +113,13 @@ const COPY = {
       "Automatic transcription: uses the browser's speech service (Chrome / Edge). When enabled, audio may be sent to the browser vendor; it can be turned off in the studio in favor of typing.",
       "Recordings and stories can be deleted anytime; deletion removes both local audio and transcript and cannot be undone.",
       "AI-generated audio is clearly labeled and never impersonates a real person.",
+    ],
+    compatTitle: "Browser support",
+    compatItems: [
+      "Latest Chrome / Edge is recommended: speech playback, automatic transcription, recording and PWA install all work.",
+      "Safari: reading, recording and offline use work; install via “Add to Home Screen”; automatic transcription is unavailable, so type the transcript instead.",
+      "Quark, UC and in-app browsers such as WeChat: reading and recording usually work; PWA install, offline use and automatic transcription may be limited. Open the site in a system browser instead.",
+      "Cantonese playback depends on installed system voices; if none is available, the app says so and falls back to a Mandarin sample.",
     ],
     prototypeTitle: "About this prototype",
     prototype1:
@@ -202,6 +216,15 @@ export default function AboutPage() {
           <h2>{c.privacyTitle}</h2>
           <ul>
             {c.privacyItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="about-card">
+          <h2>{c.compatTitle}</h2>
+          <ul>
+            {c.compatItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>

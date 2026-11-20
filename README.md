@@ -261,3 +261,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | 参赛材料成品：17 张 v0.12 截图、8 页产品说明 PDF、10 页路演 PPT / PDF、3 分钟演示 MP4（白字黑描边烧字幕）与 SRT；故事馆「继续阅读」条不再压导语 | deliverables/、web/app/globals.css、docs/contest/14、README | PWA 主屏安装截图未拍；真实试用缺口保持标注 |
 | 2026-11-20 | 补真机主屏截图：`17-pwa-home.png` 为 Chrome 快捷方式（图标带 Chrome 徽标），v0.12 截图合计 18 张 | deliverables/screenshots/v0.12、docs/contest/14、README | 独立窗口未取证，材料按实际形态标注 |
 | 2026-11-20 | 隐私卖点上位：首页与关于页写清无需注册、录音只存本机、无广告与第三方统计；报名帖、产品说明、路演稿同步，重导 PDF 与 PPT | web/app/page.js、about/page.js、globals.css、docs/contest/09/11/12、deliverables、README | 自动转写与 AI 工坊的数据边界保留说明 |
+| 2026-11-20 | 关于页与报名帖补浏览器兼容说明：Chrome / Edge 全功能，Safari 需手动安装且转写不可用，夸克 / UC / 微信内置浏览器可能受限 | web/app/about/page.js、docs/contest/09、README | 自动转写与 PWA 安装列为降级项 |
