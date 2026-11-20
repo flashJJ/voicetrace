@@ -143,7 +143,7 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 - **黄金样品**：8 个（正经 6 + 鬼故事 1 + 野史 1）
 - **AI 工坊**：`/studio` 选素材 + 模式 → 生成 3-8 幕/翻译/注释 → 自动对照黄金样品跑 8 项检查；已配置火山方舟 Agent Plan（`deepseek-v4.1-flash`）。历史记录（v0.3，7 项规则）为 8 个样品 7/7 通过，不等同于新规则结果
 - **预生成演示**：`/demo` 已用真实模型预生成 3 个模式各 1 个故事（五羊传说 / 金花娘娘 / 波罗诞），现场不用等模型
-- **参赛材料**：`deliverables/` 内含 17 张 v0.12 截图、产品说明 PDF（8 页）、路演 PPT / PDF（10 页）与 3 分钟演示 MP4（烧字幕）+ SRT；试玩报告与报名帖草稿见文档导航
+- **参赛材料**：`deliverables/` 内含 18 张 v0.12 截图（含真机主屏快捷方式）、产品说明 PDF（8 页）、路演 PPT / PDF（10 页）与 3 分钟演示 MP4（烧字幕）+ SRT；试玩报告与报名帖草稿见文档导航
 - 运行：`cd web && npm install && npm run dev`，打开 <http://localhost:3000>
 - 构建：`npm run build` 已通过
 - 待办：真实亲子试用（暂停）、报名帖补视频链接与 TRAE Session ID
@@ -223,7 +223,7 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 - [ ] 真实亲子试用暂停：按现有仿真记录做材料，不再声称真实用户证据。
 - [ ] 按 `docs/contest/09` 补齐报名帖：视频链接、TRAE Session ID；用户证据只写仿真与自测。
 - [x] 3 分钟演示视频与字幕已重录：`deliverables/VoiceTrace-声迹-3分钟演示.mp4`（179 秒，烧字幕）与 `.srt`
-- [x] 产品说明 PDF、路演 PPT / PDF 与 17 张 v0.12 截图已导出到 `deliverables/`；PWA 主屏安装截图因 headless 限制未拍
+- [x] 产品说明 PDF、路演 PPT / PDF 与 18 张 v0.12 截图已导出到 `deliverables/`；`17-pwa-home.png` 为真机 Chrome 快捷方式，材料中未写成独立窗口
 - [ ] 真实录音作为可选加分项：有家人/朋友愿意录再补，不作为前置条件。
 
 ## 6. 变更记录
@@ -258,3 +258,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | 收尾材料按双入口重做：产品说明、路演 10 页、报名帖、3 分钟脚本、截图清单；统一 25/14/164/8 数字 | docs/contest/06-14、docs/development/01、05、10、README | 真实试用缺口保持显式标注；PDF/PPT/视频仍待制作 |
 | 2026-11-20 | 修复亲子角色走查 P1：儿童词注去重、首屏跟读入口、跟读听示例、小测听题目、跨设备提示 | web/hooks/useSpeechPlayback.js、StoryReader、KidReadAlong、KidQuiz、KidWordCards、kids/parent、globals.css、web/tests、web/scripts | 单测增至 25 项；静态检查覆盖新按钮与提示 |
 | 2026-11-20 | 参赛材料成品：17 张 v0.12 截图、8 页产品说明 PDF、10 页路演 PPT / PDF、3 分钟演示 MP4（白字黑描边烧字幕）与 SRT；故事馆「继续阅读」条不再压导语 | deliverables/、web/app/globals.css、docs/contest/14、README | PWA 主屏安装截图未拍；真实试用缺口保持标注 |
+| 2026-11-20 | 补真机主屏截图：`17-pwa-home.png` 为 Chrome 快捷方式（图标带 Chrome 徽标），v0.12 截图合计 18 张 | deliverables/screenshots/v0.12、docs/contest/14、README | 独立窗口未取证，材料按实际形态标注 |
