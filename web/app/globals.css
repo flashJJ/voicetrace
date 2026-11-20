@@ -3070,6 +3070,10 @@ button {
   margin: 0 0 28px;
 }
 
+.kids-continue.stories-continue {
+  margin: 6px 0 28px;
+}
+
 .pwa-install {
   position: fixed;
   left: 18px;
