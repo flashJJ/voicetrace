@@ -269,3 +269,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | 按新版页面重录 3 分钟演示：故事馆单行标签、隐私卖点与儿童页间距入镜，沿用 2:27 剪辑与字幕时间轴 | deliverables 视频 / SRT、README | 演示仍为脚本自测，不含真实用户数据 |
 | 2026-11-20 | 儿童跟读区留白：朗读速度与「听示例 / 开始跟读」之间补 14px 间距，演示视频同步重录 | web/app/globals.css、deliverables 视频、README | 其他页面的语速控件不受影响 |
 | 2026-11-21 | 新增动效与转场调研及落地计划：原生 View Transitions + CSS/WAAPI 优先，Motion 仅按需；含入场分镜、转场类型与验收指标 | docs/development/15、docs 索引、README | 仅文档，未改动线上动效 |
+| 2026-11-21 | 上线古风电影版入场（2.7s、可跳过、每会话一次、`?intro=1` 重播）、毛笔光标与点击墨点；reduced-motion 下全部关闭 | web/components/CinematicIntro.jsx、web/components/InkEffects.jsx、web/public/cursor、web/app/globals.css、layout.js、page.js、docs/development/15、README | 路由转场与滚动入场未实施 |

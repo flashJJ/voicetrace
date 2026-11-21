@@ -4,6 +4,7 @@ import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import PwaRegister from "../components/PwaRegister";
 import PwaInstall from "../components/PwaInstall";
+import InkEffects from "../components/InkEffects";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -51,9 +52,14 @@ export const viewport = {
   themeColor: "#a63a2b",
 };
 
+const INTRO_BOOT = `(function(){try{var home=${JSON.stringify(`${basePath}/`)};var path=location.pathname.replace(/index\\.html$/,"");if(path!==home)return;var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;var seen=false;try{seen=sessionStorage.getItem("voicetrace:intro")==="1"}catch(e){}var force=location.search.indexOf("intro=1")!==-1;if(!reduce&&(!seen||force)){document.documentElement.setAttribute("data-intro","on")}}catch(e){}})();`;
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="zh-Hans" data-scroll-behavior="smooth">
+    <html lang="zh-Hans" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: INTRO_BOOT }} />
+      </head>
       <body>
         <LocaleProvider>
           <SiteHeader />
@@ -61,6 +67,7 @@ export default function RootLayout({ children }) {
           <SiteFooter />
           <PwaInstall />
           <PwaRegister />
+          <InkEffects />
         </LocaleProvider>
       </body>
     </html>

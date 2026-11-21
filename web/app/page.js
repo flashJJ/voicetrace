@@ -5,6 +5,7 @@ import { featuredStories, stories, storyModes, heroImage, whyImage } from "../li
 import StoryCard from "../components/StoryCard";
 import VoiceMoment from "../components/VoiceMoment";
 import HomeVoice from "../components/HomeVoice";
+import CinematicIntro from "../components/CinematicIntro";
 import { useLocale } from "../components/LocaleProvider";
 
 const COPY = {
@@ -113,6 +114,7 @@ export default function HomePage() {
 
   return (
     <>
+      <CinematicIntro />
       <section className="container hero">
         <div className="hero-copy">
           <span className="eyebrow fade-in">{c.eyebrow}</span>
