@@ -272,4 +272,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-21 | 上线古风电影版入场（2.7s、可跳过、每会话一次、`?intro=1` 重播）、毛笔光标与点击墨点；reduced-motion 下全部关闭 | web/components/CinematicIntro.jsx、web/components/InkEffects.jsx、web/public/cursor、web/app/globals.css、layout.js、page.js、docs/development/15、README | 路由转场与滚动入场未实施 |
 | 2026-11-21 | 3 分钟演示重录：开场改为站点古风入场，正文沿用 2:27 旁白与字幕时间轴 | deliverables 视频、README | 演示仍为脚本自测，不含真实用户数据 |
 | 2026-11-21 | 重做点击墨效：多边形碎片改为柔边墨团 + 洇开外晕 + 少量飞溅，multiply 混色；输入框不触发；另出 A-E 墨效选型页，演示视频同步重录 | web/components/InkEffects.jsx、web/public/ink、web/app/globals.css、deliverables 视频 / ink-lab、README | 选型页不参与站点路由与构建 |
-| 2026-11-21 | 点击效果改为水波纹（中心点 + 三圈扩散）；全站文字与图片不可选中，输入框与可编辑区仍可选择 | web/components/InkEffects.jsx、web/app/globals.css、README | 墨团贴图从站点移除，选型页仍保留 |
+| 2026-11-21 | 点击效果改为水波纹（中心点 + 三圈扩散）；全站文字与图片不可选中，输入框与可编辑区仍可选择；演示视频同步重录 | web/components/InkEffects.jsx、web/app/globals.css、deliverables 视频、README | 墨团贴图从站点移除，选型页仍保留 |
