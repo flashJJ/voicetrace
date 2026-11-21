@@ -268,3 +268,4 @@ npm run test:static   # 静态产物路由、儿童页面与录音链接
 | 2026-11-20 | 故事馆卡片排版：文字栏加宽，地区 / 模式 / 年龄标签不拆字，1024-1440 宽度下 28 张卡片均为单行；980 以下改单列避免挤行 | web/app/globals.css、web/app/stories/page.js、README | 英文站标签较长时整行换行，不拆词 |
 | 2026-11-20 | 按新版页面重录 3 分钟演示：故事馆单行标签、隐私卖点与儿童页间距入镜，沿用 2:27 剪辑与字幕时间轴 | deliverables 视频 / SRT、README | 演示仍为脚本自测，不含真实用户数据 |
 | 2026-11-20 | 儿童跟读区留白：朗读速度与「听示例 / 开始跟读」之间补 14px 间距，演示视频同步重录 | web/app/globals.css、deliverables 视频、README | 其他页面的语速控件不受影响 |
+| 2026-11-21 | 新增动效与转场调研及落地计划：原生 View Transitions + CSS/WAAPI 优先，Motion 仅按需；含入场分镜、转场类型与验收指标 | docs/development/15、docs 索引、README | 仅文档，未改动线上动效 |
