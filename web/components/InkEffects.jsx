@@ -2,25 +2,8 @@
 
 import { useEffect } from "react";
 
-const INK_RGB = [31, 27, 22];
-const RED_RGB = [166, 58, 43];
-
-function drawBlot(ctx, x, y, radius, seed, alpha, rgb) {
-  ctx.beginPath();
-  const points = 11;
-  for (let i = 0; i <= points; i += 1) {
-    const angle = (i / points) * Math.PI * 2;
-    const wobble =
-      1 + 0.24 * Math.sin(angle * 3 + seed) + 0.1 * Math.cos(angle * 5 - seed * 1.7);
-    const px = x + Math.cos(angle) * radius * wobble;
-    const py = y + Math.sin(angle) * radius * wobble;
-    if (i === 0) ctx.moveTo(px, py);
-    else ctx.lineTo(px, py);
-  }
-  ctx.closePath();
-  ctx.fillStyle = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${alpha})`;
-  ctx.fill();
-}
+const BLOTS = ["blot-0.png", "blot-1.png", "blot-2.png", "blot-3.png"];
+const DROPS = ["drop-0.png", "drop-1.png"];
 
 export default function InkEffects() {
   useEffect(() => {
@@ -35,6 +18,13 @@ export default function InkEffects() {
       `url("${basePath}/cursor/brush-link.png") 2 30, pointer`
     );
     root.dataset.inkCursor = "on";
+
+    const images = {};
+    [...BLOTS, ...DROPS, "blot-red.png"].forEach((name) => {
+      const img = new Image();
+      img.src = `${basePath}/ink/${name}`;
+      images[name] = img;
+    });
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
     let canvas = null;
@@ -73,10 +63,19 @@ export default function InkEffects() {
       particles = particles.filter((p) => now - p.born < p.life);
       for (const p of particles) {
         const age = Math.max(0, now - p.born);
-        const k = age / p.life;
-        const alpha = (1 - k) * (p.red ? 0.45 : 0.5);
-        const radius = p.r * (0.7 + k * 0.9);
-        drawBlot(ctx, p.x + p.vx * age, p.y + p.vy * age, radius, p.seed, alpha, p.rgb);
+        const k = Math.min(1, age / p.life);
+        const fadeIn = k < 0.12 ? k / 0.12 : 1;
+        const alpha = p.alpha * fadeIn * (1 - k);
+        const scale = p.scale * (1 + 0.2 * k);
+        const img = images[p.name];
+        if (!img || !img.complete) continue;
+        const size = p.size * scale;
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.translate(p.x + p.vx * age, p.y + p.vy * age);
+        ctx.rotate(p.rot);
+        ctx.drawImage(img, -size / 2, -size / 2, size, size);
+        ctx.restore();
       }
       if (particles.length) {
         raf = requestAnimationFrame(frame);
@@ -91,40 +90,86 @@ export default function InkEffects() {
       if (root.dataset.inkCursor !== "on") return;
       const target = event.target;
       if (target && target.closest && target.closest("[data-no-ink]")) return;
+      if (
+        target &&
+        target.closest &&
+        target.closest("input, textarea, select, [contenteditable='true']")
+      ) {
+        return;
+      }
       ensureCanvas();
 
       const now = performance.now();
       const touch = event.pointerType === "touch";
-      const count = touch ? 6 : 9;
+      const pick = (list) => list[Math.floor(Math.random() * list.length)];
+
+      // 主墨团：柔边扩散，像宣纸吸墨
       particles.push({
+        name: pick(BLOTS),
         x: event.clientX,
         y: event.clientY,
-        r: 11 + Math.random() * 6,
+        size: touch ? 70 + Math.random() * 16 : 78 + Math.random() * 26,
+        scale: 0.82,
+        rot: Math.random() * Math.PI * 2,
         vx: 0,
         vy: 0,
         born: now,
-        life: 620,
-        seed: Math.random() * 100,
-        rgb: INK_RGB,
-        red: false,
+        life: 760 + Math.random() * 140,
+        alpha: 0.78,
       });
+
+      // 淡淡的外晕，模拟洇开
+      particles.push({
+        name: pick(BLOTS),
+        x: event.clientX,
+        y: event.clientY,
+        size: touch ? 140 : 180,
+        scale: 0.9,
+        rot: Math.random() * Math.PI * 2,
+        vx: 0,
+        vy: 0,
+        born: now,
+        life: 1000,
+        alpha: 0.12,
+      });
+
+      // 少量墨点飞溅
+      const count = touch ? 3 : 5;
       for (let i = 0; i < count; i += 1) {
         const angle = Math.random() * Math.PI * 2;
-        const dist = 8 + Math.random() * (touch ? 16 : 24);
-        const red = !touch && Math.random() < 0.14;
+        const dist = 12 + Math.random() * (touch ? 14 : 24);
         particles.push({
+          name: pick(DROPS),
           x: event.clientX + Math.cos(angle) * dist,
           y: event.clientY + Math.sin(angle) * dist,
-          r: 2.5 + Math.random() * (touch ? 6 : 9),
-          vx: Math.cos(angle) * (0.02 + Math.random() * 0.05),
-          vy: Math.sin(angle) * (0.02 + Math.random() * 0.05),
+          size: 9 + Math.random() * (touch ? 5 : 7),
+          scale: 0.9,
+          rot: Math.random() * Math.PI * 2,
+          vx: Math.cos(angle) * (0.015 + Math.random() * 0.035),
+          vy: Math.sin(angle) * (0.015 + Math.random() * 0.035),
           born: now + Math.random() * 40,
-          life: 460 + Math.random() * 240,
-          seed: Math.random() * 100,
-          rgb: red ? RED_RGB : INK_RGB,
-          red,
+          life: 420 + Math.random() * 220,
+          alpha: 0.5,
         });
       }
+
+      // 偶尔一点朱砂
+      if (!touch && Math.random() < 0.12) {
+        particles.push({
+          name: "blot-red.png",
+          x: event.clientX + (Math.random() - 0.5) * 40,
+          y: event.clientY + (Math.random() - 0.5) * 40,
+          size: 16 + Math.random() * 8,
+          scale: 0.8,
+          rot: Math.random() * Math.PI * 2,
+          vx: 0,
+          vy: 0,
+          born: now + 30,
+          life: 520,
+          alpha: 0.35,
+        });
+      }
+
       if (!raf) raf = requestAnimationFrame(frame);
     };
 
