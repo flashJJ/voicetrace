@@ -32,6 +32,28 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+select,
+[contenteditable="true"] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+img,
+svg,
+canvas {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 body {
   margin: 0;
   color: var(--ink);
